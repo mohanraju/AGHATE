@@ -1,0 +1,70 @@
+/*
+ *  File:         dmodule_user.css
+ *  Project:      ProjetMSI
+ *  Copyright 2013 Mohanraju Sp SLS-APHP 
+ *
+ * ***************************************************************************
+ */
+
+@import "../../commun/styles/smoothness/jquery-ui-1.8.4.custom.css";
+
+div#body_left {
+    float: left;
+    width: 500px;
+		min-height:150px;			    
+		margin-left:50px;			    					
+}
+div#body_right {
+		margin-top:20px;			    					
+		min-height:150px;
+    float: left;
+    width: 550px;
+		margin-left:20px;			    
+}			
+</style>
+<style type="text/css">
+#addcode {
+	background-repeat: no-repeat;
+	background-size: 100% Auto;
+	background-color:#FFFFFF;			
+	color:#4E6CA3;		  
+	font-size:1.2em;
+	font-weight:bold;
+	height: 30px;
+	width: 150px;
+}		
+#addcode hover {
+	
+}
+.pagecontainer {/* encadre le tableau */
+	width:550px ; /* largeur du tableau */
+	height:240px ; /* hauteur minimale du tableau */
+	margin:0 ; padding:0 ; /* marges intérieures et extérieures du tableau */
+	border:1px solid black ;/* bordure du tableau */
+	background-color:#E7E4E4;
+	text-align: center;
+	position: fixed;
+	left: 250;
+
+}
+
+.gauche { /* définition de la colonne gauche */
+	float:left ; /* flotte à gauche */
+	width:250px ; /* largeur : 24% de .container */
+	height:100% ; /* hauteur : 100% du .container */
+	margin:2px ; padding:0;
+}  
+
+.centre {/* définition de la colonne centre */
+	float:left ; /* flotte à gauche */
+	width:25px ; /* largeur : 50% de .container */
+	height:100% ; /* hauteur : 100% du .container */
+	margin:0;padding:0 ; /* marges */
+} 
+
+.droite { /* colonne droite */
+	float:left ; /* flotte à gauche */
+	width:250px ; /* largeur : 23% de .container */
+	height:100% ; /* hauteur : 100% du .container */
+	margin:0 ; padding-left:20px;
+}

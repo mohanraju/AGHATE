@@ -1,0 +1,64 @@
+.OptionNotSelected,.OptionSelected{
+
+	color: #434343;	
+	font-family: 'Open Sans', 'segoe ui', helvetica, 'lucida grande', lucida, tahoma, arial, geneva, verdana, 'ms sans serif', sans-serif;	
+	font-size: 1em;
+	text-decoration:none;	
+	cursor:pointer;
+	padding: .5em 1em;
+	line-height: 3em;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+ 
+
+}
+.OptionSelected{
+	background-color:#ECBF41;opacity: 0.90;
+}
+.OptionNotSelected{
+	background-color:#e6e6e6; opacity: 0.90;
+ 
+}
+
+
+a:hover, a:focus {
+text-decoration: none;
+}
+
+#SectionTitle
+	{
+		font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		font-size:16px;
+		font-weight:normal;
+		color:#fff;
+		background-color:#6194C3;
+		border-bottom:1px solid #ccc;
+		padding:10px 20px;
+width:100px;
+ 	  opacity: 0.90;
+  	filter: alpha(opacity=90);
+   		-webkit-box-shadow: none;
+    	 -moz-box-shadow: none;
+     	box-shadow: none;
+	}
+#SectionForm
+	{
+		font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		font-size:15px;
+		font-weight:normal;
+	}
+#Patient
+	{
+		font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		font-size:16px;
+		font-weight:normal;
+		color:#fff;
+		background-color:rgb(199,183,151);
+		border-bottom:1px solid #ccc;
+		padding:10px 20px;
+ 	  opacity: 0.90;
+  	filter: alpha(opacity=90);
+   		-webkit-box-shadow: none;
+    	 -moz-box-shadow: none;
+     	box-shadow: none;
+	}

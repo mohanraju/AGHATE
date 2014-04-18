@@ -1,0 +1,38 @@
+NOM:donnees complementaire AGHATE
+NABV:forms
+DATABASE:intramsi
+TYPEDATA:colonne
+SQL:select * from forms where nda='FormUpdate_Nda' and valid='A' and type='BIO' and nohjo='FormUpdate_Nohjo' 
+INACTIVE:update forms set valid='D' where id='FormUpdate_VidChamps' 
+UPDATE:insert into forms (idref,ref,nip,nda,nohjo,uhexec,uhdem,type,var,libelle,val,valid,datmaj,username) values ('FormUpdate_Nda','FormUpdate_REF','FormUpdate_Nip','FormUpdate_Nda','FormUpdate_Nohjo','FormUpdate_Uhexec','FormUpdate_Uhdem','FormUpdate_TypeAttribut','FormUpdate_Var','FormUpdate_Libelle','FormUpdate_Val','A','FormUpdate_SaveDateTime','FormUpdate_Username')
+UPDATECHAMPS:update forms set FormUpdate_Champs='FormUpdate_DataChamps' where id='FormUpdate_VidChamps' 
+#Descriptifs de champs complementaires
+IDPATIENT:NIP
+NAMEPATIENT:NOM
+FIRSTNAMEPATIENT:PRENOM
+
+
+Horodatage : 18/03/2014 11:03:21
+Erreur : Syntax error, unrecognized expression: #BTN_DEL_DP_Array
+(
+    [FormUpdate_VID] => 377
+    [FormUpdate_ID] => autre_bio
+    [Source] => formsAutoComp
+    [FormUpdate_Nip] => 3913089103
+    [FormUpdate_Nda] => 377
+    [FormUpdate_Nohjo] => 
+    [FormUpdate_Entry] => 2014-03-12
+    [FormUpdate_End] => 2014-03-23
+    [FormUpdate_Uhdem] => 344
+    [FormUpdate_Uhexec] => 344
+    [FormUpdate_Libuhdem] => 
+    [FormUpdate_Username] => ADMIN
+    [FormUpdate_SaveDateTime] => 2014-03-18 12:58
+    [FormUpdate_Diag] => A1273
+    [FormUpdate_Libdiag] => Test   HNF 0 UI/ml
+    [FormUpdate_TypeAttribut] => DP
+)
+insert into forms (idref,ref,nip,nda,nohjo,uhexec,uhdem,var,libelle,val,type,valid,datmaj,username) values ('377','FormUpdate_REF','3913089103','377','','344','344','A1273','Test   HNF 0 UI/ml','FormUpdate_Val','autre_bio','A','2014-03-18 12:58','ADMIN')
+286
+Fichier Source : http://localhost/aghate_lrb/commun/js/jquery-1.9.1.js
+Ligne : 4421

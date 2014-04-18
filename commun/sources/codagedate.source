@@ -1,0 +1,11 @@
+NOM:Données au format CIM 10 et CCAM
+NABV:codage_msi
+DATABASE:intramsi
+TYPEDATA:colonne
+SQL:select * from codage_msi where nda='FormUpdate_Nda' and valid='A' and type='DAS' and nohjo='FormUpdate_Nohjo' 
+INACTIVE:update codage_msi set valid='D' where id_codage_msi='FormUpdate_Var' 
+UPDATE:insert into codage_msi (nip,nda,nohjo,dteent,datsor,uhexec,uhdem,libuhdem,type,diag,libdiag,datmaj,username,valid,etat) values ('FormUpdate_Nip','FormUpdate_Nda','FormUpdate_Nohjo','FormUpdate_Entry','FormUpdate_End','FormUpdate_Uhexec','FormUpdate_Uhdem','FormUpdate_Libuhdem','FormUpdate_TypeAttribut','FormUpdate_Diag','FormUpdate_Libdiag','FormUpdate_SaveDateTime','FormUpdate_Username','A','ENR')
+#Descriptifs de champs complementaires
+IDPATIENT:FormUpdate_Nip
+IDSEJOUR:FormUpdate_Nda
+UHDEM:FormUpdate_Uhdem
