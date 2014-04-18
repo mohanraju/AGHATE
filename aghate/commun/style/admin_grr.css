@@ -1,0 +1,46 @@
+/* ------------------------------------ *
+ CSS
+ * ------------------------------------ */
+div.onglet {
+    font-family: Arial, Sans, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #888888;
+    margin-right: 3px;
+    padding: 5px;
+    background-color: white;
+}
+div.onglet a {
+    color: black;
+}
+
+div.onglet_on {
+    font-family: Arial, Sans, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #111111;
+    margin-right: 3px;
+    padding: 5px;
+    background-color: #888888;
+}
+div.onglet_on a, div.onglet_on a:hover {
+    color: #888888;
+    text-decoration: none;
+}
+
+div.onglet_on a:hover {
+    color: white;
+}
+
+div.onglet_off {
+    font-family: Arial, Sans, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #888888;
+    margin-right: 3px;
+    padding: 5px;
+    background-color: #888888;
+    color: white;
+}
+
+
