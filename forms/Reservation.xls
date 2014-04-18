@@ -1,0 +1,42 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+Bloc opératoire	titre1				forms	
+Intervention	text			type_inter	forms	o
+Diagnostics d'entree	InputCompletSimple	DP		motif	forms	o
+Autorisation d'opérée signée	cs	Oui|Non		aut	forms	
+Durée intervention	Heure			duree_op	forms	
+Prévoir transfert	cs	USC|Réanimation		transfert	forms	
+Secteur	cs	Laennec|Hamburger		secteur	forms	
+Coté	cs	Droit|Gauche		cote	forms	
+Mode	cs	Coelioscopie|Laparotomie		mode_inter	forms	
+Matériel à prévoir	titre2				forms	
+Prothèse	text			prot	forms	
+Autre	text			autre	forms	
+Anesthésie	titre1				forms	
+Type d'anesthésie	cs	Générale|Locale|Loco-régionnale|APB		type_anes	forms	
+Intubation	cs	Buccale|Latérale|Nasale|Médiane		intubation	forms	
+Sonde	cs	Normale|Preformée		sonde	forms	
+Risque de Crutzfeld Jacob	cs	Oui|Non		creutz	forms	
+Consultation anesthésie	tite				forms	
+Médecin ayant effectué la consultation	text			c_anes_med	forms	o
+Confirmation de la date d'entrée	cs	Oui|Non		c_anes_conf_entree	forms	
+Temps de l'intervention prévu	num			c_anes_duree	forms	
+Patient récusé	cs	Oui|Non		c_anes_recuse	forms	
+Examen complémentaires	titre1				forms	
+	cm	Echographie		echo	forms	
+	cm	Radio		radio	forms	
+Autre	text			autre	forms	
+Contraintes liées à la prise en charge	titre1				forms	
+Pathologies associées	InputCompletMulti	DAS		das	forms	
+	cm	Allergie au latex		latex	forms	
+	cm	BMR		bmr	forms	
+	cm	Sérologies		sero	forms	
+	cm	Hyperanxiété		hyperanx	forms	
+	cm	Autres		autres	forms	
+Sortie et post-hospitalisation	titre1					
+Sortie prévue	cs	A domicile| SSR | Long séjour		ms	forms	
+Date du rendez vous post-opératoire	Date			c_postop	forms	
+A revoir en consultation d'anesthésie	cs	Oui|Non		c_anes_revoir	forms	
+Motif	text			c_anes_revoir_motif	forms	
+Délai	num		jour	c_anes_revoir_delai	forms	
+Date consultation	date			c_anes_date	forms	
+Remarques	text			c_anes_rem	forms	

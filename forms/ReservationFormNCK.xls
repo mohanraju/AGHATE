@@ -1,0 +1,19 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+ref	text		hidden	ref		
+nip	num		hidden	nip		
+nda	num		hidden	nda		
+nohjo	text		hidden	nohjo		
+entry	date		hidden	entry		
+end	date		hidden	end		
+uhdem	text		hidden	uhdem		
+uhexec	text		hidden	uhexec		
+Diagnostics	titre1				forms	
+Provenance du malade	cs	Domicile|SAMU|Autre hopital		provenance	forms	o
+Bloc opératoire	titre1				forms	
+Intervention	text			type_inter	forms	o
+Transfert à prévoir	cs	Réanimation|USC		transfert	forms	
+Sortie et post-hospitalisation	titre1					
+Sortie prévue	cs	A domicile| SSR | Long séjour		ms	forms	
+Date du rendez vous post-opératoire	Date			c_postop	forms	
+Date consultation	Date			c_anes_date	forms	
+Remarques	text			c_anes_rem	forms	

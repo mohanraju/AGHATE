@@ -1,0 +1,41 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+NIP	num		hidden	NIP	forms	
+NDA	num		hidden	NDA	forms	
+Hospitalisation	titre1				forms	
+Hospitalisation	cs 	De semaine|Conventionnelle		choix_hopi	forms	
+Date d'hospitalisation	date			date_hosp	forms	
+Heure D'hospitalisation	text			heure_hosp	forms	
+Information hospitalisation	titre1				forms	
+Date de la demande	date			date_dem	forms	
+Prescripteur	text			prescripteur	forms	
+Médecin correspondant	text			med_corres	forms	
+Délai d'hospitalisation	num			delai_hosp	forms	
+Durée estimée du séjour	num			duree_sej	forms	
+Motif d'hospitalisation	text			motif_hospi	forms	
+Bilan sanguin en externe	cs 	Oui|Non		bilan_ext	forms	
+Prescrit à l'entrée		Oui|Non		presc_ent	forms	
+Exécution	titre2				forms	
+Date	date			date_exec	forms	
+Heure	text			heure_exec	forms	
+Prescription	ImputCompletMultiple			prescription	forms	
+Consentement du patient	cs 	Oui|Non		consent_pat	forms	
+Informations du patient 	cs 	Oui|Non			forms	
+Convocation	titre2				forms	
+Date	date			date_convoc	forms	
+Heure	text			heure_convoc	forms	
+Téléphone	cs 	Oui|Non		phone_patient	forms	
+Sur place	cs 	Oui|Non		sur_place	forms	
+Courrier	cs 	Oui|Non		courrier_patient	forms	
+Diabète	cs 	Oui|Non		diabete	forms	
+Allergie	cs 	Oui|Non		allergie	forms	
+Rendez-vous annulé par	cs 	Patient|Service		annule_rdv	forms	
+Motif	text			motif_annule	forms	
+Médecin prévenu par mail de la date d’hospitalisation le 	date			date_prev_med	forms	
+Typage HLA fait dans le centre greffeur 	titre1				forms	
+Protocole	cs 	Oui|Non		protocole	forms	
+Lequel	text			lequel_pro	forms	
+Autres	longtext			aut_proto	forms	
+Prévoir CS après HDJ avec le DR :                                      	text			prev_cs	forms	
+Délai d'hospitalisation	num			delai	forms	
+Nom de la secrétaire	text			nom_secret	forms	
+Nom IDE	text			nom_ide	forms	
