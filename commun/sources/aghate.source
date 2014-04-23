@@ -1,0 +1,9 @@
+NOM:donnees complementaire AGHATE
+NABV:forms
+DATABASE:aghate_test
+TYPEDATA:colonne
+SQL:select * from agt_loc where id_prog='AghateUpdate_VID' and statut_entry !='S'
+#Descriptifs de champs complementaires
+IDPROG:NIP
+NAMEPATIENT:NOM
+FIRSTNAMEPATIENT:PRENOM

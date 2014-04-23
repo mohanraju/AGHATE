@@ -1,0 +1,11 @@
+NOM:donnees complementaire AGHATE
+NABV:forms
+DATABASE:intramsi
+TYPEDATA:colonne
+SQL:select * from forms where (idref='FormUpdate_VID' or nda='FormUpdate_Nda')  and valid='A'
+INACTIVE:update forms set valid='D' where (idref='FormUpdate_VID' or nda='FormUpdate_Nda') and var='FormUpdate_Var'
+UPDATE:insert into forms (idref,ref,nip,nda,nohjo,uhexec,uhdem,var,libelle,val,valid,datmaj,username) values ('FormUpdate_VID','FormUpdate_REF','FormUpdate_Nip','FormUpdate_Nda','FormUpdate_Nohjo','FormUpdate_Uhexec','FormUpdate_Uhdem','FormUpdate_Var','FormUpdate_Libelle','FormUpdate_Val','A','FormUpdate_SaveDateTime','FormUpdate_Username')
+#Descriptifs de champs complementaires
+IDPATIENT:NIP
+NAMEPATIENT:NOM
+FIRSTNAMEPATIENT:PRENOM

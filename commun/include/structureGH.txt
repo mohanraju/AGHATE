@@ -1,0 +1,724 @@
+﻿NUM_HOPITAL	HOPITAL	POLE	POLE.LIB	CHEF.SERVICE	SERVICE	URM	URM.LIB	UH	UH.LIB	UA	VAL.DEB	VAL.FIN	UGIPOP
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	542	HC AJA HEMATO - Greffe	417	AJA Greffe	417	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	552	HC AJA HEMATO	418	HEMATO AJA HSP                          	418	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	553	HC AJA HEMATO	419	AJA SI	419	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	552	HC AJA HEMATO	420	HDJ AJA HEMATO	420	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	552	HC AJA HEMATO	421	HDJ AJA GREFFE MOELLE	421	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	552	HC AJA HEMATO	444	HDJ AJA HEMATO	418	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	553	HC AJA HEMATO	445	HDJ AJA GREFFE MOELLE	419	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	552	HC AJA HEMATO	447	HDJ AJA COQ 3	420	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	552	HC AJA HEMATO	446	SI AJA GREFFE DE MOELLE	418	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	553	HC AJA HEMATO	439	HEMATO AJA HSP	419	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		AJA - Hematologie	552	HC AJA HEMATO	440	SI HEMATO AJA	420	01/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Centre Maladies Sein	70	Centre Maladies Sein	364	CHIMIO-SEINO-ONCO-POLI	738	23/01/2001	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Centre Maladies Sein	70	Centre Maladies Sein	365	CH-ONCOSEINO	3813	01/01/1992	02/12/1998	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	131	CHIR-GE-L5	5211	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	132	CH-GEN-SA-G5	5211	01/01/1992	31/01/2007	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	133	CHIR-HSP-LA5	5211	01/01/1992	31/01/2007	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	134	CHIR-GE-PRIV-L5	5211	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	153	CHIR-GE-G5	5211	26/09/2003	01/01/3000	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	156	HOP-SEM-GER5	5211	01/10/2003	08/01/2004	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	157	HOP-SP-CT-G5	5211	29/09/2003	31/01/2007	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	195	CHIR-GE-HSP-L5	5211	01/01/2007	01/01/3000	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	196	CHIR-GE-SPC-G5	5211	01/01/2007	01/01/3000	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	267	HDJ2-CHIR-GE-G5	5224	02/12/1998	01/01/3000	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	267	HJ2-CHRG-CELERIER	5224	01/01/1992	02/12/1998	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	285	HJ-CHIR-GER5	5224	01/01/1992	31/12/2003	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	288	HOP-SEM-GER5	5211	01/01/1992	31/12/2003	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	289	CHIR-INT-GE5	5211	01/01/1992	31/12/2003	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	291	CH-GEN-HS-G5	5211	01/01/1992	31/12/2003	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	280	HC CHIR GE PC LIB�	5211	09/12/2011	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	270	HC CHIR PLAST RECON ESTH L4	3401	07/10/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	271	HC CHIR PLAST PRIV M L4	3401	07/10/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	272	HC CHIR PLAST PRIV C L4                 	3401	07/10/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	273	HDJ CHIR PLAST RECON BAT BRU	3403	07/10/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	274	HDJ CHIR PLAST PRIV M BAT BRU	3403	07/10/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	275	HDJ CHIR PLAST PRIV C BAT BRU	3403	07/10/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	342	TRAIT CHIR BRULES	276	TRAITEMENT CHIR BRULES L4	3402	07/10/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	214	CHIR-PLAST1-PRIV-G4	1011	29/03/2004	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	215	CHPL-GERLAV4	1011	01/01/1992	31/03/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	216	HSEM-CHIR-PLAST G4	1013	01/01/1992	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	217	CHPL-P-BA-G4	1011	01/01/1992	01/07/1998	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	218	CHIR-PLAST2-PRIV-G4	1011	03/05/1995	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	219	CHPL-P-SE-G4	1011	01/01/1992	06/03/1999	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	221	HDJ2-CHIR-PL2-PRIV-G4	1041	01/01/1992	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	222	HDJ2-CHIR-P1-PRIV-G4	1041	29/03/2004	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	233	CHIMIO-CH-PL	1031	01/01/1992	31/12/2003	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	234	HDJ2-CHIR-PLAST-G4	1041	01/01/1992	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	241	CHIR-PLAST-G4	1011	01/01/2007	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	242	CHIR-PLAST-HSP-G4	1011	01/01/2007	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	219	HDJ2 CHIR PLAST AMBU G4	1042	01/03/2013	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	266	CIC		01/01/1992	01/01/2000	
+76	Saint Louis	108	Biologie anatomopathologie		Cinetique	820	CINETIQUE	238	HDJ3-CINETIQUE	6031	01/01/2007	01/02/2012	
+76	Saint Louis	108	Biologie anatomopathologie		Cinetique	820	CINETIQUE	253	HDJ3 CINETIQUE	6031	03/11/2011	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Apherese therapeutique	810	HDJ TRANSFU	227	HDJ1-TRANSFU-TH-CELL	6026	01/01/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Apherese therapeutique	810	HDJ TRANSFU	808	HJ1-TRANSFUSION	6026	01/01/2002	31/12/2005	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	211	CMF STO HSP T5                          	2113	01/01/2007	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	212	CHIR-AMBU-CMF STO T5                    	2115	01/01/2007	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	269	HJ-POL-STOM	2124	02/12/1998	31/12/2003	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	269	HJ-POL-STOM	1119	01/01/1992	02/12/1998	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	346	CMF STO-T5                              	2113	01/01/1992	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	347	STOMA-PR-DEB		01/01/1992	31/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	348	CHIMIO STOMA	2121	01/01/1992	06/12/1999	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	350	CMF & STOMATO PRIVE T5                  	2113	07/07/2009	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	358	HSEM-CMF STO-T5                         	2114	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		CRN SLS	170	CRN	152	I.V.G-R.U		18/09/1995	02/01/2007	
+76	Saint Louis	105	DUNEGO		CRN SLS	522	HDJ CRN	197	HDJ2-MEDIC-CRN	5216	01/01/2007	01/01/3000	
+76	Saint Louis	105	DUNEGO		CRN SLS	522	HDJ CRN	198	HDJ1-BLOC-CRN	5216	01/01/2007	01/01/3000	UG5200
+76	Saint Louis	105	DUNEGO		CRN SLS	170	CRN	355	S-IVG-PORTE	1721	01/01/1992	10/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	151	HJ-DERM-DUBE	1111	01/01/1992	01/06/1996	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	206	HDJ2-DERMATO2-T5	632	01/01/2007	01/02/2012	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	207	HDJ3-DERMATO-PI-POLI	633	01/01/2007	01/02/2012	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	208	HDJ3-COD-DIAG	634	01/01/2007	01/02/2012	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	228	DERMATO1-M5	512	01/01/2007	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	229	HSEM-DERMATO2 T5	613	01/01/2007	28/01/2010	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	262	HJ-POL-DERM	1112	01/01/1992	01/06/1996	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	679	DERMATO-HOSP	613	01/01/1992	18/04/2000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	681	HSEM-DERMATO1-M5	612	01/01/1992	28/01/2010	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	682	CHIM-DERM-DU	622	01/01/1992	01/05/2000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	683	HOP-SEM-TRE5	613	01/01/1992	30/03/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	684	HDJ2-DERMATO1-M5	631	01/01/1995	01/02/2012	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	685	HJ3-DERM-POL		31/10/2000	31/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	861	HJ2-DERMATO-T5	531	01/01/1995	01/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	862	DERMATO2-T5	511	01/01/1992	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	863	DERM-MOR-TR5	511	01/01/1992	01/05/2000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	864	SC-DERM-MYO5		01/01/1992	02/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	885	CHIMIO-COD	551	01/01/1992	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	886	HJ3-DERMATO-PO		16/09/2002	10/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	686	HDJ2 DERMATO1 M5	535	30/11/2011	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	687	HDJ2 DERMATO2 T5	536	30/11/2011	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	60	DERMATO 1	689	HDJ3 COD DIAG	534	01/01/2011	01/01/3000	
+76	Saint Louis	105	DUNEGO		Endocrinologie	10	ENDOCRINOLOGIE	317	ENDOCRI-TRE4	114	01/01/1992	25/04/2000	
+76	Saint Louis	105	DUNEGO		Endocrinologie	10	ENDOCRINOLOGIE	318	ENDOCRINO-SC-T4	114	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Endocrinologie	10	ENDOCRINOLOGIE	875	HSEM-ENDOCRINO-T4	113	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Endocrinologie	10	ENDOCRINOLOGIE	877	HDJ2-ENDOCRINO-POLI	115	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Gastro-enterologie	470	GASTRO-ENTERO	194	GASTRO-ENT-HSP-G5	4713	01/01/2007	01/01/3000	
+76	Saint Louis	105	DUNEGO		Gastro-enterologie	470	GASTRO-ENTERO	352	GASTRO-ENT-SC-G5	4713	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Gastro-enterologie	470	GASTRO-ENTERO	353	HDJ2-GASTRO-ENT-F5	4714	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Gastro-enterologie	470	GASTRO-ENTERO	356	GAST-ENT-HSP	4715	01/01/1992	01/11/2007	
+76	Saint Louis	105	DUNEGO		Gastro-enterologie	470	GASTRO-ENTERO	359	HSEM-SC-GASTR-ENT-F5	4716	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Gastro-enterologie	470	GASTRO-ENTERO	362	CHIR-AMBU-GASTRO-F5	4731	16/12/1999	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Greffes de moelle	541	SOINS INT HEMA GRF M	120	SI-HEMATO-GRF-M-T3	5415	09/01/2006	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Greffes de moelle	540	GREFFES DE MOELLE	478	ALLOGREF-MOE		01/01/1992	01/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Greffes de moelle	540	GREFFES DE MOELLE	479	HEMATO-GRF-M-T3	5411	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Greffes de moelle	540	GREFFES DE MOELLE	562	CHIMIO-GRF-M-POLI	5438	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Greffes de moelle	540	GREFFES DE MOELLE	562	CHIMIO-PO-GLUCKMAN	3817	02/12/1993	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Greffes de moelle	540	GREFFES DE MOELLE	566	HDJ1-HEMAT-GRF-M-POLI	5437	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Greffes de moelle	540	GREFFES DE MOELLE	566	HOP-JOUR1-GLUCKMAN	3717	02/12/1993	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	551	SOINS INTENSIFS	130	SI-HEMATO-ADULTE-M3	5515	09/01/2006	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	550	HEMATO ADULTES	563	CHIMIO-HEM-ADUL-POLI	5538	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	550	HEMATO ADULTES	563	CHIMIO-PO-DEGOS	3818	02/12/1993	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	550	HEMATO ADULTES	567	HDJ1-HEM-ADULTE-POLI	5537	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	550	HEMATO ADULTES	567	HOP-JOUR1-DEGOS	3718	02/12/1993	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	550	HEMATO ADULTES	633	HEMATO-ADULTE-HSP-M3	5511	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	550	HEMATO ADULTES	635	HDJ1-HEM-ADULTE-M3	5537	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Adultes	550	HEMATO ADULTES	635	HJ1-HEMATO-DE	3718	29/09/1994	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	9	HEMATO-PED-C3	5614	16/11/2007	14/01/2006	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	501	HDJ1-HEMATO-PED-POLI	5621	01/01/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	548	HJ1-REA-HEMATO		02/12/1998	31/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	548	HJ1-REA-HEMATO		11/09/1996	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	564	CH.POL.H.PED	5638	02/12/1998	08/01/2004	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	564	CHIMIO-PO-SCHAISON	3816	02/12/1993	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	565	CHIMIO-PO-GISSE		02/12/1998	31/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	565	CHIMIO-PO-GISSE		20/07/1998	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	565	CHIMIO-PO-GISSE		02/12/1993	20/07/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	568	HJ1.POL.H.PED		02/12/1998	31/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	568	HJ1-POL-SCHAISON		02/12/1993	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	569	HJ1-POL-GISSE	3716	02/12/1993	30/09/1996	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	616	SI-HEMATO-PED-C3	5611	01/01/1992	14/01/2010	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	560	HEMATO PED	617	HDJ1-HEMATO-PED-C3	5621	01/01/1992	14/01/2010	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	619	HEMATO-ONCO-COQ6		16/04/1998	31/03/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	631	HEMATO-COQ6	5612	01/01/1992	10/04/1999	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Hematologie Pediatrique	561	HEMATO PED	639	HJ-HEM-HAYEM	3712	01/01/1992	29/09/1994	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Immuno-hematologie	581	SOINS-INT-IMMUNOPATO	110	SI-IMMUNO-HEMATO-M4	5815	09/01/2006	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	220	CHIMIO-IMM-HEM-POLI	5838	05/02/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	502	CHIMIO-FERMAND		04/01/2005	14/02/2008	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	551	CHIMIO BROUE	5738	02/12/1998	31/12/2005	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	551	CHIMIO BROUE	3814	01/01/1994	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	610	HDJ1-IMM-HEM-M4	5832	07/01/2005	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	611	HJ-HEMATO-MY4		01/01/2005	15/12/2005	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	614	IMM-HEM-HSP-M4	5814	01/01/2005	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	615	IMM-HEMATO-M4	5813	01/01/2005	31/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	621	IMM-HEMATO-MYO4	5711	03/01/1994	03/02/2005	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	622	HJ-HEMATO-BR-MYO4	5731	01/01/1994	03/01/2005	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	570	IMMUNO HEMATO	623	HEMATO-HSP-MYO4	5712	03/01/1994	12/03/2005	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Oksenhendler	Immunopathologie clinique	581	SOINS-INT-IMMUNOPATO	140	SI-IMMUNO-PATHO-C4	5815	09/01/2006	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Oksenhendler	Immunopathologie clinique	580	IMMUNOPATH CLI	552	CHIMIO-IMM-CLI-POLI	5838	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Oksenhendler	Immunopathologie clinique	580	IMMUNOPATH CLI	552	CHIMIO-CLAUVEL	3815	01/01/1994	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Fermand	Immuno-hematologie	580	IMMUNOPATH CLI	630	HDJ IMM HEM POLI 	3815	26/04/2012  	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Oksenhendler	Immunopathologie clinique	580	IMMUNOPATH CLI	611	HJ-HEMATO-MY4	5831	01/01/2005	15/12/2005	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Oksenhendler	Immunopathologie clinique	580	IMMUNOPATH CLI	624	IMM-HEM-SP-COQ4	5811	01/01/1994	31/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Oksenhendler	Immunopathologie clinique	580	IMMUNOPATH CLI	625	HDJ1-IMMUNO-CLI-C4	5831	30/12/1993	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie	Pr Oksenhendler	Immunopathologie clinique	580	IMMUNOPATH CLI	626	IMMUNO-CLI-C4	5812	24/11/1993	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	111	MAL-INFECT-SPC-F3	5115	01/01/1995	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	112	CH-M-INF-FO3		01/01/1992	05/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	113	SC-M-INF-FO3	5112	01/01/1992	01/11/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	118	HJ1-MAL-INFECT.	5114	01/01/1996	31/03/1996	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	123	HDJ2-MAL-INFECT-F3	5114	01/01/1992	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	127	HJ1-MAL-INF	5116	21/03/1996	23/04/1996	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	174	HJ1-MAL-INF		23/04/1996	31/01/2007	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	202	MAL-INFECT-SC-F3	5115	01/01/2007	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Maladies infectieuses SLS	510	MALADIES INF	203	HDJ1-MAL-INFECT-F3                      	5114	01/01/2007	01/01/3000	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne (Pr Mahr)	31	MEDECINE INTERNE	11	HC MEDECINE INTERNE		28/09/2010	01/01/3000	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne (Pr Farge)	30	MEDECINE INTERNE	115	MEDECINE-INTERNE-L6	311	28/09/2010	01/01/3000	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne (Pr Farge)	30	MEDECINE INTERNE	149	MED-INTERNE-SPC-L6	311	28/09/2010	01/01/3000	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne (Pr Farge)	30	MEDECINE INTERNE	199	MED-INTERNE-HSP-L6	311	28/09/2010	01/01/3000	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne (Pr Farge)	30	MEDECINE INTERNE	264	HDJ2-MED-INTERNE-L6	324	28/09/2010	01/01/3000	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne (Pr Mahr)	31	MEDECINE INTERNE	10	HJ-M-INT-MAHR		28/09/2010	01/01/3000	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne SLS	30	MEDECINE INTERNE	115	MEDECINE-INTERNE-L6	311	01/01/1992	28/09/2010	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne SLS	30	MEDECINE INTERNE	116	MED-INT-HT-SPEC	312	01/01/1996	01/11/2007	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne SLS	30	MEDECINE INTERNE	149	MED-INTERNE-SPC-L6	311	01/01/1992	28/09/2010	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne SLS	30	MEDECINE INTERNE	199	MED-INTERNE-HSP-L6	311	01/01/2007	28/09/2010	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne SLS	30	MEDECINE INTERNE	264	HDJ2-MED-INTERNE-L6	324	02/12/1998	28/09/2010	
+76	Saint Louis	107	Medecine Geriatrie		Medecine Interne SLS	30	MEDECINE INTERNE	264	HJ-POL-M-INT	1114	01/01/1992	02/12/1998	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	193	HDJ2-NEPHRO-L3	4017	01/01/2007	01/01/3000	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	838	DIALYSES-7		12/12/1994	31/01/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	865	DIALYSES-2		12/12/1994	31/01/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	866	DIALYSES-3		12/12/1994	31/01/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	867	DIALYSES-4		12/12/1994	31/01/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	868	DIALYSES-5		12/12/1994	31/01/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	869	DIALYSES-6		12/12/1994	31/01/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	874	GREFFE-REIN-PAN		12/09/1995	02/01/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	876	GREFFE-REIN-L3	4013	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	878	NEPHROL-LAV3	4011	01/01/1992	03/02/2007	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	879	DIALYSES	4012	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	880	NEPHRO-L3	4013	01/01/2007	01/01/3000	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	881	NEPHRO-SPC-L3	4013	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	882	HS-NEPHRO		01/01/1992	31/12/2003	
+76	Saint Louis	105	DUNEGO		Nephrologie	400	NEPHROLOGIE	883	HOP-JOUR-NEP		01/01/1992	31/12/2003	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Hematologie	591	SOINS-INT-ONCO	150	SI-ONCO-HEMATO-C6	5915	09/01/2006	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Hematologie	590	HEMATO SPE	223	ONCO-HEMATO-HSP C6	5911	01/01/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Hematologie	590	HEMATO SPE	224	CHIMIO-ONCO-HEM-POLI	5938	01/01/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Hematologie	590	HEMATO SPE	230	HDJ1-REA-HEM-POLI	5937	01/01/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	365	CHIMIO-ONCO-MED-POLI	738	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	651	ONCO T6	738	01/05/2012	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	642	HDJ1-CHRONO-TH-F6		04/11/2002	13/06/2008	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	643	ONCO-HSP-F6	712	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	644	HDJ1-ONCO-MED-F6	737	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	644	HJ-ONCO-TRE6	3713	01/01/1992	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	645	HS-ONCO-HSP-F6	714	01/01/1992	01/06/2004	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	74	ONCO THORACIQUE	158	CANCERO-THOR		03/10/2003	31/07/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	74	ONCO THORACIQUE	226	CANCERO-THOR-HSP-C5	713	01/01/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	201	TRAIT-ISOTOP-RADIOTH	2619	01/01/2007	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	537	RADIOTH-TRE6		01/01/1992	31/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	538	RADTH-SPC-T6	2613	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	539	CHIMIO-RADTH-T6	2615	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	540	RADTH-TRAIT-SEANCE	2626	01/06/2000	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	542	HSEM-RADIOTHER-T6	2618	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	587	CURITHERAPIE	2617	30/06/2010	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	544	HDJ2-RADIOTHERAPIE	2617	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	560	RADIOTHERAPIE PRIVE M T6                	2613	06/07/2009	10/10/2009	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	575	RADIOTH PRIVE T6 H                      	2613	07/10/2009	10/10/2009	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	576	HDJ RADIOTH PRIVE H                     	2617	07/10/2009	10/10/2009	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	577	CHIMIO-RADTH-PRIVE-M-T6                 	2615	07/10/2009	10/10/2009	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	578	CHIMIO-RADIOTH-PRIVE-H-T6               	2615	07/10/2009	10/10/2009	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	579	RADTH TRAIT PRIV - M	2626	09/10/2009	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	580	RADTH TRAIT PRIV - H	2626	09/10/2009	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	581	RADTH TRAIT PRIV - M	2626	01/01/2009	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	582	RADTH TRAIT PRIV - H	2626	01/01/2009	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Onco-Radiotherapie	260	ONCO RADIO	650	HDJ2 RADIOTHERAPIE                	2617	07/10/2009	10/10/2009	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	209	CHIR-ORL-HSP-F4	1412	01/01/2007	23/10/2009	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	210	CHIR-AMBU-ORL F4	1417	01/01/2007	23/10/2009	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	254	ORL-CH-HT-SPE	1416	22/12/1995	01/11/2007	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	255	HSEM-ORL-F4	1415	01/01/1992	23/10/2009	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	256	ORL-SPC-PRIV-F4	1412	01/01/1992	23/10/2009	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	257	ORL-SPC-F4	1412	01/01/1992	23/10/2009	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	259	HJ-ORL	1413	01/01/1992	24/12/1999	
+76	Saint Louis	104	Neurosciences Tete et Cou		ORL SLS	140	ORL	268	HJ-POL-ORL	1424	02/12/1998	31/12/2003	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Pneumologie	500	PNEUMOLOGIE	114	PNEUMO-SC-C5	5013	01/01/1992	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Pneumologie	500	PNEUMOLOGIE	244	C-PNEUMO-PMC	5022	18/01/1996	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Pneumologie	500	PNEUMOLOGIE	246	C-AMI-PNEUMO-PMC	5022	05/03/1999	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Pneumologie	500	PNEUMOLOGIE	247	HDJ2-PNEUMO-COMP-PMC	5024	12/01/2000	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Pneumologie	500	PNEUMOLOGIE	265	HDJ2-PNEUMO-PMC	5024	02/12/1998	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Pneumologie	500	PNEUMOLOGIE	265	HJ-POL-PNEUM	1115	01/01/1992	02/12/1998	
+76	Saint Louis	106	Urgences		Reanimation Chirurgicale & HDJ KT SLS	290	REANIMATION CHIRURGICALE	200	REA-CHIR	2925	01/01/2007	01/01/3000	
+76	Saint Louis	106	Urgences		Reanimation Chirurgicale & HDJ KT SLS	290	REANIMATION CHIRURGICALE	225	HDJ2-ANESTH-PMC	2924	01/01/2007	01/01/3000	
+76	Saint Louis	106	Urgences		Reanimation Chirurgicale & HDJ KT SLS	410	REANIMATION	293	REA-CHIR-RDC		29/11/1993	31/01/1999	
+76	Saint Louis	106	Urgences		Reanimation Chirurgicale & HDJ KT SLS	410	REANIMATION CHIRURGICALE	294	REA-CHIR	4211	01/01/1992	20/09/2007	
+76	Saint Louis	106	Urgences		Reanimation Chirurgicale & HDJ KT SLS	410	REANIMATION	632	REA-MED-1ETA		29/11/1993	31/01/1999	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Reanimation medicale	110	REANIMATION MEDICALE	263	HJ-POL-ANES	2924	02/12/1998	01/01/2007	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Reanimation medicale	110	REANIMATION MEDICALE	263	HJ-POL-ANES	1113	01/01/1992	02/12/1998	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Reanimation medicale	410	REANIMATION MEDICALE	636	REA-MED	4111	01/01/1992	01/01/3000	
+76	Saint Louis	106	Urgences		Urgences UHCD SLS	190	URGENCES	372	S-URGENCES	1912	01/01/1992	08/01/2010	
+76	Saint Louis	106	Urgences		Urgences UHCD SLS	190	URGENCES	374	URGEN-DESENC	1912	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	173	UROLOGIE-PRIV-G3	3911	10/06/2002	01/01/3000	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	175	CHIR-AMBU-URO-G3	3921	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	176	UROLOGIE-G3	3911	01/01/1992	01/01/3000	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	177	URO-PR-LEDUC	3911	01/01/1992	01/01/2007	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	178	UROLOGIE-SPC		01/01/1992	31/01/2007	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	179	URO-PR-TEILL		01/01/1992	13/06/2008	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	191	HDJ2-UROLOGIE-G3	3922	01/01/2007	01/01/3000	
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	192	UROLOGIE-SPC-G3	3911	01/01/2007	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	7	C-ANDRO-SEXO-ENDO-POLI	133	13/11/2007	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	8	ANESTHESIO	2911	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	119	C-MALADIE-INFECT	5121	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	121	C-VERLAINE-MED-INT-PMC	315	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	121	CONSULTATION-DEMUNIS	4515	01/01/1995	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	122	C-MED-INTERNE-PMC	345	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	122	MED-INTERNE	4512	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	124	C-NEPHRO-PMC	4045	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	124	CONS-NEPHRO	4513	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	125	C-BIOPSIE-NEPHRO-PMC	4045	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	125	BIOPSIE-NEPH	4513	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	126	C-EXPLO-FONCT-PMC	349	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	126	EXPLO-FONCT	4911	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	128	C-PRELEVEMENTS-PMC	349	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	128	PRELEVEMENTS	4911	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	129	SALLE-REVEIL	2912	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	135	C-DERMATO2-POLI	553	25/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	135	C-DERM-MOREL	5311	01/01/1992	25/04/1998	
+76	Saint Louis					999	URM FICTIVE	136	C-DERMATO1	653	23/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	136	C-DERM-DUBER	5312	01/01/1992	23/04/1998	
+76	Saint Louis					999	URM FICTIVE	137	C-DERM2-ALLERGO-POLI	553	25/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	137	C-ALLERG-MOR	5311	01/01/1992	25/04/1998	
+76	Saint Louis					999	URM FICTIVE	138	C DERMATO2 PRIVE POLI	553	24/06/2009	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	138	C-DERMATO-ALLERGO1	653	23/04/1998	13/06/2008	
+76	Saint Louis					999	URM FICTIVE	138	C-ALLERG-DUB	5312	01/01/1992	23/04/1998	
+76	Saint Louis					999	URM FICTIVE	139	INTERV-DERMATO2-POLI	553	19/05/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	139	INTER-MOREL	5311	01/01/1992	19/05/1998	
+76	Saint Louis					999	URM FICTIVE	141	INTER-DERMATO1-POLI	653	24/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	141	INTER-DUBERT	5312	01/01/1992	24/04/1998	
+76	Saint Louis					999	URM FICTIVE	142	C-PHOTOBIO-DERMATO1-POLI	653	25/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	142	PHOTOBIOLOGI	5312	01/01/1992	25/04/1998	
+76	Saint Louis					999	URM FICTIVE	143	C-PUVATH-DERMATO2-POLI	553	19/05/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	143	PUVATH-MOREL	5311	01/01/1992	19/05/1998	
+76	Saint Louis					999	URM FICTIVE	144	C-PUVATH-DERMATO1-POLI	653	23/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	144	PUVATH-DUBER	5312	01/01/1992	23/04/1998	
+76	Saint Louis					999	URM FICTIVE	145	C-SOIN-INF-DERM1-POLI	653	24/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	145	SOINS-INFIR	5312	01/01/1992	24/04/1998	
+76	Saint Louis					999	URM FICTIVE	148	EFR-PNEUMO-PMC	5021	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	161	C-MST-DISPENSAIRE	513	03/01/2007	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	161	DISPENS-MST	4811	01/01/1992	03/01/2007	
+76	Saint Louis					999	URM FICTIVE	162	C-MST	514	03/01/2007	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	162	CONSULT-MST	4812	01/01/1992	03/01/2007	
+76	Saint Louis					999	URM FICTIVE	163	LABO-MST	2211	01/01/2007	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	163	LABO-MST	2212	01/01/1992	01/01/2007	
+76	Saint Louis					999	URM FICTIVE	164	C-PHOTOBIO-DERMATO2-POLI	553	15/05/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	164	PHOTOBIO-MO	5311	01/01/1992	15/05/1998	
+76	Saint Louis					999	URM FICTIVE	165	C-SOINS-INFIRM-DERMATO2	553	19/05/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	165	SOINS-INFIR	5311	01/01/1992	19/05/1998	
+76	Saint Louis					999	URM FICTIVE	181	SPECTROSCOPIE-RADIO	4311	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	204	C-INFIRM-CHIR-G-PMC	5246	01/01/2007	30/01/2009	
+76	Saint Louis					999	URM FICTIVE	231	PETIT-BLOC-CHPL-POLI	1021	06/12/1994	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	232	PETIT-BLOC	4611	01/01/1992	07/12/1994	
+76	Saint Louis					999	URM FICTIVE	235	C-CHIR-PLAST-POLI	1021	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	236	C-LAZER-DERMATO1-POLI	653	24/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	236	LAZER-DUBERT	5312	01/01/1992	24/04/1998	
+76	Saint Louis					999	URM FICTIVE	237	C CHIR PLAST PRIVE POLI                 	1021	29/06/2009	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	237	C-LAZER-DERMATO2	553	15/05/1998	13/06/2008	
+76	Saint Louis					999	URM FICTIVE	237	LAZER-MOREL	5311	01/01/1992	15/05/1998	
+76	Saint Louis					999	URM FICTIVE	243	C-ORL-PMC                               	1421	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	245	ENDOSC-BRONC-EFR-PMC	5021	18/01/1996	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	284	C-INTERV-CHIR-GE-PMC	5246	29/09/2003	04/02/2009	
+76	Saint Louis					999	URM FICTIVE	284	ACT-EXT-CHIR	1346	02/12/1998	29/09/2003	
+76	Saint Louis					999	URM FICTIVE	284	ACT-EXT-CHIR	4614	01/01/1992	02/12/1998	
+76	Saint Louis					130	 	285	HJ-CHIR-GER5	1314	01/01/1992	31/12/2003	
+76	Saint Louis					130	 	287	CHIR-GE-GER5	1313	01/01/1992	09/06/1994	
+76	Saint Louis					130	 	288	HOP-SEM-GER5	1312	01/01/1992	31/12/2003	
+76	Saint Louis					130	 	289	CHIR-INT-GE5	1313	01/01/1992	31/12/2003	
+76	Saint Louis					130	 	291	CH-GEN-HS-G5	1316	01/01/1992	31/12/2003	
+76	Saint Louis					999	URM FICTIVE	295	REA-CHIR	2912	01/01/1992	01/01/2007	
+76	Saint Louis					999	URM FICTIVE	315	C-ENDOCRINO-POLI	131	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	316	CARDIO-ENDOC	131	01/01/1992	08/12/1994	
+76	Saint Louis					120	 	321	S-MEARY	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	321	S-MEARY	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	322	S-MEARY-INT	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	322	S-MEARY-INT	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	323	HOP-J-ORTHO	1231	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	323	HOP-J-ORTHO	1231	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	324	CHRISTEL-PRI	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	324	CHRISTEL-PRI	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	325	MEAR-WITVOET	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	325	MEAR-WITVOET	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	326	MEARY-SEDEL	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	326	MEARY-SEDEL	1214	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	328	HS-ORTH-MEAR	1216	01/01/1992	01/06/1996	
+76	Saint Louis					120	 	328	HS-ORTH-MEAR	1216	01/01/1992	01/06/1996	
+76	Saint Louis					999	URM FICTIVE	331	PRELEV.COMAS-BLOC	2941	01/07/2001	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	331	CONS-ANTI-DOULEURS	4615	04/05/1994	10/10/1994	
+76	Saint Louis					999	URM FICTIVE	332	SOINS-PALLIATIFS-BLOC	2914	07/06/2001	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	332	SOINS-PALLIATIFS	2913	01/01/1999	07/06/2001	
+76	Saint Louis					999	URM FICTIVE	332	SOINS-PALLIATIFS	2946	02/12/1998	31/12/1998	
+76	Saint Louis					999	URM FICTIVE	332	SOINS-PALLIATIFS	4612	15/07/1993	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	333	C-ANTI-DOULEURS PMC                     	2913	01/01/1999	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	333	C-ANTI-DOULEURS	2946	02/12/1998	31/12/1998	
+76	Saint Louis					999	URM FICTIVE	333	C-ANTI-DOULEURS	4612	06/10/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	334	C-ANESTH-CHIR-PLAST-POLI	2946	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	334	CONSUL-ANEST	4612	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	335	ANGIO-NUMERISEE-RADIO	3011	01/01/1992	02/06/2008	
+76	Saint Louis					999	URM FICTIVE	336	C-ANESTHES-URO-PMC	2946	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	336	C-ANESTHESIO	4612	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	337	C-UROLOGIE-PMC	3946	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	337	C-UROLOGIE	4613	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	338	C-ENDOSCOP-URI-PMC	3946	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	338	ENDOSCOP-URI	4613	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	339	C-UROLOGIE-PRIVE-PMC	3946	09/04/2009	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	339	C-CHIR-CLOT	1346	02/12/1998	31/12/2003	
+76	Saint Louis					999	URM FICTIVE	339	C-CHIR-CLOT	4614	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	341	C-CHIR-GE-PMC	5246	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	341	C-CHIR-CELER	4615	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	342	C CMF STOMATO PRIVE PMC                 	2111	25/06/2009	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	342	CONS-GYNECO	4611	01/01/1992	08/12/1994	
+76	Saint Louis					999	URM FICTIVE	343	C-STOMATO-PMC	2111	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	344	C CHIR GE PRIVE PMC                     	5246	25/06/2009	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	344	CONS-PNEUMO	4514	01/01/1992	01/06/1996	
+76	Saint Louis					999	URM FICTIVE	345	C-RHINOMANO	4711	01/01/1992	10/12/1995	
+76	Saint Louis					999	URM FICTIVE	351	EXP-PH-METRIE ENDOSCOPIE	4712	28/11/1995	13/06/2008	
+76	Saint Louis	105	DUNEGO		Gastro-enterologie	470	GASTRO-ENTERO	354	ENDOSCOPIES-DIG-F5	4712	28/11/1995	01/01/3000	UG370
+76	Saint Louis					999	URM FICTIVE	357	CRN-PLANNING-FAM	5215	13/04/2007	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	357	PLANNING-FAM	1711	01/01/1992	13/04/2007	
+76	Saint Louis					999	URM FICTIVE	367	C-ONCOLOGIE-POLI	735	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	367	C-ONCO-SEINO	3513	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	368	C-PSY-ONCO-SEINO	735	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	368	ONCOSEIN-PSY	3513	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	369	C-SEINO-POLI	735	01/01/2002	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	375	RADIO-URGENCES	3011	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	376	URG-MED-CHIR	1913	16/09/1993	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	378	C-URG-PSY	1913	16/09/1993	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	383	LABO-BACTERIO	2211	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	385	LABO-VIROLOGIE	2211	01/01/2007	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	385	LAB-VIROLOGI	2213	01/01/1992	01/01/2007	
+76	Saint Louis					999	URM FICTIVE	386	MICROSC-ELEC	2214	01/01/1992	31/12/2003	
+76	Saint Louis					999	URM FICTIVE	387	LABO-APATH	2311	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	388	RECH-APATH	2311	24/03/1999	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	411	OPHTAL-ANGIO	1521	01/01/1992	08/12/1994	
+76	Saint Louis					999	URM FICTIVE	412	C-OPHTALMO-PMC	1521	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	414	C-OPHTAL-ANGIO-PMC	132	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	423	REEDUCATION	1611	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	435	LABO-TOXICO	3611	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	452	LABO-HORMO-N	2711	01/01/1992	31/12/2003	
+76	Saint Louis					999	URM FICTIVE	453	RECH-HORMONOLOGIE	2711	30/03/1994	31/12/2003	
+76	Saint Louis					999	URM FICTIVE	455	LABO-BIOCHIMIE	2511	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	456	RECH-BIOCHIMIE	2511	01/03/1994	01/01/2007	
+76	Saint Louis					999	URM FICTIVE	459	LABO-IMMUNO-SEROLO	2411	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	461	RECH-IMMUSER	2411	01/01/1992	31/03/1996	
+76	Saint Louis					999	URM FICTIVE	463	LAB-HEM-CYTO	411	01/01/1992	31/10/1996	
+76	Saint Louis					999	URM FICTIVE	465	LAB-IMMUCELL	2461	01/01/1992	31/03/1996	
+76	Saint Louis					999	URM FICTIVE	466	RECH-IMMUCEL	2461	01/01/1992	31/03/1996	
+76	Saint Louis					999	URM FICTIVE	467	LABO-IM-CHIM	2471	01/01/1992	31/03/1996	
+76	Saint Louis					999	URM FICTIVE	468	RECHERCHE-IM	2471	01/01/1992	31/03/1996	
+76	Saint Louis					999	URM FICTIVE	469	REC-IMMUCHIM	411	01/01/1992	31/10/1996	
+76	Saint Louis					999	URM FICTIVE	471	LABO-HISTOCOMP	2431	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	472	RECH-HISTOCOMP	2431	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	473	GAMMA-BODYSCAN	3111	12/12/1994	30/12/1995	
+76	Saint Louis					999	URM FICTIVE	474	BIO.CELL.CHO	3111	24/02/1994	01/01/1999	
+76	Saint Louis					999	URM FICTIVE	475	L-CINETIQUE	3111	01/01/1992	15/01/1996	
+76	Saint Louis					999	URM FICTIVE	476	PHARMACOLOGIE	911	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	477	HOP-JO-TREF3	5621	01/01/1992	29/09/1994	
+76	Saint Louis					999	URM FICTIVE	481	CHIMIO	3811	02/12/1993	19/04/1994	
+76	Saint Louis					999	URM FICTIVE	482	FORFAIT-ALLO-GRF-T3	5444	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	482	FORFAIT-ALLOG	4411	01/08/1995	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	491	MED-NUCL-IN VIVO	3112	27/11/1995	07/12/1995	
+76	Saint Louis					999	URM FICTIVE	521	IRM-MAG-1000	3014	12/12/1994	02/06/2008	
+76	Saint Louis					999	URM FICTIVE	522	RADTH-PHYS ET SIMUL	2611	12/12/1994	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	524	CS-RADTH-NVX-PATIENTS	2612	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	525	RADTH - ELEKTA	2611	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	526	RADTH-CLIC-VARIAN	2611	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	527	RADTH-BASSE-ENERGIE	2611	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	528	CS-RXTHERAPIE	2612	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	529	CS-RADTH-PRIV-ANC-PA	2612	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	531	RADIOLOGIE-DIAG	3011	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	532	SCANNER-RADIOLOGIE	3013	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	533	IRM-RADIOLOGIE	3014	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	534	C-RADIO	3011	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	535	RADTH-SATURNE-41	2611	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	536	RADTH-CURIETHERAPIE	2611	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	541	RDTH-P-MA-T6	2614	01/01/1992	18/05/1994	
+76	Saint Louis					999	URM FICTIVE	545	CHIMIO-HEM-A	3812	01/01/1992	29/09/1994	
+76	Saint Louis					999	URM FICTIVE	546	C-BILANS-RADTH-T6	2612	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	549	HJ1-HEMATO-SC	5637	02/12/1998	03/01/2007	
+76	Saint Louis					999	URM FICTIVE	549	HJ1-HEMATO-SC	3716	29/09/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	553	C-IMMUNO-CLI-POLI	5835	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	553	CONS-HEMATO-CL	3515	01/01/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	554	C-IMMUNO-HEM-POLI	5835	06/01/2005	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	554	CONS-HEMATO-BR	5735	02/12/1998	06/01/2005	
+76	Saint Louis					999	URM FICTIVE	554	CONS-HEMATO-BR	3514	01/01/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	557	C-HEMATO-GRF-M-POLI	5435	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	557	C-POL-GLUCKMAN	3517	31/03/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	558	C-HEMATO-ADULTE-POLI	5535	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	558	C-POL-DEGOS	3518	31/03/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	559	C-HEMATO-PED-POLI	5635	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	559	C-POL-SCHAISON	3516	01/01/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	561	C-POLY-GISSE	5635	02/12/1998	31/01/1999	
+76	Saint Louis					999	URM FICTIVE	561	C-POLY-GISSE	3516	01/01/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	612	C-IMMUN-HEMA	3511	01/01/1992	01/01/1994	
+76	Saint Louis					999	URM FICTIVE	613	C-IMM-PSYCHO	3511	01/01/1992	31/01/1994	
+76	Saint Louis					999	URM FICTIVE	618	IMMU-HSP-MY4	1833	01/01/1992	01/01/1994	
+76	Saint Louis					999	URM FICTIVE	627	C-REA-MED	4113	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	628	ECHO-CARDIO-REA-MED	4112	01/01/1992	27/09/2008	
+76	Saint Louis					999	URM FICTIVE	629	C-REA-MED	4113	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	632	REA-MED-1ETA	4111	29/11/1993	31/01/1999	
+76	Saint Louis					999	URM FICTIVE	635	HJ1-HEMATO-DE		29/09/1994	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	646	DIALYS-GMS-REA-MED	4113	12/12/1994	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	647	DIALYS-GAMBO-REA-MED	4113	12/12/1994	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	648	HEMODIALYSES-REA-MED	4113	14/12/1994	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	659	LABO-HEM-CYTO	411	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	662	LABO-HEM-IMMUNO	411	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	663	LABO-HEM-BIO-MOLEC	411	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	667	LABO-HEM-CYTO-GARDE	411	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	678	RADIO-IMMUNO	3111	01/01/1992	01/01/1999	
+76	Saint Louis					999	URM FICTIVE	741	LABO-PARASITO	3211	01/01/1992	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	771	CSH-AUTO	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	772	HEMAPHERESET	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	773	TRANSFUSIONS	7931	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	774	SAIGNEES	7931	08/02/1994	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	775	SG TOTAL AUTO	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	777	SG TOTAL HOMO	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	778	APHERESE HOMO	7931	08/02/1994	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	779	B D T	7911	01/01/1992	13/05/2000	
+76	Saint Louis					310		807	HJ1-TRANSFU		01/01/2006	31/01/2007	
+76	Saint Louis					310	 	808	HJ1-TRANSFUSION	3118	01/01/2002	31/12/2005	
+76	Saint Louis					999	URM FICTIVE	811	CSH ALLO	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	812	ACTIVITE PSL	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	813	ACTIVITE BDT	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	814	ACTIVITE CSH	7911	01/01/1992	13/05/2000	
+76	Saint Louis					999	URM FICTIVE	815	SALLE-OP-ORL-BLOC	1444	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	815	SALLE-OP-ORL	4417	01/01/1992	02/12/1998	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	816	SALLE-OP-STO-BLOC	2144	02/12/1998	01/01/3000	UG200
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		CMF Stomatologie	210	STOMATO	816	SALLE-OP-STO	4412	01/01/1992	02/12/1998	UG200
+76	Saint Louis					999	URM FICTIVE	817	S-OP-CH-CLOT	1344	02/12/1998	31/12/2003	
+76	Saint Louis					999	URM FICTIVE	817	S-OP-CH-CLOT	4413	01/01/1992	02/12/1998	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	818	SALLE-OP-CHPL-BLOC	1044	02/12/1998	01/01/3000	UG150
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique (Pr Revol)	100	CHIRURGIE PLASTIQUE	818	S-OP-CHIR-PL	4415	01/01/1992	02/12/1998	UG150
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	819	SALLE-OP-URO-BLOC	3944	02/12/1998	01/01/3000	UG210
+76	Saint Louis	105	DUNEGO		Urologie	390	UROLOGIE	819	SALLE-OP-URO	4416	01/01/1992	02/12/1998	UG210
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	279	HJ2-CHIR REC AMBU-G4Ȣ	3405	12/02/2013	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Chirurgie plastique & brules (Pr Mimoun)	340	CHIR PLAST RECON EST	820	OP. PLASTIE ESTH BR 	1000	02/12/1998	01/01/3000	UG3444
+76	Saint Louis					999	URM FICTIVE	821	SCANNER-ELITE	3013	12/12/1994	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	822	PRELEV-MOELLE-BLOC	5444	02/12/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	822	PRELEV-MOELL	4411	01/01/1992	02/12/1998	
+76	Saint Louis	106	Urgences		Reanimation Chirurgicale & HDJ KT SLS	290	REANIMATION CHIRURGICALE	823	POSECATHETER BLOC	2944	02/12/1998	01/01/3000	UG385
+76	Saint Louis	106	Urgences		Reanimation Chirurgicale & HDJ KT SLS	290	REANIMATION CHIRURGICALE	823	POSECATHETER	4418	01/01/1992	02/12/1998	UG385
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	824	SALLE-OP-CHIR-G-BLOC	5244	02/12/1998	01/01/3000	UG220
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	824	S-OP-CH-CELE	4414	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	825	S-OP-RADIOTH	2644	02/12/1998	01/01/2007	
+76	Saint Louis					999	URM FICTIVE	825	S-OP-RADIOTH	4421	01/01/1992	02/12/1998	
+76	Saint Louis					999	URM FICTIVE	829	RADIO-MEARY	3011	01/01/1992	31/01/1999	
+76	Saint Louis					999	URM FICTIVE	833	SALLE-CATH-ANES-BLOC	2911	01/01/1992	13/06/2008	
+76	Saint Louis					999	URM FICTIVE	834	LITHOTRIPTEUR-F5	3933	01/04/1998	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	834	LITHOTRIPTEUR	3311	01/01/1992	01/04/1998	
+76	Saint Louis					999	URM FICTIVE	835	GAM-DIAGNOST	3111	12/12/1994	31/12/1995	
+76	Saint Louis					999	URM FICTIVE	836	GAMMATOMG	3111	12/12/1994	15/02/1996	
+76	Saint Louis					999	URM FICTIVE	837	SCINTIGRAPHI	3111	01/01/1992	30/01/1996	
+76	Saint Louis					999	URM FICTIVE	838	DIALYSES-7		12/12/1994	31/01/2007	
+76	Saint Louis					999	URM FICTIVE	865	DIALYSES-2		12/12/1994	31/01/2007	
+76	Saint Louis					999	URM FICTIVE	866	DIALYSES-3		12/12/1994	31/01/2007	
+76	Saint Louis					999	URM FICTIVE	867	DIALYSES-4		12/12/1994	31/01/2007	
+76	Saint Louis					999	URM FICTIVE	868	DIALYSES-5		12/12/1994	31/01/2007	
+76	Saint Louis					999	URM FICTIVE	869	DIALYSES-6		12/12/1994	31/01/2007	
+76	Saint Louis					999	URM FICTIVE	888	L-HYSTO-CUTA	2311	01/01/1992	01/01/2007	
+76	Saint Louis					999	URM FICTIVE	891	EXTERNES	8061	06/07/1993	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	894	MED-TRAVAIL	9774	01/01/1992	21/09/1996	
+76	Saint Louis					999	URM FICTIVE	896	M-C-EXTERNES	9997	01/01/1992	02/06/1994	
+76	Saint Louis					999	URM FICTIVE	898	DEMANDE-EXT-CONV	9915	06/07/1993	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	987	CONSULTANTS EXTERNES	8061	07/07/1993	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	988	PIH NON AP/HP	9915	07/07/1993	01/01/3000	
+76	Saint Louis					999	URM FICTIVE	989	PIH-AP/HP	9911	07/07/1993	01/01/3000	
+76	Saint Louis	105	DUNEGO		Chirurgie generale	520	CHIRURGIE 2	281	HDJ CHIR GE PC LIBﾠ	5211	12/12/2011 ﾠ	01/01/3000	
+76	Saint Louis	101	Hematologie Oncologie Radiotherapie		Oncologie Medicale	70	ONCOLOGIE	650	HDJ2 RADIOTHERAPIEﾠ	714	16/01/2012	01/01/3000	
+76	Saint Louis	110	Centre des brules		Reanimation Centre des brules	291	REA BRULES	510	REA BRULE	2950	01/05/2012	01/01/3000	
+76	Saint Louis	110	Centre des brules		SC Centre des brules	292	SC BRULES	511	SC BRULES	2951	01/05/2012	01/01/3000	
+76	Saint Louis	110	Centre des brules		Hospitalisation Centre des brules	293	Centre des brules	512	Centre des brules	2952	01/05/2012	01/01/3000	
+76	Saint Louis	102	Peau Reparation cutanee Infectiologie		Dermatologie	50	DERMATO 2	688	HDJ3 POLI DERMATO PIﾠ		01/01/2011	01/01/3000 ﾠ	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	346	HOP-JR-CARDI	428	01/01/1992	01/01/3000	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	344	P-SOULIE-M	444	01/01/1992	01/01/3000	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	343	CARDIO-GREFF	449	01/01/1992	01/01/2005	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	348	S-GRISOLLE	444	01/01/1992	01/01/3000	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	365	S-C-LAUBRY-M	444	01/01/1992	04/11/1997	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	345	HSEM MED-CARDIO	447	27/03/1997	01/01/3000	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	341	HDJ READAPTATION 2CATEGORIE	458	01/11/2005	01/01/2007	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	347	HC CARDIO LIBERAL	444	01/01/2011	01/01/3000	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	349	HSEM CARDIO LIBERAL	447	01/01/2011	01/01/3000	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie	40	Cardiologie	350	HDJ CARDIO LIBERAL	428	01/01/2011	01/01/3000	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie USI 	40	USIC	352	REA-D-ROUTIER	449	01/01/1992	14/01/2004	
+47	Lariboisiere	106	Urgences	PR COHENSOLAL	Cardiologie USI 	42	USIC	353	USIC D ROUTIER	449	13/01/2004	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	472	ORTHOPEDIE 2 ETG	4711	29/03/1996	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	476	ORTHOPEDIE CL-P-W	4711	29/03/1996	01/06/2004	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	477	ORTHOPEDIE CL-P-S	4711	29/03/1996	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	482	TRAUMATOLOGIE	4711	29/03/1996	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	487	ORTHOPEDIE CL-P-N	4711	06/01/2003	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	489	ORTH ANEST CHIR AMBUL	4729	10/11/1998	27/11/2005	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	486	H-J-ORTHO-TRAUMA	4748	29/03/1996	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	488	ORTHOPEDIE PRIV H		01/06/2010	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	571	CHIRURGIE-1	812	01/01/1992	03/02/2007	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	572	CHIRURGIE-3	812	01/01/1992	03/02/2007	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	573	SC-CHIRURG-2	812	01/01/1992	02/06/1995	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	574	CHIRURGIE-RC	812	01/01/1992	03/02/2007	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	575	CHIR-CL-P	812	01/01/1992	03/02/2007	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	577	HOPSEM-CHIR-	812	01/01/1992	01/01/2002	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	579	HOSP-MAL-LAS	812	01/01/1992	01/01/2002	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	581	REA-CHIRUR-A	816	01/01/1992	14/01/2004	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	583	REA-CHIR-CL-P	816	01/01/1992	14/01/2004	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	144	HOSP.CHIR.GALE 1ER	4231	01/01/2007	15/02/2012	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	145	HOSP.CHIR.GALE 3E	4231	02/01/2007	01/02/2012	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	146	HOSP.CHIR.GALE RDC	4231	02/01/2007	01/02/2012	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie digestive	147	CHIR-CL-P	4231	08/01/2007	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie vicerale	23	Chirurgie vicerale ambulatoire	4231	01/01/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie vicerale	148	CHIRURGIE HDS	4235	01/06/2010	01/02/2012	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie vicerale	899	HOSP.CHIR.GALE 3EME	5001	15/12/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie vicerale	898	HOSP. CHIR GALE 1ER	5001	15/12/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie vicerale	900	HSEM CHIR	5002	15/12/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie vicerale	902	HOSP CHIR GALE RDC	5001	15/12/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale	80	Chirurgie vicerale	903	CHIR VISC AMBU	5005	15/12/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale			777	CONSULT.CHIRURGIE	5003	15/12/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR VALEUR	Chirurgie viscerale			960	C-VISCERALE ACTE LIBERAL	5003	15/12/2011	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Chirurgie viscerale SC	82	SC chirurgie digestive	584	SUR.CONT.VISCERALE	816	13/01/2004	03/02/2007	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Chirurgie viscerale SC	82	SC chirurgie digestive	586	S.C.VISCERALE CL.P	816	13/01/2004	03/02/2007	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Chirurgie viscerale SC	82	SC chirurgie digestive	442	SURV.CONT.CHIR.	4234	01/01/2007	01/02/2012	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Chirurgie viscerale SC	82	SC chirurgie digestive	448	S.C.VISCERALE CL.P	4234	08/01/2007	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Chirurgie viscerale SC	82	SC chirurgie digestive	901	SUR. CONT.CHIR	5004	15/12/2011	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	DR LIDY	Geriatrie	559	Gerontologie	424	MEDECINE GERIATRIE LRB	4414	20/09/2005	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	DR LIDY	Geriatrie	559	Gerontologie	416	HOPITAL DE JOUR GERONTOLOGIE	4428	01/01/2002	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	DR LIDY	Geriatrie	559	Gerontologie	428	HORTELOUP DEMARQUAY	4412	01/01/2002	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Gynecologie	74	Gynecologie	519	GYNECOLOGIE	712	01/01/2008	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Gynecologie	74	Gynecologie	533	GYNECO-CL-PE	712	01/01/2008	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Gynecologie	74	Gynecologie	529	GYNECO-CL-PE	712	01/01/1992	01/01/2008	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Gynecologie	74	Gynecologie	781	ACTES IVG	721	01/01/1992	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Gynecologie	74	Gynecologie	517	HDJ GYNECOLOGIE	738	03/01/2008	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	CRN LRB	74	Gynecologie	535	HOSPITALISATION IVG	721	01/01/2008	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	CRN LRB	74	Gynecologie	539	HOSPITALISATION IVG	721	01/01/1992	01/01/2008	
+47	Lariboisiere	101	Hematologie Oncologie Radiotherapie	PR TOBELEM	Hematologie Clinique	200	Angio-hematologie	325	JPALLEZ-HEMA	2021	01/01/1992	01/01/3000	
+47	Lariboisiere	101	Hematologie Oncologie Radiotherapie	PR TOBELEM	Hematologie Clinique	200	Angio-hematologie	328	THERAPIE VASCULAIRE	2023	01/01/2001	01/01/3000	
+47	Lariboisiere	101	Hematologie Oncologie Radiotherapie	PR TOBELEM	Hematologie Clinique	200	Angio-hematologie	327	H-SEM-PALLEZ	2027	01/01/1992	12/01/1999	
+47	Lariboisiere	101	Hematologie Oncologie Radiotherapie	PR TOBELEM	Hematologie Clinique	200	Angio-hematologie	326	SAIGNEES(REPRISE EFS)	2048	29/08/2002	23/01/2008	
+47	Lariboisiere	101	Hematologie Oncologie Radiotherapie	PR TOBELEM	Hematologie Clinique	200	Angio-hematologie	329	H-J-H-VAQUEZ	2048	01/01/1992	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	118	HOP SEM CACHERA 3EME ETAGE  PORTE 15	4213	01/01/1997	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	114	RACHET 2ETG	4214	01/01/1997	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	917	HOSP ACTIVITE LIBERALE	4214	22/09/2004	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	115	LAMBLING 1ETG	4215	01/01/1997	01/08/2006	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	117	HDJ CACHERA 3 ETG	4216	15/01/1999	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	119	HOP DE JOUR GASTROLOGIE	4216	15/12/1995	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	916	HDJ ACTIVITE LIBERALE	4216	27/08/2007	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	116	HEPATO GASTRO SPE	4299	01/01/2002	09/08/2006	
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	106	HDJ Hepato-gastro-enterologie		01/01/2011	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR BERGMANN	Maladies infectieuses LRB	20	Medecine interne A	588	MEDECINE-A-4	211	01/01/1992	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR BERGMANN	Maladies infectieuses LRB	20	Medecine interne A	587	MEDEC-INF-A4                            	212	01/01/1992	31/12/2010	
+47	Lariboisiere	107	Medecine Geriatrie	PR BERGMANN	Maladies infectieuses LRB	20	Medecine interne A	596	H.J.MED.INF                             	248	01/01/1997	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR BERGMANN	Maladies infectieuses LRB	26	Maladies infectieuses	587			01/01/2011	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR BERGMANN	Maladies infectieuses LRB	26	Maladies infectieuses	589			01/10/2010	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	502	MALADIES RARES SNC	351	01/02/2006	01/01/2007	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	504	MALADIES DE WILSON	361	01/02/2006	01/01/2007	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	534	HJ MALADIES DE WILSON	368	24/02/2006	15/12/2006	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	555	HJ-MALADIES RARES SNC	358	01/01/2006	31/03/2007	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	543	HJ NEURO.EXP.FONC.	358	09/07/2001	03/02/2007	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	439	MALADIES RARES CERVCO	351	01/01/2007	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	243	HJ MALADIES RARES CERVCO	358	13/03/2007	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	34	Maladies rares neurologie	521	HJ MALADIES DE WILSON	368	02/10/2006	17/01/2007	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	35	Maladie de Wilson	337	MALADIES DE WILSON	361	01/01/2007	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Maladies rares	35	Maladie de Wilson	235	HJ MALADIES DE WILSON	368	01/01/2007	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR BERGMANN	Medecine A	20	Medecine interne A	582	MEDECINE-A-2	211	01/01/1992	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR BERGMANN	Medecine A	20	Medecine interne A	594	MEDECINE-A-3	211	01/01/1992	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	292	MEDECINE-B-4	611	01/01/1992	01/08/1998	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	298	MEDECINE-B-5	611	01/01/1992	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	299	HOSPIT EN URGENCE	611	01/06/2001	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	322	MEDECINE-B-6	611	01/01/1992	01/08/1998	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	323	HOP-SEM-B-6	617	01/01/1992	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	294	H-J-E-AZERAD	628	01/01/1992	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	295	EXPLORATIONS SOMMEIL	628	01/09/1997	01/01/3000	
+47	Lariboisiere	107	Medecine Geriatrie	PR GUILLAUSSEAU	Medecine B	60	Medecine B	296	BILAN ENERGETIQUE	628	01/09/1998	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR DALLY	Medecine interne toxicologie	510	Medecine interne addictologie	131	FEREOL	4512	01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR DALLY	Medecine interne toxicologie	510	Medecine interne addictologie	141	FIESSINGER	4512	01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR DALLY	Medecine interne toxicologie	510	Medecine interne addictologie	143	HDJ ADDICTOLOGIE	4535	08/10/2009	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Neonatalogie	73	Neonatalogie	401	UNITE NEONATALOGIE	724	16/10/2008	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Neonatalogie	73	Neonatalogie	402	UNITE NEONATOLOGIE	724	01/01/2010	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Neonatalogie	73	Neonatalogie	526	PEDIATRIE	724	01/01/1992	26/06/2004	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	212	HOSP.NEUROCHIRURGIE	1018	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	218	N-CHIR-CL-P	1018	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	240	N-CHIR-CL-P NEURORAD.	1018	23/05/2008	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	630	NEURO-RADIO	1018	01/10/2006	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	219	DOULEUR NEUROCHIRURGIE	1019	01/01/2000	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	220	DOULEUR NEUROCHIR-CL-P	1019	18/04/2000	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	216	DOULEUR NEUROCHIRGIE	1019	01/01/1992	01/04/2000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	105	Neurochirurgie	121		905	01/01/2007	29/10/2010	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	103	Neurochirurgie	418	DOULEUR NEUROCHIRGIE	1019	19/06/2012	01/01/3000 ï¾ 	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie SC	102	SC neurochirurgie	226	SUR.CONT.NEURO.CHIR.	1016	13/01/2004	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie SC	102	SC neurochirurgie	227	DOULEUR SC.NC	1016	13/01/2004	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie SC	102	SC neurochirurgie	231	SC.NC CLP	1016	13/01/2004	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie SC	102	SC neurochirurgie	232	SC. NC. CL-P NEURORAD.	1016	23/05/2008	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie SC	102	SC neurochirurgie	660	NEURO-RADIO SUR.CONT	1016	01/10/2006	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie SC	102	SC neurochirurgie	222	REA-NEUROCHIRURGIE	1016	01/01/1992	14/01/2004	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie SC	102	SC neurochirurgie	225	REA-NC-CL-P	1016	27/03/1997	14/01/2004	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	105	Neurochirurgie	121		905	01/01/2007	29/10/2010	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neurologie	30	Neurologie	542	NEUROLOGIE R. GARCIN	311	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neurologie	30	Neurologie	544	A-THOMAS-N2	311	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neurologie	30	Neurologie	545	A.V.C	311	17/10/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neurologie	30	Neurologie	640	NEURO-RADIO	311	01/10/2006	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neurologie	30	Neurologie	537	A.V.C	328	17/10/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neurologie	30	Neurologie	541	H-JOUR-NEURO	328	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neurologie	30	Neurologie	546	H-SEM-R-GARC	317	01/01/1992	01/03/2000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR QUTENZA 	Douleur	30	Douleur	415	HDJ QUTENZA	311	19/06/2012  	01/01/3000  	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neuro-Vasculaire	31	Neuro-Vasculaire	107			01/01/2010	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neuro-Vasculaire	31	Neuro-Vasculaire	109			01/12/2010	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neuro-Vasculaire	31	Neuro-Vasculaire	549	U-S-I-NEURO.VASC.BABINSKI	313	01/01/1992	16/01/2004	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neuro-Vasculaire USI	32	USIN	538	A.V.C	313	17/10/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neuro-Vasculaire USI	32	USIN	553	USIN-BABINSKI-N1	313	13/01/2004	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR CHABRIAT	Neuro-Vasculaire USI	32	USIN	620	NEURO-RADIO SOINS INT	313	01/10/2006	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Obstetrique	75	Obstetrique	499	OBSTETRIQUE	711	01/01/1992	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Obstetrique	75	Obstetrique	523	MATER-CL-PER	711	03/08/1994	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Obstetrique	75	Obstetrique	522	MATER-3	711	01/01/1992	01/04/2000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Obstetrique	75	Obstetrique	524	MATER-4	711	01/01/1992	01/04/2000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Obstetrique	75	Obstetrique	525	MATER-5	711	01/01/1992	01/04/2000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	Obstetrique	75	Obstetrique	528	GYNECOLOGIE	712	01/01/1992	28/02/2008	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	444	HOSP ETAGE 2 OPH	1211	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	452	HOSP. AL. PMASSIN                       	1211	14/09/2009	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	602	HOSP.CERVCO	1211	30/01/2008	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	441	OPH CL-P NEURORAD.	1228	23/05/2008	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	443	ARTERIOGRAPHIE	1228	27/10/2003	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	446	HDJ OPHTALMOLOGIE	1228	01/09/1999	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	445	OPH-CL-P	1211	27/05/1998	06/04/2004	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	461	ORL GDE GARDE	1111	01/11/1998	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	462	O-R-L	1111	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	567	ORL ACT LIB KANIA	1111	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	463	ORL CL-P TBHP	1111	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	465	ORL CL-P HP	1111	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	560	ORL ACTIVITE NEURORAD.	1111	23/05/2008	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	562	ORL PR MONTEIL                          	1111	13/07/2009	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	563	ORL CL-P PR MONTEIL                     	1111	13/07/2009	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	566	IMPLANTOLOGIE PAYANT ORL	1111	13/07/2001	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	469	HOP-JOUR-ORL	1128	01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	561	HDJ ORL PR MONTEIL	1128	13/07/2009	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	456	ORL ANEST.CH.AMBUL	1129	10/11/1998	01/04/2008	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR MONTEIL	ORL	490	ORL MAXILLO FACIAL	490	HC ORL MAXILLO 		23/10/2009	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR MONTEIL	ORL	490	ORL MAXILLO FACIAL	507	HC ORL PRIVE 		23/10/2009	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR MONTEIL	ORL	490	ORL MAXILLO FACIAL	508	HDJ ORL 		23/10/2009	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR MONTEIL	ORL	490	ORL MAXILLO FACIAL	518	HDJ ORL PRIVE M		23/10/2009	01/01/3000	
+47	Lariboisiere	108	Biologie anatomopathologie	PR LEVY	Physiologie EF	220	Explorations fonctionnelles	459	HDJ E.F-H.T.A	2226	01/01/2007	01/01/3000	
+47	Lariboisiere	106	Urgences	PR PAYEN DE LA.	Reanimation Chirurgicale LRB	240	Reanimation chirurgicale	229	REA-CHIRURGI	2422	01/01/1992	01/01/3000	
+47	Lariboisiere	106	Urgences	PR PAYEN DE LA.	Reanimation Chirurgicale LRB	240	Reanimation chirurgicale	230	REA CLOVIS VINCENT	2432	03/01/2005	01/01/3000	
+47	Lariboisiere	106	Urgences	PR BAUD	Reanimation medicale et toxicologie	22	Reanimation medicale et toxicologique	421	REANIMATION MEDICALE	5713	12/03/1997	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR BARDIN	Rhumatologie A	10	Rhumatologie A	494	CHARCOT	111	01/01/1992	12/01/2008	
+47	Lariboisiere	103	Appareil Locomoteur	PR BARDIN	Rhumatologie A	10	Rhumatologie A	493	P-MARIE-VP3D	112	01/01/1992	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR BARDIN	Rhumatologie A	10	Rhumatologie A	495	HSEM-BOUILLAUD	117	01/01/1992	03/02/2007	
+47	Lariboisiere	103	Appareil Locomoteur	PR BARDIN	Rhumatologie A	10	Rhumatologie A	491	HDJ RHUMAT DUPUY 3CA	128	24/06/2004	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR BARDIN	Rhumatologie A	10	Rhumatologie A	497	HDJ SICARD 1 ETAGE	128	01/09/1999	01/02/2008	
+47	Lariboisiere	103	Appareil Locomoteur	PR BARDIN	Rhumatologie A	10	Rhumatologie A	498	HDJ O.T1	128	28/03/2003	01/01/3000	
+47	Lariboisiere	103	Appareil Locomoteur	PR ORCEL	Rhumatologie B	11	Rhumatologie B	435	H-SEM-CHARCOT	517	19/01/2007	01/01/3000	
+47	Lariboisiere	106	Urgences	PR BAUD	SC medicale et toxicologie	23	SC Reanimation medicale et toxicologique	451	SURVEIL.CONT.MEDECINE	5716	01/01/2006	01/01/3000	
+47	Lariboisiere	106	Urgences	PR PLAISANCE	Urgences UHCD LRB	140	UHU	516	U.H.U UNITE HOSP.URGENCE	1522	01/01/1995	01/01/3000	
+47	Lariboisiere	106	Urgences	PR PLAISANCE	Urgences UHCD LRB	140	UHU	585	HOSP-POST-PORTE	1522	01/01/1998	02/10/2006	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	210	H.NEUROCHIR FROELICH 	1019	01/05/2012	01/01/3000	
+47	Lariboisiere	105	DUNEGO	PR BARRANGER	CRN LRB	74	Gynecologie	832	BLOC MATER		01/01/1980	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	688	S-OP-LEDENTU                            		01/01/1992	31/12/2999	1021
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	689	S-OP-DOULEUR                            		16/03/1994	31/12/2999	1021
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	718	BL.OP ODONTOLOGIE                       		02/12/1999	31/12/2999	1121
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	719	BL.OP IMPLANTOLOGIE                     		02/12/1999	31/12/2999	1121
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	788	S-OP-O-R-L                              		01/01/1992	31/12/2999	1121
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	789	BLOC ORL G.GARDE                        		23/05/2001	31/12/2999	1121
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	797	ECAM 2                                  		01/01/2002	31/12/2999	1121
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR TRAN BA HUY	ORL	110	ORL	797	ECAM 2                                  		01/01/2002	31/12/2999	IPOP4900
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GAUDRIC	Ophtalmologie	120	Ophtalmologie	752	S-OP-OPHT                               		01/01/1992	31/12/2999	1221
+47	Lariboisiere	103	Appareil Locomoteur	PR SEDEL	Chirurgie Orthopedique	470	Orthopedie	846	S-OP-ORTHOPEDIE                         		29/03/1996	31/12/2999	4721
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	691	ENDOSCOPIE                              		18/12/1999	31/12/2999	4241
+47	Lariboisiere	105	DUNEGO	PR MARTEAU	Hepato-gastro-enterologie	600	Hepato gastro enterologie	918	ENDOSCOPIE ACTIVITE LIBERALE            		10/09/2004	31/12/2999	4241
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	688	S-OP-LEDENTU                            		01/01/1992	31/12/2999	IPOP1021
+47	Lariboisiere	104	Neurosciences Tete et Cou	PR GEORGES	Neurochirurgie	100	Neurochirurgie	689	S-OP-DOULEUR                            		16/03/1994	31/12/2999	IPOP1021
+47	Lariboisiere					999	URM FICTIVE	603	S-OP.CHIR                               		01/01/2007	31/12/2999	IPOP4232
+47	Lariboisiere					999	URM FICTIVE	604	S-OP-URGENCES                           		01/01/2007	31/12/2999	IPOP4232
+47	Lariboisiere	106	Urgences	PR PAYEN DE LA.	Reanimation Chirurgicale LRB	240	Reanimation chirurgicale	228	REA-CHIRURGI  		01/01/1992	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou		MPR	539		312	REEDUC.FONCT.		01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou		MPR	539		314	REED NEUROLOGIQUE		01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou		MPR	539		317	HDJ REEDUC.		01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou		MPR	539		318	HDJ REEDUC 1CA		01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou		Psychiatrie	561		272	CHIRAY		01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou		Psychiatrie	561		273	MONOD		01/01/2002	01/01/3000	
+47	Lariboisiere	104	Neurosciences Tete et Cou		Psychiatrie	561		278	ANTONIN CLERCÊ		01/01/2002	01/01/3000	

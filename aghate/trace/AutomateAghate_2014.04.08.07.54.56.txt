@@ -1,0 +1,1108 @@
+08-04-2014 19:55:06
+
+Debut a 08-04-2014 19:54:56
+
+ #### Procedure mettre a jour DateFin ####
+==>Lancé à 08/04/2014 19:54:56 
+
+NIP:3913006461| NDA:471414933 | UH: 482 | end_time :2014-04-03 2010|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509064004| NDA:471414853 | UH: 462 | end_time :2014-04-03 1811|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498048983| NDA:471465789 | UH: 131 | end_time :2014-04-03 0959|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094012826| NDA:471413526 | UH: 353 | end_time :2014-04-03 2128|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610082477| NDA:471413708 | UH: 344 | end_time :2014-04-03 1853|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711062311| NDA:471414949 | UH: 482 | end_time :2014-04-03 2006|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913019155| NDA:471400361 | UH: 499 | end_time :2014-04-03 1714|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307058305| NDA:471405195 | UH: 482 | end_time :2014-04-03 0639|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025101| NDA:471414717 | UH: 553 | end_time :2014-04-03 1441|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498057629| NDA:471414726 | UH: 553 | end_time :2014-04-03 1603|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913064665| NDA:471413662 | UH: 499 | end_time :2014-04-03 1341|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802089529| NDA:471414669 | UH: 594 | end_time :2014-04-03 1410|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913045302| NDA:471408689 | UH: 660 | end_time :2014-04-03 1455|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025462| NDA:471414902 | UH: 516 | end_time :2014-04-03 1700|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913089898| NDA:471403592 | UH: 462 | end_time :2014-04-03 1426|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022511| NDA:471413374 | UH: 401 | end_time :2014-04-02 1456|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509034588| NDA:471413125 | UH: 212 | end_time :2014-04-03 1325|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600075571| NDA:471414280 | UH: 540 | end_time :2014-04-03 1638|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812041043| NDA:471465679 | UH: 131 | end_time :2014-04-04 0912|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014014072| NDA:471414019 | UH: 444 | end_time :2014-04-04 0936|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408065553| NDA:471414937 | UH: 444 | end_time :2014-04-04 0919|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024762| NDA:471414896 | UH: 519 | end_time :2014-04-03 1912|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025404| NDA:471414885 | UH: 519 | end_time :2014-04-03 1634|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014011391| NDA:471413449 | UH: 444 | end_time :2014-04-04 0949|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025148| NDA:471414803 | UH: 444 | end_time :2014-04-04 0956|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2195051291| NDA:471412708 | UH: 901 | end_time :2014-04-04 0730|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610064890| NDA:471465628 | UH: 131 | end_time :2014-04-04 0955|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014020919| NDA:471465677 | UH: 131 | end_time :2014-04-04 0959|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024153| NDA:471414272 | UH: 114 | end_time :2014-04-04 1004|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913066724| NDA:471414895 | UH: 444 | end_time :2014-04-04 1039|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599084270| NDA:471465736 | UH: 141 | end_time :2014-04-04 1101|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802009963| NDA:471412863 | UH: 426 | end_time :2014-04-04 0952|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307065621| NDA:471400538 | UH: 499 | end_time :2014-04-04 0910|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802084117| NDA:471413851 | UH: 109 | end_time :2014-04-04 1058|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711069295| NDA:471401459 | UH: 499 | end_time :2014-04-04 1055|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913061127| NDA:471414371 | UH: 499 | end_time :2014-04-04 1055|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599002565| NDA:471414662 | UH: 594 | end_time :2014-04-04 1127|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701098087| NDA:471409489 | UH: 487 | end_time :2014-04-03 1002|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014015468| NDA:471465523 | UH: 273 | end_time :2014-04-04 1141|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802082130| NDA:471465414 | UH: 273 | end_time :2014-04-03 1034|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094061551| NDA:471413485 | UH: 482 | end_time :2014-04-04 1144|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014020978| NDA:471414709 | UH: 898 | end_time :2014-04-04 1128|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913049935| NDA:471413630 | UH: 472 | end_time :2014-04-04 1106|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903048218| NDA:471413129 | UH: 472 | end_time :2014-04-04 1219|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023922| NDA:471414545 | UH: 482 | end_time :2014-04-04 0935|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025112| NDA:471414727 | UH: 482 | end_time :2014-04-04 1220|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913074693| NDA:471413649 | UH: 488 | end_time :2014-04-04 1155|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022244| NDA:471413241 | UH: 226 | end_time :2014-04-04 1020|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913061596| NDA:471329415 | UH: 212 | end_time :2014-04-03 1600|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025302| NDA:471414859 | UH: 462 | end_time :2014-04-04 1117|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206013056| NDA:471411439 | UH: 109 | end_time :2014-04-04 1256|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105074900| NDA:471413889 | UH: 499 | end_time :2014-04-04 1112|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711094727| NDA:471400554 | UH: 499 | end_time :2014-04-04 1254|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509026461| NDA:471414324 | UH: 499 | end_time :2014-04-04 1159|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307074843| NDA:471414458 | UH: 499 | end_time :2014-04-04 1232|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812089422| NDA:471414304 | UH: 229 | end_time :2014-04-04 1324|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701028480| NDA:471415107 | UH: 516 | end_time :2014-04-04 1335|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206029647| NDA:471415062 | UH: 516 | end_time :2014-04-04 1202|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812040494| NDA:471415088 | UH: 516 | end_time :2014-04-04 1336|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014005593| NDA:471413867 | UH: 345 | end_time :2014-04-04 1336|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610038141| NDA:471415094 | UH: 516 | end_time :2014-04-04 1336|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509069457| NDA:471414969 | UH: 345 | end_time :2014-04-04 1337|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004070981| NDA:471415060 | UH: 516 | end_time :2014-04-04 1337|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600019054| NDA:471414807 | UH: 345 | end_time :2014-04-04 1224|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105008150| NDA:471415095 | UH: 516 | end_time :2014-04-04 1331|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025778| NDA:471415103 | UH: 516 | end_time :2014-04-04 0910|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711016023| NDA:471408482 | UH: 898 | end_time :2014-04-04 1339|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094029923| NDA:471414214 | UH: 898 | end_time :2014-04-04 1339|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022513| NDA:471413790 | UH: 212 | end_time :2014-04-04 1047|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913051865| NDA:471414493 | UH: 418 | end_time :2014-04-04 1047|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307080903| NDA:471412181 | UH: 298 | end_time :2014-04-04 1406|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913091652| NDA:471414467 | UH: 298 | end_time :2014-04-04 1407|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024001| NDA:471414187 | UH: 114 | end_time :2014-04-04 1040|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105002968| NDA:471412801 | UH: 298 | end_time :2014-04-03 1130|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600010755| NDA:471414469 | UH: 070 | end_time :2014-04-04 0804|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307006705| NDA:471414480 | UH: 070 | end_time :2014-04-04 1200|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802083011| NDA:471414674 | UH: 070 | end_time :2014-04-04 1202|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004059974| NDA:471414003 | UH: 070 | end_time :2014-04-04 1308|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105032499| NDA:471412832 | UH: 472 | end_time :2014-04-04 1331|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913069231| NDA:471409776 | UH: 472 | end_time :2014-04-04 1425|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599063629| NDA:471413912 | UH: 582 | end_time :2014-04-04 1430|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913072679| NDA:471400511 | UH: 499 | end_time :2014-04-04 1417|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913088626| NDA:471409867 | UH: 499 | end_time :2014-04-04 1428|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610086986| NDA:471414572 | UH: 499 | end_time :2014-04-04 1413|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913067198| NDA:471414757 | UH: 519 | end_time :2014-04-04 1450|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014005633| NDA:471414664 | UH: 519 | end_time :2014-04-04 1128|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307003222| NDA:471408045 | UH: 435 | end_time :2014-04-04 1340|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014001740| NDA:471414409 | UH: 435 | end_time :2014-04-04 1237|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913004825| NDA:471414403 | UH: 435 | end_time :2014-04-04 1159|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206069243| NDA:471409471 | UH: 435 | end_time :2014-04-04 1411|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206058249| NDA:471408930 | UH: 435 | end_time :2014-04-04 1336|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023642| NDA:471414285 | UH: 435 | end_time :2014-04-04 1134|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509075408| NDA:471400859 | UH: 435 | end_time :2014-04-04 1342|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812072026| NDA:471414401 | UH: 435 | end_time :2014-04-04 1453|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913046399| NDA:471401191 | UH: 435 | end_time :2014-04-03 1752|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913067872| NDA:471408391 | UH: 435 | end_time :2014-04-04 1045|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105010768| NDA:471414821 | UH: 435 | end_time :2014-04-04 1135|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014021741| NDA:471413031 | UH: 594 | end_time :2014-04-04 1505|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913037190| NDA:471414381 | UH: 118 | end_time :2014-04-04 1446|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307033334| NDA:471414375 | UH: 118 | end_time :2014-04-04 1315|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105070764| NDA:471414827 | UH: 582 | end_time :2014-04-04 1436|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711019037| NDA:471412661 | UH: 118 | end_time :2014-04-04 1518|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024566| NDA:471414512 | UH: 550 | end_time :2014-04-04 1519|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610056714| NDA:471414092 | UH: 323 | end_time :2014-04-04 1526|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610036053| NDA:471412751 | UH: 323 | end_time :2014-04-04 1325|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913025033| NDA:471414389 | UH: 323 | end_time :2014-04-04 1322|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094006304| NDA:471406255 | UH: 323 | end_time :2014-04-04 1119|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094009068| NDA:471414385 | UH: 323 | end_time :2014-04-04 1307|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812006944| NDA:471414804 | UH: 337 | end_time :2014-04-04 1531|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014003689| NDA:471414030 | UH: 567 | end_time :2014-04-04 1428|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509071766| NDA:471412969 | UH: 465 | end_time :2014-04-04 1038|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022166| NDA:471414605 | UH: 461 | end_time :2014-04-04 1354|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2296006524| NDA:471414574 | UH: 461 | end_time :2014-04-04 0955|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014010105| NDA:471413414 | UH: 493 | end_time :2014-04-04 1054|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014018741| NDA:471413824 | UH: 493 | end_time :2014-04-04 1540|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903067630| NDA:471465429 | UH: 272 | end_time :2014-04-04 1301|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014019718| NDA:471412360 | UH: 493 | end_time :2014-04-04 1005|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014000249| NDA:471465192 | UH: 273 | end_time :2014-04-04 1501|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022732| NDA:471465731 | UH: 272 | end_time :2014-04-04 1042|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812025457| NDA:471409125 | UH: 212 | end_time :2014-04-04 1456|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913055908| NDA:471414393 | UH: 076 | end_time :2014-04-04 1328|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913040134| NDA:471408397 | UH: 076 | end_time :2014-04-04 1327|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024499| NDA:471414404 | UH: 076 | end_time :2014-04-04 1314|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023621| NDA:471414287 | UH: 435 | end_time :2014-04-04 1541|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913078859| NDA:471409027 | UH: 076 | end_time :2014-04-04 1329|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913073533| NDA:471414282 | UH: 435 | end_time :2014-04-04 1552|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509038738| NDA:471414410 | UH: 076 | end_time :2014-04-04 1253|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610092229| NDA:471414399 | UH: 076 | end_time :2014-04-04 1256|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913062072| NDA:471413804 | UH: 345 | end_time :2014-04-04 1335|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913048193| NDA:471412997 | UH: 345 | end_time :2014-04-04 1333|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206088353| NDA:471414881 | UH: 345 | end_time :2014-04-04 1514|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812033410| NDA:471414597 | UH: 345 | end_time :2014-04-04 1153|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812052560| NDA:471465814 | UH: 273 | end_time :2014-04-04 1610|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022843| NDA:471413565 | UH: 109 | end_time :2014-04-04 1438|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024112| NDA:471414243 | UH: 401 | end_time :2014-04-04 1233|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610082780| NDA:471404412 | UH: 499 | end_time :2014-04-04 1633|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024359| NDA:471414349 | UH: 499 | end_time :2014-04-04 1633|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014005000| NDA:471413489 | UH: 493 | end_time :2014-04-04 1657|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025677| NDA:471414981 | UH: 345 | end_time :2014-04-04 1555|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610071546| NDA:471414884 | UH: 345 | end_time :2014-04-04 1513|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913081107| NDA:471414551 | UH: 493 | end_time :2014-04-04 1650|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2195018663| NDA:471414995 | UH: 344 | end_time :2014-04-04 1632|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024653| NDA:471414478 | UH: 344 | end_time :2014-04-04 1544|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913088996| NDA:471408062 | UH: 344 | end_time :2014-04-04 1723|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025769| NDA:471415065 | UH: 353 | end_time :2014-04-04 1213|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025474| NDA:471414892 | UH: 353 | end_time :2014-04-04 1512|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094053767| NDA:471465813 | UH: 131 | end_time :2014-04-04 1724|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024478| NDA:471414387 | UH: 435 | end_time :2014-04-04 1635|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014019560| NDA:471414806 | UH: 345 | end_time :2014-04-04 1727|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610021939| NDA:471411691 | UH: 582 | end_time :2014-04-04 1646|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023371| NDA:471414426 | UH: 540 | end_time :2014-04-04 1710|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206049917| NDA:471414293 | UH: 540 | end_time :2014-04-04 1717|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711049356| NDA:471414278 | UH: 550 | end_time :2014-04-04 1629|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023644| NDA:471413985 | UH: 461 | end_time :2014-04-04 2012|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024606| NDA:471414541 | UH: 109 | end_time :2014-04-04 1734|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014002346| NDA:471415124 | UH: 472 | end_time :2014-04-04 1918|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014006130| NDA:471409392 | UH: 499 | end_time :2014-04-04 1612|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498028423| NDA:471413902 | UH: 594 | end_time :2014-04-05 0014|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913092730| NDA:471415121 | UH: 462 | end_time :2014-04-05 0148|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913026448| NDA:471414819 | UH: 462 | end_time :2014-04-04 1326|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812016469| NDA:471408501 | UH: 499 | end_time :2014-04-04 1552|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610028550| NDA:471409569 | UH: 499 | end_time :2014-04-04 1802|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024928| NDA:471414628 | UH: 451 | end_time :2014-04-03 1534|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025637| NDA:471415093 | UH: 516 | end_time :2014-04-04 1615|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903020096| NDA:471414867 | UH: 516 | end_time :2014-04-04 1344|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004078741| NDA:471415172 | UH: 516 | end_time :2014-04-04 1853|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025695| NDA:471415090 | UH: 516 | end_time :2014-04-04 1726|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025586| NDA:471415020 | UH: 516 | end_time :2014-04-04 1328|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105068566| NDA:471415061 | UH: 516 | end_time :2014-04-04 1541|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025775| NDA:471415085 | UH: 516 | end_time :2014-04-04 1414|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509011940| NDA:471415106 | UH: 516 | end_time :2014-04-04 1437|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711006770| NDA:471415059 | UH: 516 | end_time :2014-04-04 1345|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610056956| NDA:471414773 | UH: 589 | end_time :2014-04-05 1138|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913039029| NDA:471415207 | UH: 114 | end_time :2014-04-05 1049|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913011619| NDA:471410909 | UH: 899 | end_time :2014-04-05 1211|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004021400| NDA:471465083 | UH: 273 | end_time :2014-04-05 1217|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025880| NDA:471415150 | UH: 482 | end_time :2014-04-05 1214|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025773| NDA:471415096 | UH: 472 | end_time :2014-04-05 1123|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812068478| NDA:471414497 | UH: 899 | end_time :2014-04-05 1231|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701064508| NDA:471411104 | UH: 582 | end_time :2014-04-05 1101|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026135| NDA:471415261 | UH: 516 | end_time :2014-04-05 1242|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701053865| NDA:471415249 | UH: 516 | end_time :2014-04-05 1130|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094010284| NDA:471415259 | UH: 516 | end_time :2014-04-05 1144|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610010775| NDA:471415242 | UH: 516 | end_time :2014-04-05 1303|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2195043401| NDA:471415234 | UH: 516 | end_time :2014-04-05 1306|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913021134| NDA:471415026 | UH: 114 | end_time :2014-04-05 1310|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610056964| NDA:471414504 | UH: 899 | end_time :2014-04-05 1304|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903088924| NDA:471415239 | UH: 516 | end_time :2014-04-05 1334|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025375| NDA:471414864 | UH: 461 | end_time :2014-04-05 1057|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802017373| NDA:471414629 | UH: 462 | end_time :2014-04-05 1218|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025413| NDA:471414861 | UH: 899 | end_time :2014-04-05 1347|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025798| NDA:471415131 | UH: 898 | end_time :2014-04-05 1357|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600015919| NDA:471410217 | UH: 298 | end_time :2014-04-04 1252|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025140| NDA:471415089 | UH: 353 | end_time :2014-04-05 1408|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610082056| NDA:471414700 | UH: 353 | end_time :2014-04-05 1200|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014021911| NDA:471413130 | UH: 594 | end_time :2014-04-05 1417|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812010430| NDA:471414730 | UH: 499 | end_time :2014-04-05 1419|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913093202| NDA:471410558 | UH: 499 | end_time :2014-04-05 1247|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913057083| NDA:471406626 | UH: 499 | end_time :2014-04-05 1249|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913063673| NDA:471414742 | UH: 499 | end_time :2014-04-05 1207|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711033815| NDA:471400426 | UH: 499 | end_time :2014-04-05 1257|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610020163| NDA:471409437 | UH: 499 | end_time :2014-04-05 1135|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004083131| NDA:471415258 | UH: 516 | end_time :2014-04-05 1323|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2195011606| NDA:471415262 | UH: 516 | end_time :2014-04-05 1400|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026133| NDA:471415252 | UH: 482 | end_time :2014-04-05 1447|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802022320| NDA:471414971 | UH: 345 | end_time :2014-04-05 1550|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600016546| NDA:471414906 | UH: 344 | end_time :2014-04-05 1106|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812087511| NDA:471465818 | UH: 131 | end_time :2014-04-05 1736|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2397012046| NDA:471465770 | UH: 141 | end_time :2014-04-05 1807|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913081392| NDA:471412488 | UH: 465 | end_time :2014-04-05 1132|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903032852| NDA:471465688 | UH: 131 | end_time :2014-04-04 1122|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026125| NDA:471415247 | UH: 482 | end_time :2014-04-05 2240|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206009696| NDA:471414422 | UH: 499 | end_time :2014-04-05 1628|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913071149| NDA:471406997 | UH: 499 | end_time :2014-04-05 1510|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025429| NDA:471414871 | UH: 499 | end_time :2014-04-05 1733|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025787| NDA:471415098 | UH: 482 | end_time :2014-04-05 1220|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509053177| NDA:471409497 | UH: 472 | end_time :2014-04-05 1249|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024825| NDA:471415186 | UH: 401 | end_time :2014-04-05 0917|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024185| NDA:471414659 | UH: 401 | end_time :2014-04-02 0919|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913059212| NDA:471415232 | UH: 516 | end_time :2014-04-05 2132|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026112| NDA:471415248 | UH: 516 | end_time :2014-04-05 2204|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025811| NDA:471415128 | UH: 516 | end_time :2014-04-04 1454|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903086685| NDA:471415220 | UH: 516 | end_time :2014-04-05 1543|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026050| NDA:471415255 | UH: 516 | end_time :2014-04-05 1436|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026196| NDA:471415361 | UH: 516 | end_time :2014-04-06 1022|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025871| NDA:471415218 | UH: 482 | end_time :2014-04-06 1129|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913056226| NDA:471415140 | UH: 898 | end_time :2014-04-06 1059|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026198| NDA:471415347 | UH: 898 | end_time :2014-04-06 1250|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014008063| NDA:471410578 | UH: 898 | end_time :2014-04-06 1239|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913078300| NDA:471414569 | UH: 899 | end_time :2014-04-06 1206|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014007402| NDA:471412496 | UH: 899 | end_time :2014-04-06 1259|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610039114| NDA:471415342 | UH: 482 | end_time :2014-04-06 0938|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025921| NDA:471415274 | UH: 482 | end_time :2014-04-06 1143|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2397014940| NDA:471414580 | UH: 472 | end_time :2014-04-06 1222|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408040716| NDA:471414886 | UH: 499 | end_time :2014-04-06 1229|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711020775| NDA:471403637 | UH: 499 | end_time :2014-04-06 1342|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903002241| NDA:471415366 | UH: 516 | end_time :2014-04-06 1344|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913093477| NDA:471406620 | UH: 898 | end_time :2014-04-06 1357|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307075656| NDA:471411628 | UH: 461 | end_time :2014-04-05 1142|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014001342| NDA:471401933 | UH: 594 | end_time :2014-04-06 1504|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509009761| NDA:471414903 | UH: 519 | end_time :2014-04-05 1027|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022740| NDA:471414815 | UH: 462 | end_time :2014-04-05 1214|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014013443| NDA:471413506 | UH: 519 | end_time :2014-04-05 1603|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913073891| NDA:471413797 | UH: 462 | end_time :2014-04-05 1204|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913040495| NDA:471410428 | UH: 899 | end_time :2014-04-06 1533|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711070360| NDA:471410664 | UH: 462 | end_time :2014-04-05 1204|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206045337| NDA:471414986 | UH: 519 | end_time :2014-04-05 1008|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913095500| NDA:471412497 | UH: 462 | end_time :2014-04-05 1256|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026089| NDA:471415231 | UH: 461 | end_time :2014-04-06 1043|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014003258| NDA:471405769 | UH: 462 | end_time :2014-04-06 1028|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023854| NDA:471414621 | UH: 212 | end_time :2014-04-04 2038|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025733| NDA:471415032 | UH: 212 | end_time :2014-04-05 1018|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913096255| NDA:471412635 | UH: 212 | end_time :2014-04-06 1032|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599020984| NDA:471414472 | UH: 212 | end_time :2014-04-05 1012|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701033528| NDA:471414635 | UH: 212 | end_time :2014-04-06 0949|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026161| NDA:471415273 | UH: 482 | end_time :2014-04-06 1545|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014012611| NDA:471414791 | UH: 461 | end_time :2014-04-05 1214|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094010440| NDA:471415229 | UH: 461 | end_time :2014-04-06 1617|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903015279| NDA:471414534 | UH: 461 | end_time :2014-04-06 1203|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913092740| NDA:471413779 | UH: 462 | end_time :2014-04-06 1232|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498015175| NDA:471414953 | UH: 212 | end_time :2014-04-04 1606|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025831| NDA:471415132 | UH: 212 | end_time :2014-04-05 0948|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025832| NDA:471415139 | UH: 212 | end_time :2014-04-05 1003|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023612| NDA:471414439 | UH: 218 | end_time :2014-04-05 1618|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610048203| NDA:471414940 | UH: 212 | end_time :2014-04-06 1159|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812032610| NDA:471407890 | UH: 462 | end_time :2014-04-06 1637|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509035620| NDA:471414830 | UH: 461 | end_time :2014-04-05 1056|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014014952| NDA:471411516 | UH: 461 | end_time :2014-04-05 1112|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913075079| NDA:471412424 | UH: 461 | end_time :2014-04-05 1157|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025797| NDA:471415104 | UH: 461 | end_time :2014-04-05 1157|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025849| NDA:471415277 | UH: 461 | end_time :2014-04-06 1804|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026263| NDA:471415359 | UH: 553 | end_time :2014-04-06 1736|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307065368| NDA:471415237 | UH: 519 | end_time :2014-04-06 0947|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599070955| NDA:471414514 | UH: 519 | end_time :2014-04-05 1017|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509001179| NDA:471414837 | UH: 519 | end_time :2014-04-06 1335|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014004845| NDA:471413846 | UH: 519 | end_time :2014-04-06 1013|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026315| NDA:471415372 | UH: 482 | end_time :2014-04-06 2317|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105012333| NDA:471414917 | UH: 499 | end_time :2014-04-06 1550|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025833| NDA:471415130 | UH: 444 | end_time :2014-04-05 0954|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014009224| NDA:471411981 | UH: 444 | end_time :2014-04-05 1010|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812016866| NDA:471412588 | UH: 660 | end_time :2014-04-06 1433|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026090| NDA:471415240 | UH: 516 | end_time :2014-04-06 1953|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711069192| NDA:471415353 | UH: 516 | end_time :2014-04-06 1700|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026237| NDA:471415362 | UH: 516 | end_time :2014-04-06 1526|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014006358| NDA:471412590 | UH: 660 | end_time :2014-04-06 1058|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094020826| NDA:471415351 | UH: 516 | end_time :2014-04-06 1700|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913015053| NDA:471415290 | UH: 516 | end_time :2014-04-06 1322|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022277| NDA:471413248 | UH: 226 | end_time :2014-04-05 1400|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498046802| NDA:471406462 | UH: 323 | end_time :2014-04-04 1543|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024104| NDA:471414179 | UH: 401 | end_time :2014-04-06 1122|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105059099| NDA:471465710 | UH: 141 | end_time :2014-04-07 0930|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600099705| NDA:471409203 | UH: 582 | end_time :2014-04-07 0941|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711024308| NDA:471408147 | UH: 594 | end_time :2014-04-07 0930|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802030378| NDA:471413986 | UH: 298 | end_time :2014-04-07 0945|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023916| NDA:471465762 | UH: 131 | end_time :2014-04-07 0945|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408000729| NDA:471465767 | UH: 272 | end_time :2014-04-06 0958|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701008308| NDA:471367597 | UH: 272 | end_time :2014-04-07 0855|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408030866| NDA:471411159 | UH: 899 | end_time :2014-04-07 1027|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023774| NDA:471414015 | UH: 109 | end_time :2014-04-07 1058|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2195000466| NDA:471465769 | UH: 141 | end_time :2014-04-07 1106|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913075273| NDA:471343064 | UH: 472 | end_time :2013-12-06 2100|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105021950| NDA:471414047 | UH: 109 | end_time :2014-04-07 1014|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014017411| NDA:471410624 | UH: 109 | end_time :2014-04-07 1104|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026170| NDA:471415287 | UH: 516 | end_time :2014-04-07 1134|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026337| NDA:471415386 | UH: 472 | end_time :2014-04-06 2355|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025410| NDA:471414869 | UH: 212 | end_time :2014-04-04 2000|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498079189| NDA:471411943 | UH: 582 | end_time :2014-04-07 1204|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610080375| NDA:471411460 | UH: 472 | end_time :2014-04-07 1116|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913089808| NDA:471411385 | UH: 488 | end_time :2014-04-07 1009|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913062044| NDA:471400503 | UH: 472 | end_time :2014-04-07 1014|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812006376| NDA:471403767 | UH: 472 | end_time :2014-04-07 0915|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408053085| NDA:471414720 | UH: 482 | end_time :2014-04-07 1020|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701072050| NDA:471410086 | UH: 472 | end_time :2014-04-07 1124|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711034719| NDA:471414451 | UH: 472 | end_time :2014-04-07 0848|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026319| NDA:471415387 | UH: 516 | end_time :2014-04-07 1207|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014015150| NDA:471414653 | UH: 594 | end_time :2014-04-07 1225|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2195022059| NDA:471413897 | UH: 426 | end_time :2014-04-07 1247|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509030008| NDA:471413952 | UH: 589 | end_time :2014-04-07 1238|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026318| NDA:471415373 | UH: 516 | end_time :2014-04-07 1305|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498058128| NDA:471415419 | UH: 516 | end_time :2014-04-07 1320|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026123| NDA:471415244 | UH: 421 | end_time :2014-04-06 1200|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014015620| NDA:471414691 | UH: 472 | end_time :2014-04-07 1136|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599084270| NDA:471465820 | UH: 272 | end_time :2014-04-07 1345|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105070308| NDA:471415246 | UH: 461 | end_time :2014-04-07 1144|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408034877| NDA:471415383 | UH: 899 | end_time :2014-04-07 1345|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024840| NDA:471414702 | UH: 899 | end_time :2014-04-07 1341|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014020709| NDA:471412524 | UH: 899 | end_time :2014-04-07 1404|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913003692| NDA:471412839 | UH: 461 | end_time :2014-04-07 1028|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498067454| NDA:471414141 | UH: 298 | end_time :2014-04-07 1245|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105000576| NDA:471414455 | UH: 070 | end_time :2014-04-07 1347|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711059032| NDA:471406608 | UH: 499 | end_time :2014-04-07 1202|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812072757| NDA:471415412 | UH: 516 | end_time :2014-04-07 1411|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025483| NDA:471415399 | UH: 401 | end_time :2014-04-07 1411|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004015773| NDA:471415417 | UH: 516 | end_time :2014-04-07 1412|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913079773| NDA:471415230 | UH: 499 | end_time :2014-04-07 1149|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903019863| NDA:471415475 | UH: 499 | end_time :2014-04-07 1326|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610064212| NDA:471415410 | UH: 516 | end_time :2014-04-07 1412|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026312| NDA:471415409 | UH: 516 | end_time :2014-04-07 1412|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026305| NDA:471415379 | UH: 516 | end_time :2014-04-07 1412|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2397006773| NDA:471415403 | UH: 516 | end_time :2014-04-07 1412|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913059625| NDA:471407540 | UH: 499 | end_time :2014-04-07 1329|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913061080| NDA:471414714 | UH: 499 | end_time :2014-04-07 1155|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903067630| NDA:471415418 | UH: 516 | end_time :2014-04-07 1416|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022094| NDA:471414817 | UH: 070 | end_time :2014-04-07 1319|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812009472| NDA:471414599 | UH: 070 | end_time :2014-04-07 1341|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2296014609| NDA:471412240 | UH: 582 | end_time :2014-04-07 1422|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014021494| NDA:471412879 | UH: 582 | end_time :2014-04-07 1423|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105088860| NDA:471415267 | UH: 519 | end_time :2014-04-07 0952|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610023274| NDA:471414679 | UH: 519 | end_time :2014-04-07 1351|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023842| NDA:471414271 | UH: 519 | end_time :2014-04-07 1445|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610082736| NDA:471400513 | UH: 499 | end_time :2014-04-07 1448|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812018120| NDA:471465803 | UH: 272 | end_time :2014-04-07 1158|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094030579| NDA:471414495 | UH: 298 | end_time :2014-04-07 1514|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014016179| NDA:471465544 | UH: 273 | end_time :2014-04-07 1316|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023230| NDA:471414913 | UH: 070 | end_time :2014-04-07 1514|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014020649| NDA:471414643 | UH: 462 | end_time :2014-04-07 1436|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2296048089| NDA:471465768 | UH: 273 | end_time :2014-04-07 1403|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024938| NDA:471414636 | UH: 114 | end_time :2014-04-07 1044|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014016223| NDA:471414788 | UH: 344 | end_time :2014-04-07 1542|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600050532| NDA:471414163 | UH: 344 | end_time :2014-04-07 1519|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913076949| NDA:471411625 | UH: 499 | end_time :2014-03-12 0948|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4195003450| NDA:471412177 | UH: 544 | end_time :2014-04-07 1602|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599063414| NDA:471465591 | UH: 272 | end_time :2014-04-07 1621|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023943| NDA:471414126 | UH: 461 | end_time :2014-04-07 1747|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004051082| NDA:471410033 | UH: 472 | end_time :2014-04-07 1357|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4701002577| NDA:471415003 | UH: 899 | end_time :2014-04-07 1756|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913064912| NDA:471400611 | UH: 499 | end_time :2014-04-07 1539|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711048105| NDA:471415019 | UH: 516 | end_time :2014-04-06 1515|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094022563| NDA:471414740 | UH: 589 | end_time :2014-04-07 1456|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610053928| NDA:471415225 | UH: 553 | end_time :2014-04-07 1850|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026285| NDA:471415367 | UH: 461 | end_time :2014-04-07 1013|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600016269| NDA:471414252 | UH: 344 | end_time :2014-04-07 1727|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014019076| NDA:471414362 | UH: 499 | end_time :2014-04-07 2241|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913071084| NDA:471400485 | UH: 482 | end_time :2014-04-07 2227|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913080973| NDA:471465676 | UH: 131 | end_time :2014-04-08 0627|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004074186| NDA:471415402 | UH: 516 | end_time :2014-04-07 1440|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913089362| NDA:471465744 | UH: 141 | end_time :2014-04-08 0840|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024285| NDA:471414704 | UH: 401 | end_time :2014-04-07 1803|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509050511| NDA:471414832 | UH: 421 | end_time :2014-04-03 0541|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026233| NDA:471415339 | UH: 421 | end_time :2014-04-07 0904|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610081941| NDA:471413885 | UH: 421 | end_time :2014-04-07 1622|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913092300| NDA:471415427 | UH: 444 | end_time :2014-04-08 0957|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913055871| NDA:471415514 | UH: 444 | end_time :2014-04-08 1010|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509049365| NDA:471411372 | UH: 444 | end_time :2014-04-08 1047|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913020288| NDA:471413849 | UH: 519 | end_time :2014-04-08 0955|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913079529| NDA:471414985 | UH: 519 | end_time :2014-04-08 1024|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2701041116| NDA:471414921 | UH: 519 | end_time :2014-04-08 1059|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014021415| NDA:471412806 | UH: 426 | end_time :2014-04-08 1100|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913064055| NDA:471412282 | UH: 589 | end_time :2014-04-08 1101|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023382| NDA:471413816 | UH: 426 | end_time :2014-04-08 0944|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2903084193| NDA:471400161 | UH: 472 | end_time :2014-04-08 0852|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498043649| NDA:471410319 | UH: 472 | end_time :2014-04-08 1042|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802084294| NDA:471415408 | UH: 472 | end_time :2014-04-08 1107|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913057780| NDA:471415168 | UH: 482 | end_time :2014-04-08 1108|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025953| NDA:471415185 | UH: 482 | end_time :2014-04-08 1108|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711076282| NDA:471413840 | UH: 337 | end_time :2014-04-08 1101|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913082735| NDA:471415426 | UH: 444 | end_time :2014-04-08 1128|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026458| NDA:471415468 | UH: 444 | end_time :2014-04-08 1132|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3711087025| NDA:471414924 | UH: 499 | end_time :2014-04-08 1125|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913063126| NDA:471415264 | UH: 499 | end_time :2014-04-08 1142|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600031908| NDA:471414488 | UH: 582 | end_time :2014-04-08 1130|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610008122| NDA:471415499 | UH: 899 | end_time :2014-04-07 1830|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3206039707| NDA:471413967 | UH: 898 | end_time :2014-04-08 1159|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3610035921| NDA:471414377 | UH: 899 | end_time :2014-04-08 1240|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913095251| NDA:471414912 | UH: 212 | end_time :2014-04-08 1209|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913050424| NDA:471415465 | UH: 212 | end_time :2014-04-08 1056|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025464| NDA:471414893 | UH: 212 | end_time :2014-04-08 1118|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913017632| NDA:471415378 | UH: 212 | end_time :2014-04-08 0956|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022841| NDA:471413570 | UH: 401 | end_time :2014-04-08 1049|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014012458| NDA:471412654 | UH: 899 | end_time :2014-04-08 1308|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014005329| NDA:471411266 | UH: 898 | end_time :2014-04-08 1251|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026241| NDA:471415340 | UH: 461 | end_time :2014-04-08 1208|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913096514| NDA:471414045 | UH: 493 | end_time :2014-04-08 1305|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913009493| NDA:471414453 | UH: 444 | end_time :2014-04-08 1113|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307006587| NDA:471415589 | UH: 899 | end_time :2014-04-08 1330|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307075303| NDA:471415401 | UH: 519 | end_time :2014-04-08 1341|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014014506| NDA:471413481 | UH: 519 | end_time :2014-04-08 1343|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014007394| NDA:471412656 | UH: 533 | end_time :2014-04-08 1202|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014021399| NDA:471412856 | UH: 298 | end_time :2014-04-08 1022|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509084066| NDA:471465761 | UH: 131 | end_time :2014-04-08 0952|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913093598| NDA:471414799 | UH: 487 | end_time :2014-04-08 1308|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913004361| NDA:471410566 | UH: 462 | end_time :2014-04-08 1142|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2397057535| NDA:471415390 | UH: 462 | end_time :2014-04-08 1138|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812043483| NDA:471415101 | UH: 499 | end_time :2014-04-08 1415|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2599017472| NDA:471412774 | UH: 462 | end_time :2014-04-08 1149|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812063557| NDA:471403610 | UH: 499 | end_time :2014-04-08 1308|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913029437| NDA:471413776 | UH: 462 | end_time :2014-04-08 1141|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3004080565| NDA:471415588 | UH: 899 | end_time :2014-04-08 1254|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3509029152| NDA:471414958 | UH: 465 | end_time :2014-04-08 1411|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024290| NDA:471414315 | UH: 462 | end_time :2014-04-08 1047|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802094803| NDA:471415238 | UH: 451 | end_time :2014-04-08 1427|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026083| NDA:471415226 | UH: 451 | end_time :2014-04-06 1400|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026171| NDA:471415272 | UH: 461 | end_time :2014-04-08 0802|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2296064848| NDA:471415577 | UH: 461 | end_time :2014-04-08 1344|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812009773| NDA:471415210 | UH: 070 | end_time :2014-04-08 1238|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014024609| NDA:471415434 | UH: 345 | end_time :2014-04-08 1238|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3812002950| NDA:471414927 | UH: 462 | end_time :2014-04-08 1022|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2802082130| NDA:471465851 | UH: 273 | end_time :2014-04-08 1443|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023509| NDA:471413904 | UH: 582 | end_time :2014-04-08 1038|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026251| NDA:471415523 | UH: 472 | end_time :2014-04-08 1456|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408009701| NDA:471413007 | UH: 462 | end_time :2014-04-08 1459|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014017402| NDA:471412715 | UH: 439 | end_time :2014-04-08 1455|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3408049024| NDA:471415404 | UH: 516 | end_time :2014-04-08 1500|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913060535| NDA:471415592 | UH: 516 | end_time :2014-04-08 1524|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498049230| NDA:471415578 | UH: 516 | end_time :2014-04-08 1142|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094023833| NDA:471413275 | UH: 553 | end_time :2014-04-08 1404|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105069069| NDA:471415612 | UH: 516 | end_time :2014-04-08 1525|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026788| NDA:471415613 | UH: 516 | end_time :2014-04-08 1525|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094050124| NDA:471415576 | UH: 516 | end_time :2014-04-08 1350|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2296032736| NDA:471415599 | UH: 516 | end_time :2014-04-08 1526|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014025782| NDA:471415615 | UH: 516 | end_time :2014-04-08 0845|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3913089036| NDA:471415587 | UH: 516 | end_time :2014-04-08 1142|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2094006304| NDA:471415445 | UH: 323 | end_time :2014-04-08 1245|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2498018463| NDA:471414564 | UH: 899 | end_time :2014-04-08 1539|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2600093087| NDA:471415209 | UH: 070 | end_time :2014-04-08 1458|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014023937| NDA:471414196 | UH: 109 | end_time :2014-04-08 1510|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2195027240| NDA:471415018 | UH: 109 | end_time :2014-04-08 1528|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3307060220| NDA:471415013 | UH: 345 | end_time :2014-04-08 1327|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026459| NDA:471415455 | UH: 345 | end_time :2014-04-08 1239|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:2397025355| NDA:471414440 | UH: 582 | end_time :2014-04-08 1625|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105062228| NDA:471415289 | UH: 344 | end_time :2014-04-08 1553|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014022484| NDA:471465733 | UH: 273 | end_time :2014-04-08 1314|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014019215| NDA:471415435 | UH: 439 | end_time :2014-04-08 1519|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105006543| NDA:471415276 | UH: 353 | end_time :2014-04-08 1436|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:3105074988| NDA:471415253 | UH: 353 | end_time :2014-04-08 1208|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014017505| NDA:471414663 | UH: 344 | end_time :2014-04-08 1616|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014010922| NDA:471415453 | UH: 345 | end_time :2014-04-08 1247|statut 'sorite' et end_time  MAJ on 0 enregistrement(s)
+NIP:4014026504| NDA:471415500 | UH: 421 | end_time :2014-04-08 1826|statut 'sorite' et end_time  MAJ on 1 enregistrement(s)
+NIP:3105084012| NDA:471412325 | UH: 461 | end_time :2014-04-08 1521|statut 'sorite' et end_time  MAJ on 1 enregistrement(s)
+NIP:3307063475| NDA:471412819 | UH: 462 | end_time :2014-04-08 1717|statut 'sorite' et end_time  MAJ on 1 enregistrement(s)
+ ==> Fin à 08/04/2014 19:54:56 
+
+
+ ##### Procedure InsertConvocation (Gilda=>Aghate) ####
+ ==>Lance à 08-04-2014 19:55:02
+
+NIP :2094006021| NDA:471414974| uh : 444| tymvt : EN| lit :LI002| post_trt :OPL| date_mvt :2014-04-08 à 1313| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094013373| NDA:471413288| uh : 594| tymvt : PI| lit :LI318| post_trt :MD3| date_mvt :2014-03-26 à 1539| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094017887| NDA:471415194| uh : 899| tymvt : EN| lit :LI301| post_trt :CD3| date_mvt :2014-04-08 à 1201| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094019224| NDA:471414805| uh : 298| tymvt : EN| lit :LI510| post_trt :MD5| date_mvt :2014-04-02 à 1354| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094020972| NDA:471415524| uh : 298| tymvt : EN| lit :LI507| post_trt :MD5| date_mvt :2014-04-07 à 1405| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094021221| NDA:471415628| uh : 582| tymvt : EN| lit :LI211| post_trt :MD2| date_mvt :2014-04-08 à 0944| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094023640| NDA:471415311| uh : 435| tymvt : EN| lit :LI404| post_trt :RH4| date_mvt :2014-04-07 à 0812| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094024716| NDA:471414382| uh : 582| tymvt : PI| lit :LI222| post_trt :MD2| date_mvt :2014-03-31 à 1433| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094037442| NDA:471415441| uh : 323| tymvt : EN| lit :L300| post_trt :MB3| date_mvt :2014-04-07 à 0840| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094043414| NDA:471465861| uh : 141| tymvt : EN| lit :FI108| post_trt :MG1| date_mvt :2014-04-08 à 1139| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094044874| NDA:471415355| uh : 299| tymvt : PI| lit :LI521| post_trt :MD5| date_mvt :2014-04-07 à 1407| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094049535| NDA:471413814| uh : 345| tymvt : EN| lit :LI202| post_trt :CA2| date_mvt :2014-04-07 à 1513| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094050016| NDA:471415354| uh : 553| tymvt : PI| lit :LI103| post_trt :NE1| date_mvt :2014-04-07 à 1851| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094055697| NDA:471415677| uh : 118| tymvt : EN| lit :L307| post_trt :HG3| date_mvt :2014-04-08 à 1623| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094055904| NDA:471407614| uh : 323| tymvt : EN| lit :LI301| post_trt :MB3| date_mvt :2014-04-07 à 1000| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2094065312| NDA:471414358| uh : 594| tymvt : PI| lit :LI320| post_trt :MD3| date_mvt :2014-03-31 à 1510| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195008754| NDA:471415091| uh : 344| tymvt : EN| lit :LI111| post_trt :CA1| date_mvt :2014-04-03 à 2340| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195012817| NDA:471465775| uh : 141| tymvt : EN| lit :FI107| post_trt :MG1| date_mvt :2014-03-31 à 1111| Patient déja present , |end_date maj 13/04/2014 07:55:04 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :2195017399| NDA:471415414| uh : 421| tymvt : EN| lit :L116B| post_trt :SCM| date_mvt :2014-04-07 à 0155| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195028154| NDA:471415350| uh : 482| tymvt : PI| lit :L403B| post_trt :OT4| date_mvt :2014-04-06 à 1534| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195030376| NDA:471415699| uh : 344| tymvt : EN| lit :LI108| post_trt :CA1| date_mvt :2014-04-08 à 1634| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195042362| NDA:471415437| uh : 345| tymvt : EN| lit :LI212| post_trt :CA2| date_mvt :2014-04-07 à 1012| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195045038| NDA:471413899| uh : 421| tymvt : PI| lit :L104| post_trt :RMT| date_mvt :2014-04-05 à 1315| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195048429| NDA:471410865| uh : 472| tymvt : EN| lit :L301A| post_trt :OT3| date_mvt :2014-04-07 à 1346| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195052885| NDA:471415297| uh : 435| tymvt : EN| lit :LI414| post_trt :RH4| date_mvt :2014-04-07 à 0814| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195056274| NDA:471413633| uh : 472| tymvt : EN| lit :L403A| post_trt :OT4| date_mvt :2014-04-06 à 1313| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195057110| NDA:471414652| uh : 472| tymvt : EN| lit :L405A| post_trt :OT4| date_mvt :2014-04-01 à 1449| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195057414| NDA:471413826| uh : 493| tymvt : EN| lit :L311| post_trt :RH3| date_mvt :2014-03-26 à 1515| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195059619| NDA:471415448| uh : 323| tymvt : EN| lit :L302| post_trt :MB3| date_mvt :2014-04-07 à 0845| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2195068055| NDA:471465547| uh : 131| tymvt : EN| lit :FE009| post_trt :MG0| date_mvt :2014-03-03 à 0958| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296002776| NDA:471410379| uh : 589| tymvt : EN| lit :L411| post_trt :MD4| date_mvt :2014-03-03 à 1510| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296009149| NDA:471414004| uh : 493| tymvt : EN| lit :L303A| post_trt :RH3| date_mvt :2014-03-27 à 1502| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296010911| NDA:471413004| uh : 070| tymvt : PI| lit :LI604| post_trt :ED6| date_mvt :2014-04-04 à 1615| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296011317| NDA:471415591| uh : 344| tymvt : PI| lit :LI117| post_trt :CA1| date_mvt :2014-04-08 à 1649| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296012960| NDA:471409042| uh : 594| tymvt : PI| lit :L312| post_trt :MD3| date_mvt :2014-04-05 à 0232| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296016284| NDA:471415593| uh : 299| tymvt : PI| lit :LI516| post_trt :MD5| date_mvt :2014-04-08 à 1428| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296020351| NDA:471465713| uh : 141| tymvt : EN| lit :FI104| post_trt :MG1| date_mvt :2014-03-21 à 1338| Patient déja present , |end_date maj 13/04/2014 07:55:04 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :2296026622| NDA:471413691| uh : 323| tymvt : EN| lit :L306| post_trt :MB3| date_mvt :2014-04-07 à 1404| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296035800| NDA:471414476| uh : 298| tymvt : EN| lit :LI508| post_trt :MD5| date_mvt :2014-03-31 à 1420| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296041596| NDA:471465852| uh : 131| tymvt : EN| lit :FE015| post_trt :MG0| date_mvt :2014-04-08 à 0954| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296043686| NDA:471415097| uh : 344| tymvt : PI| lit :LI112| post_trt :CA1| date_mvt :2014-04-04 à 1718| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296048521| NDA:471345317| uh : 898| tymvt : PI| lit :LI109| post_trt :CD1| date_mvt :2014-01-26 à 0818| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296056031| NDA:471414690| uh : 426| tymvt : PI| lit :MT311| post_trt :MS3| date_mvt :2014-04-02 à 1055| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296059318| NDA:471414866| uh : 582| tymvt : PI| lit :LI216| post_trt :MD2| date_mvt :2014-04-03 à 1403| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296064891| NDA:471465802| uh : 141| tymvt : EN| lit :FI122| post_trt :MG1| date_mvt :2014-04-03 à 0945| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2296069874| NDA:471414070| uh : 594| tymvt : PI| lit :LI324| post_trt :MD3| date_mvt :2014-03-28 à 1511| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397005459| NDA:471415505| uh : 418| tymvt : EN| lit :LI220| post_trt :NC2| date_mvt :2014-04-07 à 1221| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397024356| NDA:471412183| uh : 898| tymvt : EN| lit :LI112| post_trt :CD1| date_mvt :2014-04-02 à 1553| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397036576| NDA:471410729| uh : 070| tymvt : PI| lit :LI608| post_trt :ED6| date_mvt :2014-03-23 à 1706| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397063605| NDA:471415436| uh : 323| tymvt : EN| lit :LI303| post_trt :MB3| date_mvt :2014-04-07 à 0839| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397069281| NDA:471412748| uh : 472| tymvt : EN| lit :L401B| post_trt :OT4| date_mvt :2014-04-06 à 1435| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397069416| NDA:471465771| uh : 278| tymvt : EN| lit :AC104| post_trt :PS2| date_mvt :2014-03-28 à 1618| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397076474| NDA:471400211| uh : 472| tymvt : EN| lit :L202A| post_trt :OT2| date_mvt :2014-04-01 à 1230| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2397078990| NDA:471415076| uh : 540| tymvt : EN| lit :LI006| post_trt :NE4| date_mvt :2014-04-07 à 1120| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2498009976| NDA:471414184| uh : 901| tymvt : PI| lit :LI204| post_trt :CD2| date_mvt :2014-04-03 à 1454| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2498011788| NDA:471415668| uh : 070| tymvt : EN| lit :LI606| post_trt :ED6| date_mvt :2014-04-08 à 1340| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2498013034| NDA:471414550| uh : 582| tymvt : PI| lit :LI210| post_trt :MD2| date_mvt :2014-04-01 à 1534| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2498024706| NDA:471414544| uh : 426| tymvt : PI| lit :MT303| post_trt :MS3| date_mvt :2014-04-02 à 1058| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2498062901| NDA:471414874| uh : 582| tymvt : PI| lit :LI220| post_trt :MD2| date_mvt :2014-04-03 à 1742| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2498077468| NDA:471415603| uh : 421| tymvt : EN| lit :L103| post_trt :RMT| date_mvt :2014-04-07 à 1506| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599004562| NDA:471414651| uh : 472| tymvt : EN| lit :L508| post_trt :OT5| date_mvt :2014-04-01 à 1406| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599011939| NDA:471413147| uh : 582| tymvt : EN| lit :LI218| post_trt :MD2| date_mvt :2014-03-21 à 1511| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599026693| NDA:471414883| uh : 482| tymvt : EN| lit :L205| post_trt :OT2| date_mvt :2014-04-02 à 2118| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599029844| NDA:471414826| uh : 493| tymvt : EN| lit :L303B| post_trt :RH3| date_mvt :2014-04-02 à 1516| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599046603| NDA:471465815| uh : 131| tymvt : EN| lit :FE020| post_trt :MG0| date_mvt :2014-04-04 à 0920| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599053178| NDA:471414506| uh : 898| tymvt : EN| lit :LI110| post_trt :CD1| date_mvt :2014-04-08 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599056002| NDA:471411605| uh : 298| tymvt : PI| lit :LI526| post_trt :MD5| date_mvt :2014-04-04 à 1700| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599057270| NDA:471465843| uh : 141| tymvt : EN| lit :FI102| post_trt :MG1| date_mvt :2014-04-07 à 1219| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599063414| NDA:471415570| uh : 070| tymvt : EN| lit :LI609| post_trt :ED6| date_mvt :2014-04-07 à 1659| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599066896| NDA:471465832| uh : 141| tymvt : EN| lit :FI120| post_trt :MG1| date_mvt :2014-04-07 à 1005| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599076424| NDA:471407712| uh : 451| tymvt : PI| lit :L105| post_trt :RMT| date_mvt :2014-04-06 à 1315| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2599084270| NDA:471415525| uh : 472| tymvt : EN| lit :L503B| post_trt :OT5| date_mvt :2014-04-07 à 1404| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600005055| NDA:471414559| uh : 114| tymvt : PI| lit :L209A| post_trt :HG2| date_mvt :2014-04-04 à 0745| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600015342| NDA:471411052| uh : 323| tymvt : EN| lit :L308| post_trt :MB3| date_mvt :2014-04-07 à 1524| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600017745| NDA:471415303| uh : 435| tymvt : EN| lit :LI406| post_trt :RH4| date_mvt :2014-04-07 à 0812| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600022688| NDA:471465638| uh : 272| tymvt : EN| lit :CH010| post_trt :PS0| date_mvt :2014-03-12 à 1558| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600041872| NDA:471415369| uh : 421| tymvt : PI| lit :L112| post_trt :RMT| date_mvt :2014-04-06 à 1243| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600073032| NDA:471412848| uh : 488| tymvt : EN| lit :L206| post_trt :OT2| date_mvt :2014-04-06 à 1422| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600073932| NDA:471415338| uh : 582| tymvt : PI| lit :LI227| post_trt :MD2| date_mvt :2014-04-06 à 1421| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600076125| NDA:471409048| uh : 898| tymvt : PI| lit :LI104| post_trt :CD1| date_mvt :2014-03-22 à 1010| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600077245| NDA:471414972| uh : 472| tymvt : EN| lit :L402A| post_trt :OT4| date_mvt :2014-04-03 à 1434| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2600085367| NDA:471414882| uh : 594| tymvt : PI| lit :LI322| post_trt :MD3| date_mvt :2014-04-08 à 1808| Patient déja present , |Passage Interne MVT son dernière sejour maj id:2142 date_fin :13/04/2014 07:55:04||Convocation inseré,  sans programation
+NIP :2701006301| NDA:471415688| uh : 118| tymvt : EN| lit :L303| post_trt :HG3| date_mvt :2014-04-08 à 1624| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701012575| NDA:471414549| uh : 298| tymvt : PI| lit :LI528| post_trt :MD5| date_mvt :2014-04-01 à 1341| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701027028| NDA:471415425| uh : 426| tymvt : PI| lit :MT308| post_trt :MS3| date_mvt :2014-04-08 à 1211| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701028620| NDA:471411483| uh : 118| tymvt : EN| lit :L302A| post_trt :HG3| date_mvt :2014-04-08 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701034083| NDA:471414725| uh : 426| tymvt : PI| lit :MT318| post_trt :MS3| date_mvt :2014-04-04 à 1103| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701038109| NDA:471412718| uh : 114| tymvt : PI| lit :L210| post_trt :HG2| date_mvt :2014-03-19 à 1241| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701042932| NDA:471415075| uh : 540| tymvt : EN| lit :LI010| post_trt :NE4| date_mvt :2014-04-07 à 0851| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701045949| NDA:471414255| uh : 589| tymvt : PI| lit :L403| post_trt :MD4| date_mvt :2014-03-30 à 1219| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701053335| NDA:471465699| uh : 278| tymvt : EN| lit :AC103| post_trt :PS2| date_mvt :2014-03-19 à 1555| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701058814| NDA:471465743| uh : 141| tymvt : EN| lit :FI118| post_trt :MG1| date_mvt :2014-03-26 à 1141| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701066281| NDA:471413183| uh : 344| tymvt : PI| lit :LI103| post_trt :CA1| date_mvt :2014-04-05 à 1704| Patient déja present , |end_date maj 13/04/2014 07:55:04 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :2701090409| NDA:471415470| uh : 337| tymvt : EN| lit :LI220| post_trt :NE2| date_mvt :2014-04-07 à 1243| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2701098009| NDA:471413732| uh : 589| tymvt : PI| lit :L409| post_trt :MD4| date_mvt :2014-03-27 à 0012| Patient déja present , |end_date maj 13/04/2014 07:55:04 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :2802008807| NDA:471415193| uh : 589| tymvt : EN| lit :L412| post_trt :MD4| date_mvt :2014-04-04 à 1517| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802008960| NDA:471412644| uh : 493| tymvt : EN| lit :L312| post_trt :RH3| date_mvt :2014-03-18 à 1534| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802012754| NDA:471413452| uh : 418| tymvt : EN| lit :LI212| post_trt :NC2| date_mvt :2014-03-24 à 1256| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802016958| NDA:471414000| uh : 212| tymvt : PI| lit :LI201| post_trt :NC2| date_mvt :2014-04-01 à 1424| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802021645| NDA:471414946| uh : 299| tymvt : EN| lit :LI522| post_trt :MD5| date_mvt :2014-04-03 à 1358| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802032119| NDA:471408063| uh : 594| tymvt : PI| lit :LI317| post_trt :MD3| date_mvt :2014-02-19 à 1457| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802039370| NDA:471404957| uh : 109| tymvt : PI| lit :LI201| post_trt :NE2| date_mvt :2014-03-05 à 1047| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802041663| NDA:471415554| uh : 118| tymvt : EN| lit :L308| post_trt :HG3| date_mvt :2014-04-07 à 1607| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802045013| NDA:471401831| uh : 435| tymvt : EN| lit :LI412| post_trt :RH4| date_mvt :2014-04-07 à 0815| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802047139| NDA:471415406| uh : 899| tymvt : PI| lit :LI303| post_trt :CD3| date_mvt :2014-04-07 à 1756| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802061334| NDA:471415389| uh : 344| tymvt : EN| lit :LI114| post_trt :CA1| date_mvt :2014-04-06 à 1629| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802065564| NDA:471415291| uh : 899| tymvt : EN| lit :LI312| post_trt :CD3| date_mvt :2014-04-05 à 1711| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802068066| NDA:471411518| uh : 898| tymvt : EN| lit :LI106| post_trt :CD1| date_mvt :2014-03-25 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802074218| NDA:471415260| uh : 114| tymvt : PI| lit :L207| post_trt :HG2| date_mvt :2014-04-05 à 1637| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802076448| NDA:471414668| uh : 582| tymvt : EN| lit :LI208| post_trt :MD2| date_mvt :2014-04-01 à 1505| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2802078802| NDA:471412831| uh : 426| tymvt : PI| lit :MT305| post_trt :MS3| date_mvt :2014-03-31 à 1213| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903004669| NDA:471414301| uh : 109| tymvt : PI| lit :LI211| post_trt :NE2| date_mvt :2014-04-04 à 1720| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903021436| NDA:471465848| uh : 273| tymvt : EN| lit :MO106| post_trt :PS1| date_mvt :2014-04-07 à 1513| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903022179| NDA:471415447| uh : 076| tymvt : EN| lit :LI617| post_trt :EHS| date_mvt :2014-04-07 à 0907| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903025927| NDA:471410094| uh : 435| tymvt : EN| lit :LI417| post_trt :RH4| date_mvt :2014-04-07 à 0835| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903026009| NDA:471415371| uh : 499| tymvt : EN| lit :LI313| post_trt :MA3| date_mvt :2014-04-06 à 1026| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903045694| NDA:471415070| uh : 540| tymvt : EN| lit :LI013| post_trt :NE4| date_mvt :2014-04-07 à 0958| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903056462| NDA:471414677| uh : 114| tymvt : PI| lit :L211| post_trt :HG2| date_mvt :2014-04-05 à 1312| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903063301| NDA:471415483| uh : 353| tymvt : EN| lit :LI010| post_trt :CRR| date_mvt :2014-04-07 à 1219| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903065864| NDA:471415364| uh : 499| tymvt : EN| lit :LI401| post_trt :MA4| date_mvt :2014-04-06 à 0554| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903069208| NDA:471415698| uh : 493| tymvt : EN| lit :L307B| post_trt :RH3| date_mvt :2014-04-08 à 1623| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903071014| NDA:471415377| uh : 487| tymvt : EN| lit :L204| post_trt :OT2| date_mvt :2014-04-06 à 1328| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903076254| NDA:471400419| uh : 499| tymvt : EN| lit :LI418| post_trt :MA4| date_mvt :2014-04-06 à 0110| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903084214| NDA:471414538| uh : 901| tymvt : EN| lit :LI201| post_trt :CD2| date_mvt :2014-03-31 à 1203| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :2903087424| NDA:471414388| uh : 901| tymvt : PI| lit :LI206| post_trt :CD2| date_mvt :2014-04-08 à 1216| Patient déja present  |(cdn:2)manque de place, Patient deplace dans le pannier | room_id modifée par gilda, new room_id739
+NIP :2903088924| NDA:471465829| uh : 272| tymvt : EN| lit :CH015| post_trt :PS0| date_mvt :2014-04-05 à 1339| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004002724| NDA:471415214| uh : 594| tymvt : EN| lit :LI327| post_trt :MD3| date_mvt :2014-04-04 à 0953| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004004625| NDA:471465794| uh : 141| tymvt : EN| lit :FI115| post_trt :MG1| date_mvt :2014-04-02 à 0947| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004011902| NDA:471407700| uh : 070| tymvt : EN| lit :LI620| post_trt :ED6| date_mvt :2014-04-07 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004020144| NDA:471411203| uh : 444| tymvt : EN| lit :LI001| post_trt :OPL| date_mvt :2014-04-07 à 1520| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004021400| NDA:471465865| uh : 273| tymvt : EN| lit :MO105| post_trt :PS1| date_mvt :2014-04-08 à 1447| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004022589| NDA:471415487| uh : 298| tymvt : EN| lit :LI523| post_trt :MD5| date_mvt :2014-04-07 à 1404| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004022895| NDA:471415071| uh : 550| tymvt : EN| lit :LI002| post_trt :NE4| date_mvt :2014-04-07 à 1525| Patient déja present , |end_date maj 13/04/2014 07:55:04
+NIP :3004031319| NDA:471412405| uh : 070| tymvt : EN| lit :LI622| post_trt :ED6| date_mvt :2014-04-03 à 1420| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3004036979| NDA:471415069| uh : 540| tymvt : EN| lit :LI004| post_trt :NE4| date_mvt :2014-04-07 à 1020| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3004041400| NDA:471407387| uh : 901| tymvt : PI| lit :LI210| post_trt :CD2| date_mvt :2014-02-27 à 2011| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3004053398| NDA:471413655| uh : 218| tymvt : EN| lit :LI405| post_trt :NC4| date_mvt :2014-04-06 à 1620| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3004062306| NDA:471414710| uh : 344| tymvt : EN| lit :LI105| post_trt :CA1| date_mvt :2014-04-01 à 1932| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3004087875| NDA:471415623| uh : 519| tymvt : EN| lit :LI205| post_trt :MA2| date_mvt :2014-04-08 à 0938| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3004088400| NDA:471415503| uh : 582| tymvt : EN| lit :LI221| post_trt :MD2| date_mvt :2014-04-07 à 1534| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105002074| NDA:471415538| uh : 462| tymvt : EN| lit :LI217| post_trt :OR2| date_mvt :2014-04-07 à 1454| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105008152| NDA:471411647| uh : 462| tymvt : EN| lit :LI403| post_trt :OR4| date_mvt :2014-03-31 à 1508| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105009624| NDA:471465756| uh : 141| tymvt : EN| lit :FI116| post_trt :MG1| date_mvt :2014-03-27 à 1135| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105018956| NDA:471414300| uh : 472| tymvt : EN| lit :L408| post_trt :OT4| date_mvt :2014-03-29 à 1710| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105024026| NDA:471415382| uh : 594| tymvt : PI| lit :LI316| post_trt :MD3| date_mvt :2014-04-07 à 1512| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105025902| NDA:471415573| uh : 499| tymvt : EN| lit :LI305| post_trt :MA3| date_mvt :2014-04-07 à 1837| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105028446| NDA:471413454| uh : 462| tymvt : EN| lit :LI215| post_trt :OR2| date_mvt :2014-03-24 à 1543| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105035601| NDA:471413707| uh : 345| tymvt : EN| lit :LI204| post_trt :CA2| date_mvt :2014-04-07 à 1030| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105039979| NDA:471415457| uh : 076| tymvt : EN| lit :LI616| post_trt :EHS| date_mvt :2014-04-07 à 0920| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105062289| NDA:471414857| uh : 594| tymvt : PI| lit :LI321| post_trt :MD3| date_mvt :2014-04-03 à 1659| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105065403| NDA:471415411| uh : 582| tymvt : PI| lit :LI217| post_trt :MD2| date_mvt :2014-04-08 à 1444| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105070308| NDA:471415662| uh : 461| tymvt : EN| lit :LI207| post_trt :OR2| date_mvt :2014-04-08 à 1314| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3105082818| NDA:471412907| uh : 493| tymvt : EN| lit :L306B| post_trt :RH3| date_mvt :2014-03-20 à 0850| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206000598| NDA:471414516| uh : 519| tymvt : PI| lit :LI223| post_trt :MA2| date_mvt :2014-04-04 à 0949| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206007121| NDA:471465728| uh : 131| tymvt : EN| lit :FE010| post_trt :MG0| date_mvt :2014-03-24 à 1211| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206009747| NDA:471465800| uh : 272| tymvt : EN| lit :CH012| post_trt :PS0| date_mvt :2014-04-02 à 1543| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206015558| NDA:471410364| uh : 323| tymvt : EN| lit :LI305| post_trt :MB3| date_mvt :2014-04-07 à 0842| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206016795| NDA:471410179| uh : 070| tymvt : PI| lit :LI605| post_trt :ED6| date_mvt :2014-03-24 à 1612| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206019236| NDA:471405272| uh : 499| tymvt : EN| lit :LI409| post_trt :MA4| date_mvt :2014-04-07 à 0158| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206022836| NDA:471414889| uh : 582| tymvt : PI| lit :LI204| post_trt :MD2| date_mvt :2014-04-03 à 1402| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206023453| NDA:471414811| uh : 298| tymvt : EN| lit :LI518| post_trt :MD5| date_mvt :2014-04-02 à 1419| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206023921| NDA:471414601| uh : 212| tymvt : EN| lit :LI208| post_trt :NC2| date_mvt :2014-04-07 à 1439| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206031790| NDA:471406523| uh : 499| tymvt : EN| lit :LI405| post_trt :MA4| date_mvt :2014-03-29 à 1900| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206074676| NDA:471414367| uh : 298| tymvt : PI| lit :LI519| post_trt :MD5| date_mvt :2014-03-31 à 1121| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206076324| NDA:471413189| uh : 589| tymvt : EN| lit :L416| post_trt :MD4| date_mvt :2014-03-21 à 1837| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3206082682| NDA:471411512| uh : 898| tymvt : PI| lit :LI105| post_trt :CD1| date_mvt :2014-03-20 à 1625| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307001246| NDA:471411539| uh : 426| tymvt : PI| lit :MT306| post_trt :MS3| date_mvt :2014-04-02 à 1136| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307001249| NDA:471465793| uh : 131| tymvt : EN| lit :FE005| post_trt :MG0| date_mvt :2014-04-02 à 1007| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307001423| NDA:471404408| uh : 109| tymvt : PI| lit :LI204| post_trt :NE2| date_mvt :2014-02-26 à 1723| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307004728| NDA:471465773| uh : 141| tymvt : EN| lit :FI114| post_trt :MG1| date_mvt :2014-03-31 à 1115| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3307008107| NDA:471415295| uh : 435| tymvt : EN| lit :LI413| post_trt :RH4| date_mvt :2014-04-07 à 0814| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307017409| NDA:471415422| uh : 229| tymvt : EN| lit :LI20| post_trt :RCP| date_mvt :2014-04-07 à 0424| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307021361| NDA:471412238| uh : 212| tymvt : PI| lit :LI210| post_trt :NC2| date_mvt :2014-03-20 à 1254| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307025211| NDA:471410904| uh : 344| tymvt : EN| lit :LI107| post_trt :CA1| date_mvt :2014-03-06 à 1538| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307027423| NDA:471415257| uh : 499| tymvt : EN| lit :LI321| post_trt :MA3| date_mvt :2014-04-05 à 0433| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307030693| NDA:471414543| uh : 426| tymvt : PI| lit :MT310| post_trt :MS3| date_mvt :2014-04-01 à 1059| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307032605| NDA:471415477| uh : 212| tymvt : EN| lit :LI415| post_trt :NC4| date_mvt :2014-04-07 à 1101| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307035632| NDA:471413868| uh : 109| tymvt : PI| lit :LI209| post_trt :NE2| date_mvt :2014-04-01 à 1313| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307038142| NDA:471414970| uh : 472| tymvt : EN| lit :L404A| post_trt :OT4| date_mvt :2014-04-07 à 1320| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307038458| NDA:471414305| uh : 109| tymvt : PI| lit :LI205| post_trt :NE2| date_mvt :2014-04-01 à 1819| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307046914| NDA:471465738| uh : 141| tymvt : PI| lit :FI123| post_trt :MG1| date_mvt :2014-03-28 à 1551| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307048292| NDA:471311560| uh : 212| tymvt : PI| lit :LI203| post_trt :NC2| date_mvt :2013-10-03 à 1611| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307057681| NDA:471465841| uh : 131| tymvt : EN| lit :FE017| post_trt :MG0| date_mvt :2014-04-07 à 1134| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307057957| NDA:471411132| uh : 472| tymvt : EN| lit :L201B| post_trt :OT2| date_mvt :2014-04-06 à 1318| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307061625| NDA:471415596| uh : 499| tymvt : EN| lit :LI421| post_trt :MA4| date_mvt :2014-04-07 à 2257| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307073296| NDA:471414473| uh : 519| tymvt : EN| lit :LI215| post_trt :MA2| date_mvt :2014-04-03 à 1602| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307074046| NDA:471411643| uh : 229| tymvt : EN| lit :LI11| post_trt :RCP| date_mvt :2014-03-11 à 1434| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3307076114| NDA:471465823| uh : 273| tymvt : EN| lit :MO110| post_trt :PS1| date_mvt :2014-04-04 à 1405| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307085549| NDA:471465824| uh : 131| tymvt : EN| lit :FE006| post_trt :MG0| date_mvt :2014-04-04 à 1523| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3307087994| NDA:471414036| uh : 344| tymvt : PI| lit :LI116| post_trt :CA1| date_mvt :2014-03-28 à 2121| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408007704| NDA:471412672| uh : 472| tymvt : EN| lit :L404B| post_trt :OT4| date_mvt :2014-04-02 à 1324| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408015465| NDA:471415508| uh : 462| tymvt : EN| lit :LI406| post_trt :OR4| date_mvt :2014-04-08 à 1338| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408022495| NDA:471414485| uh : 482| tymvt : EN| lit :L506| post_trt :OT5| date_mvt :2014-03-31 à 1504| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408023829| NDA:471413115| uh : 226| tymvt : PI| lit :LI110| post_trt :NR1| date_mvt :2014-04-08 à 1549| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408024177| NDA:471314290| uh : 298| tymvt : PI| lit :LI517| post_trt :MD5| date_mvt :2013-04-20 à 2337| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408026423| NDA:471414703| uh : 298| tymvt : PI| lit :LI527| post_trt :MD5| date_mvt :2014-04-08 à 1406| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408032120| NDA:471412669| uh : 899| tymvt : PI| lit :LI314| post_trt :CD3| date_mvt :2014-04-08 à 1213| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408037748| NDA:471415301| uh : 435| tymvt : EN| lit :LI423| post_trt :RH4| date_mvt :2014-04-07 à 1353| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408042088| NDA:471414966| uh : 444| tymvt : EN| lit :LI09A| post_trt :OPL| date_mvt :2014-04-08 à 1116| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408048379| NDA:471465625| uh : 131| tymvt : EN| lit :FE022| post_trt :MG0| date_mvt :2014-03-11 à 1505| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408055785| NDA:471415420| uh : 482| tymvt : PI| lit :L202B| post_trt :OT2| date_mvt :2014-04-07 à 1321| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408057227| NDA:471465666| uh : 141| tymvt : EN| lit :FI110| post_trt :MG1| date_mvt :2014-03-17 à 1209| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408063469| NDA:471465856| uh : 272| tymvt : EN| lit :CH007| post_trt :PS0| date_mvt :2014-04-08 à 1052| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408069349| NDA:471414162| uh : 070| tymvt : EN| lit :LI618| post_trt :ED6| date_mvt :2014-03-28 à 1555| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408070344| NDA:471414890| uh : 141| tymvt : PI| lit :FI113| post_trt :MG1| date_mvt :2014-04-07 à 1056| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408082167| NDA:471413466| uh : 299| tymvt : EN| lit :LI515| post_trt :MD5| date_mvt :2014-03-24 à 1348| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3408082765| NDA:471414954| uh : 118| tymvt : EN| lit :L306B| post_trt :HG3| date_mvt :2014-04-03 à 1217| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509003029| NDA:471413614| uh : 462| tymvt : EN| lit :LI415| post_trt :OR4| date_mvt :2014-04-07 à 1555| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509006932| NDA:471415594| uh : 516| tymvt : EN| lit :LO06| post_trt :UHU| date_mvt :2014-04-07 à 1246| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509007738| NDA:471415415| uh : 298| tymvt : EN| lit :LI514| post_trt :MD5| date_mvt :2014-04-06 à 1803| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509010587| NDA:471412388| uh : 519| tymvt : EN| lit :LI208| post_trt :MA2| date_mvt :2014-04-07 à 1511| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509018574| NDA:471415346| uh : 114| tymvt : EN| lit :L206| post_trt :HG2| date_mvt :2014-04-05 à 1015| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509020873| NDA:471465683| uh : 272| tymvt : EN| lit :CH003| post_trt :PS0| date_mvt :2014-03-18 à 1441| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3509023324| NDA:471465781| uh : 273| tymvt : EN| lit :MO101| post_trt :PS1| date_mvt :2014-03-31 à 1411| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509028778| NDA:471465627| uh : 272| tymvt : EN| lit :CH013| post_trt :PS0| date_mvt :2014-03-11 à 1639| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509035955| NDA:471414977| uh : 582| tymvt : EN| lit :LI206| post_trt :MD2| date_mvt :2014-04-03 à 1436| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509040967| NDA:471415669| uh : 472| tymvt : EN| lit :L303B| post_trt :OT3| date_mvt :2014-04-08 à 1405| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509048372| NDA:471412678| uh : 519| tymvt : EN| lit :LI211| post_trt :MA2| date_mvt :2014-04-08 à 1500| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509051251| NDA:471414736| uh : 589| tymvt : PI| lit :L405| post_trt :MD4| date_mvt :2014-04-02 à 1510| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509056591| NDA:471414823| uh : 582| tymvt : EN| lit :LI205| post_trt :MD2| date_mvt :2014-04-02 à 1501| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509058021| NDA:471415100| uh : 901| tymvt : PI| lit :LI203| post_trt :CD2| date_mvt :2014-04-04 à 1647| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509059312| NDA:471414833| uh : 594| tymvt : PI| lit :LI315| post_trt :MD3| date_mvt :2014-04-05 à 1418| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509063167| NDA:471411589| uh : 472| tymvt : EN| lit :L214| post_trt :OT2| date_mvt :2014-04-08 à 1436| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509064955| NDA:471412146| uh : 487| tymvt : EN| lit :L402B| post_trt :OT4| date_mvt :2014-04-08 à 1342| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509065554| NDA:471413531| uh : 899| tymvt : EN| lit :LI311| post_trt :CD3| date_mvt :2014-04-08 à 1437| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509071806| NDA:471414058| uh : 426| tymvt : PI| lit :MT309| post_trt :MS3| date_mvt :2014-03-31 à 1100| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509084066| NDA:471465863| uh : 272| tymvt : EN| lit :CH009| post_trt :PS0| date_mvt :2014-04-08 à 1435| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3509087947| NDA:471465785| uh : 141| tymvt : EN| lit :FI106| post_trt :MG1| date_mvt :2014-03-31 à 1705| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610001788| NDA:471415189| uh : 553| tymvt : EN| lit :LI110| post_trt :NE1| date_mvt :2014-04-04 à 1538| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610001788| NDA:471415189| uh : 553| tymvt : EN| lit :ME235| post_trt :LS2| date_mvt :2014-04-04 à 1538| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610009004| NDA:471415444| uh : 076| tymvt : EN| lit :LI614| post_trt :EHS| date_mvt :2014-04-07 à 0906| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610010136| NDA:471465796| uh : 131| tymvt : EN| lit :FE012| post_trt :MG0| date_mvt :2014-04-02 à 1018| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610011960| NDA:471413856| uh : 114| tymvt : EN| lit :L208| post_trt :HG2| date_mvt :2014-03-26 à 1723| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610015284| NDA:471414466| uh : 487| tymvt : EN| lit :L311| post_trt :OT3| date_mvt :2014-03-31 à 1401| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610016260| NDA:471415649| uh : 444| tymvt : EN| lit :LI05A| post_trt :OPL| date_mvt :2014-04-08 à 1155| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610018730| NDA:471414525| uh : 426| tymvt : PI| lit :MT314| post_trt :MS3| date_mvt :2014-04-01 à 1122| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610023641| NDA:471415375| uh : 472| tymvt : EN| lit :L302A| post_trt :OT3| date_mvt :2014-04-06 à 1307| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610025034| NDA:471409892| uh : 344| tymvt : EN| lit :LI110| post_trt :CA1| date_mvt :2014-04-07 à 1605| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610029421| NDA:471465562| uh : 141| tymvt : EN| lit :FI109| post_trt :MG1| date_mvt :2014-03-04 à 1214| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610029444| NDA:471415079| uh : 540| tymvt : EN| lit :LI009| post_trt :NE4| date_mvt :2014-04-07 à 1050| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610031795| NDA:471465772| uh : 131| tymvt : EN| lit :FE019| post_trt :MG0| date_mvt :2014-03-31 à 0908| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610037227| NDA:471415181| uh : 070| tymvt : EN| lit :LI601| post_trt :ED6| date_mvt :2014-04-04 à 1416| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610039435| NDA:471415595| uh : 516| tymvt : EN| lit :LO02| post_trt :UHU| date_mvt :2014-04-07 à 2156| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610043105| NDA:471414765| uh : 426| tymvt : PI| lit :MT315| post_trt :MS3| date_mvt :2014-04-03 à 1231| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610048534| NDA:471415609| uh : 482| tymvt : PI| lit :L501B| post_trt :OT5| date_mvt :2014-04-08 à 1249| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610050067| NDA:471406512| uh : 462| tymvt : EN| lit :LI407| post_trt :OR4| date_mvt :2014-04-06 à 1605| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610051124| NDA:471465791| uh : 131| tymvt : EN| lit :FE003| post_trt :MG0| date_mvt :2014-04-01 à 1732| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610051472| NDA:471408036| uh : 462| tymvt : EN| lit :LI401| post_trt :OR4| date_mvt :2014-04-08 à 1407| Patient déja present ||Convocation inseré,  sans programation
+NIP :3610056155| NDA:471415171| uh : 482| tymvt : EN| lit :L208| post_trt :OT2| date_mvt :2014-04-04 à 1232| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610065455| NDA:471415421| uh : 499| tymvt : EN| lit :LI412| post_trt :MA4| date_mvt :2014-04-07 à 0255| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610068353| NDA:471415536| uh : 472| tymvt : EN| lit :L502B| post_trt :OT5| date_mvt :2014-04-07 à 1526| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610068957| NDA:471415294| uh : 435| tymvt : EN| lit :LI421| post_trt :RH4| date_mvt :2014-04-07 à 1224| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610075141| NDA:471413667| uh : 212| tymvt : EN| lit :LI410| post_trt :NC4| date_mvt :2014-04-08 à 1036| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610079308| NDA:471415607| uh : 898| tymvt : PI| lit :LI111| post_trt :CD1| date_mvt :2014-04-08 à 1501| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610080085| NDA:471410638| uh : 482| tymvt : PI| lit :L307| post_trt :OT3| date_mvt :2014-03-06 à 0647| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610082437| NDA:471465786| uh : 131| tymvt : EN| lit :FE004| post_trt :MG0| date_mvt :2014-04-01 à 0958| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610082477| NDA:471415697| uh : 344| tymvt : EN| lit :LI102| post_trt :CA1| date_mvt :2014-04-08 à 1700| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610083225| NDA:471415687| uh : 323| tymvt : EN| lit :L310| post_trt :MB3| date_mvt :2014-04-08 à 1534| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610083637| NDA:471415269| uh : 589| tymvt : EN| lit :L412B| post_trt :MD4| date_mvt :2014-04-04 à 2116| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3610086871| NDA:471414787| uh : 499| tymvt : EN| lit :LI403| post_trt :MA4| date_mvt :2014-04-02 à 1236| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711011535| NDA:471415443| uh : 118| tymvt : EN| lit :L305| post_trt :HG3| date_mvt :2014-04-07 à 0841| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711015833| NDA:471414340| uh : 582| tymvt : EN| lit :LI215| post_trt :MD2| date_mvt :2014-03-30 à 1114| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711020536| NDA:471465836| uh : 131| tymvt : EN| lit :FE008| post_trt :MG0| date_mvt :2014-04-07 à 1042| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711023344| NDA:471415471| uh : 076| tymvt : EN| lit :LI611| post_trt :EHS| date_mvt :2014-04-07 à 1033| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711025873| NDA:471465686| uh : 131| tymvt : EN| lit :FE018| post_trt :MG0| date_mvt :2014-03-19 à 1018| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711027710| NDA:471415446| uh : 076| tymvt : EN| lit :LI615| post_trt :EHS| date_mvt :2014-04-07 à 0906| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711033880| NDA:471414721| uh : 462| tymvt : PI| lit :LI203| post_trt :OR2| date_mvt :2014-04-02 à 1313| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711036723| NDA:471406990| uh : 212| tymvt : PI| lit :LI402| post_trt :NC4| date_mvt :2014-03-25 à 1531| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711053303| NDA:471414812| uh : 899| tymvt : EN| lit :LI308| post_trt :CD3| date_mvt :2014-04-02 à 1433| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711053336| NDA:471413502| uh : 226| tymvt : PI| lit :LI102| post_trt :NR1| date_mvt :2014-04-04 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711054808| NDA:471415304| uh : 426| tymvt : PI| lit :MT312| post_trt :MS3| date_mvt :2014-04-06 à 1248| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711057892| NDA:471415543| uh : 109| tymvt : EN| lit :LI217| post_trt :NE2| date_mvt :2014-04-07 à 1916| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711059331| NDA:471415233| uh : 594| tymvt : EN| lit :LI314| post_trt :MD3| date_mvt :2014-04-04 à 2049| Patient déja present  |(cdn:2)manque de place, Patient deplace dans le pannier | room_id modifée par gilda, new room_id1127
+NIP :3711061299| NDA:471414529| uh : 461| tymvt : PI| lit :LI211| post_trt :OR2| date_mvt :2014-04-08 à 1928| Patient déja present , |Passage Interne MVT son dernière sejour maj id:1920 date_fin :13/04/2014 07:55:05||Convocation inseré,  sans programation
+NIP :3711063331| NDA:471413684| uh : 118| tymvt : EN| lit :L304| post_trt :HG3| date_mvt :2014-04-08 à 1626| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711065190| NDA:471415513| uh : 344| tymvt : PI| lit :LI113| post_trt :CA1| date_mvt :2014-04-07 à 2126| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711066566| NDA:471415680| uh : 337| tymvt : EN| lit :LI019| post_trt :NE4| date_mvt :2014-04-08 à 1506| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711068473| NDA:471465858| uh : 426| tymvt : EN| lit :MT12B| post_trt :MS3| date_mvt :2014-04-08 à 1107| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711076896| NDA:471409473| uh : 435| tymvt : EN| lit :LI415| post_trt :RH4| date_mvt :2014-04-07 à 0814| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711077028| NDA:471465765| uh : 131| tymvt : EN| lit :FE007| post_trt :MG0| date_mvt :2014-03-28 à 1314| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3711078846| NDA:471415077| uh : 540| tymvt : EN| lit :LI005| post_trt :NE4| date_mvt :2014-04-07 à 1032| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711091590| NDA:471465748| uh : 278| tymvt : EN| lit :CH005| post_trt :PS0| date_mvt :2014-03-26 à 1435| Patient déja present  |(cdn:4)manque de place, Patient deplace dans le pannier||Convocation inseré,  sans programation
+NIP :3711091605| NDA:471410673| uh : 323| tymvt : EN| lit :LI311| post_trt :MB3| date_mvt :2014-04-07 à 1047| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3711093248| NDA:471413152| uh : 544| tymvt : EN| lit :LI203| post_trt :NE2| date_mvt :2014-03-21 à 1545| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3812007030| NDA:471412470| uh : 229| tymvt : EN| lit :LI21| post_trt :RCP| date_mvt :2014-03-17 à 1856| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812011678| NDA:471400399| uh : 472| tymvt : EN| lit :L505B| post_trt :OT5| date_mvt :2014-04-08 à 1344| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812012024| NDA:471412802| uh : 493| tymvt : PI| lit :L302A| post_trt :RH3| date_mvt :2014-03-20 à 1446| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812012615| NDA:471415305| uh : 435| tymvt : EN| lit :LI409| post_trt :RH4| date_mvt :2014-04-07 à 0925| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812017563| NDA:471410822| uh : 472| tymvt : EN| lit :L305A| post_trt :OT3| date_mvt :2014-04-07 à 1300| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812022183| NDA:471413961| uh : 462| tymvt : EN| lit :LI417| post_trt :OR4| date_mvt :2014-04-07 à 1530| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812023691| NDA:471415293| uh : 435| tymvt : EN| lit :LI419| post_trt :RH4| date_mvt :2014-04-07 à 0815| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812024805| NDA:471465740| uh : 272| tymvt : EN| lit :CH001| post_trt :PS0| date_mvt :2014-03-25 à 1530| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812027591| NDA:471411788| uh : 444| tymvt : EN| lit :LI06A| post_trt :OPL| date_mvt :2014-04-07 à 1336| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812032581| NDA:471406532| uh : 899| tymvt : EN| lit :LI304| post_trt :CD3| date_mvt :2014-04-01 à 1331| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812033410| NDA:471415678| uh : 345| tymvt : EN| lit :LI203| post_trt :CA2| date_mvt :2014-04-08 à 1723| Patient déja present ||Convocation inseré,  sans programation
+NIP :3812041937| NDA:471465819| uh : 426| tymvt : EN| lit :MT317| post_trt :MS3| date_mvt :2014-04-04 à 1054| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812043045| NDA:471414418| uh : 226| tymvt : PI| lit :LI108| post_trt :NR1| date_mvt :2014-04-07 à 1407| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812043632| NDA:471415532| uh : 212| tymvt : EN| lit :LI407| post_trt :NC4| date_mvt :2014-04-07 à 1437| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812044953| NDA:471338989| uh : 212| tymvt : EN| lit :LI404| post_trt :NC4| date_mvt :2013-11-05 à 1633| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812049049| NDA:471415521| uh : 499| tymvt : EN| lit :LI316| post_trt :MA3| date_mvt :2014-04-07 à 1345| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812049849| NDA:471411321| uh : 589| tymvt : PI| lit :L408| post_trt :MD4| date_mvt :2014-03-17 à 1913| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812052560| NDA:471465869| uh : 273| tymvt : EN| lit :MO104| post_trt :PS1| date_mvt :2014-04-08 à 1752| Patient déja present ||Convocation inseré,  sans programation
+NIP :3812061083| NDA:471415296| uh : 435| tymvt : EN| lit :LI420| post_trt :RH4| date_mvt :2014-04-07 à 0916| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812061229| NDA:471414557| uh : 472| tymvt : EN| lit :L410| post_trt :OT4| date_mvt :2014-03-31 à 1810| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812069126| NDA:471409274| uh : 226| tymvt : PI| lit :LI101| post_trt :NR1| date_mvt :2014-04-08 à 1333| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812074677| NDA:471414878| uh : 582| tymvt : PI| lit :LI207| post_trt :MD2| date_mvt :2014-04-03 à 1526| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812077379| NDA:471413274| uh : 141| tymvt : PI| lit :FI119| post_trt :MG1| date_mvt :2014-03-31 à 1440| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812080624| NDA:471465807| uh : 273| tymvt : EN| lit :MO102| post_trt :PS1| date_mvt :2014-04-03 à 1526| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812080779| NDA:471414739| uh : 901| tymvt : PI| lit :LI207| post_trt :CD2| date_mvt :2014-04-02 à 1437| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812081557| NDA:471465844| uh : 131| tymvt : EN| lit :FE002| post_trt :MG0| date_mvt :2014-04-07 à 1412| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812084321| NDA:471415665| uh : 589| tymvt : EN| lit :L410| post_trt :MD4| date_mvt :2014-04-08 à 1341| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812086005| NDA:471412998| uh : 444| tymvt : EN| lit :LI06B| post_trt :OPL| date_mvt :2014-04-07 à 1528| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812086764| NDA:471408479| uh : 493| tymvt : PI| lit :L301A| post_trt :RH3| date_mvt :2014-02-21 à 1714| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812088683| NDA:471414614| uh : 519| tymvt : EN| lit :LI214| post_trt :MA2| date_mvt :2014-04-08 à 1453| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3812089090| NDA:471415203| uh : 344| tymvt : EN| lit :LI118| post_trt :CA1| date_mvt :2014-04-04 à 1724| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913000642| NDA:471412968| uh : 131| tymvt : PI| lit :FE021| post_trt :MG0| date_mvt :2014-03-31 à 1157| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913001361| NDA:471415529| uh : 472| tymvt : EN| lit :L409| post_trt :OT4| date_mvt :2014-04-07 à 1430| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913002277| NDA:471465698| uh : 273| tymvt : PI| lit :MO103| post_trt :PS1| date_mvt :2014-04-04 à 1153| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913011700| NDA:471414978| uh : 344| tymvt : PI| lit :LI119| post_trt :CA1| date_mvt :2014-04-05 à 1559| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913011784| NDA:471411120| uh : 472| tymvt : EN| lit :L301B| post_trt :OT3| date_mvt :2014-04-08 à 1324| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913015764| NDA:471412983| uh : 212| tymvt : PI| lit :LI411| post_trt :NC4| date_mvt :2014-04-07 à 1406| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913018396| NDA:471412840| uh : 493| tymvt : EN| lit :L310| post_trt :RH3| date_mvt :2014-03-19 à 1738| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913018708| NDA:471413008| uh : 462| tymvt : EN| lit :LI419| post_trt :OR4| date_mvt :2014-04-06 à 1649| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913018938| NDA:471415254| uh : 582| tymvt : PI| lit :LI209| post_trt :MD2| date_mvt :2014-04-06 à 1420| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913019525| NDA:471465857| uh : 141| tymvt : EN| lit :FI105| post_trt :MG1| date_mvt :2014-04-08 à 1105| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913021925| NDA:471410727| uh : 472| tymvt : EN| lit :L302B| post_trt :OT3| date_mvt :2014-04-06 à 1315| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913022196| NDA:471414014| uh : 898| tymvt : EN| lit :LI107| post_trt :CD1| date_mvt :2014-04-06 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913023347| NDA:471415281| uh : 353| tymvt : EN| lit :LI005| post_trt :CRR| date_mvt :2014-04-05 à 1414| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913024321| NDA:471414639| uh : 472| tymvt : EN| lit :L505A| post_trt :OT5| date_mvt :2014-04-01 à 1259| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913030307| NDA:471414620| uh : 212| tymvt : EN| lit :LI414| post_trt :NC4| date_mvt :2014-04-08 à 1545| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913034458| NDA:471415385| uh : 421| tymvt : EN| lit :L109| post_trt :RMT| date_mvt :2014-04-06 à 1524| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913039659| NDA:471342971| uh : 482| tymvt : PI| lit :L207| post_trt :OT2| date_mvt :2014-03-13 à 1344| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913041493| NDA:471412602| uh : 229| tymvt : EN| lit :LI05| post_trt :RCP| date_mvt :2014-03-18 à 1103| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3913042123| NDA:471415493| uh : 418| tymvt : EN| lit :LI217| post_trt :NC2| date_mvt :2014-04-07 à 1140| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913044129| NDA:471408499| uh : 493| tymvt : EN| lit :L305A| post_trt :RH3| date_mvt :2014-04-03 à 1534| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913044436| NDA:471415388| uh : 462| tymvt : EN| lit :LI416| post_trt :OR4| date_mvt :2014-04-06 à 1616| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913044677| NDA:471322513| uh : 212| tymvt : PI| lit :LI401| post_trt :NC4| date_mvt :2013-08-07 à 1214| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913044815| NDA:471344752| uh : 582| tymvt : PI| lit :LI213| post_trt :MD2| date_mvt :2014-02-21 à 1410| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913048345| NDA:471415068| uh : 540| tymvt : EN| lit :LI011| post_trt :NE4| date_mvt :2014-04-07 à 1207| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913048679| NDA:471415632| uh : 462| tymvt : EN| lit :LI208| post_trt :OR2| date_mvt :2014-04-08 à 1009| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913050263| NDA:471415072| uh : 540| tymvt : EN| lit :LI003| post_trt :NE4| date_mvt :2014-04-07 à 1011| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913054441| NDA:471410581| uh : 070| tymvt : EN| lit :LI621| post_trt :ED6| date_mvt :2014-03-04 à 1529| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3913056159| NDA:471413315| uh : 898| tymvt : PI| lit :LI108| post_trt :CD1| date_mvt :2014-04-01 à 1803| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913058504| NDA:471403490| uh : 070| tymvt : EN| lit :LI607| post_trt :ED6| date_mvt :2014-04-07 à 1408| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913059679| NDA:471415431| uh : 323| tymvt : EN| lit :L304| post_trt :MB3| date_mvt :2014-04-07 à 0840| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913059726| NDA:471414767| uh : 499| tymvt : EN| lit :LI323| post_trt :MA3| date_mvt :2014-04-02 à 1147| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913060205| NDA:471415428| uh : 640| tymvt : EN| lit :LI017| post_trt :NE4| date_mvt :2014-04-07 à 0815| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913060231| NDA:471415251| uh : 499| tymvt : EN| lit :LI317| post_trt :MA3| date_mvt :2014-04-05 à 0238| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913061508| NDA:471415672| uh : 070| tymvt : EN| lit :LI623| post_trt :ED6| date_mvt :2014-04-08 à 1429| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913061516| NDA:471329403| uh : 229| tymvt : PI| lit :LI07| post_trt :RCP| date_mvt :2013-09-25 à 2047| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913062759| NDA:471415102| uh : 499| tymvt : EN| lit :LI416| post_trt :MA4| date_mvt :2014-04-04 à 0244| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913063370| NDA:471408049| uh : 499| tymvt : EN| lit :LI400| post_trt :MA4| date_mvt :2014-04-07 à 0300| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913063802| NDA:471405487| uh : 499| tymvt : EN| lit :LI413| post_trt :MA4| date_mvt :2014-04-06 à 1755| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913064368| NDA:471465642| uh : 278| tymvt : EN| lit :AC105| post_trt :PS2| date_mvt :2014-03-12 à 1713| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913064628| NDA:471415449| uh : 898| tymvt : EN| lit :LI115| post_trt :CD1| date_mvt :2014-04-07 à 0853| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913064652| NDA:471411066| uh : 212| tymvt : PI| lit :LI204| post_trt :NC2| date_mvt :2014-03-27 à 1529| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3913064734| NDA:471415696| uh : 553| tymvt : EN| lit :LI102| post_trt :NE1| date_mvt :2014-04-08 à 1700| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913065997| NDA:471404144| uh : 472| tymvt : EN| lit :L507| post_trt :OT5| date_mvt :2014-03-20 à 1245| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :3913067053| NDA:471406818| uh : 499| tymvt : EN| lit :LI301| post_trt :MA3| date_mvt :2014-04-08 à 1303| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913067180| NDA:471415556| uh : 344| tymvt : EN| lit :LI109| post_trt :CA1| date_mvt :2014-04-07 à 1754| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913067294| NDA:471409870| uh : 462| tymvt : EN| lit :LI412| post_trt :OR4| date_mvt :2014-04-08 à 1430| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913067638| NDA:471415416| uh : 499| tymvt : EN| lit :LI420| post_trt :MA4| date_mvt :2014-04-07 à 0159| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913067889| NDA:471414421| uh : 499| tymvt : EN| lit :LI407| post_trt :MA4| date_mvt :2014-04-06 à 1352| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913068091| NDA:471403806| uh : 499| tymvt : EN| lit :LI318| post_trt :MA3| date_mvt :2014-04-07 à 1849| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913068290| NDA:471411608| uh : 519| tymvt : EN| lit :LI204| post_trt :MA2| date_mvt :2014-04-06 à 1525| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913068501| NDA:471412170| uh : 499| tymvt : EN| lit :LI320| post_trt :MA3| date_mvt :2014-04-02 à 1217| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913068543| NDA:471415704| uh : 109| tymvt : EN| lit :LI212| post_trt :NE2| date_mvt :2014-04-08 à 1704| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913068600| NDA:471411394| uh : 519| tymvt : EN| lit :LI210| post_trt :MA2| date_mvt :2014-04-08 à 1445| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913069445| NDA:471409871| uh : 640| tymvt : EN| lit :LI020| post_trt :NE4| date_mvt :2014-04-08 à 1440| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913069725| NDA:471414993| uh : 070| tymvt : EN| lit :LI602| post_trt :ED6| date_mvt :2014-04-03 à 1522| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913069899| NDA:471415620| uh : 323| tymvt : EN| lit :LI309| post_trt :MB3| date_mvt :2014-04-08 à 0838| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913070144| NDA:471415348| uh : 499| tymvt : EN| lit :LI312| post_trt :MA3| date_mvt :2014-04-05 à 2302| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913070436| NDA:471411121| uh : 472| tymvt : EN| lit :L303A| post_trt :OT3| date_mvt :2014-03-30 à 1553| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913071232| NDA:471415562| uh : 212| tymvt : EN| lit :LI209| post_trt :NC2| date_mvt :2014-04-07 à 1621| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913071497| NDA:471415452| uh : 076| tymvt : EN| lit :LI612| post_trt :EHS| date_mvt :2014-04-07 à 0906| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913073508| NDA:471401184| uh : 472| tymvt : EN| lit :L504A| post_trt :OT5| date_mvt :2014-04-01 à 1323| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913074847| NDA:471401188| uh : 472| tymvt : EN| lit :L210| post_trt :OT2| date_mvt :2014-04-07 à 1320| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913076635| NDA:471409021| uh : 109| tymvt : PI| lit :LI202| post_trt :NE2| date_mvt :2014-04-02 à 1605| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913076869| NDA:471336371| uh : 482| tymvt : PI| lit :L510| post_trt :OT5| date_mvt :2013-11-13 à 0727| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913076885| NDA:471413520| uh : 465| tymvt : EN| lit :LI418| post_trt :OR4| date_mvt :2014-04-08 à 1823| Patient inseré ||Convocation inseré,  sans programation
+NIP :3913077481| NDA:471407758| uh : 435| tymvt : EN| lit :LI411| post_trt :RH4| date_mvt :2014-04-07 à 0813| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913077752| NDA:471409459| uh : 435| tymvt : EN| lit :LI410| post_trt :RH4| date_mvt :2014-04-07 à 0823| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913077757| NDA:471411580| uh : 499| tymvt : EN| lit :LI408| post_trt :MA4| date_mvt :2014-04-07 à 1848| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913077839| NDA:471414814| uh : 493| tymvt : EN| lit :L306A| post_trt :RH3| date_mvt :2014-04-02 à 1444| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913078395| NDA:471465792| uh : 141| tymvt : EN| lit :FI124| post_trt :MG1| date_mvt :2014-04-02 à 0922| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913078523| NDA:471407329| uh : 472| tymvt : EN| lit :L401A| post_trt :OT4| date_mvt :2014-03-30 à 1330| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913080823| NDA:471415682| uh : 462| tymvt : EN| lit :LI402| post_trt :OR4| date_mvt :2014-04-08 à 1508| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913081407| NDA:471414891| uh : 499| tymvt : EN| lit :LI302| post_trt :MA3| date_mvt :2014-04-03 à 0313| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913083131| NDA:471412681| uh : 901| tymvt : PI| lit :LI202| post_trt :CD2| date_mvt :2014-04-08 à 1423| Patient déja present  | room_id modifée par gilda, new room_id741
+NIP :3913083214| NDA:471415307| uh : 435| tymvt : EN| lit :LI408| post_trt :RH4| date_mvt :2014-04-07 à 0831| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913084027| NDA:471415283| uh : 582| tymvt : PI| lit :LI212| post_trt :MD2| date_mvt :2014-04-07 à 1547| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913084346| NDA:471415099| uh : 594| tymvt : PI| lit :LI323| post_trt :MD3| date_mvt :2014-04-04 à 1637| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913084714| NDA:471413017| uh : 499| tymvt : EN| lit :LI308| post_trt :MA3| date_mvt :2014-04-08 à 0937| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913086268| NDA:471414808| uh : 519| tymvt : EN| lit :LI218| post_trt :MA2| date_mvt :2014-04-07 à 1500| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913086416| NDA:471415518| uh : 345| tymvt : EN| lit :LI211| post_trt :CA2| date_mvt :2014-04-07 à 1408| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913087987| NDA:471414802| uh : 472| tymvt : EN| lit :L501A| post_trt :OT5| date_mvt :2014-04-02 à 1329| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913087989| NDA:471412742| uh : 630| tymvt : EN| lit :LI103| post_trt :NR1| date_mvt :2014-04-07 à 1305| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913088208| NDA:471415540| uh : 345| tymvt : EN| lit :LI215| post_trt :CA2| date_mvt :2014-04-08 à 0823| Patient déja present  |(cdn:2)manque de place, Patient deplace dans le pannier | room_id modifée par gilda, new room_id692
+NIP :3913088864| NDA:471408596| uh : 462| tymvt : EN| lit :LI411| post_trt :OR4| date_mvt :2014-04-08 à 1511| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913090269| NDA:471415162| uh : 499| tymvt : EN| lit :LI411| post_trt :MA4| date_mvt :2014-04-04 à 1130| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913090272| NDA:471415256| uh : 499| tymvt : EN| lit :LI315| post_trt :MA3| date_mvt :2014-04-05 à 0432| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913090371| NDA:471342731| uh : 212| tymvt : PI| lit :LI205| post_trt :NC2| date_mvt :2014-01-28 à 1321| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913092004| NDA:471406517| uh : 462| tymvt : EN| lit :LI405| post_trt :OR4| date_mvt :2014-04-06 à 1600| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913092423| NDA:471408734| uh : 472| tymvt : EN| lit :L306| post_trt :OT3| date_mvt :2014-02-19 à 1159| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913092661| NDA:471415549| uh : 519| tymvt : EN| lit :LI219| post_trt :MA2| date_mvt :2014-04-07 à 1548| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913092984| NDA:471413528| uh : 472| tymvt : EN| lit :L504B| post_trt :OT5| date_mvt :2014-04-08 à 0850| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913094521| NDA:471415674| uh : 345| tymvt : EN| lit :LI214| post_trt :CA2| date_mvt :2014-04-08 à 1438| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913094537| NDA:471414660| uh : 519| tymvt : EN| lit :LI209| post_trt :MA2| date_mvt :2014-04-07 à 1512| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913094875| NDA:471413598| uh : 212| tymvt : EN| lit :LI406| post_trt :NC4| date_mvt :2014-04-07 à 1350| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :3913097182| NDA:471415400| uh : 461| tymvt : EN| lit :LI420| post_trt :OR4| date_mvt :2014-04-06 à 1805| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014000249| NDA:471465864| uh : 273| tymvt : EN| lit :MO111| post_trt :PS1| date_mvt :2014-04-08 à 1444| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014000787| NDA:471410749| uh : 472| tymvt : PI| lit :L309| post_trt :OT3| date_mvt :2014-04-02 à 1927| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014001128| NDA:471415481| uh : 901| tymvt : PI| lit :LI205| post_trt :CD2| date_mvt :2014-04-08 à 1711| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014001576| NDA:471415670| uh : 898| tymvt : EN| lit :LI114| post_trt :CD1| date_mvt :2014-04-08 à 1354| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014002902| NDA:471415308| uh : 435| tymvt : EN| lit :LI403| post_trt :RH4| date_mvt :2014-04-07 à 0844| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014003138| NDA:471415509| uh : 070| tymvt : EN| lit :LI610| post_trt :ED6| date_mvt :2014-04-07 à 1418| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014003314| NDA:471405631| uh : 462| tymvt : EN| lit :LI409| post_trt :OR4| date_mvt :2014-04-07 à 1530| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014003785| NDA:471415166| uh : 212| tymvt : EN| lit :LI409| post_trt :NC4| date_mvt :2014-04-06 à 1617| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014004272| NDA:471415306| uh : 435| tymvt : EN| lit :LI405| post_trt :RH4| date_mvt :2014-04-07 à 0901| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014004855| NDA:471414973| uh : 487| tymvt : EN| lit :L212| post_trt :OT2| date_mvt :2014-04-03 à 1420| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014005392| NDA:471415285| uh : 899| tymvt : EN| lit :LI309| post_trt :CD3| date_mvt :2014-04-05 à 1709| Patient déja present  | room_id modifée par gilda, new room_id749
+NIP :4014005410| NDA:471465782| uh : 131| tymvt : EN| lit :FE016| post_trt :MG0| date_mvt :2014-03-31 à 1354| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014005814| NDA:471465817| uh : 131| tymvt : EN| lit :FE023| post_trt :MG0| date_mvt :2014-04-04 à 1015| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014005865| NDA:471404625| uh : 109| tymvt : PI| lit :LI207| post_trt :NE2| date_mvt :2014-01-26 à 1645| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014005920| NDA:471408030| uh : 899| tymvt : PI| lit :LI306| post_trt :CD3| date_mvt :2014-04-08 à 1425| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014005993| NDA:471413604| uh : 229| tymvt : PI| lit :LI09| post_trt :RCP| date_mvt :2014-04-02 à 1250| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014006647| NDA:471465826| uh : 273| tymvt : EN| lit :MO109| post_trt :PS1| date_mvt :2014-04-04 à 1459| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014007483| NDA:471415265| uh : 499| tymvt : EN| lit :LI303| post_trt :MA3| date_mvt :2014-04-05 à 1041| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014008265| NDA:471408615| uh : 212| tymvt : PI| lit :LI403| post_trt :NC4| date_mvt :2014-04-04 à 1228| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014008598| NDA:471406011| uh : 421| tymvt : PI| lit :L102| post_trt :RMT| date_mvt :2014-02-25 à 1008| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014008611| NDA:471413047| uh : 461| tymvt : PI| lit :LI214| post_trt :OR2| date_mvt :2014-03-28 à 1255| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014009373| NDA:471410310| uh : 519| tymvt : EN| lit :LI222| post_trt :MA2| date_mvt :2014-03-13 à 1522| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014009576| NDA:471408390| uh : 472| tymvt : EN| lit :L201A| post_trt :OT2| date_mvt :2014-04-03 à 1315| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014010925| NDA:471407272| uh : 212| tymvt : PI| lit :LI202| post_trt :NC2| date_mvt :2014-03-06 à 1533| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014010940| NDA:471410309| uh : 472| tymvt : EN| lit :L502A| post_trt :OT5| date_mvt :2014-04-03 à 1317| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014011421| NDA:471414763| uh : 435| tymvt : EN| lit :LI418| post_trt :RH4| date_mvt :2014-04-07 à 0820| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014011990| NDA:471407807| uh : 226| tymvt : PI| lit :LI107| post_trt :NR1| date_mvt :2014-03-14 à 1708| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014011996| NDA:471407814| uh : 226| tymvt : PI| lit :LI111| post_trt :NR1| date_mvt :2014-03-22 à 1905| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014012098| NDA:471415170| uh : 212| tymvt : EN| lit :LI216| post_trt :NC2| date_mvt :2014-04-06 à 1613| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014012500| NDA:471414876| uh : 482| tymvt : EN| lit :L310| post_trt :OT3| date_mvt :2014-04-02 à 2335| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014012563| NDA:471414594| uh : 218| tymvt : EN| lit :LI218| post_trt :NC2| date_mvt :2014-04-07 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014012959| NDA:471408309| uh : 344| tymvt : PI| lit :LI101| post_trt :CA1| date_mvt :2014-04-02 à 0120| Patient déja present , |end_date maj 13/04/2014 07:55:05 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014013003| NDA:471415228| uh : 472| tymvt : EN| lit :L509| post_trt :OT5| date_mvt :2014-04-04 à 1856| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014013069| NDA:471465758| uh : 273| tymvt : EN| lit :MO108| post_trt :PS1| date_mvt :2014-03-27 à 1438| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014013094| NDA:471415302| uh : 435| tymvt : EN| lit :LI407| post_trt :RH4| date_mvt :2014-04-07 à 1459| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014013098| NDA:471408461| uh : 299| tymvt : EN| lit :LI506| post_trt :MD5| date_mvt :2014-02-17 à 1538| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014013217| NDA:471414291| uh : 493| tymvt : PI| lit :L308A| post_trt :RH3| date_mvt :2014-04-04 à 1544| Patient déja present , |end_date maj 13/04/2014 07:55:05
+NIP :4014013325| NDA:471415216| uh : 589| tymvt : PI| lit :L402| post_trt :MD4| date_mvt :2014-04-08 à 1655| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014013435| NDA:471411491| uh : 898| tymvt : EN| lit :LI101| post_trt :CD1| date_mvt :2014-04-01 à 1351| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014013732| NDA:471408699| uh : 451| tymvt : PI| lit :L106| post_trt :RMT| date_mvt :2014-03-20 à 1547| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014014316| NDA:471409051| uh : 589| tymvt : PI| lit :L414| post_trt :MD4| date_mvt :2014-02-21 à 1440| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014014322| NDA:471411967| uh : 462| tymvt : EN| lit :LI421| post_trt :OR4| date_mvt :2014-03-25 à 1509| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014014685| NDA:471415566| uh : 345| tymvt : EN| lit :LI207| post_trt :CA2| date_mvt :2014-04-07 à 1736| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014014905| NDA:471409981| uh : 229| tymvt : EN| lit :LI17| post_trt :RCP| date_mvt :2014-02-27 à 1838| Patient déja present , |end_date maj 13/04/2014 07:55:06 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014015696| NDA:471415433| uh : 462| tymvt : EN| lit :LI410| post_trt :OR4| date_mvt :2014-04-07 à 0825| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014016720| NDA:471414693| uh : 114| tymvt : EN| lit :L204| post_trt :HG2| date_mvt :2014-04-01 à 1617| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014017247| NDA:471412195| uh : 519| tymvt : EN| lit :LI217| post_trt :MA2| date_mvt :2014-04-08 à 1500| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014017643| NDA:471465757| uh : 131| tymvt : EN| lit :FE014| post_trt :MG0| date_mvt :2014-03-27 à 1421| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014017938| NDA:471410981| uh : 298| tymvt : PI| lit :LI511| post_trt :MD5| date_mvt :2014-03-14 à 1104| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014018109| NDA:471414930| uh : 519| tymvt : EN| lit :LI221| post_trt :MA2| date_mvt :2014-04-03 à 1302| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014018161| NDA:471411071| uh : 582| tymvt : EN| lit :LI226| post_trt :MD2| date_mvt :2014-03-07 à 1533| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014018207| NDA:471413627| uh : 493| tymvt : PI| lit :L304B| post_trt :RH3| date_mvt :2014-03-28 à 1841| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014018289| NDA:471414270| uh : 114| tymvt : EN| lit :L202B| post_trt :HG2| date_mvt :2014-03-29 à 1057| Patient déja present  |(cdn:2)manque de place, Patient deplace dans le pannier | room_id modifée par gilda, new room_id865
+NIP :4014018332| NDA:471411151| uh : 229| tymvt : EN| lit :LI04| post_trt :RCP| date_mvt :2014-03-08 à 0618| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014018388| NDA:471411174| uh : 229| tymvt : EN| lit :LI15| post_trt :RCP| date_mvt :2014-03-08 à 2156| Patient déja present , |end_date maj 13/04/2014 07:55:06 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014018735| NDA:471414822| uh : 070| tymvt : EN| lit :LI603| post_trt :ED6| date_mvt :2014-04-02 à 1455| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014018977| NDA:471415199| uh : 899| tymvt : PI| lit :LI307| post_trt :CD3| date_mvt :2014-04-05 à 1638| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014018994| NDA:471414650| uh : 299| tymvt : PI| lit :LI505| post_trt :MD5| date_mvt :2014-04-04 à 1406| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019144| NDA:471415155| uh : 212| tymvt : EN| lit :LI219| post_trt :NC2| date_mvt :2014-04-07 à 1400| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019381| NDA:471412441| uh : 901| tymvt : PI| lit :LI209| post_trt :CD2| date_mvt :2014-04-04 à 1755| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019384| NDA:471413825| uh : 519| tymvt : EN| lit :LI220| post_trt :MA2| date_mvt :2014-04-02 à 1546| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019388| NDA:471415299| uh : 435| tymvt : EN| lit :LI422| post_trt :RH4| date_mvt :2014-04-07 à 1620| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019391| NDA:471415579| uh : 499| tymvt : EN| lit :LI304| post_trt :MA3| date_mvt :2014-04-07 à 1846| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019421| NDA:471413548| uh : 540| tymvt : EN| lit :LI001| post_trt :NE4| date_mvt :2014-04-07 à 1414| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019700| NDA:471413700| uh : 345| tymvt : EN| lit :LI206| post_trt :CA2| date_mvt :2014-04-07 à 1512| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019801| NDA:471412003| uh : 426| tymvt : PI| lit :MT304| post_trt :MS3| date_mvt :2014-03-31 à 1234| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014019806| NDA:471465649| uh : 278| tymvt : EN| lit :MO107| post_trt :PS1| date_mvt :2014-03-13 à 1617| Patient déja present , |end_date maj 13/04/2014 07:55:06 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014019815| NDA:471415490| uh : 444| tymvt : EN| lit :LI007| post_trt :OPL| date_mvt :2014-04-07 à 1416| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014020120| NDA:471414372| uh : 461| tymvt : EN| lit :LI404| post_trt :OR4| date_mvt :2014-03-31 à 0200| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014020181| NDA:471412231| uh : 212| tymvt : EN| lit :LI418| post_trt :NC4| date_mvt :2014-03-14 à 2310| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014020209| NDA:471415014| uh : 519| tymvt : EN| lit :LI206| post_trt :MA2| date_mvt :2014-04-03 à 1917| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014020265| NDA:471415152| uh : 553| tymvt : EN| lit :LI108| post_trt :NE1| date_mvt :2014-04-04 à 1119| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014020512| NDA:471465708| uh : 272| tymvt : EN| lit :AC101| post_trt :PS2| date_mvt :2014-03-20 à 1555| Patient déja present  |(cdn:4)manque de place, Patient deplace dans le pannier||Convocation inseré,  sans programation
+NIP :4014020522| NDA:471412349| uh : 482| tymvt : PI| lit :L209| post_trt :OT2| date_mvt :2014-04-07 à 1753| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014020833| NDA:471414698| uh : 353| tymvt : PI| lit :LI006| post_trt :CRR| date_mvt :2014-04-01 à 1727| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014021063| NDA:471415581| uh : 472| tymvt : EN| lit :L406| post_trt :OT4| date_mvt :2014-04-08 à 0822| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014021089| NDA:471412650| uh : 212| tymvt : PI| lit :LI408| post_trt :NC4| date_mvt :2014-03-26 à 1522| Patient déja present , |end_date maj 13/04/2014 07:55:06 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014021258| NDA:471412725| uh : 298| tymvt : PI| lit :LI525| post_trt :MD5| date_mvt :2014-03-31 à 1247| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014021406| NDA:471414007| uh : 899| tymvt : PI| lit :LI305| post_trt :CD3| date_mvt :2014-04-08 à 1212| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014021457| NDA:471412825| uh : 421| tymvt : EN| lit :L107| post_trt :RMT| date_mvt :2014-03-19 à 1541| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014021952| NDA:471414633| uh : 461| tymvt : EN| lit :LI216| post_trt :OR2| date_mvt :2014-04-01 à 1449| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022172| NDA:471413216| uh : 898| tymvt : PI| lit :LI103| post_trt :CD1| date_mvt :2014-03-23 à 1719| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022204| NDA:471413217| uh : 421| tymvt : EN| lit :L110| post_trt :RMT| date_mvt :2014-03-22 à 0825| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022243| NDA:471414158| uh : 212| tymvt : PI| lit :LI215| post_trt :NC2| date_mvt :2014-04-08 à 1306| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022258| NDA:471413232| uh : 229| tymvt : EN| lit :LI18| post_trt :RCP| date_mvt :2014-03-22 à 1551| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022345| NDA:471413287| uh : 212| tymvt : PI| lit :LI214| post_trt :NC2| date_mvt :2014-03-25 à 1418| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022350| NDA:471413284| uh : 229| tymvt : EN| lit :LI08| post_trt :RCP| date_mvt :2014-03-22 à 2310| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022354| NDA:471413609| uh : 461| tymvt : EN| lit :LI205| post_trt :OR2| date_mvt :2014-03-25 à 1306| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022357| NDA:471413735| uh : 141| tymvt : PI| lit :FI101| post_trt :MG1| date_mvt :2014-04-01 à 1234| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022554| NDA:471413541| uh : 109| tymvt : PI| lit :LI208| post_trt :NE2| date_mvt :2014-03-26 à 1851| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022648| NDA:471413543| uh : 553| tymvt : PI| lit :LI105| post_trt :NE1| date_mvt :2014-04-03 à 1108| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022690| NDA:471414999| uh : 401| tymvt : EN| lit :BNN03| post_trt :NEO| date_mvt :2014-04-03 à 1535| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022720| NDA:471413498| uh : 493| tymvt : EN| lit :L304A| post_trt :RH3| date_mvt :2014-03-24 à 1520| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022727| NDA:471413789| uh : 345| tymvt : EN| lit :LI216| post_trt :CA2| date_mvt :2014-04-07 à 1504| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014022853| NDA:471413702| uh : 899| tymvt : PI| lit :LI302| post_trt :CD3| date_mvt :2014-04-01 à 1428| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023076| NDA:471413715| uh : 141| tymvt : PI| lit :FI121| post_trt :MG1| date_mvt :2014-03-27 à 1531| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023186| NDA:471413725| uh : 582| tymvt : EN| lit :LI225| post_trt :MD2| date_mvt :2014-03-25 à 2009| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023361| NDA:471413805| uh : 299| tymvt : EN| lit :LI530| post_trt :MD5| date_mvt :2014-03-26 à 1402| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023412| NDA:471413900| uh : 589| tymvt : PI| lit :L415| post_trt :MD4| date_mvt :2014-03-27 à 1508| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023437| NDA:471413837| uh : 482| tymvt : EN| lit :L407| post_trt :OT4| date_mvt :2014-03-26 à 1557| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023443| NDA:471465750| uh : 272| tymvt : EN| lit :CH004| post_trt :PS0| date_mvt :2014-03-26 à 1612| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023470| NDA:471413872| uh : 461| tymvt : EN| lit :LI219| post_trt :OR2| date_mvt :2014-03-26 à 2030| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023473| NDA:471413876| uh : 109| tymvt : PI| lit :LI206| post_trt :NE2| date_mvt :2014-04-01 à 2125| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023577| NDA:471415178| uh : 401| tymvt : EN| lit :BNN04| post_trt :NEO| date_mvt :2014-04-04 à 1348| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023667| NDA:471413983| uh : 229| tymvt : PI| lit :LI14| post_trt :RCP| date_mvt :2014-03-27 à 1452| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023709| NDA:471465808| uh : 272| tymvt : EN| lit :CH017| post_trt :PS0| date_mvt :2014-04-03 à 1510| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023802| NDA:471414023| uh : 435| tymvt : EN| lit :LI424| post_trt :RH4| date_mvt :2014-04-07 à 1812| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023827| NDA:471414046| uh : 229| tymvt : EN| lit :LI19| post_trt :RCP| date_mvt :2014-03-27 à 1911| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014023832| NDA:471414061| uh : 226| tymvt : PI| lit :LI105| post_trt :NR1| date_mvt :2014-04-02 à 1415| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024047| NDA:471465809| uh : 272| tymvt : EN| lit :CH011| post_trt :PS0| date_mvt :2014-04-03 à 1519| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024191| NDA:471414273| uh : 499| tymvt : EN| lit :LI404| post_trt :MA4| date_mvt :2014-03-29 à 1225| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024267| NDA:471414306| uh : 229| tymvt : EN| lit :LI02| post_trt :RCP| date_mvt :2014-03-29 à 1849| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024325| NDA:471414325| uh : 353| tymvt : PI| lit :LI003| post_trt :CRR| date_mvt :2014-03-31 à 1303| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024737| NDA:471414515| uh : 114| tymvt : EN| lit :L201A| post_trt :HG2| date_mvt :2014-03-31 à 1832| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024744| NDA:471414522| uh : 553| tymvt : EN| lit :LI101| post_trt :NE1| date_mvt :2014-03-31 à 1656| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024756| NDA:471414546| uh : 482| tymvt : EN| lit :L308| post_trt :OT3| date_mvt :2014-03-31 à 2205| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024838| NDA:471414734| uh : 594| tymvt : PI| lit :LI325| post_trt :MD3| date_mvt :2014-04-07 à 0834| Patient déja present , |end_date maj 13/04/2014 07:55:06 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4014024871| NDA:471415484| uh : 452| tymvt : EN| lit :LI008| post_trt :OPL| date_mvt :2014-04-07 à 1203| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014024879| NDA:471465787| uh : 141| tymvt : EN| lit :FI117| post_trt :MG1| date_mvt :2014-04-01 à 1041| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025015| NDA:471414678| uh : 439| tymvt : PI| lit :LI210| post_trt :NE2| date_mvt :2014-04-04 à 1720| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025020| NDA:471414713| uh : 901| tymvt : PI| lit :LI208| post_trt :CD2| date_mvt :2014-04-06 à 1735| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025074| NDA:471414722| uh : 141| tymvt : PI| lit :FI112| post_trt :MG1| date_mvt :2014-04-03 à 1429| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025081| NDA:471414705| uh : 353| tymvt : EN| lit :LI011| post_trt :CRR| date_mvt :2014-04-01 à 1915| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025089| NDA:471415706| uh : 401| tymvt : EN| lit :BNN06| post_trt :NEO| date_mvt :2014-04-08 à 1700| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025146| NDA:471414851| uh : 426| tymvt : PI| lit :MT316| post_trt :MS3| date_mvt :2014-04-03 à 1214| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025216| NDA:471414795| uh : 109| tymvt : PI| lit :LI219| post_trt :NE2| date_mvt :2014-04-08 à 1559| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025276| NDA:471414887| uh : 582| tymvt : PI| lit :LI214| post_trt :MD2| date_mvt :2014-04-03 à 1630| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025289| NDA:471414846| uh : 499| tymvt : EN| lit :LI307| post_trt :MA3| date_mvt :2014-04-02 à 2211| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025318| NDA:471414818| uh : 070| tymvt : EN| lit :LI619| post_trt :ED6| date_mvt :2014-04-02 à 1442| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025331| NDA:471415681| uh : 109| tymvt : EN| lit :LI213| post_trt :NE2| date_mvt :2014-04-08 à 1501| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025340| NDA:471414870| uh : 212| tymvt : EN| lit :LI412| post_trt :NC4| date_mvt :2014-04-02 à 1505| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025426| NDA:471465860| uh : 272| tymvt : EN| lit :CH016| post_trt :PS0| date_mvt :2014-04-08 à 1129| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025428| NDA:471414879| uh : 114| tymvt : PI| lit :L201B| post_trt :HG2| date_mvt :2014-04-03 à 1339| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025434| NDA:471414875| uh : 229| tymvt : EN| lit :LI03| post_trt :RCP| date_mvt :2014-04-02 à 2209| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025471| NDA:471414894| uh : 226| tymvt : EN| lit :LI109| post_trt :NR1| date_mvt :2014-04-03 à 0634| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025529| NDA:471414951| uh : 482| tymvt : EN| lit :L203| post_trt :OT2| date_mvt :2014-04-03 à 1443| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025550| NDA:471414943| uh : 401| tymvt : EN| lit :BNN02| post_trt :NEO| date_mvt :2014-04-03 à 1142| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025552| NDA:471415187| uh : 298| tymvt : EN| lit :LI524| post_trt :MD5| date_mvt :2014-04-04 à 1511| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025563| NDA:471415268| uh : 493| tymvt : EN| lit :L301B| post_trt :RH3| date_mvt :2014-04-05 à 1040| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025614| NDA:471414988| uh : 109| tymvt : PI| lit :LI218| post_trt :NE2| date_mvt :2014-04-07 à 1703| Patient déja present , |Passage Interne MVT son dernière sejour maj id:2084 date_fin :13/04/2014 07:55:06, |end_date maj 13/04/2014 07:55:06
+NIP :4014025689| NDA:471415021| uh : 482| tymvt : EN| lit :L304B| post_trt :OT3| date_mvt :2014-04-03 à 1954| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025738| NDA:471415092| uh : 426| tymvt : PI| lit :MT307| post_trt :MS3| date_mvt :2014-04-04 à 1121| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025739| NDA:471415039| uh : 461| tymvt : PI| lit :LI212| post_trt :OR2| date_mvt :2014-04-08 à 1744| Patient déja present , |Passage Interne MVT son dernière sejour maj id:2091 date_fin :13/04/2014 07:55:06||Convocation inseré,  sans programation
+NIP :4014025780| NDA:471415105| uh : 299| tymvt : PI| lit :LI529| post_trt :MD5| date_mvt :2014-04-04 à 1407| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025949| NDA:471415200| uh : 226| tymvt : EN| lit :LI206| post_trt :NC2| date_mvt :2014-04-04 à 1608| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025954| NDA:471415169| uh : 229| tymvt : EN| lit :LI12| post_trt :RCP| date_mvt :2014-04-04 à 2054| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014025994| NDA:471415227| uh : 472| tymvt : EN| lit :L405B| post_trt :OT4| date_mvt :2014-04-04 à 1413| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026079| NDA:471415241| uh : 589| tymvt : PI| lit :L401| post_trt :MD4| date_mvt :2014-04-08 à 1656| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026097| NDA:471415243| uh : 553| tymvt : EN| lit :LI106| post_trt :NE1| date_mvt :2014-04-04 à 2308| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026099| NDA:471415245| uh : 589| tymvt : EN| lit :L406| post_trt :MD4| date_mvt :2014-04-04 à 2121| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026102| NDA:471415250| uh : 594| tymvt : EN| lit :LI326| post_trt :MD3| date_mvt :2014-04-04 à 2130| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026107| NDA:471415537| uh : 544| tymvt : EN| lit :LI214| post_trt :NE2| date_mvt :2014-04-07 à 1500| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026123| NDA:471465830| uh : 278| tymvt : EN| lit :AC102| post_trt :PS2| date_mvt :2014-04-06 à 1233| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026135| NDA:471465828| uh : 273| tymvt : EN| lit :MO113| post_trt :PS1| date_mvt :2014-04-05 à 1247| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026146| NDA:471415279| uh : 451| tymvt : EN| lit :L114B| post_trt :SCM| date_mvt :2014-04-05 à 2330| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026156| NDA:471415271| uh : 461| tymvt : EN| lit :LI202| post_trt :OR2| date_mvt :2014-04-05 à 1339| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026182| NDA:471415280| uh : 114| tymvt : EN| lit :L205| post_trt :HG2| date_mvt :2014-04-05 à 1107| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026184| NDA:471415275| uh : 582| tymvt : PI| lit :LI224| post_trt :MD2| date_mvt :2014-04-06 à 1436| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026191| NDA:471415358| uh : 114| tymvt : PI| lit :L203| post_trt :HG2| date_mvt :2014-04-06 à 1637| Patient déja present  | room_id modifée par gilda, new room_id863
+NIP :4014026192| NDA:471415344| uh : 426| tymvt : PI| lit :MT302| post_trt :MS3| date_mvt :2014-04-07 à 1248| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026194| NDA:471415343| uh : 594| tymvt : PI| lit :LI319| post_trt :MD3| date_mvt :2014-04-06 à 1506| Patient déja present  | room_id modifée par gilda, new room_id1134
+NIP :4014026201| NDA:471415357| uh : 898| tymvt : PI| lit :LI102| post_trt :CD1| date_mvt :2014-04-06 à 1408| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026242| NDA:471415365| uh : 109| tymvt : PI| lit :LI216| post_trt :NE2| date_mvt :2014-04-08 à 1122| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026244| NDA:471415345| uh : 451| tymvt : PI| lit :L115A| post_trt :SCM| date_mvt :2014-04-07 à 1346| Patient déja present  |(cdn:2)manque de place, Patient deplace dans le pannier | room_id modifée par gilda, new room_id1785
+NIP :4014026299| NDA:471415368| uh : 482| tymvt : EN| lit :L503A| post_trt :OT5| date_mvt :2014-04-06 à 1533| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026308| NDA:471415370| uh : 499| tymvt : EN| lit :LI419| post_trt :MA4| date_mvt :2014-04-06 à 1014| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026318| NDA:471465845| uh : 278| tymvt : EN| lit :AC106| post_trt :PS2| date_mvt :2014-04-07 à 1516| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026326| NDA:471415376| uh : 553| tymvt : EN| lit :LI109| post_trt :NE1| date_mvt :2014-04-06 à 1326| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026339| NDA:471415380| uh : 353| tymvt : EN| lit :LI012| post_trt :CRR| date_mvt :2014-04-06 à 1350| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026349| NDA:471415384| uh : 353| tymvt : EN| lit :LI001| post_trt :CRR| date_mvt :2014-04-06 à 1645| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026409| NDA:471415413| uh : 472| tymvt : EN| lit :L304A| post_trt :OT3| date_mvt :2014-04-06 à 2212| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026434| NDA:471415432| uh : 516| tymvt : EN| lit :LO03| post_trt :UHU| date_mvt :2014-04-07 à 0820| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026446| NDA:471415438| uh : 435| tymvt : EN| lit :LI416| post_trt :RH4| date_mvt :2014-04-07 à 0837| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026547| NDA:471415616| uh : 229| tymvt : PI| lit :LI10| post_trt :RCP| date_mvt :2014-04-08 à 0900| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026561| NDA:471415539| uh : 444| tymvt : EN| lit :LI004| post_trt :OPL| date_mvt :2014-04-08 à 1329| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026573| NDA:471415572| uh : 461| tymvt : EN| lit :LI209| post_trt :OR2| date_mvt :2014-04-07 à 1749| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026575| NDA:471415583| uh : 353| tymvt : EN| lit :LI008| post_trt :CRR| date_mvt :2014-04-07 à 2126| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026591| NDA:471415597| uh : 472| tymvt : EN| lit :L411| post_trt :OT4| date_mvt :2014-04-07 à 1902| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026609| NDA:471415586| uh : 582| tymvt : EN| lit :LI223| post_trt :MD2| date_mvt :2014-04-07 à 2036| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026621| NDA:471415526| uh : 345| tymvt : EN| lit :LI208| post_trt :CA2| date_mvt :2014-04-07 à 1505| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026683| NDA:471415550| uh : 114| tymvt : EN| lit :L209B| post_trt :HG2| date_mvt :2014-04-07 à 1543| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026734| NDA:471415571| uh : 461| tymvt : EN| lit :LI218| post_trt :OR2| date_mvt :2014-04-07 à 1735| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026744| NDA:471415575| uh : 660| tymvt : PI| lit :LI104| post_trt :NR1| date_mvt :2014-04-08 à 1548| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026750| NDA:471415590| uh : 516| tymvt : EN| lit :LI03| post_trt :UHU| date_mvt :2014-04-07 à 1828| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026753| NDA:471415582| uh : 401| tymvt : EN| lit :BNN05| post_trt :NEO| date_mvt :2014-04-07 à 1906| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026758| NDA:471415610| uh : 589| tymvt : PI| lit :L407| post_trt :MD4| date_mvt :2014-04-08 à 1700| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026778| NDA:471415600| uh : 553| tymvt : EN| lit :LI111| post_trt :NE1| date_mvt :2014-04-08 à 0023| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026787| NDA:471415606| uh : 353| tymvt : EN| lit :LI002| post_trt :CRR| date_mvt :2014-04-08 à 0242| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026791| NDA:471415608| uh : 421| tymvt : EN| lit :L101| post_trt :RMT| date_mvt :2014-04-08 à 0255| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026834| NDA:471465853| uh : 131| tymvt : EN| lit :FE001| post_trt :MG0| date_mvt :2014-04-08 à 0952| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026845| NDA:471415627| uh : 344| tymvt : EN| lit :LI007| post_trt :CRR| date_mvt :2014-04-08 à 1641| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026865| NDA:471465854| uh : 131| tymvt : EN| lit :FE024| post_trt :MG0| date_mvt :2014-04-08 à 1030| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026914| NDA:471415685| uh : 212| tymvt : EN| lit :LI416| post_trt :NC4| date_mvt :2014-04-08 à 1547| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026923| NDA:471415693| uh : 461| tymvt : EN| lit :LI210| post_trt :OR2| date_mvt :2014-04-08 à 1557| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026928| NDA:471415653| uh : 553| tymvt : EN| lit :LI104| post_trt :NE1| date_mvt :2014-04-08 à 1210| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014026930| NDA:471415661| uh : 401| tymvt : EN| lit :BNN01| post_trt :NEO| date_mvt :2014-04-08 à 1259| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014027015| NDA:471415683| uh : 345| tymvt : EN| lit :LI201| post_trt :CA2| date_mvt :2014-04-08 à 1623| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4014027079| NDA:471415710| uh : 421| tymvt : EN| lit :L108| post_trt :RMT| date_mvt :2014-04-08 à 1807| Patient inseré ||Convocation inseré,  sans programation
+NIP :4195001060| NDA:471411069| uh : 488| tymvt : EN| lit :L211| post_trt :OT2| date_mvt :2014-04-02 à 1320| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4195001171| NDA:471465701| uh : 141| tymvt : EN| lit :FI111| post_trt :MG1| date_mvt :2014-03-20 à 1011| Patient déja present , |end_date maj 13/04/2014 07:55:06 | end_date definis par utilisateur est inférier de now() , donc,maj 08/04/2014 07:55
+NIP :4195003715| NDA:471465760| uh : 141| tymvt : EN| lit :FE011| post_trt :MG0| date_mvt :2014-03-28 à 1051| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4195006219| NDA:471465816| uh : 141| tymvt : EN| lit :FI103| post_trt :MG1| date_mvt :2014-04-04 à 1014| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4498000873| NDA:471465846| uh : 272| tymvt : EN| lit :CH018| post_trt :PS0| date_mvt :2014-04-07 à 1643| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4701000601| NDA:471465719| uh : 131| tymvt : EN| lit :FE12B| post_trt :MG0| date_mvt :2014-03-24 à 1005| Patient déja present , |end_date maj 13/04/2014 07:55:06
+NIP :4701003948| NDA:471465850| uh : 273| tymvt : EN| lit :MO112| post_trt :PS1| date_mvt :2014-04-07 à 1851| Patient déja present , |end_date maj 13/04/2014 07:55:06
+
+Nombre séjours traité : 615
+Nombre patient insere : 10
+Nombre maj : 619
+Nombre lit absent | pat non insere : 0
+NOmbre pat non insere faute de place : 0
+Nombre pat dejà present agt_loc : 0
+Nombre date de sortie forcé pour insertion : 0
+
+Fin a 08-04-2014 19:55:06

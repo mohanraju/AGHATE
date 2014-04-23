@@ -1,0 +1,57 @@
+	body{
+		font-size:0.8em;
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		margin:0px;
+		padding:0px;
+	}
+	img{
+		border:0px;
+	}
+	thead td{
+		font-weight:bold;
+		color:#000;
+		background-color:#E2EBED;
+	}
+	td{
+		padding:2px;
+	}
+	table{
+		border:1px solid #000;
+		border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;		
+	}
+	h1{
+		font-size:1.3em;
+		margin-bottom:0px;
+	}
+	table,h1,p,#ads{
+		margin-left:10px;
+	}
+	#ads{
+		margin-top:20px;
+	}
+	
+	/* These classes are used by the script as rollover effect for table 1 and 2 */
+	
+	.tableRollOverEffect1{
+		background-color:#FFEFD5;
+		color:#FFF;
+	}
+
+	.tableRowClickEffect1{
+		background-color:#FFEFD5;
+		color:#FFF;
+	}
+ .Tableau{
+     margin-left:auto;
+    margin-right:auto;
+ }
+div{
+width:100%;
+text-align:center;
+color:Red;
+padding-left:25px;
+float:left; 
+
+}
