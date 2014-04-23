@@ -36,7 +36,7 @@ for($i=0; $i < $nb_rec;$i++)
 	
 	//prepare Tableau	
 	$ret_vals[] = array(
-		'value' => utf8_encode($lib),
+		'value' => $lib,
         'id'    => $id
     	);  
 }
