@@ -98,6 +98,8 @@ $liste = array();
 if ((authGetUserLevel(getUserName(),-1,'area') >= 5) or (authGetUserLevel(getUserName(),-1,'user') == 1))
 $liste[] = 'admin_user.php';
 if(authGetUserLevel(getUserName(),-1,'area') >= 5)
+$liste[] = 'admin_gestion_user.php';
+if(authGetUserLevel(getUserName(),-1,'area') >= 5)
 $liste[] = 'admin_right_admin.php';
 if(authGetUserLevel(getUserName(),-1,'area') >= 4)
 $liste[] = 'admin_right.php' ;
