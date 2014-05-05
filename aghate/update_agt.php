@@ -22,8 +22,7 @@ include "./commun/include/ClassFileHandle.php";
 include "./commun/include/ClassAghate.php";
 include "./commun/include/CommonFonctions.php";
 include "config/config_".$site.".php";
-echo '<script type="text/javascript" src="./commun/js/jquery-1.10.2.js"></script>';
-echo '<script type="text/javascript" src="./commun/js/functions.js"></script>';
+ 
 
 $debut = time();
 echo "<pre>";
@@ -37,13 +36,52 @@ $Gilda= new Gilda($ConnexionStringGILDA);
 $FileHandle= new FileHandle();
 echo "<hr> Syncronisation gilda <hr>";
 
+/*=======================================================================
+ * Etape 1 
+ * Mettre a jour les annulations reconstrure les sejours 
+ * ======================================================================
+*/
+$Aghate->AddTrace("\n ####  Procedure MAJ annulations ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
+//recupares les annulation de GILDA.MVT avec le typaj D et date misea jour=$date
+$sql="SELECT dos.noip,mvt.NODA as NDA,MVT.NOUF,MVT.TYMVAD,MVT.DAMVAD,MVT.HHMVAD,MVT.TYMAJ,MVT.DADEMJ,MVT.NOIDMV
+		FROM mvt,dos
+		WHERE  dos.noda=mvt.noda 
+		AND DADEMJ between sysdate-1 and sysdate+1
+		AND tymaj='D' order by mvt.NODA";
 
-/*#####################################################################
- * Traitement des sorties SH du Gilda.MVT
- * met a jour les dates de fin (SH)
- * Ferme les séjours 
- * ecrire la tableau dans un fichier 
- * #####################################################################
+$res=$Gilda->OraSelect($sql);
+//print_r($res); 
+ 
+$nbr_resume=count($res);
+$last_nda="";
+
+for($i=0; $i < $nbr_resume ;$i++)
+{
+	if($last_nda != $res[$i]['NDA'])
+	{
+		$Aghate->AddTrace("\nNDA:".$res[$i]['NDA']." séjour reconstruite");		
+		// mise a jour TEMPS NDA dans forms/coadge a faire ici
+		$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
+		$url= str_replace(strrchr($url,"/"),"/",$url);			
+		$result = file_get_contents($url."commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda=".$res[$i]['NDA']."&table_loc=agt_loc");
+		//echo "<br>".$result;
+	}	
+	$last_nda = $res[$i]['NDA'];
+	
+	//mettre a jour dans loc_bacup les annularions
+	$sql_update="UPDATE loc_backup set
+				tymaj='D' WHERE NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"; 
+	$NbrRecords=$Aghate->update($sql_update);	
+}
+
+
+
+ 
+/*=======================================================================
+ * Etape 2 
+ * 	mettre a jour les SH du Gilda.MVT
+ * 
+ * ======================================================================
 */
  // Initialise le fichier de trace
 $Aghate->init_trace_file ();
@@ -51,7 +89,7 @@ $Aghate->init_trace_file ();
 $DonneeGilda= $Gilda->GetSortiesParDate(date("d/m/Y"));
 $FileHandle->Array2csv($DonneeGilda,"./trace/Sorie.".date("Y.m.d.h.i.s").".csv");
 
-$Aghate->AddTrace("\n #### totoooProcedure mettre a jour DateFin ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
+$Aghate->AddTrace("\n ####  Procedure mettre a jour DateFin ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
 
 // les cols retourne :NOIP	NDA	DTSOR	HHSOR	UHSOR	TYSEJ	NOIDMV
 $cpt_maj = 0;
@@ -59,6 +97,8 @@ $cpt_wait = 0;
 
 $TableName = 'agt_loc';
 $nb_i = count($DonneeGilda);
+$Aghate->BackupSortie($DonneeGilda);
+
 for($i=0;$i< $nb_i;$i++)
 {
 	$noip 		= $DonneeGilda[$i]['NOIP'];
@@ -83,13 +123,16 @@ for($i=0;$i< $nb_i;$i++)
 }
 
 $Aghate->AddTrace("\n ==> Fin à ". date('d/m/Y H:i:s'). " \n"); 		
- 
-/*#####################################################################
+
+ /*
+ * ======================================================================
+ * Etape 3
+ * insert/maj LOC
  * Syncronisation with Gilda LOC+MVT vers Agt.loc
  * paramètre : $GildaLoc : tableau contenant les données de LOC
  * Insère les patients de LOC vers Aghate (agt_loc)
  * Met a jour les dates d'entrées et/ou les uh/nda
- * #####################################################################
+ * ======================================================================
 */ 
 
 // Récupère les données de LOC  dans un tableau
@@ -154,9 +197,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 			$service_info 	= $Aghate->GetServiceInfoByNoPost($nopost);
 
 	}	
-	
-	$date_loc 		= $GildaLoc[$i]['DTENT']; //de MVT
-	$heure_loc 		= $GildaLoc[$i]['HHENT']; //de MVT
+
 	$type_mv 		= $GildaLoc[$i]['TYMVT'];
 	$uh				= $GildaLoc[$i]['UH'];
 	
@@ -170,8 +211,8 @@ for ($i=0; $i< $nb_loc ;$i++)
 	$service_id = $service_info['id']; 
 	if (strlen($service_id) < 1)
 	{
-		echo "ERR => Post Traitement =>".$GildaLoc[$i]['NOPOST']." NOLIT =>".$GildaLoc[$i]['NOLIT']." Service introuvable , maj jour structure neccessaire" ;
-		echo "================================================================================================================================================================================================<>>>>>>>>>>>>>>>>>>>><<<Traitement abandonné!!" ;				
+		$Aghate->AddTrace("ERR => Post Traitement =>".$GildaLoc[$i]['NOPOST']." NOLIT =>".$GildaLoc[$i]['NOLIT']." Service introuvable , maj jour structure neccessaire" );
+		$Alerts[]="ERR => Post Traitement =>".$GildaLoc[$i]['NOPOST']." NOLIT =>".$GildaLoc[$i]['NOLIT']." Service introuvable , maj jour structure neccessaire" ;
 		continue;
 	}
 				
@@ -182,7 +223,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 	if (strlen($room_info['id']) < 1 )
 	{
 		$Aghate->AddTrace("ERR => Le lit ".$room_name." n'existe pas dans la table agt_room, maj de la structure necessaire\n");
-		echo "================================================================================================================================================================================================<>>>>>>>>>>>>>>>>>>>><<<Traitement abandonné!!" ;				
+		$Alerts[]="ERR => Le lit ".$room_name." n'existe pas dans la table agt_room, maj de la structure necessaire\n";
 		continue;
 	}
 	
@@ -423,8 +464,12 @@ for ($i=0; $i< $nb_loc ;$i++)
 		//-------------------------------------------
 		if($nda != $sejours[$s]['nda']){
 			$Aghate->updateNda($sejours[$s]['id'],$GildaLoc[$i]);
+
 			// mise a jour TEMPS NDA dans forms/coadge a faire ici
-			echo "<script>res=LanceAjax('../commun/ajax/ajax_forms_update_temp_nda.php','temp_nda=".$sejours[$s]['nda']."&nda=".$GildaLoc[$i]['NDA']."&uh=".$GildaLoc[$i]['UH']."');</script>";			
+			$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
+			$url= str_replace(strrchr($url,"/"),"/",$url);			
+			$res = file_get_contents($url."../commun/ajax/ajax_forms_update_temp_nda.php?temp_nda=".$sejours[$s]['nda']."&nda=".$GildaLoc[$i]['NDA']."&uh=".$GildaLoc[$i]['UH']);
+
 		}		
 
 		//--------------------------------------------------------------------------------------------
@@ -504,15 +549,19 @@ $Aghate->AddTrace("\n\nNombre séjours traité : ".$nb_loc);
 $Aghate->AddTrace("\nNombre patient insere : ".$cpt_in);
 $Aghate->AddTrace("\nNombre maj : ".$cpt_updt."\n");
 $Aghate->AddTrace("Nombre lit absent | pat non insere : ".$nb_lit_abs."\n");
-$Aghate->AddTrace("NOmbre pat non insere faute de place : ".$no_place."\n");
+$Aghate->AddTrace("Nombre pat non insere faute de place : ".$no_place."\n");
 $Aghate->AddTrace("Nombre pat dejà present agt_loc : ".$pat_pres."\n");
 $Aghate->AddTrace("Nombre date de sortie forcé pour insertion : ".$cpt_forced."\n");
-
  
 
 //Ecrit dans le fichier de trace
 $Aghate->write_trace_file();
 
+// affiche les alerts
+foreach ($Alerts as $val)
+{
+	echo "<br>".$val;
+}
 $fin = time();
 
 $result = $fin - $debut;

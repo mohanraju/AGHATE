@@ -1,7 +1,19 @@
-<?php include "./commun/include/admin.inc.php";
+<?php 
+include "./commun/include/admin.inc.php";
+include("./config/config.php");
+require("./commun/include/ClassMysql.php");
+include("./commun/include/ClassHtml.php");
+include("./commun/include/CommonFonctions.php");
+include("./commun/include/ClassAghate.php");
+include("./config/config_".$site.".php");
+//include("../commun/layout/header.php");
+
+$com=new CommonFunctions(true);
+$Html=new Html();
+$mysql = new MySQL();
+
 $grr_script_name = "protocoles.php";
 $back = '';
-if (isset($_SERVER['HTTP_REFERER'])) $back = htmlspecialchars($_SERVER['HTTP_REFERER']);
 
 if ((authGetUserLevel(getUserName(),-1) < 3) and (authGetUserLevel(getUserName(),-1,'user') !=  1))
 {
@@ -11,17 +23,58 @@ if ((authGetUserLevel(getUserName(),-1) < 3) and (authGetUserLevel(getUserName()
     showAccessDenied($day, $month, $year, $area,$back);
     exit();
 }
-# print the page header
-print_header("","","","",$type="with_session", $page="admin");
-// Affichage de la colonne de gauche
-include "admin_col_gauche.php";
+ 
+	if($t_mode=="MODIF")$tmode="MODIF";
+	if(!isset($tmode))$tmode="AFFICHE";
+	
+	if (isset($Enregistrer)){
+		// vérifications des données
+		$err="";
+		if (strlen($protocole)==0)$err.=" Protocole  Vide !<br />";
+		if (strlen($duree) < 2) 	$err.=" Durée invalide... <br />";
+		//if (!isdate($date_deb))		$err.=" Date Debut invalid " .$date_deb ."<br />";
+		//if (!isdate($date_fin))  $err.=" Date Fin invalide " .$date_fin ."<br />";
+		if (strlen($err) > 0 ){
+		}else{
 
-
-if (isset($_SERVER['HTTP_REFERER'])) $back = htmlspecialchars($_SERVER['HTTP_REFERER']);
-$urm=$_SESSION["URM"];
-
-
-?>
+    		if($tmode=="Nouveau"){			
+				$date_deb=$com->Normal2Mysql($date_deb);
+				$date_fin=$com->Normal2Mysql($date_fin);
+				$sql="INSERT INTO agt_protocole (protocole,duree,service,date_deb,date_fin,actif) values('$protocole','$duree','$urm','$date_deb','$date_fin','$actif')";
+				//echo $sql;							
+				$mysql->insert($sql);
+				header("Location: protocoles.php");
+			}
+	    	if($tmode=="MODIF"){			
+				$date_deb=$com->Normal2Mysql($date_deb);
+				$date_fin=$com->Normal2Mysql($date_fin);
+				$sql="UPDATE agt_protocole set 
+				protocole  ='$protocole',
+				duree      ='$duree',
+				date_deb   = '$date_deb',
+				date_fin 	 ='$date_fin',
+				actif	   ='$actif'
+				where id_protocole ='$id_protocole'";
+				$mysql->update($sql);
+				header("Location: protocoles.php");
+			}
+			$tmode="AFFICHE";
+		}
+	}else{
+		// on initialise les données
+		$protocole="";
+		$duree="";	
+		$date_deb="2000-01-01";	
+		$y=date("Y")+1;
+		$date_fin="31/01/".$y;
+	}
+		
+	# print the page header
+	print_header("","","","",$type="with_session", $page="admin");
+	// Affichage de la colonne de gauche
+	include "admin_col_gauche.php";
+	?>
+	
 	<script type="text/JavaScript">
 		function CheckSelection(retval){
 		  	if (retval==""){
@@ -38,59 +91,14 @@ $urm=$_SESSION["URM"];
 			}
 			
 		}
-</script>		
-<link rel="stylesheet" href="./commun/style/tbl_scroll.css" type="text/css">
-<div align="center" style="overflow:auto;width:600px;" ><h2>Protocoles</h2></div>
-<?php 
-	if($t_mode=="MODIF")$tmode="MODIF";
-	if(!isset($tmode))$tmode="AFFICHE";
-	
-	include ("./commun/include/CustomSql.inc.php");
-	$db = New CustomSQL($DBName);
-	if (isset($Enregistrer)){
-		// vérifications des données
-		$err="";
-		if (strlen($protocole)==0)$err.=" Protocole  Vide !<br />";
-		if (strlen($duree) < 2) 	$err.=" Durée invalide... <br />";
-		if (!isdate($date_deb))		$err.=" Dete Debut invalid " .$date_deb ."<br />";
-		if (!isdate($date_fin))  $err.=" Date Fin invalid " .$date_fin ."<br />";
-		if (strlen($err) > 0 ){
-		}else{
-
-    		if($tmode=="Nouveau"){			
-				$date_deb=Date_Normal2MySQL($date_deb);
-				$date_fin=Date_Normal2MySQL($date_fin);
-				$sql="INSERT INTO agt_protocole (protocole,duree,service,date_deb,date_fin) values('$protocole','$duree','$urm','$date_deb','$date_fin')";
-				//echo $sql;							
-				$db->insert($sql);
-			}
-	    	if($tmode=="MODIF"){			
-				$date_deb=Date_Normal2MySQL($date_deb);
-				$date_fin=Date_Normal2MySQL($date_fin);
-				$sql="UPDATE agt_protocole set 
-				protocole  ='$protocole',
-				duree      ='$duree',
-				date_deb   = '$date_deb',
-				date_fin 	 ='$date_fin'
-				where id_protocole ='$id_protocole'";
-				$db->insert($sql);
-			}
-			$tmode="AFFICHE";
-		}
-	}else{
-		// on initialise les données
-		$protocole="";
-		$duree="";	
-		$date_deb="2000-01-01";	
-		$y=date("Y")+1;
-		$date_fin="31/01/".$y;
-	}
-		
-	?>
-
+	</script>		
+	<script type="text/javascript" src="./commun/js/fonctions_aghate.js"></script>
+	<link rel="stylesheet" href="./commun/style/tbl_scroll.css" type="text/css">
+	<div align="center" style="overflow:auto;width:600px;" ><h2>Protocoles</h2></div>
 	<?php 
-	$sql="select * from agt_protocole where service='$urm' order by protocole";
-	$results=$db->select($sql);
+
+	$sql="select * from agt_protocole where service='$urm' order by actif desc, protocole";
+	$results=$mysql->select($sql);
 	?>
 		<form name="form1" >	 
 		 <table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFCC">
@@ -99,7 +107,9 @@ $urm=$_SESSION["URM"];
 		                 <th width='180'>Protocole</th>
 		                 <th width='50'>Dur&eacute;e (minutes)</th>
 		                 <th width='75'>D&eacute;but de validit&eacute;</th>
-	                  <th width='95'>Fin de validit&eacute;</th>
+	               		 <th width='95'>Fin de validit&eacute;</th>
+	           			 <th width='50'>Validité</th>
+	           			 <th width='150'>Supprimer</th>
 		             </tr>              
 		          </thead>             
 		</table>          
@@ -110,18 +120,20 @@ $urm=$_SESSION["URM"];
 								$id_prt=$results[$i]['id_protocole'];	
 								$protocole=$results[$i]['protocole'];
 								$duree=$results[$i]['duree'];						
-								$date_deb=Date_Mysql2Normal($results[$i]['date_deb']);
-								$date_fin=Date_Mysql2Normal($results[$i]['date_fin']);
+								$date_deb=$com->Mysql2Normal($results[$i]['date_deb']);
+								$date_fin=$com->Mysql2Normal($results[$i]['date_fin']);
+								$actif=$results[$i]['actif'];
 								$retval="'".$id_prt."|".str_replace("'","\'",$protocole)."|".$duree."|".$date_deb."|".$date_fin."'";
 								Print "<tr class=\"initial\" 
 											onMouseOver=\"this.className='highlight'\" 
-											onMouseOut=\"this.className='normal'\" 
-											onClick=\"CheckSelection(".$retval.")\">";
+											onMouseOut=\"this.className='normal'\" >";
 							
-								Print "<td width='200'>".$results[$i]['protocole']. " </td>";
-								Print "<td width='50'>".$results[$i]['duree']. " </td>";
-								Print "<td width='75'>".$date_deb. " </td>";
-								Print "<td width='75'>".$date_fin. " </td>";
+								Print "<td width='180' onClick=\"CheckSelection(".$retval.")\">".$results[$i]['protocole']. " </td>";
+								Print "<td width='75' onClick=\"CheckSelection(".$retval.")\">".$results[$i]['duree']. " </td>";
+								Print "<td width='75' onClick=\"CheckSelection(".$retval.")\">".$date_deb. " </td>";
+								Print "<td width='95' onClick=\"CheckSelection(".$retval.")\">".$date_fin. " </td>";
+								Print "<td width='50' onClick=\"CheckSelection(".$retval.")\">".$actif."</td>";
+								Print "<td width='150'> <input id=\"Supprimer_".$i."\" type=\"button\" onclick=\"DelProtocole(".$id_prt.");\" value=\"Supprimer\" name=\"Supprimer\"> </td>";
 								Print "</tr>";
 								
 		
@@ -141,14 +153,14 @@ $urm=$_SESSION["URM"];
 	        <input type="submit" name="tmode" value="Nouveau">		
     <?php }?>    
 	        <input type="hidden" name="t_mode" id="t_mode" value="">			        
-			  <input type="hidden" name="id_protocole"  id="id_protocole"  value="<?php print $id_protocole?>">			 
+			<input type="hidden" name="id_protocole"  id="id_protocole"  value="<?php print $id_protocole?>">			 
 	        <input type="hidden" name="cur_mode"  id="cur_mode"  value="<?php print $tmode?>">	        	        			  
 		</div>	
  	
 <?php 
 
 	//---------------------------------------------------
-	// affiche l'affichage l'eerur
+	// affiche l'affichage l'erreur
 	//---------------------------------------------------
 		if (strlen($err) > 0 ){
 		echo "<br /><div color='red'>$err</div><br />";
@@ -170,6 +182,13 @@ $urm=$_SESSION["URM"];
 	      <td colspan="2" height="30" align="center"> <font size ="2" color="#000099"><b> 
 	        Nouveau Protocole</b></font></td>
 	  </tr>
+	  <tr>
+	  		<td width="45%" align="right" class="textnoraml"> Actif</td>
+	  		<td width="60%"><select name="actif" id="actif">
+            	<option value="o">oui</option>
+           		 <option value="n">non</option>
+         	 </select></td>
+       </tr>
 	    <tr> 
 	      <td width="45%" align="right" class="textnoraml">Protocole</td>
 	      <td width="60%"> 
@@ -215,13 +234,14 @@ $urm=$_SESSION["URM"];
 	//---------------------------------------------------
 	 if($tmode=="MODIF"){
 			$sql="select * from agt_protocole where id_protocole='$id_protocole'";
-			$results=$db->select($sql);
+			$results=$mysql->select($sql);
 			
+			$actif=$results[0]['actif'];	
 			$id_protocole=$results[0]['id_protocole'];	
 			$protocole=$results[0]['protocole'];
 			$duree=$results[0]['duree'];						
-			$date_deb=Date_Mysql2Normal($results[0]['date_deb']);
-			$date_fin=Date_Mysql2Normal($results[0]['date_fin']);
+			$date_deb=$com->Mysql2Normal($results[0]['date_deb']);
+			$date_fin=$com->Mysql2Normal($results[0]['date_fin']);
 
 
 ?>	
@@ -232,7 +252,14 @@ $urm=$_SESSION["URM"];
 	    <tr>
 	      <td colspan="2" height="30" align="center"> <font size ="2" color="#000099"><b> 
 	        Modifier un  Protocole</b></font></td>
-	  </tr>
+	    </tr>
+	    <tr>
+	  		<td width="45%" align="right" class="textnoraml"> Actif</td>
+	  		<td width="60%"><select name="actif" id="actif">
+            	<option value="o">oui</option>
+           		<option value="n">non</option>
+         	</select></td>
+       </tr>
 	    <tr> 
 	      <td width="45%" align="right" class="textnoraml">Protocole</td>
 	      <td width="60%"> 

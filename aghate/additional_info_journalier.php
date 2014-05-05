@@ -1,10 +1,13 @@
 <?php 
 include "./commun/include/admin.inc.php";
 include "./commun/include/CustomMysql.php";
-
-
+include "./commun/include/CommonFonctions.php";
 $db = New CustomMySQL($DBName);
-$area=$service_id;
+
+if(strlen($service_id)>0)
+	$area=$service_id;
+else
+	$area=$area;
 $grr_script_name = "additional_info_journalier.php";
 if (empty($area)) $area = get_default_area();
 

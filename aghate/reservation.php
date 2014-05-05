@@ -703,7 +703,7 @@ $(document).ready(function() {
 	//calcul duree
 	//--------------------------------------------------------------------
 	$("#protocole").blur(function(){
-		res=LanceAjax("./commun/ajax/ajax_aghate_get_duree_protocole.php","id_protocole="+$("#id_protocole").val()+"&date_deb="+$("#start_time").val());
+		res=LanceAjax("./commun/ajax/ajax_aghate_get_duree_protocole.php","id_protocole="+$("#id_protocole").val()+"&date_deb="+$("#start_time").val()+"&date_fin="+$("#end_time").val()+"&duree="+$("#duree").val());
 		res = res.split("|");
 		$("#end_time").val(res[1]);
 		$("#duree").val(res[0]);
@@ -724,6 +724,14 @@ $(document).ready(function() {
 			$("#duree").val(res);
         }
 	});
+
+	$("#start_time,#end_time").blur(function(){	
+		
+		res=LanceAjax("./commun/ajax/ajax_aghate_get_duree.php","date_fin="+$("#end_time").val()+"&date_deb="+$("#start_time").val());
+		$("#duree").val(res);
+		//diff = CalculDate($("#start_time").val(),$("#end_time").val());
+		//$("#duree").val(diff.day+" jours "+diff.hour+" heures");
+	});
 		
 	$("#end_time").datetimepicker({
 		fixFocusIE: false,	
@@ -738,10 +746,12 @@ $(document).ready(function() {
 	//--------------------------------------------------------------------
 	$("#MAJ").click(function(){
 		var nda = $("#MAJ").attr( "NDA" );		
-//alert("./commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda="+nda+"&table_loc="+$("#table_loc").val());		
+		//alert("./commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda="+nda+"&table_loc="+$("#table_loc").val());		
 		res=LanceAjax("./commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php","nda="+nda+"&table_loc="+$("#table_loc").val());
 		res = res.split("|");
-		alert(res[0]);
+
+		//refresh windows
+		window.location.href=window.location.href;
  	});
 
 

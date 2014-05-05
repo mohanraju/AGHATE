@@ -63,6 +63,14 @@ $TableLoc='agt_loc';
 $TableLoc='agt_loc';
 $Aghate->NomTableLoc=$TableLoc;
 
+// Vérification du numéro de version et renvoi automatique vers la page de mise à jour
+$versionRC_old=$Aghate->GetRevision();
+if ($version_grr_RC !=  $versionRC_old) {
+	echo "<br>Le dernier revision doit être applique avant de proceder<br>Votre revision : ".  $versionRC_old."<br>Revision actuel : ".$version_grr_RC ;		
+    echo "<h1>Veuillez prceder la mise a jour en cliquent <a href='./admin_maj.php'>ICI</a> </h1>";
+    exit();
+}
+
 if($ServiceInfo[0]['enable_periods']=='y')
 {
  
@@ -258,7 +266,7 @@ $(function() {
 		showOn: "button",
 		buttonImage: "./commun/images/calendar.gif",
  		buttonImageOnly: true,		
-		numberOfMonths: 3, 
+		numberOfMonths: 1, 
 		showCurrentAtPos: 1,
 		changeMonth: true,
 		changeYear: true,	
@@ -1016,7 +1024,7 @@ else
                          if ($id_derniere_ligne_du_bloc != $id) $cellules[$id]['value'] = $cellules[$id]['value']-1;
                        }
                     }
-                    
+                   
                     tdcell_rowspan ($c, $cellules[$id]['value']);
                     if ($cellules[$id]['retard'])
 						echo "<div id='retard' style='height:".$cellules[$id]['retard']."px;'>"; //  1 row = 18px
@@ -1085,7 +1093,7 @@ else
 						echo '<a href='.$link.' title='.$AreaName["service_name"].'><= UH :'.$prev_link["uh"].' </a>';
 					}
 					else echo '';
-					$overload_data=$Aghate->GetOverloadData($id);
+						$overload_data=$Aghate->GetOverloadData($id);
                 		$duree= $duration .' '. $dur_units;
 						$date_rdv	=date("d/m/Y-H:i",$date_rdv);
 						$link="convocation_options.php?pat=$descr&uh=$uh&med=$med&duree=$duree&date_nais=$p_ddn&date_entree=$date_rdv&area=$area";

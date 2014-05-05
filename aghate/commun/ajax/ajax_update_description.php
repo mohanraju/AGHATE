@@ -25,4 +25,5 @@ require("../../commun/include/CommonFonctions.php");
 $Aghate=new Aghate();
 $Aghate->NomTableLoc=$table_loc;
 $res=$Aghate->UpdateDescriptionFromId ($FormUpdate_VID,$FormUpdate_Var,$FormUpdate_Val,$FormUpdate_Libelle);
+
 ?>

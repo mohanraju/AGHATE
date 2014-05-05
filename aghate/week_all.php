@@ -224,7 +224,7 @@ $(function() {
 		showOn: "button",
 		buttonImage: "./commun/images/calendar.gif",
 		buttonImageOnly: true,		
-		numberOfMonths: 3, 
+		numberOfMonths: 1, 
 		showCurrentAtPos: 1,
 		changeMonth: true,
 		changeYear: true,	

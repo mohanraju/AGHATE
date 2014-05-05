@@ -301,6 +301,9 @@ function DelReservation(TableLoc,TypeResa)
 		window.close();
 	}
 }
+//=============================================================================================
+//function updateConsult(id_prog)
+//=============================================================================================
 function updateConsult(id_prog)
 {
 	var pagevariables="id_prog="+id_prog;
@@ -313,6 +316,54 @@ function updateConsult(id_prog)
 	window.location.reload(false);
 }
 
+
+//=============================================================================================
+//function DelMedecin(val)
+//=============================================================================================
+function DelMedecin(val)
+{
+	msg=" Voulez-vous vraiment désactiver ce médecin ?";
+	if (confirm(msg)==false) 
+		return false;
+	else
+	{
+		res=LanceAjax("./commun/ajax/ajax_aghate_del_medecin.php","id="+val);	
+		result=res.split('|');
+		if (result[1] != "OK"){
+			//alert(result[2]);
+			return false;
+		}
+		
+		msg=" Médecin supprimé ";
+		if (confirm(msg)==false) {return false;}
+			else {window.location.reload();}
+		
+	}
+}
+
+
+//=============================================================================================
+//function DelProtocole(val)
+//=============================================================================================
+function DelProtocole(val)
+{
+	msg=" Voulez-vous vraiment désactiver ce protocole ?";
+	if (confirm(msg)==false) 
+		return false;
+	else
+	{
+		res=LanceAjax("./commun/ajax/ajax_aghate_del_protocole.php","id="+val);	
+		result=res.split('|');
+		if (result[1] != "OK"){
+			//alert(result[2]);
+			return false;
+		}
+		
+		msg=" Protocole supprimé ";
+		if (confirm(msg)==false){ return false;}
+			else{window.location.reload();}
+	}
+}
 //##############################################################
 // DIV PAT RECH
 //##############################################################

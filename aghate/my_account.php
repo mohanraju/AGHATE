@@ -354,8 +354,13 @@ function ModifierListe(code_item)
 }
 </SCRIPT>
 <?php
-    #Liste des domaines
-$sql = "SELECT id, service_name, access FROM agt_service ORDER BY  order_display, service_name";
+    #Liste des services
+$sql = "SELECT id, service_name, access FROM agt_service WHERE etat='n' ORDER BY  order_display, service_name";
+// liste des services autorisés pour l'utilisateur equivalent de  getallserviceauthorized
+/*$sql = "SELECT id, service_name, access FROM agt_service,agt_j_user_area
+		WHERE login = ".$_SESSION['login']."
+		AND agt_j_user_area.id_area=agt_service.id
+		ORDER BY  order_display, service_name";*/
 $resultat = grr_sql_query($sql);
 echo "<h4>".get_vocab("explain_default_area_and_room")."</h4>";
 echo "<table><tr><td>".get_vocab("default_area")."</td><td>";

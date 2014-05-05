@@ -73,10 +73,10 @@ class Aghate  extends MySQL
 		
 		if ($droit=="administrateur")
 		{
-			return $this->select("select * from agt_service WHERE 1=1 $Cond order by service_name");
+			return $this->select("select * from agt_service WHERE 1=1 $Cond and etat ='n' order by service_name ");
 		}else
 		{
-			$sql="select agt_service.* from agt_service,agt_j_user_area where agt_service.id=agt_j_user_area.id_area and login='".$user."' $Cond order by service_name";
+			$sql="select agt_service.* from agt_service,agt_j_user_area where agt_service.id=agt_j_user_area.id_area and login='".$user."' $Cond and etat ='n' order by service_name";
 			return $this->select($sql);
 		}
 	}	
@@ -2230,8 +2230,8 @@ class Aghate  extends MySQL
 		$this->CheckTableInit();
 		
 		$date_tmp=date("dmY",$DateDeb);
-		$DateDeb_ = $DateDeb - (60*60); // changer 24 pour moins d'heures ou plus
-		$DateFin_ = $DateDeb + (60*60);	
+		$DateDeb_ = $DateDeb - (60*60*24*2); // -2 jous 
+		$DateFin_ = $DateDeb + (60*60*24*2); // +2 jous 	
 		
 		$sql_chk="SELECT ".$this->NomTableLoc.".*,service_id,agt_room.room_name
 					FROM  ".$this->NomTableLoc.",agt_room
@@ -2623,7 +2623,8 @@ class Aghate  extends MySQL
 	==========================================================================
 	*/
 	function GetColorCodeByDescription($Description){
-		$sql = "SELECT * FROM agt_type_area WHERE type_name='".$Description."'";
+		$sql = "SELECT * FROM agt_type_area WHERE ='".$Description."'";
+
 		$res = $this->select($sql);
 		return $res[0]['type_letter'];
 	}
@@ -2741,6 +2742,7 @@ class Aghate  extends MySQL
 	*/
 	function  BackupLoc($DataLoc)
 	{
+		// NOTE ::create sql doit etre tranfere vers une page commun
 		//$sql create table if not exist
 		//---------------------------------
 		$Sql_create="CREATE TABLE IF NOT EXISTS loc_backup (
@@ -2769,6 +2771,7 @@ class Aghate  extends MySQL
 			) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ";
 		
 		$this->create($Sql_create);
+
 		$nbr_rows=count($DataLoc);
 		for($t=0; $t < $nbr_rows; $t++)
 		{
@@ -2797,7 +2800,69 @@ class Aghate  extends MySQL
 				
 
 	}			
-		
+	/*
+	==========================================================================
+	function BackupSortie($Tableau)
+	==========================================================================
+	*/
+	function  BackupSortie($GildaSortie)
+	{
+		// NOTE ::create sql doit etre tranfere vers une page commun
+
+		// modif le 28/04/14 par mohan add TYMAJ dans loc_backup
+		$res=$this->select("SELECT column_name FROM information_schema.columns WHERE table_name = 'loc_backup' AND column_name LIKE 'tymaj'");
+		// Si il existe
+		if (count($res) < 1)
+		{
+			$this->create("ALTER TABLE  `loc_backup` ADD  `TYMAJ` VARCHAR( 1 ) NOT NULL DEFAULT  'A'");
+		}
+
+		// boucle sur les resultat
+		$nbr_rows=count($GildaSortie);
+		for($t=0; $t < $nbr_rows; $t++)
+		{
+			// prepare les variables
+			$vars="
+			    NOIP	= '".$GildaSortie[$t]['NOIP']."' AND 
+			    NDA		= '".$GildaSortie[$t]['NODA']."' AND 
+			    DTENT	= '".$GildaSortie[$t]['DTSOR']."' AND   
+			    HHENT	= '".$GildaSortie[$t]['HHSOR']."' AND  
+			    UH		= '".$GildaSortie[$t]['UHENT']."' AND 
+			    TYSEJ	= '".$GildaSortie[$t]['TYSEJ']."' AND  
+			    TYMVT	= '".$GildaSortie[$t]['TYMVT']."' AND  
+			    NOIDMV	= '".$GildaSortie[$t]['NOIDMV']."'"  ;
+			// check present dans la table
+			$nbr_res=$this->select("select * from loc_backup where ".$vars);
+			if (count($nbr_res)< 1 ) 
+			{
+				// insert les variables
+				$sql_insert="INSERT INTO loc_backup set " .str_replace('AND',', ',$vars);
+				$this->insert($sql_insert);			
+
+			}
+		}
+	}			
+	
+	/*
+	==========================================================================
+	function GetVersion()
+	==========================================================================
+	*/
+	function  GetVersion()
+	{
+		$res=$this->select("SELECT VALUE FROM agt_config where NAME='version'");
+		return $res[0]['VALUE'];
+	}	
+	/*
+	==========================================================================
+	function GetRevision()
+	==========================================================================
+	*/
+	function  GetRevision()
+	{
+		$res=$this->select("SELECT VALUE FROM agt_config where NAME='versionRC'");
+		return $res[0]['VALUE'];
+	}	
 }
 //fin Objet	
 ?>
