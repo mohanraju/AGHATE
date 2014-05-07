@@ -38,7 +38,7 @@ echo "<hr> Syncronisation gilda <hr>";
 
 /*=======================================================================
  * Etape 1 
- * Mettre a jour les annulations reconstrure les sejours 
+ * Mettre a jour les annulations adns la journée  reconstrure les sejours 
  * ======================================================================
 */
 $Aghate->AddTrace("\n ####  Procedure MAJ annulations ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
@@ -49,33 +49,38 @@ $sql="SELECT dos.noip,mvt.NODA as NDA,MVT.NOUF,MVT.TYMVAD,MVT.DAMVAD,MVT.HHMVAD,
 		AND DADEMJ between sysdate-1 and sysdate+1
 		AND tymaj='D' order by mvt.NODA";
 
-$res=$Gilda->OraSelect($sql);
+$AnnlGilda=$Gilda->OraSelect($sql);
 //print_r($res); 
  
-$nbr_resume=count($res);
+$nbr_resume=count($AnnlGilda);
 $last_nda="";
 
 for($i=0; $i < $nbr_resume ;$i++)
 {
-	if($last_nda != $res[$i]['NDA'])
+	// verify e sejour est deja reconstrute
+	$Chk=$Aghate->select("select * from  loc_backup  WHERE tymaj='D' AND NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"); 
+	if (count($Chk) > 0)
 	{
-		$Aghate->AddTrace("\nNDA:".$res[$i]['NDA']." séjour reconstruite");		
-		// mise a jour TEMPS NDA dans forms/coadge a faire ici
-		$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
-		$url= str_replace(strrchr($url,"/"),"/",$url);			
-		$result = file_get_contents($url."commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda=".$res[$i]['NDA']."&table_loc=agt_loc");
-		//echo "<br>".$result;
-	}	
-	$last_nda = $res[$i]['NDA'];
-	
-	//mettre a jour dans loc_bacup les annularions
-	$sql_update="UPDATE loc_backup set
-				tymaj='D' WHERE NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"; 
-	$NbrRecords=$Aghate->update($sql_update);	
+		if($last_nda != $res[$i]['NDA'])
+		{
+			$Aghate->AddTrace("\nNDA:".$res[$i]['NDA']." séjour reconstruite");		
+			// url
+			$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
+			$url= str_replace(strrchr($url,"/"),"/",$url);			
+			$result = file_get_contents($url."commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda=".$AnnlGilda[$i]['NDA']."&table_loc=agt_loc");
+			//echo "<br>".$result;
+		}	
+		$last_nda = $res[$i]['NDA'];
+		
+		//mettre a jour dans loc_bacup les annularions
+		$sql_update="UPDATE loc_backup set
+					tymaj='D' WHERE NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"; 
+		$NbrRecords=$Aghate->update($sql_update);	
+	}
 }
 
 
-
+ 
  
 /*=======================================================================
  * Etape 2 

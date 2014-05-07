@@ -65,8 +65,9 @@ $Aghate->NomTableLoc=$TableLoc;
 
 // Vérification du numéro de version et renvoi automatique vers la page de mise à jour
 $versionRC_old=$Aghate->GetRevision();
+ 
 if ($version_grr_RC !=  $versionRC_old) {
-	echo "<br>Le dernier revision doit être applique avant de proceder<br>Votre revision : ".  $versionRC_old."<br>Revision actuel : ".$version_grr_RC ;		
+	echo "<br>Le dernier revision doit etre applique avant de proceder<br>Votre revision : ".  $versionRC_old."<br>Revision actuel : ".$version_grr_RC ;		
     echo "<h1>Veuillez prceder la mise a jour en cliquent <a href='./admin_maj.php'>ICI</a> </h1>";
     exit();
 }

@@ -46,7 +46,7 @@ class Aghate  extends MySQL
 	
 	/*######################################################################################
 			SERVICE INFO
-	 *######################################################################################*/
+	*######################################################################################*/
 	
 	/*
 	========================================================================
@@ -1976,12 +1976,18 @@ class Aghate  extends MySQL
 				foreach($DataPhp as $key=>$val){
 					if ($key==$MotCleDescCompl)
 						$DescCompl=$val['Valeur']."<br>";
-					else
+					else{
 						if(is_array($DataPhp))
 						{
-							$retval.="\n  ".$val['Libelle']." :".$val['Valeur']."<br>";	
+							//echo "<br>'".$val['Valeur']."'".strlen($val['Valeur']);
+							if((strlen($val['Valeur']) >0) && ($val['Valeur']!= "99"))
+								$retval.="\n  ".$val['Libelle']." :".$val['Valeur']."<br>";	
 						}else
-						$retval.="\n  ".$key." :".$val."<br>";	
+						{
+							if((strlen($val['Valeur']) >0) || ($val['Valeur']!=99))
+								$retval.="\n  ".$key." :".$val."<br>";	
+						}
+					}
 				}
 			}
 		}
@@ -2863,6 +2869,19 @@ class Aghate  extends MySQL
 		$res=$this->select("SELECT VALUE FROM agt_config where NAME='versionRC'");
 		return $res[0]['VALUE'];
 	}	
+	
+	/*
+	==========================================================================
+	function GetLocBackupParNda($Nda)
+	==========================================================================
+	*/
+	function GetLocBackupParNda($Nda)
+	{
+		$sql =	"SELECT * from loc_backup where NDA='".$Nda."' AND TYMAJ='A' order by DTENT,HHENT,DDLOPT,HHLOPT";
+		return $this->select($sql);
+	}	
+		
+	
 }
 //fin Objet	
 ?>

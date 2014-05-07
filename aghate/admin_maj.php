@@ -45,18 +45,25 @@ if($_SESSION['login']!='ADMIN' )
 
 // get $RevisionBase
 $RevisionBase=$Aghate->GetRevision();
+if (strlen($RevisionBase) < 0)
+{
+	$RevisionBase="20140101";
+	$Aghate->delete("delete from agt_config where NAME='versionRC' or NAME='version'");
+	$Aghate->insert("insert into agt_config set NAME='versionRC',VALUE='$RevisionBase'");
+	$Aghate->insert("insert into agt_config set NAME='version',VALUE='2.0'");
+}
 
 include("admin_maj_20140303.php");
 include("admin_maj_20140420.php");
 include("admin_maj_20140422.php");
 include("admin_maj_20140428.php");
-//$RevisionBase="000";
-//include("admin_maj_20140430.php");
 
 //mettre a jour la dernière version
 echo "<br>1".$version_grr_RC;
 $sql="update agt_config set VALUE='".$version_grr_RC."' where NAME='versionRC'";
 $Aghate->update($sql);
 ?>
+<br>
+<a href="./">re-login Aghate en cliquent ICI</a>
 </body>
 </html>

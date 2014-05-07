@@ -17,6 +17,7 @@ if ($RevisionBase < $Revision)
 	//intranetmsi
 	$forms_sql[] =" ALTER TABLE `forms` CHANGE `idref` `idref` VARCHAR( 11 ) NOT NULL ";
 	$forms_sql[] =" ALTER TABLE `forms` CHANGE `nda` `idref` VARCHAR( 9 ) NOT NULL ";
+	$forms_sql[] =" ALTER TABLE `forms` CHANGE `nip` `nip` VARCHAR( 10 ) NULL 	";
 	$forms_sql[] =" ALTER TABLE `forms` CHANGE `type` `type` VARCHAR( 25 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL ";
 
 	include "../config/config.php";

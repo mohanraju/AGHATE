@@ -47,7 +47,7 @@ if ($RevisionBase < $Revision)
 	$Aghate->update($sql);
 	echo "  ... succès";
 }else{
-	echo "  ... déja faites.";
+	echo "  ... déja fait.";
 	}
 
 ?>

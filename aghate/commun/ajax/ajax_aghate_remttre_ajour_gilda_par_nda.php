@@ -26,8 +26,7 @@ $TableName = 'agt_loc';
 $sej_aghate	=	$Aghate->GetSejoursParNda($nda);
 
 // loc backup 
-$sql =	"SELECT * from loc_backup where NDA='".$nda."' AND TYMAJ='A' order by DTENT,HHENT,DDLOPT,HHLOPT";
-$sej_backup=$Aghate->select($sql);
+$sej_backup=$Aghate->GetLocBackupParNda($nad);
 
 //print_r($sej_aghate);
 //print_r($sej_backup);

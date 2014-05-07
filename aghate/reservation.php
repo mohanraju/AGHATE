@@ -446,7 +446,7 @@ if($ResService[0]['enable_periods']=='y')
 					<span class="add-on"><b>Specialité  </b>&nbsp;&nbsp;</span>
 						<?php 
 							print $Html->InputHiddenBox("type",$type );
-							Print $Html->InputTextBox("specialite",$specialite,20,10,"readonly=readonly");
+							Print $Html->InputTextBox("specialite",$specialite,40,40,"readonly=readonly");
 						?>
 					</div>	
 					</td>
@@ -749,7 +749,7 @@ $(document).ready(function() {
 		//alert("./commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda="+nda+"&table_loc="+$("#table_loc").val());		
 		res=LanceAjax("./commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php","nda="+nda+"&table_loc="+$("#table_loc").val());
 		res = res.split("|");
-
+		alert(res[1]);
 		//refresh windows
 		window.location.href=window.location.href;
  	});
