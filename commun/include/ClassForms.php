@@ -316,30 +316,29 @@ class Forms extends MySQL
 
 
 	function GetForm($NDA){
-			$sql="select distinct val from forms where var='form' and nda='$NDA' order by val asc";
+			$sql="select distinct val from forms where var='form' and nda=$NDA order by val asc";
 			$Res=$this->select($sql);
 			return $Res;
 	}
 	
 	/*
 	* ==========================================================================
-	* function updateNda($LocID,$Nda,$Uh)
+	* function updateNda($LocID,$InfoMVT[])
 	* function permet de mise a jour les TempNDA vers le vrai NDA  et les UH
 	* Ex :T00000001 => 761401224
 	* ==========================================================================
 	*/
-	function updateNda($TempNDA,$Nda,$Uh)
+	function updateNda($TempNDA,$InfoMVT)
 	{
 		//update forms
-		$sql_updt="UPDATE forms set idref='".$Nda."', ref='GILDA', nda='".$Nda."', uhexec='".$Uh."', uhdem='".$Uh."' WHERE nda='".$TempNDA."'";
+		$sql_updt="UPDATE forms set idref='".$InfoMVT['NDA']."', ref='GILDA', nda='".$InfoMVT['NDA']."', uhexec='".$InfoMVT['UH']."', uhdem='".$InfoMVT['UH']."' WHERE nda='".$TempNDA."'";
 		$res = $this->update($sql_updt);	
 		echo $sql_updt;
 		//update codage
-		$sql_updt="UPDATE codage_msi set nda='".$Nda."', uhexec='".$Uh."', uhdem='".$Uh."' WHERE nda='".$TempNDA."'";
+		$sql_updt="UPDATE codage_msi set nda='".$InfoMVT['NDA']."', uhexec='".$InfoMVT['UH']."', uhdem='".$InfoMVT['UH']."' WHERE nda='".$TempNDA."'";
 		$res = $this->update($sql_updt);	
 		echo '<br>'.$sql_updt;
 	}
-
 	
 	function GetIdFromVID($vid)
 	{
@@ -362,7 +361,12 @@ class Forms extends MySQL
 		return $vid[0]['VID'];
 	}
 
-	function PrintForm($DP,$VID,$NDA,$UH,$mode_ref=""){
+	function PrintForm($DP,$result,$mode_ref=""){
+		foreach ($result as $key => $value) {
+			//echo "clé : ".$key." valeur : ".$value;
+			${$key} = $value;
+		}
+		$VID=$id;$nip=$noip;$NDA=$nda;$UH=$uh;$uhexec=$uh;$uhdem=$uh;
 		$FichierRef=$DP['MULTI_FORMS'];
 		$nom = $_SERVER["SCRIPT_NAME"]; 
 		$script_name=explode('/',$nom);
@@ -429,7 +433,8 @@ class Forms extends MySQL
 		
 		if(strlen($mode_ref) > 0  )
 		{
-			echo "<a href='".$script_name."?mode=Modifier&id=$VID&filename=".$_GET['filename']."&table_loc=".$table_loc."'>Modifier le formulaire</a><br/>";
+			echo "<a href='#' onclick=\"$('#mode').val('Modif');\" id='other'>Modifier le formulaire</a><br/>";
+			//echo "<a href='".$script_name."?mode=Modifier&id=$VID&filename=".$_GET['filename']."&table_loc=".$table_loc."'>Modifier le formulaire</a><br/>";
 			if(strlen($FichierRef)>0)
 			{
 				
@@ -449,9 +454,9 @@ class Forms extends MySQL
 		}
 		else
 		{		
-				echo "<a href='#' onclick=\"returnView('".$_GET['filename']."','".$VID."','".$table_loc."','".$script_name."')\">Retour au mode vue</a>";
-				if(strlen($FichierRef)>0)
-					echo "<br><br>Liste des formulaires  ".$this->Html->InputSelectFromArray($FormsList,'file',$_GET['filename'],"onchange='getLink(".$VID.",this,\"".$table_loc."\")'").'<br>';
+			echo "<a href='#' onclick=\"$('#mode').val('');\" id='other'>Retour au mode vue</a>";
+			if(strlen($FichierRef)>0)
+				echo "<br><br>Liste des formulaires  ".$this->Html->InputSelectFromArray($FormsList,'file',$_GET['filename'],"onchange='getLink(".$VID.",this,\"".$table_loc."\")'").'<br>';
 		}
 		
 		$n=0;
@@ -509,6 +514,7 @@ class Forms extends MySQL
 
 			if($DetailsForm[$DP['TYPE']][$i]!='titre1'&&$DetailsForm[$DP['TYPE']][$i]!='titre2'&&$DetailsForm[$DP['TYPE']][$i]!='titre3'){
 				if($DetailsForm[$DP['COMMENTAIRES']][$i]=='hidden'){
+					if(strlen($value)<1) $value=${$name};
 						echo '<input type="hidden" name="'.$name.'" id="'.$name.'" subtype="'.$subtype.'" value="'.$value.'">';
 				}
 

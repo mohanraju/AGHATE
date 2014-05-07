@@ -17,9 +17,9 @@ $(document).ready(function() {
 		var TypeAttribut= $(this).attr('TypeAttribut');
 		
 		var uhexec=$('#uhexec').val();
-		//var nda=$('#nda').val();
+		var nda=$('#nda').val();
 		//if(!nda || !uhexec) nda=$('#VID').val();
-		var nda=$('#NDA').val();
+		//var nda=$('#NDA').val();
 	
 
 		var entry=$('#entry').val();	
@@ -36,7 +36,7 @@ $(document).ready(function() {
 	 		res=LanceAjax("../commun/ajax/Ajax_updateFormsFields.php",pagevariables);
 		}else{
 			res=LanceAjax("../commun/ajax/Ajax_updateForms.php",pagevariables);
-			document.getElementById(idF).setAttribute("name",res);
+			//document.getElementById(idF).setAttribute("name",res);
 			if(CompData=='o'){
 				res=LanceAjax("../aghate/commun/ajax/ajax_update_description.php",pagevariables+"&table_loc="+$('#table_loc').val());
 			}

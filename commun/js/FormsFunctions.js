@@ -39,16 +39,16 @@ function updateForms(VID,Name,Id,Val,Source,ABV,libelle,compdata) {
 		if($("#"+Name).attr('type')=='textarea')valeur=$('#'+Name).val();
 		//valeur=$('#'+Name).val();
 		if(ColorActuel=="OptionNotSelected")valeur='99';
-		var pagevariables="FormUpdate_VID="+VID+"&FormUpdate_REF="+$('#ref').val()+"&FormUpdate_Var="+Name+"&FormUpdate_Libelle="+libelle+"&FormUpdate_Val="+valeur+"&Source="+Source+"&FormUpdate_ABV="+ABV+"&FormUpdate_Nip="+$('#nip').val()+"&FormUpdate_Nda="+$('#nda').val()+"&FormUpdate_Nohjo="+$('#nohjo').val()+"&FormUpdate_Entry="+$('#entry').val()+"&FormUpdate_End="+$('#end').val()+"&FormUpdate_Uhdem="+$('#uhdem').val()+"&FormUpdate_Uhexec="+$('#uhexec').val()+"&FormUpdate_Libuhdem="+$('#service_name').val()+"&FormUpdate_Type="+$('#type_codage').val()+"&FormUpdate_Username="+$('#Username').val()+"&FormUpdate_SaveDateTime="+$('#SaveDateTime').val()	;
+		var pagevariables="FormUpdate_VID="+VID+"&FormUpdate_REF="+$('#ref').val()+"&FormUpdate_Var="+Name+"&FormUpdate_Libelle="+libelle+"&FormUpdate_Val="+valeur+"&Source="+Source+"&FormUpdate_ABV="+ABV+"&FormUpdate_Nip="+$('#nip').val()+"&FormUpdate_Nda="+$('#nda').val()+"&FormUpdate_Nohjo="+$('#nohjo').val()+"&FormUpdate_Entry="+$('#entry').val()+"&FormUpdate_End="+$('#end').val()+"&FormUpdate_Uhdem="+$('#uhdem').val()+"&FormUpdate_Uhexec="+$('#uhexec').val()+"&FormUpdate_Libuhdem="+$('#service_name').val()+"&FormUpdate_TypeAttribut="+$('#type_codage').val()+"&FormUpdate_Username="+$('#Username').val()+"&FormUpdate_SaveDateTime="+$('#SaveDateTime').val()	;
 		//alert(pagevariables);
 	 		res=LanceAjax("../commun/ajax/Ajax_updateForms.php",pagevariables);
-	 		//alert(res);
+	 		
 	 		if(compdata=='o'){
 				res=LanceAjax("../aghate/commun/ajax/ajax_update_description.php",pagevariables+"&table_loc="+$("#table_loc").val());
 			}
 			var InitForm=$('#InitForm').val();	
 			if(InitForm=='No'){
-				var pagevariables2="FormUpdate_VID="+VID+"&FormUpdate_REF="+$('#ref').val()+"&FormUpdate_Var=Form&FormUpdate_Libelle=Nom du formulaire&FormUpdate_Val="+$('#InitForm').attr('name')+"&Source=forms&FormUpdate_ABV="+ABV+"&FormUpdate_Nip="+$('#nip').val()+"&FormUpdate_Nda="+$('#nda').val()+"&FormUpdate_Nohjo="+$('#nohjo').val()+"&FormUpdate_Entry="+$('#entry').val()+"&FormUpdate_End="+$('#end').val()+"&FormUpdate_Uhdem="+$('#uhdem').val()+"&FormUpdate_Uhexec="+$('#uhexec').val()+"&FormUpdate_Libuhdem="+$('#service_name').val()+"&FormUpdate_Type="+$('#type_codage').val()+"&FormUpdate_Username="+$('#Username').val()+"&FormUpdate_SaveDateTime="+$('#SaveDateTime').val()	;
+				var pagevariables2="FormUpdate_VID="+VID+"&FormUpdate_REF="+$('#ref').val()+"&FormUpdate_Var=Form&FormUpdate_Libelle=Nom du formulaire&FormUpdate_Val="+$('#InitForm').attr('name')+"&Source=forms&FormUpdate_ABV="+ABV+"&FormUpdate_Nip="+$('#nip').val()+"&FormUpdate_Nda="+$('#nda').val()+"&FormUpdate_Nohjo="+$('#nohjo').val()+"&FormUpdate_Entry="+$('#entry').val()+"&FormUpdate_End="+$('#end').val()+"&FormUpdate_Uhdem="+$('#uhdem').val()+"&FormUpdate_Uhexec="+$('#uhexec').val()+"&FormUpdate_Libuhdem="+$('#service_name').val()+"&FormUpdate_TypeAttribut="+$('#type_codage').val()+"&FormUpdate_Username="+$('#Username').val()+"&FormUpdate_SaveDateTime="+$('#SaveDateTime').val()	;
 				res2=LanceAjax("../commun/ajax/Ajax_updateForms.php",pagevariables2);
 				$("#InitForm").val("Yes");
 			}
@@ -134,6 +134,9 @@ function returnView(file,id,TableLoc,script_name){
  
 $(document).ready(function() {	
 	
+	$( "#other" ).click(function() {
+		$( "#resa" ).submit();
+	});
    
  	//----------------------------------------
 	// on blur sur champ recherche affiche les patients 

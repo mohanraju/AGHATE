@@ -2,22 +2,22 @@
 
 Class MySQL  
 {
-	var $Status;
-	var $Erreur="";  
-	Var $CONN;
-	function MySQL()
-	{     
-		global $DBHost,$DBUser,$DBPassword,$DBName;	   	
-		if ($conn=mysql_connect($DBHost,$DBUser,$DBPassword)){
-			mysql_select_db($DBName,$conn) or die("Mysql::Erruer selection base: $DBName .<br>".mysql_error($conn)); 
-			$this->CONN = $conn;
-			return true;
-		}else{
-		echo "Mysql::Impossible de connecter le base, veuillez vérifier config.php ";
-		exit;
-		return false;
-		}
-	}
+		var $Status;
+	   var $Erreur="";  
+	   Var $CONN;
+	   function MySQL()
+	   {     
+    		global $DBHost,$DBUser,$DBPassword,$DBName;	   	
+		    if ($conn=mysql_connect($DBHost,$DBUser,$DBPassword)){
+			  	mysql_select_db($DBName,$conn) or die("Mysql::Erruer selection base: $DBName .<br>".mysql_error($conn)); 
+			  	$this->CONN = $conn;
+		      return true;
+	   		}else{
+	   	 		echo "Mysql::Impossible de connecter le base, veuillez vérifier config.php ";
+	   	 		exit;
+	   	 		return false;
+	   		}
+	   }
 	   
 	   function select($sql="")
 	   {

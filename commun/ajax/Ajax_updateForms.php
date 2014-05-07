@@ -23,8 +23,8 @@ if (strlen($_GET['FormUpdate_VID']) >0){
 		$DetailSource['UPDATE']=str_replace($key,$value,$DetailSource['UPDATE']);
 		$DetailSource['INACTIVE']=str_replace($key,$value,$DetailSource['INACTIVE']);
 	}
-	$DetailSource['UPDATE']=str_replace('undefined',"''",$DetailSource['UPDATE']);
-	$DetailSource['INACTIVE']=str_replace('undefined',"''",$DetailSource['INACTIVE']);
+	$DetailSource['UPDATE']=str_replace('undefined','',$DetailSource['UPDATE']);
+	$DetailSource['INACTIVE']=str_replace('undefined','',$DetailSource['INACTIVE']);
 	//echo $DetailSource['UPDATE'];
 
 	$res=$db->update($DetailSource['INACTIVE']);

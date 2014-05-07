@@ -292,25 +292,22 @@ Class Html extends MySQL
 			return $retval;
 	}
 		
-	function InputChoice($Name,$Values,$default,$vertical=false,$VID,$SOURCE,$ABV)	{
+	function InputChoice($Name,$Values,$default,$vertical=false,$VID,$Source,$Abv,$Libelle,$compdata)	{
+			$Libelle=addslashes($Libelle);
 			if($vertical)
 				$NewLine="<br>";
 				
-
 			 	for($i=0;$i < count($Values) ;$i++)
 			 	{
 			 		if ($default==$Values[$i])$class="OptionSelected";
 			 		else $class="OptionNotSelected";	
 			 		$retval	.="<a style='vertical-align:bottom;'	href ='#?'
-									onclick=\"SetColorInput('".$Name."','".$i."');updateForms('$VID','$Name','$i','$Values[$i]','$SOURCE','$ABV')\"
+									onclick=\"SetColorInput('".$Name."','".$i."');updateForms('$VID','$Name','$i','$Values[$i]','$Source','$Abv','$Libelle','$compdata')\"
 									class=\"". $class."\"
 									id='LBL_".$Name.$i."' 
 									cval='".$Values[$i]."'>".$Values[$i]."</a>	&nbsp;&nbsp;";
-							 		
-			
 				}
-				
-				//hidden variable pour stocker le value selected
+							//hidden variable pour stocker le value selected
 				if(strlen($default) <  1)
 					$default='99';
 					
@@ -323,10 +320,9 @@ Class Html extends MySQL
 	//	function  InputCompletSimple Par Thierry
 	//=================================================
 	function InputCompletSimple($VariableName,$Source,$default,$defaultCode,$table,$COND1,$COND2,$ajax,$TypeAttribut,$compdata,$id='',$autres='')	{
-			if($id=='') $id=$VariableName;
 			$source="'../commun/ajax/".$ajax.".php?tb=".$table."&code=".$COND1."&lib=".$COND2."'";
 			$res="";
-			$res.="<input type=\"text\" DataSource=\"".$Source."\" CompData=\"".$compdata."\" name=\"$id\" id=\"$VariableName\" value=\"$default\" code=\"$defaultCode\" TypeAttribut=\"".$TypeAttribut."\" onfocus=\"$('#$VariableName').autocomplete({ 
+			$res.="<input type=\"text\" DataSource=\"".$Source."\" CompData=\"".$compdata."\" name=\"$VariableName\" id=\"$VariableName\" value=\"$default\" code=\"$defaultCode\" TypeAttribut=\"".$TypeAttribut."\" onfocus=\"$('#$VariableName').autocomplete({ 
 			source: $source,
 			minLength: 3, 
 			open: function(event, ui) {

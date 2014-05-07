@@ -404,6 +404,36 @@ function NombreJours($date1,$date2)
 		return $retval;
 	}
 	
+	/*
+	----------------------------------------------------------------------
+	function GetAbsoluteUrl($path,$level);
+	Retourne  URL complet en ajoutant le repertoire du level choisi
+	$level = 1 ; $path = /commun/rest/rest_aghate_get_resa_info_from_id.php
+	----------------------------------------------------------------------
+	*/
+	function GetAbsoluteUrl($path,$level){
+		$url='http://';
+		$tabloc=explode('/',$_SERVER['PHP_SELF']);$tabloc[0]=$_SERVER['HTTP_HOST'];
+		for($i=0;$i<($level+1);$i++){
+			$url.=$tabloc[$i].'/';
+		}
+		$url.=$path;
+		return $url;
+	}
+	
+	/*
+	----------------------------------------------------------------------
+	function GetRestUrl($source);
+	Retourne  URL complet en ajoutant les repertoires avant le fichier source
+	$source = rest_aghate_get_resa_info_from_id.php
+	----------------------------------------------------------------------
+	*/
+	function GetRestUrl($source){
+		$tabloc=explode('/',$_SERVER['PHP_SELF']);
+		$url='http://'.$_SERVER['HTTP_HOST'].'/'.$tabloc[1].'/commun/rest/'.$source;
+		return $url;
+	}
+	
 	
 }//end class			
 
