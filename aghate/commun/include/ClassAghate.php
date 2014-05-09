@@ -46,7 +46,7 @@ class Aghate  extends MySQL
 	
 	/*######################################################################################
 			SERVICE INFO
-	 *######################################################################################*/
+	*######################################################################################*/
 	
 	/*
 	========================================================================
@@ -56,7 +56,7 @@ class Aghate  extends MySQL
 	*/
 	function GetAllArea()
 	{
-		$sql = "select * from agt_service where etat='n' order by service_name ";
+		$sql = "select * from agt_service where   etat='n' order by service_name ";
 		$res = $this->select($sql);
 		return $res;
 	}
@@ -73,10 +73,10 @@ class Aghate  extends MySQL
 		
 		if ($droit=="administrateur")
 		{
-			return $this->select("select * from agt_service WHERE 1=1 $Cond AND etat = 'n' order by service_name");
+			return $this->select("select * from agt_service WHERE 1=1 $Cond and etat ='n' order by service_name ");
 		}else
 		{
-			$sql="select agt_service.* from agt_service WHERE 1=1 $Cond AND etat = 'n' order by service_name";
+			$sql="select agt_service.* from agt_service,agt_j_user_area where agt_service.id=agt_j_user_area.id_area and login='".$user."' $Cond and etat ='n' order by service_name";
 			return $this->select($sql);
 		}
 	}	
@@ -1976,12 +1976,18 @@ class Aghate  extends MySQL
 				foreach($DataPhp as $key=>$val){
 					if ($key==$MotCleDescCompl)
 						$DescCompl=$val['Valeur']."<br>";
-					else
+					else{
 						if(is_array($DataPhp))
 						{
-							$retval.="\n  ".$val['Libelle']." :".$val['Valeur']."<br>";	
+							//echo "<br>'".$val['Valeur']."'".strlen($val['Valeur']);
+							if((strlen($val['Valeur']) >0) && ($val['Valeur']!= "99"))
+								$retval.="\n  ".$val['Libelle']." :".$val['Valeur']."<br>";	
 						}else
-						$retval.="\n  ".$key." :".$val."<br>";	
+						{
+							if((strlen($val['Valeur']) >0) || ($val['Valeur']!=99))
+								$retval.="\n  ".$key." :".$val."<br>";	
+						}
+					}
 				}
 			}
 		}
@@ -2230,13 +2236,14 @@ class Aghate  extends MySQL
 		$this->CheckTableInit();
 		
 		$date_tmp=date("dmY",$DateDeb);
-		$DateDeb_ = $DateDeb - (60*60*24*2); // changer 24 pour moins d'heures ou plus
-		$DateFin_ = $DateDeb + (60*60*24*2);	
+		$DateDeb_ = $DateDeb - (60*60*24*2); // -2 jous 
+		$DateFin_ = $DateDeb + (60*60*24*2); // +2 jous 	
 		
 		$sql_chk="SELECT ".$this->NomTableLoc.".*,service_id,agt_room.room_name
 					FROM  ".$this->NomTableLoc.",agt_room
 					WHERE ".$this->NomTableLoc.".room_id=agt_room.id
 					AND statut_entry != 'SUPPRIMER' 
+					AND ds_source !='Gilda'
 					AND noip='$NIP' 
 					AND start_time=$DateDeb
 					AND agt_room.service_id='".$Service_id."'";
@@ -2251,10 +2258,11 @@ class Aghate  extends MySQL
 						WHERE ".$this->NomTableLoc.".room_id=agt_room.id
 						AND statut_entry != 'SUPPRIMER' 
 						AND noip='$NIP' 
-						AND ( (from_unixtime(start_time,'%d%m%Y')='".$date_tmp."' AND ds_source='Programme')
-											OR (start_time between $DateDeb_ AND $DateFin_   AND ds_source='Programme')
-									 )
-					AND agt_room.service_id='".$Service_id."'";		
+						AND ds_source !='Gilda'						
+						AND ( (from_unixtime(start_time,'%d%m%Y')='".$date_tmp."' )
+							  OR (start_time between $DateDeb_ AND $DateFin_  )
+							)
+					AND agt_room.service_id='".$Service_id."' ORDER BY start_time  ";		
 			$res=$this->select($sql_chk);						
 		echo "<br>Seconde requette to vérifie si le patient est programé, nbr pat programé trouvé :".count($res)."<br>";								
 		}	
@@ -2621,7 +2629,8 @@ class Aghate  extends MySQL
 	==========================================================================
 	*/
 	function GetColorCodeByDescription($Description){
-		$sql = "SELECT * FROM agt_type_area WHERE type_name='".$Description."'";
+		$sql = "SELECT * FROM agt_type_area WHERE type_name ='".$Description."'";
+
 		$res = $this->select($sql);
 		return $res[0]['type_letter'];
 	}
@@ -2739,6 +2748,7 @@ class Aghate  extends MySQL
 	*/
 	function  BackupLoc($DataLoc)
 	{
+		// NOTE ::create sql doit etre tranfere vers une page commun
 		//$sql create table if not exist
 		//---------------------------------
 		$Sql_create="CREATE TABLE IF NOT EXISTS loc_backup (
@@ -2767,6 +2777,7 @@ class Aghate  extends MySQL
 			) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ";
 		
 		$this->create($Sql_create);
+
 		$nbr_rows=count($DataLoc);
 		for($t=0; $t < $nbr_rows; $t++)
 		{
@@ -2795,7 +2806,82 @@ class Aghate  extends MySQL
 				
 
 	}			
+	/*
+	==========================================================================
+	function BackupSortie($Tableau)
+	==========================================================================
+	*/
+	function  BackupSortie($GildaSortie)
+	{
+		// NOTE ::create sql doit etre tranfere vers une page commun
+
+		// modif le 28/04/14 par mohan add TYMAJ dans loc_backup
+		$res=$this->select("SELECT column_name FROM information_schema.columns WHERE table_name = 'loc_backup' AND column_name LIKE 'tymaj'");
+		// Si il existe
+		if (count($res) < 1)
+		{
+			$this->create("ALTER TABLE  `loc_backup` ADD  `TYMAJ` VARCHAR( 1 ) NOT NULL DEFAULT  'A'");
+		}
+
+		// boucle sur les resultat
+		$nbr_rows=count($GildaSortie);
+		for($t=0; $t < $nbr_rows; $t++)
+		{
+			// prepare les variables
+			$vars="
+			    NOIP	= '".$GildaSortie[$t]['NOIP']."' AND 
+			    NDA		= '".$GildaSortie[$t]['NODA']."' AND 
+			    DTENT	= '".$GildaSortie[$t]['DTSOR']."' AND   
+			    HHENT	= '".$GildaSortie[$t]['HHSOR']."' AND  
+			    UH		= '".$GildaSortie[$t]['UHENT']."' AND 
+			    TYSEJ	= '".$GildaSortie[$t]['TYSEJ']."' AND  
+			    TYMVT	= '".$GildaSortie[$t]['TYMVT']."' AND  
+			    NOIDMV	= '".$GildaSortie[$t]['NOIDMV']."'"  ;
+			// check present dans la table
+			$nbr_res=$this->select("select * from loc_backup where ".$vars);
+			if (count($nbr_res)< 1 ) 
+			{
+				// insert les variables
+				$sql_insert="INSERT INTO loc_backup set " .str_replace('AND',', ',$vars);
+				$this->insert($sql_insert);			
+
+			}
+		}
+	}			
+	
+	/*
+	==========================================================================
+	function GetVersion()
+	==========================================================================
+	*/
+	function  GetVersion()
+	{
+		$res=$this->select("SELECT VALUE FROM agt_config where NAME='version'");
+		return $res[0]['VALUE'];
+	}	
+	/*
+	==========================================================================
+	function GetRevision()
+	==========================================================================
+	*/
+	function  GetRevision()
+	{
+		$res=$this->select("SELECT VALUE FROM agt_config where NAME='versionRC'");
+		return $res[0]['VALUE'];
+	}	
+	
+	/*
+	==========================================================================
+	function GetLocBackupParNda($Nda)
+	==========================================================================
+	*/
+	function GetLocBackupParNda($Nda)
+	{
+		$sql =	"SELECT * from loc_backup where NDA='".$Nda."' AND TYMAJ='A' order by DTENT,HHENT,DDLOPT,HHLOPT";
+		return $this->select($sql);
+	}	
 		
+	
 }
 //fin Objet	
 ?>
