@@ -19,13 +19,13 @@ Class Html extends MySQL
 	/*
 	===========================================================================================
 	Preparation des Liste pour multi choix (Radio /Select)
-	Les donnÃ©s sont a recupare de Mysql
+	Les donnés sont a recupare de Mysql
 	
 	===========================================================================================
 	*/	
 	function PrepareListe()
 	{
-		//recupare les listes dÃ©fini dans le base Mysql
+		//recupare les listes défini dans le base Mysql
   	$db1 = new MYSQL($DBName);		
 		$sql="SELECT grp from listes group by grp";
 		$res=$db1->select($sql);
@@ -44,7 +44,7 @@ Class Html extends MySQL
 				//echo "<br>			".$arr_val;
 			}	
 			if(strlen($arr_val) > 1)	{
-				$arr_val=substr($arr_val,0,strlen($arr_val)-1); // suprimmer le derniÃ¨re vircule
+				$arr_val=substr($arr_val,0,strlen($arr_val)-1); // suprimmer le dernière vircule
 				$$c_grp= explode("@",$arr_val);
 				$this->__Liste[$c_grp]= explode("@",$arr_val);
 			}
@@ -76,7 +76,7 @@ Class Html extends MySQL
 			
 	//=================================================
 	// function InputCheckbox par mohan
-	// default peut Ãªtre 1 ou  null
+	// default peut être 1 ou  null
 	//=================================================
 	function InputCheckbox($VariableName,$default,$lib="",$autres="")	{
 
@@ -103,6 +103,32 @@ Class Html extends MySQL
 		
 		return $res;
 	}
+
+	//=================================================
+	// function InputSelectFromArray par thierry
+	// input select v2
+	//================================================
+	
+	function InputSelectFromArray($List,$VariableName,$default,$autres='')	{
+		// gestion readonly
+		if($_SESSION["readonly"]=="true")
+			$cache="disabled";
+
+		// check taille 
+		if ($taille > 1)
+			$_taille="WIDTH='$taille' STYLE='width: ".$taille."px'";
+		
+	 	$res= "<select name='".$VariableName."' class=form ".$autres.">";
+	 	foreach($List as $i=>$val){
+	 		if ($default==$i)
+		 		$res.= "<option value='$i' selected>".$val."</option>";
+		 	else
+		 		$res.= "<option value='$i' >".$val."</option>";
+		}
+		$res.= "</select>";
+		return $res;
+	}
+	
 	/*	
 	//=================================================
 	// function InputSelect par mohan
@@ -189,7 +215,7 @@ Class Html extends MySQL
 				 	
 				}
 			}
-			//fermer le derniÃ¨re  opt group
+			//fermer le dernière  opt group
 			if($compteur > 0)
 				$res.="</optgroup>"; 
 	 		$res.= "</select>";
@@ -198,7 +224,7 @@ Class Html extends MySQL
 	
 	//=================================================
 	// function InputRadio par thierry
-	// default peut Ãªtre 1 ou  null
+	// default peut être 1 ou  null
 	//================================================
 	
 	function InputRadio($modelname1,$VariableName,$default,$events="",$vertical=false)	{
@@ -227,7 +253,7 @@ Class Html extends MySQL
 	
 	//=================================================
 	// function InputChoix Par Mohan
-	// ATTN si default  est vide 99 est assignÃ©e
+	// ATTN si default  est vide 99 est assignée
 	//===============================================
 	
 	function InputChoix($modelname,$VariableName,$default,$events="",$vertical=false)	{
@@ -294,10 +320,9 @@ Class Html extends MySQL
 	//	function  InputCompletSimple Par Thierry
 	//=================================================
 	function InputCompletSimple($VariableName,$Source,$default,$defaultCode,$table,$COND1,$COND2,$ajax,$TypeAttribut,$compdata,$id='',$autres='')	{
-			if($id=='') $id=$VariableName;
-			$source="'".$ajax."?tb=".$table."&code=".$COND1."&lib=".$COND2."'";
+			$source="'../commun/ajax/".$ajax.".php?tb=".$table."&code=".$COND1."&lib=".$COND2."'";
 			$res="";
-			$res.="<input type=\"text\" DataSource=\"".$Source."\" CompData=\"".$compdata."\" name=\"$id\" id=\"$VariableName\" value=\"$default\" code=\"$defaultCode\" TypeAttribut=\"".$TypeAttribut."\" onfocus=\"$('#$VariableName').autocomplete({ 
+			$res.="<input type=\"text\" DataSource=\"".$Source."\" CompData=\"".$compdata."\" name=\"$VariableName\" id=\"$VariableName\" value=\"$default\" code=\"$defaultCode\" TypeAttribut=\"".$TypeAttribut."\" onfocus=\"$('#$VariableName').autocomplete({ 
 			source: $source,
 			minLength: 3, 
 			open: function(event, ui) {
@@ -336,7 +361,8 @@ Class Html extends MySQL
 	//=================================================
 	function InputCompletMulti($VariableName,$Source,$default,$table,$COND1,$COND2,$ajax,$TypeAttribut,$Libelle,$Fields,$autres='')	{
 			if($id=='') $id=$VariableName;
-			$source="'".$ajax."?tb=".$table."&code=".$COND1."&lib=".$COND2."'";
+			$source="'../commun/ajax/".$ajax.".php?tb=".$table."&code=".$COND1."&lib=".$COND2."'";
+			
 			$res="<table id='$TypeAttribut' width='95%' border='0' cellspacing='0'>
 		    		<tr>
 							<td width='100%'>
@@ -360,8 +386,6 @@ Class Html extends MySQL
    		
 		 	var uhexec=$('#uhexec').val();
 			var nda=$('#nda').val();
-			//if(!nda || !uhexec) nda=$('#VID').val();
-			nda=$('#VID').val();
 			var TypeAttribut= $(this).attr('TypeAttribut');
 			var Fields= $(this).attr('Fields');
 			var entry=$('#entry').val();
@@ -370,11 +394,10 @@ Class Html extends MySQL
 			end=end.substr(6,4)+'-'+end.substr(3,2)+'-'+end.substr(0,2) ;
 			
 		
-		 	var pagevariables='FormUpdate_VID='+$('#VID').val()+'&FormUpdate_ID=$id&Source=$Source&FormUpdate_Nip='+$('#nip').val()+'&FormUpdate_Nda='+nda+'&FormUpdate_Nohjo='+$('#nohjo').val()+'&FormUpdate_Entry='+entry+'&FormUpdate_End='+end+'&FormUpdate_Uhdem='+$('#uhdem').val()+'&FormUpdate_Uhexec='+$('#uhexec').val()+'&FormUpdate_Libuhdem=&FormUpdate_Username='+$('#Username').val()+'&FormUpdate_SaveDateTime='+$('#SaveDateTime').val()+'&FormUpdate_Diag='+codes+'&FormUpdate_Libdiag='+lib+'&FormUpdate_TypeAttribut=$TypeAttribut';
+		 	var pagevariables='FormUpdate_VID='+$('#VID').val()+'&FormUpdate_ID=$id&FormUpdate_REF=AGHATE&FormUpdate_Var=$VariableName&Source=$Source&FormUpdate_Nip='+$('#nip').val()+'&FormUpdate_Nda='+nda+'&FormUpdate_Nohjo='+$('#nohjo').val()+'&FormUpdate_Entry='+entry+'&FormUpdate_End='+end+'&FormUpdate_Uhdem='+$('#uhdem').val()+'&FormUpdate_Uhexec='+$('#uhexec').val()+'&FormUpdate_Libuhdem=&FormUpdate_Username='+$('#Username').val()+'&FormUpdate_SaveDateTime='+$('#SaveDateTime').val()+'&FormUpdate_Val='+codes+'&FormUpdate_Libelle='+lib+'&FormUpdate_TypeAttribut=$TypeAttribut';
 			//alert(pagevariables);
 			var Create_LigneVariables='FormUpdate_VID='+$('#VID').val()+'&Source=$Source';
      		res=LanceAjax('../commun/ajax/Ajax_updateForms.php',pagevariables);
-     		alert(res);
      		var tbl = $('#$TypeAttribut');
      		var fieldsval = '';
      		//alert(tbl);
@@ -417,6 +440,7 @@ Class Html extends MySQL
 			return $res;
 	}
 
+
 /*//##############################################################
 	//       ADD ROWS TO DAS LIST
 	//##############################################################
@@ -450,6 +474,8 @@ Class Html extends MySQL
 				}
 		}
 	});*/
+		
+	 
 		
 }// fin class
 

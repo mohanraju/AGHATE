@@ -64,7 +64,7 @@ Class MySQL
 		exit;
 		}	
 
-		if ((!$results))
+		if ((!$results) or (empty($results)))
 		{ 
 		$Err ="Erreur :=>Executing SQL<br>". $sql."<br> ".var_dump($error)."\n";
 		$this->Trace .= $Err."\n";

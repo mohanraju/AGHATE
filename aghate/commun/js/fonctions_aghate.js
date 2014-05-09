@@ -265,7 +265,7 @@ function SavePage(TableLoc,TypeResa){
 	msg=" Voulez-vous enregistrer cette réservation ?";
 	if (confirm(msg)==false) 
 		return false;
-	//alert("./commun/ajax/ajax_aghate_save_"+TypeResa.toLowerCase()+".php?"+FormVariables+"&table_loc="+TableLoc);	
+alert("./commun/ajax/ajax_aghate_save_"+TypeResa.toLowerCase()+".php?"+FormVariables+"&table_loc="+TableLoc);			
 	res=LanceAjax("./commun/ajax/ajax_aghate_save_"+TypeResa.toLowerCase()+".php",FormVariables+"&table_loc="+TableLoc);	
 	result=res.split('|');
 	//alert(res);
@@ -301,7 +301,6 @@ function DelReservation(TableLoc,TypeResa)
 		window.close();
 	}
 }
-
 //=============================================================================================
 //function updateConsult(id_prog)
 //=============================================================================================
@@ -365,7 +364,6 @@ function DelProtocole(val)
 			else{window.location.reload();}
 	}
 }
-
 //##############################################################
 // DIV PAT RECH
 //##############################################################

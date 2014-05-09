@@ -14,6 +14,7 @@ foreach($aLines as $sLine) {
 		$DetailSource[$aCols[0]]=$aCols[1];
 	}
 }
+
 $db=new MySQL();
 if (strlen($_GET['FormUpdate_VID']) >0){
 	foreach($_GET as $key=>$value)
@@ -22,9 +23,10 @@ if (strlen($_GET['FormUpdate_VID']) >0){
 		$DetailSource['UPDATE']=str_replace($key,$value,$DetailSource['UPDATE']);
 		$DetailSource['INACTIVE']=str_replace($key,$value,$DetailSource['INACTIVE']);
 	}
-	$DetailSource['UPDATE']=str_replace('undefined',"''",$DetailSource['UPDATE']);
-	$DetailSource['INACTIVE']=str_replace('undefined',"''",$DetailSource['INACTIVE']);
-	
+	$DetailSource['UPDATE']=str_replace('undefined','',$DetailSource['UPDATE']);
+	$DetailSource['INACTIVE']=str_replace('undefined','',$DetailSource['INACTIVE']);
+	//echo $DetailSource['UPDATE'];
+
 	$res=$db->update($DetailSource['INACTIVE']);
 	
 	$res=$db->insert($DetailSource['UPDATE']);

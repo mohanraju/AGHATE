@@ -1,0 +1,34 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+ref	text		hidden	ref		
+nip	num		hidden	nip		
+nda	num		hidden	nda		
+nohjo	text		hidden	nohjo		
+entry	date		hidden	entry		
+end	date		hidden	end		
+uhdem	text		hidden	uhdem		
+uhexec	text		hidden	uhexec		
+Diagnostics	titre1				forms	
+Diagnostic d'entrée	InputCompletSimple	DP	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DP|TABLE=cim10spec|AJAX=ajax_autocomplete	dp	codagedp	o
+Observation	titre1				forms	
+Antécédents	longtext			atcd	forms	o
+Observation	longtext			observ	forms	o
+A faire	longtext			afaire	forms	o
+Codage	titre1				forms	
+Pathologies associées	InputCompletMulti	DAS	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DAS|TABLE=cim10spec|AJAX=ajax_autocomplete	das	codage	
+Exploration cardiologiques	titre1				forms	
+Exploration cardiologiques	cm	ECG		ecg	forms	
+Exploration cardiologiques	cm	holter ECG		holterECG	forms	
+Exploration cardiologiques	cm	ETT		ett	forms	
+Exploration cardiologiques	cm	ETO		eto	forms	
+Exploration cardiologiques	cm	echo effort/dobu		echo_dobu	forms	
+Examens complémentaires	titre1				forms	
+Autres explorations	cm	IRM cardiaque		IRMcoeur	forms	
+Autres explorations	cm	coroscanner		coroscanner	forms	
+Autres explorations	cm	scintigraphie		scintigraphie	forms	
+Autres explorations	cm	Scinti d'effort		ScEffort	forms	
+Autres explorations	cm	Echo Doppler des TAS		doppler_tsa	forms	
+Autres explorations	cm	Echo Doppler des mb inf		doppler_minf	forms	
+Autres explorations	cm	Echo doppler des artères rénales		DopplerArtRenales	forms	
+Autres explorations	cm	Scanner des surrénales		TDMsurrenales	forms	
+Autres explorations	cm	phlebographie		phlebo	forms	
+Autres explorations	cm	Const anesthésie		c_anes	forms	

@@ -167,7 +167,11 @@ for($i = 0; $i < count($Protocoles); $i++)
 	
 	function get_link(url) {
 		if(confirm("Voulez vous programmer ce jour ?")){
-			window.location.href = url;
+			window.opener.location.href = url;
+		  	if (window.opener.progressWindow){
+				window.opener.progressWindow.close()
+			}
+			window.close();
 		}else{
 		return false;
 	}
@@ -358,8 +362,8 @@ for($i = 0; $i < count($Protocoles); $i++)
 		}else{
 			$dt_affiche="&nbsp;";
 		}
-		$link="reservation.php?t=t&area=".$libre[$i]['area']."&room=".$libre[$i]['room']."&year=$_year&month=$_mon&day=$_day&page=day&table_loc=agt_loc&type_reservation=Programmation";  			
-    	$link="get_link('$link')";										
+		$link="edit_entry.php?area=".$libre[$i]['area']."&room=".$libre[$i]['room']."&period=$time_t_stripped&year=$_year&month=$_mon&day=$_day&page=day";  			
+    $link="get_link('$link')";										
 		$link_print="<a href=\"#\" onclick=\"".$link."\">".str_replace(":","H",$libre[$i]['AM'])."</a>";      
 		//$link_print="<a href=".$link.">".$libre[$i]['AM']."</a>";
 		// print only dispo jours					

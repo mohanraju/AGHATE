@@ -12,148 +12,155 @@
 
 include "../../resume_session.php";
 include "../../config/config.php";
-include "../../config/config_".$site.".php";
 include "../../commun/include/ClassMysql.php";
 include "../../commun/include/ClassAghate.php";
-include "../../commun/include/ClassGilda.php";
 include "../../commun/include/CommonFonctions.php";
 
 $mysql 		= new MySQL();
 $Aghate 	= new Aghate($table_loc);
-$Gilda		= new Gilda($ConnexionStringGILDA);
 $CommonFonctions = new CommonFunctions(true);
+$TableName = 'agt_loc';
 
 
-//-----------------------------------------------------------------------------
-// Session related functions
-//-----------------------------------------------------------------------------
-if (strlen($_SESSION['login']) < 1) {
-    echo "|ERR|Session expaired, veuillez reconnectez svp!";
-    exit;
-};
 
-//echo "<pre>";
 $sej_aghate	=	$Aghate->GetSejoursParNda($nda);
-$sej_gilda	=	$Gilda->GetSejourInfoParNda($nda);
-// print_r($sej_aghate);
-//print_r($sej_gilda);
- 
+
+// loc backup 
+$sej_backup=$Aghate->GetLocBackupParNda($nad);
+
+//print_r($sej_aghate);
+//print_r($sej_backup);
+
 $NbrAghate 	=count($sej_aghate);
-$NbrGilda	=count($sej_gilda);
-//=============================================================
-// boucle sur les sej GILDA mettre a jour fin_date
-//=============================================================
-for($g=0; $g < $NbrGilda; $g++)
+$NbrBackup	=count($sej_backup);
+
+//recupère les 	protocole et medecin avant de supprime
+$protocole	=	$sej_aghate[0]['protocole'];
+$medecin	=	$sej_aghate[0]['medecin'];
+$id_prog	=	$sej_aghate[0]['id_prog'];
+
+// supprime les sejour dans aghate avant d'inserer
+$Aghate->update("UPDATE agt_loc set statut_entry='SUPPRIMER' where nda='".$nda."'");
+
+// boucle sur les sej LOC backup pour re inserer  les jour
+for($g=0; $g < $NbrBackup; $g++)
 {
-	$EntGilda =$sej_gilda[$g]['NOUF'].$sej_gilda[$g]['DTMVAD']." ".$sej_gilda[$g]['HHMVAD'];
-	$SorGilda =$sej_gilda[$g+1]['DTMVAD']." ".$sej_gilda[$g+1]['HHMVAD'];
  
+	//les SH sont traité dans le boucle d'avant
+	if ($sej_backup[$g]['TYMVT']=='SH') 
+		continue;
+	
+	//get LIT et dt_entee	
+	if( (strlen(trim($sej_backup[$g]['NOLIT'])) < 1) ) {
+		$room_name 		= $Aghate->NomCouloir; 
+		$dt_ent 		= $sej_backup[$g]['DTENT']; //de MVT
+		$hh_ent 		= $sej_backup[$g]['HHENT']; //de MVT		
+		$service_info = $Aghate->GetServiceInfoByUh(trim($sej_backup[$g]['UH']));		
+	}
+	else
+	{
+		$room_name 		= $sej_backup[$g]['NOLIT'];
+		$dt_ent 		= $sej_backup[$g]['DDLOPT']; //de LOC
+		$hh_ent 		= $sej_backup[$g]['HHLOPT']; //de LOC		
+ 
+		//SI Neckar on localise par Nom du lit sinon par NoPoste
+ 	
+		if($site=='001')
+			$service_info = $Aghate->GetServiceInfoByRoomName(trim($sej_backup[$g]['NOLIT']));
+		else	
+			$service_info 	= $Aghate->GetServiceInfoByNoPost($nopost);
+			
+	}		
+	if(count($service_info)< 1)
+	{
+		echo "|$nda ,Lit:".$sej_backup[$g]['NOLIT']." intouvable dans la structure|"; 	
+		exit;
+	}
 
 	// prepare unix strt_time et unix end_time à partir de GILDA
-	$_time=str_replace(":","",$sej_gilda[$g]['HHMVAD']) ;		
-	$gilda_start_time	= $Aghate->MakeDate($sej_gilda[$g]['DTMVAD'],$_time);	
-	
-	// make gilda end_time s'exists
-	if(strlen($sej_gilda[$g+1]['DTMVAD']) > 1){
-		$_time=str_replace(":","",$sej_gilda[$g+1]['HHMVAD']) ;		
-		$gilda_end_time	= $Aghate->MakeDate($sej_gilda[$g+1]['DTMVAD'],$_time);	
-	}else{
-		continue;	
-	}
-	
-	echo "<br>   NDA:".$sej_gilda[$g]['NODA']." | UH: ".$sej_gilda[$g]['NOUF']." | DU :". $sej_gilda[$g]['DTMVAD']." ".$sej_gilda[$g]['HHMVAD']." AU ". $sej_gilda[$g]['DTMVAD']." ".$sej_gilda[$g]['HHMVAD'];
-	// boucle sur les sej AGHATE pour mettre a jour fin_date 
-	$Entry_trouve=false;
-	for($a=0; $a < $NbrAghate; $a++)
-	{
-		$EntAghate =$sej_aghate[$a]['uh'].date("d/m/Y H:i",$sej_aghate[$a]['start_time']);
-		$SorAghate =date("d/m/Y H:i",$sej_aghate[$a]['start_time']);
-		echo "<br>  =>".$EntGilda ."==".$EntAghate  ."&& ".  $SorGilda ."!= ".$SorAghate;
-
-		// UH+Start_time égal et edn_time is diffèrent, maj END_time
-		//-------------------------------------------------------------------
-		if(($EntGilda ==$EntAghate) && ($SorGilda != $SorAghate))
-		{
-			echo " || Mise a jour date_fin :".date('d/m/Y H:i',$gilda_end_time);
-			// check lit occupé par autre patient, donc envoi le NIP a exclure
-			$ChkPlaceLibre=$Aghate->IsPlaceLibre($sej_aghate[$a]['room_id'],$sej_aghate[$a]['start_time'],$gilda_end_time,$sej_aghate[$a]['noip']);
-
-			// Check place libre
-			if(count($ChkPlaceLibre) > 0)
-			{
-				// get coulior ID
-				$RoomInfo=$Aghate->GetRoomInfoByRoomId ($sej_aghate[$a]['room_id']);
-				$ServicePanierID=$Aghate->GetPanierIdByServiceId ($RoomInfo[0]['service_id']); 
-				
-				//deplace patient qui occupe le lit vers  couloir				
-				$sql = "UPDATE ".$table_loc." set room_id='".$ServicePanierID."' WHERE id='".$ChkPlaceLibre[0]['id']."'";
-				$Aghate->update($sql);
-				$Aghate->AddTrace(" |(cdn:A1) Remttre a jour par Gilda est deplacé ce patient ");
-				$msg_trace="Conflit 1-> Room->".$room_name." Patient -> ".$ChkPlaceLibre[0]['noip'];
-				//$Aghate->UpdateDescriptionFromId($ChkPlaceLibre[0]['id'],"TRACE_AUTOMATE",$msg_trace,"TRACE_AUTOMATE");					
-			} 
-			//update start_time pour ce patient
-			$sql="UPDATE ".$table_loc." set end_time='".$gilda_end_time."' WHERE id='".$sej_aghate[$a]['id']."'";
-			$Aghate->update($sql);			
-			$Aghate->AddTrace(" | end_time modifée par gilda, ".date('d/m/Y h:i:s',$date_deb));	
-			$Entry_trouve=true;			
-		}
-		// UH+Start_time égal et edn_time is égal, entry ok
-		//-------------------------------------------------------------------
-		if(($EntGilda ==$EntAghate) && ($SorGilda == $SorAghate))
-		{
-			$Entry_trouve=true;
-						
-		}			
-	}
-	
-	// fin de boucle et pas de sejours dans aghate on insert le ligne
-	//---------------------------------------------------------------
-	if(!$Entry_trouve)
-	{
-		echo " |Entry a inseré : ".$EntAghate. " ".$SorAghate;
-
-		// get coulior ID
-		$ServiceInfo = $Aghate->GetServiceInfoByUh(trim($sej_gilda[$g]['UH']));
+	$starttime	= $Aghate->MakeDate($dt_ent,str_replace(":","",$hh_ent));	
  	
-		$ServicePanierID=$Aghate->GetPanierIdByServiceId ($ServiceInfo['id']); 
-						
-		//Preparation du tableau pour l'insertion
-		$Data['start_time']	=	$gilda_start_time;
-		$Data['end_time']	=	$gilda_end_time;
-		$Data['room_id']	= 	$ServicePanierID;
-		$Data['create_by']	=	'Automate';
-		$Data['noip']		=	$sej_gilda[$g]['NOIP'];
-		$Data['nda']		=	$sej_gilda[$g]['NODA'];
-		$Data['uh']			=	$sej_gilda[$g]['NOUF'];				 
-		$Data['protocole']	=	'Protocole Automate';
-		$Data['de_source'] 	= 	'Gilda'; // Gilda car la date d'entrée
-		$Data['ds_source'] 	= 	'Gilda';
-		$Data['gilda_id'] 	= 	$sej_gilda[$g]['NOIDMV'];
-		$Data['statut_entry'] = 'Hospitalisé';
-		
-		// Pas de verification du place libre car on place dans  Insertion de la reservation
-		$id = $Aghate->InsertConvocation($table_loc,$Data);
-
-		
-	}
-}
-
-// Check nombre  de sejours Gilda corespond s sejours Aghate
-$sej_aghate	=	$Aghate->GetSejoursParNda($nda);
-$NbrAghate 	=count($sej_aghate);
-if($NbrAghate > $NbrGilda)
-{
-	// boucle sur res aghate et suprimme les doublons qui ne present pas dans gilda
-	for ($a=0; $a < $NbrAghate; $a++)
+	// get date_sortie
+	$temp= $g + 1;
+	if($NbrBackup == $temp) // dernier boucle et pat en cours d'hospit force end_date to now()
 	{
-		if ( $sej_aghate[$a]['start_time']==$sej_aghate[$a+1]['start_time'] )
-		{
-			echo "Ligne a suprimmer row_id :".$sej_aghate[$a]['id'];
-			$sql = "UPDATE ".$table_loc." set statut_entry='SUPPRIMER',create_by='".$_SESSION['login']."' WHERE id='".$sej_aghate[$a]['id']."'";
-			$Aghate->update($sql);			
-		}
+		$endtime	= time();	
+		$ds_source  ='Automate';	
+		
+	}elseif(strlen(trim($sej_backup[$g+1]['NOLIT'])) < 1 )
+	{	
+	
+		$dt_sor 	= $sej_backup[$g+1]['DTENT']; //de MVT
+		$hh_sor 	= $sej_backup[$g+1]['HHENT']; //de MVT
+		$endtime	= $Aghate->MakeDate($dt_sor,str_replace(":","",$hh_sor));
+		$ds_source	='Gilda';	
+
+	}else{
+
+		$dt_sor 	= $sej_backup[$g+1]['DDLOPT']; //de LOC
+		$hh_sor 	= $sej_backup[$g+1]['HHLOPT']; //de LOC	
+		$endtime	= $Aghate->MakeDate($dt_sor,str_replace(":","",$hh_sor));
+		$ds_source	='Gilda';	
 	}
+
+
+	$room_info 	= $Aghate->GetRoomInfo($room_name,$service_info['id']);// modif endroit de cette fonction 	
+	$room_id 	= $room_info['id'];	
+	
+	//get panier id pour depalcer les patients vers panier en cas de manque de place
+	if($room_name 	== $Aghate->NomCouloir)
+		$ServicePanierID=$room_id;
+	else
+		$ServicePanierID=$Aghate->GetPanierIdByServiceId ($service_info['id']); 
+		
+	$noip		=	$sej_backup[$g]['NOIP'];
+	$uh 		=	$sej_backup[$g]['UH'];
+	$nda		=	$sej_backup[$g]['NDA'];
+
+	// tableau RESERVATION info
+	$TableauData = array();
+	$TableauData['start_time'] 	= $starttime;
+	$TableauData['end_time'] 	= $endtime;
+	$TableauData['room_id'] 	= $room_id;
+	$TableauData['create_by'] 	= $_SESSION['login'];
+	$TableauData['type'] 		= $type;
+	$TableauData['noip'] 		= $noip;
+	$TableauData['uh'] 			= $uh;
+	$TableauData['nda'] 		= $nda;	
+	$TableauData['de_source'] 	= "Gilda";
+	$TableauData['ds_source'] 	= $ds_source;
+	$TableauData['medecin'] 	= $medecin;	
+	$TableauData['protocole'] 	= $protocole;
+	$TableauData['statut_entry'] 	= "Hospitalisé";	
+	if (strlen($id_prog)>0)
+		$TableauData['id_prog'] 	= $id_prog;
+
+	// Check place libr sauf  le panier 
+	if ($ServicePanierID != $room_id)
+	{
+		$ChkPlaceLibre = $Aghate->IsPlaceLibre($room_id,$starttime,$endtime);
+		
+		if (count($ChkPlaceLibre) > 0)
+		{
+			foreach($ChkPlaceLibre as $key )
+			{
+				//deplace patient qui occupe au couloir
+				$sql="UPDATE agt_loc set 
+							room_id='".$ServicePanierID."'
+							WHERE id='".$key['id']."'";
+				$Aghate->update($sql);	
+		
+				$alert="Conflit 4-> manque de palce,".$noip." occupe ce lit ".$room_name ;		
+				$Aghate->AddTrace(" |".$alert);
+				$Aghate->UpdateDescriptionFromId($key['id'],"TRACE_AUTOMATE",$alert,"TRACE_AUTOMATE");
+			}
+		}
+	}	
+	// Insertion de la reservation
+ 	
+	$id = $Aghate->InsertConvocation($TableName,$TableauData);
+
+			
 }
-echo "|OK|"; 
+echo "|$nda :sejour a été mis à jour correctement|"; 
 ?>

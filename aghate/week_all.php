@@ -30,7 +30,6 @@ include "./config/config.inc.php";
 include "./commun/include/misc.inc.php";
 include "./commun/include/functions.inc.php";
 include "./commun/include/$dbsys.inc.php";
-include "./commun/include/mincals.inc.php";
 include "./commun/include/mrbs_sql.inc.php";
 include "./config/config.php";
 include "./commun/include/ClassMysql.php";
@@ -148,6 +147,161 @@ if (getSettingValue("verif_reservation_auto")==0) {
 print_header($day, $month, $year, $area, $type_session);
 ?>
 <script src="./commun/js/functions.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" src="./commun/js/functions.js"  charset="utf-8" language="javascript"></script>
+<script type="text/javascript" src="./commun/js/jquery-1.10.2.js" charset="utf-8"></script>
+<script type="text/javascript" src="./commun/js/jquery-ui-1.10.4.custom.js"  charset="utf-8"></script>
+<script type="text/javascript" src="./commun/js/info_bulle.js"  charset="utf-8" language="javascript"></script>
+<script type="text/javascript" src="./commun/js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="./commun/js/jquery.contextMenu.js"></script>
+<style>
+td.ui-datepicker-week-col{	
+	cursor:pointer;
+	cusor:hand;}
+
+div#ui-datepicker-div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+	font-size: 1.3em; 
+}
+
+	
+</style>
+<link href="./commun/style/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" media="all"  charset="utf-8"/>
+<link href="./commun/style/day.css" rel="stylesheet" type="text/css" media="all" />
+<link href="./commun/style/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript'>
+	
+function OpenPopup(url) {
+
+    mywindow1=window.open(url,'myname','resizable=yes,width=750,height=250,left=150,top=100,status=yes,scrollbars=yes').focus();
+    mywindow1.location.href = url;
+    if (mywindow1.opener == null) mywindow1.opener = self;
+}
+function OpenPopupResa(url) {
+
+    mywindow1=window.open(url,'myname','resizable=yes,width=850,height=670,left=150,top=100,status=yes,scrollbars=yes');
+    mywindow1.location.href = url;
+    if (mywindow1.opener == null) mywindow1.opener = self;
+}
+	
+/*
+#####################################################
+		Ducuement ready funtions
+#######################################################	
+*/
+// SET REGIONAL SETTINGS to FR
+jQuery(function($){
+   $.datepicker.regional['fr'] = {
+	  showWeek: true,
+	  closeText: 'Fermer',
+	  prevText: '<Préc',
+	  nextText: 'Suiv>',
+	  currentText: 'Courant',
+	  monthNames: ['Janvier','Février','Mars','Avril','Mai','Juin',
+	  'Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
+	  monthNamesShort: ['Jan','Fév','Mar','Avr','Mai','Jun',
+	  'Jul','Aoû','Sep','Oct','Nov','Déc'],
+	  dayNames: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
+	  dayNamesShort: ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],
+	  dayNamesMin: ['Di','Lu','Ma','Me','Je','Ve','Sa'],
+	  weekHeader: 'Sm',
+	  //dateFormat: 'dd/mm/yy',
+				dateFormat: 'dd/mm/yy',
+	  firstDay: 1,
+	  isRTL: false,
+	  showMonthAfterYear: false,
+	  yearSuffix: ''};
+   $.datepicker.setDefaults($.datepicker.regional['fr']);
+});
+
+$(function() {
+	//$('#cur_date').val(<?php print $day ?>+"/"+<?php print $month ?>+"/"+<?php print $year ?>);
+	/*
+	#####################################################
+			Jquery Calandar en 3 mois
+	#######################################################	
+	*/	
+	$('#cur_date').datepicker({
+		showWeek : true,
+		showOn: "button",
+		buttonImage: "./commun/images/calendar.gif",
+		buttonImageOnly: true,		
+		numberOfMonths: 1, 
+		showCurrentAtPos: 1,
+		changeMonth: true,
+		changeYear: true,	
+		showAnim: "drop",		
+		dateFormat: 'dd/mm/yy',
+		onSelect: function(dateText, inst) {
+			dt= dateText.split("/");
+			var url ="./day.php?year="+dt[2]+"&month="+dt[1]+"&day="+dt[0]+"&area="+<?php print $area?>;
+			location.href=url
+		  }			
+	});			
+
+	/*#####################################################
+		DROG AND DROP TBODY 
+		avec le class "DrogDropTBody" sur tbody
+	#######################################################	
+	*/
+  $( "tbody.DrogDropTBody" )
+      .sortable({
+          connectWith: ".DrogDropTBody",
+          items: "> tr:not(:first)",
+          helper:"clone",
+          zIndex: 999990,
+          update: function( event, ui ) {UpdateTimes()},
+      })
+      .disableSelection() ;
+ 
+ 	/*#####################################################
+		DROG AND DROP TBODY 
+		avec le class "DrogDropTBody" sur tbody
+	#######################################################	
+	*/
+  $("#SAVETABLE").click(function()
+  {
+  	var tbl;
+  	var lignes = new Array();
+  	var count=0;
+  	alert("Option Enregistrer bientôt disponible");
+  	$('#CORO tbody tr ').each(function() {
+  		lignes[count]=$(this).text();
+  		count++;
+      tbl = tbl +"DEB:"+$(this).text()+"\n";
+ 		});
+ 		//alert(tbl);
+  	
+  });
+}); // fin document ready
+
+//===================================================
+//onclick de semaine => envoyer vers week_all
+//===================================================
+$(function() {
+	$("td.ui-datepicker-week-col").live("click", function() {         
+		$(this).next().click();
+		var cpt = 0;
+		var bool = true;
+		var currentDay;
+		var currentMonth ;
+		var currentYear  ;
+		$(this).parent().children().each(function(){
+			if(cpt>=1 && bool==true){
+				if($(this).children().length > 0){
+					currentDay	 = ($(this).children()[0].innerHTML);
+					currentMonth = 	parseInt($(this).attr("data-month"))+1;
+					currentYear  = 	parseInt($(this).attr("data-year"));
+					bool=false;
+				}
+			}
+			cpt++;
+		});
+		var fromDate = $("#cur_date").datepicker("getDate");
+		var url ="./week_all.php?year="+currentYear+"&month="+currentMonth+"&day="+currentDay+"&area="+<?php print $area?>;
+		location.href=url        
+	 });
+ });
+
+</script>
 <?php
 
 // Affichage d'un message pop-up
@@ -176,8 +330,7 @@ $time_old = $time;
 // Si $day ne correspond pas au premier jour de la semaine tel que défini dans GRR,
 // on recule la date jusqu'au précédent début de semaine
 // Evidemment, problème possible avec les changement été-hiver et hiver-été
-if (($weekday = (date("w", $time) - $weekstarts + 7) % 7) > 0)
-{
+if (($weekday = (date("w", $time) - $weekstarts + 7) % 7) > 0){
     $time -= $weekday * 86400;
 }
 if (!isset($correct_heure_ete_hiver) or ($correct_heure_ete_hiver == 1)) {
@@ -236,7 +389,6 @@ if ($_GET['pview'] != 1) {
     echo "</td>\n";
 
     #Draw the three month calendars
-    minicals($year, $month, $day, $area, $room, 'week_all');
     echo "</tr></table>\n";
 }
 
@@ -245,6 +397,9 @@ $room_info = $Aghate->GetRoomInfoByRoomId($room);
 $this_service_name = $area_info[0]['service_name'];
 $this_room_name = $room_info['room_name'];
 $this_room_name_des = $room_info['description'];
+
+
+$cur_date = date("d/m/Y",$date_start);
 
 # Don't continue if this area has no rooms:
 if ($room <= 0)
@@ -262,15 +417,15 @@ if (($this_room_name_des) and ($this_room_name_des!="-1")) {
 }
 switch ($dateformat) {
     case "en":
-    $dformat = "%A, %b %d";
+    $dformat = "%A, %b %d %Y";
     break;
     case "fr":
-    $dformat = "%A %d %b";
+    $dformat = "%A %d %b %Y";
     break;
 }
-
- echo "<center><h2>".get_vocab("week").get_vocab("deux_points").utf8_strftime($dformat, $date_start)." - ". utf8_strftime($dformat, $date_end)
-  . "<br /> $this_service_name - ".get_vocab("all_rooms")."</h2></center>\n";
+ echo "<center><h2><input type='hidden'  id='cur_date' name='cur_date'  value=".$cur_date." title='change dates' />
+	  ".get_vocab("week").get_vocab("deux_points").utf8_strftime($dformat, $date_start)." - ". utf8_strftime($dformat, $date_end)
+	  ."<br /> $this_service_name - ".get_vocab("all_rooms")."</h2></center>\n";
 
 #y? are year, month and day of the previous week.
 #t? are year, month and day of the next week.
@@ -293,7 +448,7 @@ if ($_GET['pview'] != 1) {
       <td>&nbsp;</td>
       <td align=right><a href=\"week_all.php?year=$ty&amp;month=$tm&amp;day=$td&amp;area=$area&amp;room=$room\">".
       get_vocab('weekafter')." &gt;&gt;</a></td></tr></table>";
-}
+}	
 
 # Used below: localized "all day" text but with non-breaking spaces:
 $all_day = preg_replace("# #", "&nbsp;", get_vocab("all_day"));
@@ -338,13 +493,13 @@ if ($debug_flag) {
 	echo $date_start;
 	echo "<br />". $date_end;
 }
+
 $res = $Aghate->GetWeekInfo($area,$date_start,$date_end);
 $nb_week_info = count($res);
 $row=$res;
-if (! $res) echo grr_sql_error();
-else for ($i = 0; $i<$nb_week_info; $i++)
+//if (! $res) echo grr_sql_error();
+for ($i = 0; $i<$nb_week_info; $i++)
 {
-	
     # Fill in data for each day during the month that this meeting covers.
     # Note: int casts on database rows for min and max is needed for PHP3.
     $t = max((int)$row[$i]['start_time'], $date_start);
@@ -517,11 +672,11 @@ if ($debug_flag){
 # It might be that there are no rooms defined for this area.
 # If there are none then show an error and dont bother doing anything
 # else
-if (! $res) fatal_error(0, grr_sql_error());
+if (! $row) fatal_error(0, grr_sql_error());
 if ($nb_info == 0)
 {
     echo "<h1>".get_vocab("no_rooms_for_area")."</h1>";
-    grr_sql_free($res);
+    grr_sql_free($row);
 } else {
     // Affichage de la première ligne contenant le nom des jours (lundi, mardi, ...) et les dates ("10 juil", "11 juil", ...)
     echo "<th width=\"10%\">&nbsp;</th>\n"; // Première cellule vide
@@ -698,6 +853,9 @@ if ($nb_info == 0)
 }
 echo "</table>\n";
 show_colour_key($area);
+
+$link="print_week_a4.php?area=".$area."&am7=".$date_start."&pm7=".$date_end;
+echo "<table align='center'><tr><td align='left'><a href='#'  onClick=\"OpenPopup('".mysql_real_escape_string($link)."')\" > Format imprimable en A4 </a></td></tr></table>";
 
 include "./commun/include/trailer.inc.php";
 ?>

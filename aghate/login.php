@@ -44,11 +44,7 @@ include "./commun/include/language.inc.php";
 // Session related functions
 require_once("./commun/include/session.inc.php");
 
-// Vérification du numéro de version et renvoi automatique vers la page de mise à jour
-if (verif_version()) {
-    header("Location: ./admin_maj.php");
-    exit();
-}
+
 // User wants to be authentified
 if (isset($_POST['login']) && isset($_POST['password'])) {
     // Détruit toutes les variables de session au cas où une session existait auparavant
@@ -124,7 +120,7 @@ function popup(number) {
 <div class="center">
 <h1><?php echo getSettingValue("title_home_page"); ?></h1>
 <h2><?php //echo getSettingValue("company"); ?></h2>
-<div align='center'><img src="./commun/images/logo-necker.jpg" width="200" height="65" /></div>
+<div align='center'><img src="./commun/images/logo_hopital.gif" width="200" height="65" /></div>
 <br />
 
 <p>

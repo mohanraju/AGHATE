@@ -1,3 +1,24 @@
+//##############################################################
+//LANCER AJAX avec le nom du script et parametres
+//Scripturl = nom de url : example.php
+//PageVariables = les varibales a passer donc "test=test&toto=toto&tati=tati"
+//##############################################################
+function LanceAjax(Scripturl,PageVariables){
+	var html = $.ajax({
+	  				url: Scripturl,
+	  				data :PageVariables,
+						beforeSend: function(xhr) {
+							xhr.setRequestHeader('Content-type','utf-8');
+						},		  				
+	  				async: false,
+						statusCode: {
+							404: function() {
+								alert("La page demandé n'existe pas ("+Scripturl+")");
+							}
+						}	  				
+	 					}).responseText;
+	 return html;
+}
 // Permet de faire une validation afin que l'usager ne puisse pas sélectionner un jour invalide pour le début du premier Jours/Cycle
 function verifierJoursCycles(){
     valeurA = document.getElementById('jourDebut').value;

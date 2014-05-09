@@ -13,14 +13,15 @@ include("../commun/include/ClassGilda.php");
 include("../aghate/commun/include/ClassAghate.php");
 include("../config/config_".$site.".php");
 
+//Preparation Page Variable
+$page_vars="t=t";
+foreach ($_GET as $key=> $val)
+{
+	$page_vars .= "&" . $key ."=" .$val;
+}
+
 //AfficheResaInfo;
 if ($mode=="MODIFY" || strlen($id) < 1) {
-		$page_vars="t=t";
-	foreach ($_GET as $key=> $val)
-	{
-		$page_vars .= "&" . $key ."=" .$val;
-	}
- 	
 	header("location:../aghate/reservation.php?".$page_vars);
 	exit;	
 }
@@ -32,7 +33,23 @@ $Forms->Html=$Html;
 $aghate = new Aghate();
 include("../commun/layout/header.php");
 echo  ' <link href="../commun/styles/bootstrap_form.css" rel="stylesheet">  ';
+print $Html->InputHiddenBox(id,$id);
+print $Html->InputHiddenBox(table_loc,$table_loc);		
+print $Html->InputHiddenBox(NDA,$NDA);
+print $Html->InputHiddenBox(area,$area);
+print $Html->InputHiddenBox(room,$room);
 
+
+print $Html->InputHiddenBox(prenom,$prenom);
+print $Html->InputHiddenBox(nomjf,$nomjf);
+print $Html->InputHiddenBox(ddn,$ddn);
+print $Html->InputHiddenBox(sexe,$sexe);
+print $Html->InputHiddenBox(age,$age);
+print $Html->InputHiddenBox(mode,$mode);
+print $Html->InputHiddenBox(service_name,$service_name);
+print $Html->InputHiddenBox(TypeCodage,'ID_DAS');
+
+print $Html->InputHiddenBox(RefData,'');
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -48,54 +65,41 @@ echo  ' <link href="../commun/styles/bootstrap_form.css" rel="stylesheet">  ';
 	<link rel="stylesheet" href="../commun/styles/jquery-ui.css" />
 </head>
 <body style="">
+	
 <form name="resa" id="resa" action=<?php print $PHP_SELF;?> method="POST">
 <?php
+$nom = $_SERVER["SCRIPT_NAME"]; 
+$FichierProjet = "DescriptifProjet";
+$DP=$Forms->GetDescriptifProjet($FichierProjet);
+echo '<div class="row-fluid">';
+echo '<div class="span1 "></div>';
+echo '<div class="span7">';
 
- 	
- 		$FichierProjet = "DescriptifProjet";
-		$DP=$Forms->GetDescriptifProjet($FichierProjet);
-		echo '<div class="row-fluid">';
-		echo '<div class="span1 "></div>';
-		echo '<div class="span7">';
- 		
- 		echo '<div id="view_resa"></div>';
- 		echo '<br>';
- 		
- 		
- 		
- 		if ($mode=="" /*&& authGetUserLevel(getUserName(),-1,'area') >= 2*/ )
- 		{
- 			$consulter='disabled="disabled"';
- 		}
- 		else
- 		{
- 			$consulter='';
+echo '<div id="view_resa"></div>';
+echo '<br>';
+echo '<script> LoadResaInfo();</script>';
+if ($mode=="")
+{
+	$consulter='disabled="disabled"';
+}
+else
+{
+	$consulter='';
 
- 		}
- 		
- 		echo '<div id="modif_form">';
- 		$Forms->PrintForm($DP,$id,$consulter);
- 		if ($mode=="")
- 			echo "<script>disableModifier();</script>";
- 			
- 		echo '</div>';
+}
+if (strlen($NDA) < 1 ) {
+	echo "<script>top.document.location='".$nom."?NDA='+obj.nda+'&UH='+obj.uh+'&".$page_vars."';</script>";
+}
+//echo "NDA : ".$NDA;
+//exit;
+echo '<div id="modif_form">';
+$Forms->PrintForm($DP,$id,$NDA,$UH,$consulter);
+if ($mode=="")
+	echo "<script>disableModifier();</script>";
 	
-	print $Html->InputHiddenBox(id,$id);
-	print $Html->InputHiddenBox(area,$area);
-	print $Html->InputHiddenBox(room,$room);
-	print $Html->InputHiddenBox(table_loc,$table_loc);		
+echo '</div>';
 
-	print $Html->InputHiddenBox(prenom,$prenom);
-	print $Html->InputHiddenBox(nomjf,$nomjf);
-	print $Html->InputHiddenBox(ddn,$ddn);
-	print $Html->InputHiddenBox(sexe,$sexe);
-	print $Html->InputHiddenBox(age,$age);
-	print $Html->InputHiddenBox(mode,$mode);
-	print $Html->InputHiddenBox(service_name,$service_name);
-	print $Html->InputHiddenBox(TypeCodage,'ID_DAS');
 
-	print $Html->InputHiddenBox(RefData,'');
-	
-	include("../commun/layout/footer.php");	
+include("../commun/layout/footer.php");	
 ?>
  

@@ -719,10 +719,9 @@ if (!(isset($desactive_bandeau_sup) and ($desactive_bandeau_sup==1) and ($type !
 
 
           } else {
-          	      if($user_level >= 2) {
-		              echo "<A HREF='admin_accueil.php?day=$day&amp;month=$month&amp;year=$year'>".
-		       	      "<img src=\"./commun/images/admin.jpg\" width=\"20\" height=\"20\" border=\"0\" alt=\"Administration\" title=\"Administration\"/>  </A> &nbsp;";          
-          	      }
+		          echo "<A HREF='admin_accueil.php?day=$day&amp;month=$month&amp;year=$year'>".
+		       	"<img src=\"./commun/images/admin.jpg\" width=\"20\" height=\"20\" border=\"0\" alt=\"Administration\" title=\"Administration\"/>  </A> &nbsp;";          
+          	
 			 		echo "  <A href=\"#\"  onClick=\"popup('recherche_pat.php')\" >
 			 		<img src=\"./commun/images/patient.jpg\" width=\"20\" height=\"20\" border=\"0\" alt=\"Localisation patients\" title=\"Localisation patients\"/> 
 					</a> &nbsp;";                   	
@@ -804,7 +803,7 @@ if (!(isset($desactive_bandeau_sup) and ($desactive_bandeau_sup==1) and ($type !
        ?>
        </TD>
        <TD CLASS="banner" ALIGN="right">
- 			<img src="./commun/images/logo-necker.jpg" width="200" height="50" />
+ 			<img src="./commun/images/logo_hopital.gif" width="200" height="50" />
        </TD>
      <?php
      if ($page=="no_admin") {

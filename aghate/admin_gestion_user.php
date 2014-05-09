@@ -115,7 +115,7 @@ if($action=="DELITEM")
 }
  
 //================================================================= 
-// recup�re les utilisateurs
+// recupère les utilisateurs
 //=================================================================
 //$res=$Aghate->GetAllArea();
 $res=$Aghate->select("select * from agt_utilisateurs order by nom");
@@ -127,7 +127,7 @@ for ($i=0 ;$i < count($res) ;$i++)
 }
 
 //================================================================= 
-// recup�re les services 
+// recupère les services 
 //=================================================================
 //$res=$Aghate->GetAllArea();
 $res=$Aghate->select("select * from agt_service where etat = 'n' order by service_name");
@@ -139,7 +139,7 @@ for ($i=0 ;$i < count($res) ;$i++)
 
  
 //================================================================= 
-// Recup�re les services d�ja administr� 
+// Recupère les services dèja administré 
 //=================================================================
 //MODIF ICI
 if (strlen($id_user) > 0){
@@ -265,17 +265,13 @@ if (strlen($id_user) > 0){
 	<table border=0 cellpadding=2 cellspacing=2 align='center'  >
                 
     <tr> 
-      <th  align='left' colspan="2" >Utilisateurs</th>
-    </tr>
-    <tr>
-    	<td><h5><?php Print $html->InputSelect($ListeUtilisateurs ,'id_user',$id_user,200,"onchange='javascript:submit();'"); ?></h5></td>
-    	<td><h5>Services attribuées à l'utilisateur selectionné: </h5></td>
+      <th  align='left' >Utilisateurs</th>
     </tr>
 		<tr> 
-    	  <td colspan='2'>
+      <td colspan='2'>
 		 
 			<div class="left">	
-				
+				<h5><?php Print $html->InputSelect($ListeUtilisateurs ,'id_user',$id_user,200,"onchange='javascript:submit();'"); ?></h5>
 				<select name="sources[]" id="sources" size="30" width="300px" style="width: 300px;overflow:auto;"  >
 					<?php print $ListeServices;?>
 				</select>
@@ -296,6 +292,7 @@ if (strlen($id_user) > 0){
 			</div>
 			
 			<div class="right">
+				<h5>Lits dans l'autre service </h5>
 				<select name="target[]"  id="target" size="30" width="300px" style="width: 300px;overflow:auto;"  >
 			 	<?php print $ListeServicesAttribues; ?>
 				</select>

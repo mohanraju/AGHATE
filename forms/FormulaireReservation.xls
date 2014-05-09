@@ -1,0 +1,60 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+ref	text		hidden	ref		
+nip	num		hidden	nip		
+nda	num		hidden	nda		
+nohjo	text		hidden	nohjo		
+entry	date		hidden	entry		
+end	date		hidden	end		
+uhdem	text		hidden	uhdem		
+uhexec	text		hidden	uhexec		
+Cardiologues correspondants	titre1					
+Cardiologue	InputCompletMulti	MED	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=MED|TABLE=cim10spec|AJAX=ajax_autocomplete	corres	forms	
+Diagnostics	titre1				forms	
+Diagnostic d'entrée	InputCompletSimple	DP	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DP|TABLE=cim10spec|AJAX=ajax_autocomplete	dp	codagedp	o
+Pathologies associées	InputCompletMulti	DAS	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DAS|TABLE=cim10spec|AJAX=ajax_autocomplete	das	codage	
+Biologie	titre1				forms	
+Biologie	cm	Iono + Urée		iono	forms	
+Biologie	cm	NFS		nfs	forms
+Biologie	cm	Hémostase		hemost	forms
+Biologie	cm	Bilan hépatique		bilan_hep	forms
+Biologie	cm	Troponine I		Tropo	forms
+Biologie	cm	CPK		CPK	forms
+Biologie	cm	BNP		BNP	forms
+Biologie	cm	Bilan lipidique		bilan_lipide	forms
+Biologie	cm	HbA1C		HbA1C	forms
+Autres examens biologiques	InputCompletMulti	BIO	CODE=index_ap|LIBELLE=libelle_edition|TYPEATTRIBUT=BIO|TABLE=referentiel_glims|AJAX=ajax_autocomplete	autre_bio	formsAutoComp
+Exploration cardiologiques	titre1				forms
+Exploration cardiologiques	cm	ECG		ecg	forms
+Exploration cardiologiques	cm	holter ECG		holterECG	forms
+Exploration cardiologiques	cm	Holter tensionnel		holterTA	forms
+Exploration cardiologiques	cm	ETT		ett	forms
+Exploration cardiologiques	cm	ETO		eto	forms
+Exploration cardiologiques	cm	Echo effort/dobu		echo_dobu	forms
+Exploration cardiologiques	cm	IRM cardiaque		IRMcoeur	forms
+Exploration cardiologiques	cm	IRM de stress		IRMstress	forms
+Exploration cardiologiques	cm	coroscanner		coroscanner	forms
+Exploration cardiologiques	cm	scintigraphie		scintigraphie	forms
+Autres explorations	titre1				forms
+Autres explorations	cm	vo2max		vo2max	forms
+Autres explorations	cm	Scinti d'effort		ScEffort	forms
+Autres explorations	cm	Echo Doppler des TAS		doppler_tsa	forms
+Autres explorations	cm	Echo Doppler des mb inf		doppler_minf	forms
+Autres explorations	cm	Echo doppler des artères rénales		DopplerArtRenales	forms
+Autres explorations	cm	Scanner des surrénales		TDMsurrenales	forms
+Autres explorations	cm	phlebographie		phlebo	forms
+Autres explorations	cm	Const anesthésie		c_anes	forms
+Sérologies	titre1				
+Sérologies	cm	Légionellose		legion	forms
+Sérologies	cm	CMV		cmv	forms
+Sérologies	cm	Hépatites		serohep	forms
+Sérologies	cm	EBV		ebv	forms
+Sérologies	cm	HIV 1 et 2		hiv	forms
+Sérologies	cm	Toxoplasmose		toxo	forms
+Rééducation	titre1				
+Rééducation	cm	Repas		repas	forms
+Rééducation	cm	Cours education collectif		cours	forms
+Rééducation	cm	Entretien individuel		EntInd	forms
+Rééducation	cm	Entretien avec psychologue		Psy	forms
+Rééducation	cm	Entetien individuel diététique		Diet	forms
+Rééducation	cm	Entretien individuel IDE diabétologie		EntDiabeto	forms
+Rééducation	cm	Gymnase		gym	forms

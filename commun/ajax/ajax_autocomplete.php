@@ -30,7 +30,7 @@ $ret_vals = array();
 
 $sql="SELECT ".$_GET['code'].",".$_GET['lib'];
 
-if($_GET['tb'] == "CIM10SPEC")$sql.=",CODE2";
+if($_GET['tb'] == "CIM10SPEC"|$_GET['tb'] == "cim10spec")$sql.=",CODE2";
 $sql.=" from ".$_GET['tb']."
 			WHERE ".$_GET['lib']." LIKE '%".$param."%'				
 			OR  ".$_GET['code']." LIKE '%".$param."%'

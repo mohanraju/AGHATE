@@ -137,9 +137,9 @@ Class Html extends MySQL
 	 		list($val,$libelle)=explode("|",$modelname[$i]);
 
 	 		if ($default==$val)
-		 		$res.= "<option value='$val' selected>".$libelle."</option>";
+		 		$res.= "<option value='$val' selected>".htmlentities($libelle)."</option>";
 		 	else
-		 		$res.= "<option value='$val' >".$libelle."</option>";
+		 		$res.= "<option value='$val' >".htmlentities($libelle)."</option>";
 		 	
 		}
 		 		$res.= "</select>";

@@ -1,0 +1,61 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+NIP	num		hidden	NIP	forms	
+NDA	num		hidden	NDA	forms	
+Pontages	titre1				forms	
+Coronarographie	titre2					
+Examen fait le 	date			date_coro	forms	
+Résultats	longtext			resul_coro	forms	
+Joint au dossier patient	cs	Oui|Non		joint_coro	forms	
+Doppler et des sous-clavières	titre2					
+Examen fait le 	date			date_doppler	forms	
+Résultats	longtext			resul_doppler	forms	
+Joint au dossier patient	cs	Oui|Non		joint_doppler	forms	
+Echographie cardiaque transthoracique	titre2					
+Examen fait le 	date			date_echo	forms	
+Résultats	longtext			resul_echo	forms	
+Joint au dossier patient	cs	Oui|Non		joint_echo	forms	
+Radiographie pulmonaire	titre2					
+Examen fait le 	date			date_radio	forms	
+Résultats	longtext			resul_radio	forms	
+Joint au dossier patient	cs	Oui|Non		joint_radio	forms	
+Epreuves fonctionnelles respiratoires (EFR)	titre2					
+Examen fait le 	date			date_efr	forms	
+Résultats	longtext			resul_efr	forms	
+Joint au dossier patient	cs	Oui|Non		joint_efr	forms	
+Valves	titre1				forms	
+Coronarographie	titre2					
+Examen fait le 	date			date_coro	forms	
+Résultats	longtext			resul_coro	forms	
+Joint au dossier patient	cs	Oui|Non		joint_coro	forms	
+Doppler et des sous-clavières	titre2					
+Examen fait le 	date			date_doppler	forms	
+Résultats	longtext			resul_doppler	forms	
+Joint au dossier patient	cs	Oui|Non		joint_doppler	forms	
+Echographie cardiaque transthoracique	titre2					
+Examen fait le 	date			date_echo	forms	
+Résultats	longtext			resul_echo	forms	
+Joint au dossier patient	cs	Oui|Non		joint_echo	forms	
+Radiographie pulmonaire	titre2					
+Examen fait le 	date			date_radio	forms	
+Résultats	longtext			resul_radio	forms	
+Joint au dossier patient	cs	Oui|Non		joint_radio	forms	
+Epreuves fonctionnelles respiratoires (EFR)	titre2					
+Examen fait le 	date			date_efr	forms	
+Résultats	longtext			resul_efr	forms	
+Joint au dossier patient	cs	Oui|Non		joint_efr	forms	
+Scanner sinus	titre2					
+Examen fait le 	date			date_scan	forms	
+Résultats	longtext			resul_scan	forms	
+Joint au dossier patient	cs	Oui|Non		joint_scan	forms	
+Panoramique dentaire	titre2					
+Examen fait le 	date			date_pano	forms	
+Résultats	longtext			resul_pano	forms	
+Joint au dossier patient	cs	Oui|Non		joint_pano	forms	
+Consultation stomato	titre2					
+Examen fait le 	date			date_scan	forms	
+Résultats	longtext			resul_scan	forms	
+Joint au dossier patient	cs	Oui|Non		joint_scan	forms	
+Consultation orl	titre2					
+Examen fait le 	date			date_pano	forms	
+Résultats	longtext			resul_pano	forms	
+Joint au dossier patient	cs	Oui|Non		joint_pano	forms	

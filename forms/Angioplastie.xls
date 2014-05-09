@@ -1,0 +1,37 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+ref	text		hidden	ref		
+nip	num		hidden	nip		
+nda	num		hidden	nda		
+nohjo	text		hidden	nohjo		
+entry	date		hidden	entry		
+end	date		hidden	end		
+uhdem	text		hidden	uhdem		
+uhexec	text		hidden	uhexec		
+Diagnostics	titre1				forms	
+Diagnostic d'entrée	InputCompletSimple	DP	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DP|TABLE=cim10spec|AJAX=ajax_autocomplete	dp	codagedp	o
+Pathologies associées	InputCompletMulti	DAS	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DAS|TABLE=cim10spec|AJAX=ajax_autocomplete	das	codage	
+Biologie	titre1				forms	
+Biologie	cm	Iono + Urée		iono	forms	
+Biologie	cm	NFS		nfs	forms	
+Biologie	cm	Hémostase		hemost	forms	
+Biologie	cm	Bilan hépatique		bilan_hep	forms	
+Biologie	cm	Troponine I		Tropo	forms	
+Biologie	cm	CPK		CPK	forms	
+Biologie	cm	BNP		BNP	forms	
+Biologie	cm	Bilan lipidique		bilan_lipide	forms
+Biologie	cm	HbA1C		HbA1C	forms	
+Autres examens biologiques	InputCompletMulti	BIO	CODE=index_ap|LIBELLE=libelle_edition|TYPEATTRIBUT=DP|TABLE=referentiel_glims|AJAX=ajax_autocomplete	autre_bio	formsAutoComp
+Exploration cardiologiques	titre1				forms
+Exploration cardiologiques	cm	ECG		ecg	forms
+Exploration cardiologiques	cm	holter ECG		holterECG	forms
+Exploration cardiologiques	cm	ETT		ett	forms
+Exploration cardiologiques	cm	ETO		eto	forms
+Exploration cardiologiques	cm	Echo effort/dobu		echo_dobu	forms
+Autres explorations cardiologiques	InputCompletMulti	DAS	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DAS|TABLE=cim10spec|AJAX=ajax_autocomplete	autre_bio	forms
+Autres demandes	titre1				forms
+Autres demandes	cm	Scinti d’effort		ScEffort	forms
+Autres demandes	cm	IRM de stress		IRMstress	forms
+Autres demandes	cm	Echo Doppler des TAS		doppler_tsa	forms
+Autres demandes	cm	Echo Doppler des mb inf		doppler_minf	forms
+Autres explorations	InputCompletMulti	DAS	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DAS|TABLE=cim10spec|AJAX=ajax_autocomplete	autre_bio	forms
+

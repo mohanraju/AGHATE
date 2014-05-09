@@ -1,14 +1,31 @@
 <?php
-//echo mktime(11,0,0,10,10,2013);
-$time = $_GET['time'];
-$date_now = $_GET['date'];
-if ($time)
-	echo date('d/m/Y H:i:s',$time);
-if ($date_now)
+if(strlen($_GET['date']) < 1)
+	$date= date("d/m/Y h:i:s");
+else
+	$date= $_GET['date'];
+	
+if(strlen($_GET['unixtime']) < 1)
+	$unixtime= mktime();
+else
+	$unixtime= $_GET['unixtime'];
+ 
+ 
+ 
+if ($_GET['convert']=="convert")
 {
-	list($d,$m,$y)=explode('/',$date_now);
-	echo mktime(0,0,0,$m,$d,$y);
+	list($_dt,$_hr)=explode(' ',$date);
+	
+	list($d,$m,$y)=explode('/',$_dt);
+	list($hr,$mn,$sc)=explode(':',$_hr);
+	echo "<br>DATE => Unixtime : ".$date ." => ".mktime($hr,$mn,$sc,$m,$d,$y);
+	
+	echo "<br>UnixTime => Date : ".$unixtime." => ".date("d/m/Y H:i:s",$unixtime);	
+	
 }
-//1381363200
-//1381402800
 ?>
+<br>	
+<form method='GET'>
+	DATE :<input type="text" name="date" value="<?php print $date?>" />
+	Unixtime :<input type="text" name="unixtime" value="<?php print $unixtime?>" />	
+	<input type =submit value="convert"  name="convert"> 
+</form>

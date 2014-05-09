@@ -27,7 +27,7 @@ include("../include/settings.inc.php");
 session_name('GRR');
 session_start();
 
-if(strlen($_SESSION['login'])< 1)
+if(strlen($login)< 1)
 {
 		$return=json_encode(array('Erreur'=>'Session Expiré '));
 		echo $return;
@@ -35,40 +35,38 @@ if(strlen($_SESSION['login'])< 1)
 }
 
 // 	preparation de requettes
-if($type_reservation=="Demande"){
-	$Result=$Aghate->GetInfoDemandeById($entry_id);	
-}
-else{
-	$Result=$Aghate->GetInfoReservation($entry_id);
-}
+$Result=$Aghate->GetInfoReservation ($entry_id);
+//$ResEnt=$Aghate->GetInfoEntry ($entry_id);
 
-$ResEnt=$Aghate->GetInfoEntry ($entry_id);
 $nbr_rec=count($Result);
+
 if ($nbr_rec > 0){
 	$Result['entry']=date('d-m-Y H:i' ,$Result['start_time']);
 	$Result['end']=date('d-m-Y H:i' ,$Result['end_time']);
 	$Aghate->toTimeString($Result['duration'], $dur_units);
 	$Result['naissance']=$com->Mysql2Normal($Result['ddn']);
 
-	if(count($ResEnt)>0){
-		if($ResEnt['description']){
-			$ResEnt['description']=JsonDecode($ResEnt['description']);		
+	
+		if($Result['description']){
+			$Result['description']=JsonDecode($Result['description']);		
 		}
-		if($ResEnt['medecin']){
-			$infomed=$Aghate->GetInfoMedecinById($ResEnt['medecin']);
-			$ResEnt['nom_medecin']=$infomed['nom'];
-			$ResEnt['prenom_medecin']=$infomed['prenom'];
-			$ResEnt['specialite']=$infomed['specialite'];
+		if($Result['medecin']){
+			$infomed=$Aghate->GetInfoMedecinById($Result['medecin']);
+			$Result['nom_medecin']=$infomed['nom'];
+			$Result['prenom_medecin']=$infomed['prenom'];
+			$Result['specialite']=$infomed['specialite'];
 		}
 		// Check droit de modification
-		if ($Aghate->GetUserLevel($_SESSION['login'],$ResEnt['room_id']) > 2)
-			$ResEnt['droit_modif']= "yes";
+		if ($Aghate->GetUserLevel($login,$Result['room_id']) > 2)
+			$Result['droit_modif']= "yes";
 		else
-			$ResEnt['droit_modif']= "non";
-	}
-	$return=json_encode(array_merge($Result,$ResEnt));
+			$Result['droit_modif']= "non";
+
+	
+	$return=json_encode($Result);
 	echo $return;
 } 
+
 else
 {
 		$return=json_encode(array('Erreur'=>'Pas de réseravation trouvée'));

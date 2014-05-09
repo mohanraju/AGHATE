@@ -53,7 +53,6 @@ $vocab['admin_config_lemon.php'] = "Configuration Lemonldap (SSO)";
 $vocab['admin_config_sso.php'] = "Configuration SSO";
 $vocab['admin_confirm_change_date_bookings.php'] = "Confirmation de changement des dates de début et de fin des réservations";
 $vocab['admin_email_manager.php'] = "Mails automatiques";
-$vocab['admin_gestion_user.php'] = "Gestion des droits utilisateur";
 $vocab['admin_import_users_csv0'] = "Fichier CSV à importer : ";
 $vocab['admin_import_users_csv1'] = "Le fichier à importer comporte une première ligne d'en-tête, à ignorer";
 $vocab['admin_import_users_csv10'] = "L'importation a échoué !";

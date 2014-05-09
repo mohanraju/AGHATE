@@ -63,6 +63,15 @@ $TableLoc='agt_loc';
 $TableLoc='agt_loc';
 $Aghate->NomTableLoc=$TableLoc;
 
+// Vérification du numéro de version et renvoi automatique vers la page de mise à jour
+$versionRC_old=$Aghate->GetRevision();
+ 
+if ($version_grr_RC !=  $versionRC_old) {
+	echo "<br>Le dernier revision doit etre applique avant de proceder<br>Votre revision : ".  $versionRC_old."<br>Revision actuel : ".$version_grr_RC ;		
+    echo "<h1>Veuillez prceder la mise a jour en cliquent <a href='./admin_maj.php'>ICI</a> </h1>";
+    exit();
+}
+
 if($ServiceInfo[0]['enable_periods']=='y')
 {
  
@@ -118,18 +127,15 @@ if ((!grr_resumeSession())and (getSettingValue("authentification_obli")==1)) {
 // Paramètres langage
 include "./commun/include/language.inc.php";
 $UserInfo=$Aghate->GetUserInfo ($_SESSION['login']);
-$user_default_area= $UserInfo[0]['default_area'];
-//if (empty($area) || $area == 0)
-//{
-	if(count($Aghate->GetServiceInfoByServiceId($UserInfo[0]['default_area']))<1)
-	{
-   	print_header($day, $month, $year, $area,$type_session);
-	  echo "<br><br><br><br><div style=\"text-align : center; font-size : 15px \"  >Veuillez declarer le <b>Service par défaut</b>  a afficher sur le page d'accueil en cliquant<a href='my_account.php'>  ICI</a> </div>";
-		exit;
-		
-	}
-//}
-  
+ 
+if(count($Aghate->GetServiceInfoByServiceId($UserInfo[0]['default_area'])) < 1 )
+{
+	print_header($day, $month, $year, $area,$type_session);
+	echo "<br><br><br><br><div style=\"text-align : center; font-size : 15px \"  >Veuillez declarer le <b>Service par défaut</b>  a afficher sur le page d'accuil en cliquent<a href='my_account.php'>  ICI</a> </div>";
+	exit;
+	
+}
+
 
 // On affiche le lien "format imprimable" en bas de la page
 $affiche_pview = '1';
@@ -257,10 +263,11 @@ $(function() {
 	*/	
 	
 	$('#cur_date').datepicker({
+		showWeek : true,
 		showOn: "button",
 		buttonImage: "./commun/images/calendar.gif",
  		buttonImageOnly: true,		
-		numberOfMonths: 3, 
+		numberOfMonths: 1, 
 		showCurrentAtPos: 1,
 		changeMonth: true,
 		changeYear: true,	
@@ -313,6 +320,34 @@ $(function() {
 }); // fin document ready
 
 
+//===================================================
+//onclick de semaine => envoyer vers week_all
+//===================================================
+$(function() {
+	$("td.ui-datepicker-week-col").live("click", function() {         
+		$(this).next().click();
+		var cpt = 0;
+		var bool = true;
+		var currentDay;
+		var currentMonth ;
+		var currentYear  ;
+		$(this).parent().children().each(function(){
+			if(cpt>=1 && bool==true){
+				if($(this).children().length > 0){
+					currentDay	 = ($(this).children()[0].innerHTML);
+					currentMonth = parseInt($(this).attr("data-month"))+1;
+					currentYear  = 	parseInt($(this).attr("data-year"));
+					bool=false;
+				}
+			}
+			cpt++;
+		});
+		var fromDate = $("#cur_date").datepicker("getDate");
+		var url ="./week_all.php?year="+currentYear+"&month="+currentMonth+"&day="+currentDay+"&area="+<?php print $area?>;
+		location.href=url       
+	 });
+ });
+
 /*
 #####################################################
 	DROG AND DROP TBODY  Update times on change
@@ -329,73 +364,48 @@ function UpdateTimes()
 </script>
 
 <script type="text/javascript">
-$(function(){
-    $.contextMenu({
-        selector: '.context-menu-one', 
-        trigger: 'left',
-        callback: function(key, options) {
-            var m = "clicked: " + key;
-            window.console && console.log(m) || alert(m); 
-        },
-        items: {
-            "edit": {name: "Edit", icon: "edit"},
-            "cut": {name: "Cut", icon: "cut"},
-            "copy": {name: "Copy", icon: "copy"},
-            "paste": {name: "Paste", icon: "paste"},
-            "delete": {name: "Delete", icon: "delete"},
-            "sep1": "---------",
-            "quit": {name: "Quit", icon: "quit"}
-        }
-    });
-});			
-			
-			
-			
-			
-			
-			
-			$(document).ready( function() {
-				
-				// Show menu when #.myDiv is clicked
-				$(".myDiv").contextMenu({
-					menu: 'myMenu'
-				},
-				function(action, el, pos) {
-					alert(
-						'Action: ' + action + '\n\n' +
-						'coleur à modifé  \n'  
-						);
-				});
-				
-				// Show menu when a list item is clicked
-				$("#myList UL LI").contextMenu({
-					menu: 'myMenu'
-				}, function(action, el, pos) {
-					alert(
-						'Action: ' + action + '\n\n' +
-						'Element text: ' + $(el).text() + '\n\n' + 
-						'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
-						'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
-						);
-				});
-				
-				// Disable menus
-				$("#disableMenus").click( function() {
-					$('.myDiv, #myList UL LI').disableContextMenu();
-					$(this).attr('disabled', true);
-					$("#enableMenus").attr('disabled', false);
-				});
-				
-				// Enable menus
-				$("#enableMenus").click( function() {
-					$('.myDiv, #myList UL LI').enableContextMenu();
-					$(this).attr('disabled', true);
-					$("#disableMenus").attr('disabled', false);
-				});
-				
-				
-				
-			});
+$(document).ready( function() {
+	
+	// Show menu when #.myDiv is clicked
+	$(".myDiv").contextMenu({
+		menu: 'myMenu'
+	},
+	function(action, el, pos) {
+		alert(
+			'Action: ' + action + '\n\n' +
+			'coleur à modifé  \n'  
+			);
+	});
+	
+	// Show menu when a list item is clicked
+	$("#myList UL LI").contextMenu({
+		menu: 'myMenu'
+	}, function(action, el, pos) {
+		alert(
+			'Action: ' + action + '\n\n' +
+			'Element text: ' + $(el).text() + '\n\n' + 
+			'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
+			'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
+			);
+	});
+	
+	// Disable menus
+	$("#disableMenus").click( function() {
+		$('.myDiv, #myList UL LI').disableContextMenu();
+		$(this).attr('disabled', true);
+		$("#enableMenus").attr('disabled', false);
+	});
+	
+	// Enable menus
+	$("#enableMenus").click( function() {
+		$('.myDiv, #myList UL LI').enableContextMenu();
+		$(this).attr('disabled', true);
+		$("#disableMenus").attr('disabled', false);
+	});
+	
+	
+	
+});
 			
 		</script>
 <?php
@@ -656,7 +666,7 @@ for($i=0;$i< $nb_res;$i++)
 	{
 		$UrlView=$ModuleReservationView."?id=".$res[$i]['entry_id']."&table_loc=".$TableLoc;
 
-		//$title=($Aghate->GetDescComplementaire($res[$i]['description']));
+		$title=($Aghate->GetDescComplementaire($res[$i]['description']));
 
 		$lien = "<a href='#?'  onClick=\"OpenPopupResa('".$UrlView."')\"   title=\"".$title."\" >";
 		$imgag_link="";
@@ -686,7 +696,7 @@ for($i=0;$i< $nb_res;$i++)
 //===============================================
 // Liste demande
 //===============================================
-/*
+
 $Aghate->NomTableLoc = 'agt_prog';
 
 $demande = $Aghate->GetInfoDemande($area,$compare_to_start_time,$compare_to_end_time);
@@ -705,7 +715,7 @@ for($i=0;$i< $nb_demande;$i++)
 {
 	
 	//$title=($Aghate->GetDescComplementaire($res[$i]['description']));
-	$UrlView="reservation.php?id=".$demande[$i]['entry_id']."&table_loc=".$Aghate->NomTableLoc."&type_reservation=Demande";
+	$UrlView=$ModuleReservationView."?id=".$demande[$i]['entry_id']."&table_loc=".$Aghate->NomTableLoc."&type_reservation=Demande";
 	$lien = "<a href='#?'  onClick=\"OpenPopupResa('".$UrlView."')\"   title=\"".$title."\" >";
 	$imgag_link="";
 	if ($demande[$i]['sex']=="M")
@@ -733,7 +743,6 @@ for($i=0;$i< $nb_demande;$i++)
 
 
 	$Aghate->NomTableLoc = $TableLoc;
-	* */
 if ($cpt!=0)
 	echo "Réservation programmées (lit à attribuer) :".$lien;
 echo "<br />";
@@ -1016,7 +1025,7 @@ else
                          if ($id_derniere_ligne_du_bloc != $id) $cellules[$id]['value'] = $cellules[$id]['value']-1;
                        }
                     }
-                    
+                   
                     tdcell_rowspan ($c, $cellules[$id]['value']);
                     if ($cellules[$id]['retard'])
 						echo "<div id='retard' style='height:".$cellules[$id]['retard']."px;'>"; //  1 row = 18px
@@ -1085,7 +1094,7 @@ else
 						echo '<a href='.$link.' title='.$AreaName["service_name"].'><= UH :'.$prev_link["uh"].' </a>';
 					}
 					else echo '';
-					$overload_data=$Aghate->GetOverloadData($id);
+						$overload_data=$Aghate->GetOverloadData($id);
                 		$duree= $duration .' '. $dur_units;
 						$date_rdv	=date("d/m/Y-H:i",$date_rdv);
 						$link="convocation_options.php?pat=$descr&uh=$uh&med=$med&duree=$duree&date_nais=$p_ddn&date_entree=$date_rdv&area=$area";

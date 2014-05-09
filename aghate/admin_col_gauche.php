@@ -87,6 +87,8 @@ if(authGetUserLevel(getUserName(),-1,'area') >= 5)
 $liste[] = 'report.php';
 if(authGetUserLevel(getUserName(),-1,'area') >= 4)
 $liste[] = 'admin_room.php';
+if(authGetUserLevel(getUserName(),-1,'area') >= 5)
+$liste[] = 'admin_overload.php';
 if(authGetUserLevel(getUserName(),-1,'area') > 1)
 $liste[] = 'protocoles.php';
 if(authGetUserLevel(getUserName(),-1,'area') > 1)
@@ -97,8 +99,6 @@ affichetableau($liste,get_vocab("admin_menu_arearoom"));
 $liste = array();
 if ((authGetUserLevel(getUserName(),-1,'area') >= 5) or (authGetUserLevel(getUserName(),-1,'user') == 1))
 $liste[] = 'admin_user.php';
-if(authGetUserLevel(getUserName(),-1,'area') >= 5)
-$liste[] = 'admin_gestion_user.php';
 if(authGetUserLevel(getUserName(),-1,'area') >= 5)
 $liste[] = 'admin_right_admin.php';
 if(authGetUserLevel(getUserName(),-1,'area') >= 4)

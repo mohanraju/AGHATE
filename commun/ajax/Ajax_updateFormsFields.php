@@ -27,7 +27,7 @@ $DetailSource['UPDATECHAMPS']=str_replace('undefined',"''",$DetailSource['UPDATE
 
 	//echo $DetailSource['UPDATE'];
 	//echo $DetailSource['TYPEDATA'];
-	if($DetailSource['TYPEDATA']=='colonne')echo "toto";
+	//if($DetailSource['TYPEDATA']=='colonne')echo "toto";
 	$res=$db->update($DetailSource['UPDATECHAMPS']);
 	echo "<br>".$DetailSource['UPDATECHAMPS'];
 	echo $res;

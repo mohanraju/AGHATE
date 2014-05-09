@@ -113,7 +113,7 @@ function CheckSelection(retval)
 <script type="text/javascript" src="./commun/js/fonctions_aghate.js"></script>		
 
 <link rel="stylesheet" href="./commun/style/tbl_scroll.css" type="text/css">
-<div align="center" style="overflow:auto;width:750px;" >
+<div align="center" style="overflow:auto;width:700px;" >
   <h2>M&eacute;decin</h2>
 </div>
 
@@ -121,17 +121,17 @@ function CheckSelection(retval)
 		 <table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFCC">
 					 <thead class="fixedHeader">
 		         	<tr  id="idHeader" bgcolor=#A8BBCA  height=30>
-		              <th width='50'>Actif</th>
-		              <th width='50'>Titre</th>
+		              <th width='75'>Actif</th>
+		              <th width='75'>Titre</th>
 	                  <th width='150'>Nom</th>
 	                  <th width='150'>Pr&eacute;nom</th>
-	                  <th width='100'>T&eacute;l</th>
+	                  <th width='150'>T&eacute;l</th>
 	                  <th width='150'>Specialit&eacute;</th>
-	                  <th width='100'>Suppression</th>
+	                  <th width='150'>Suppression</th>
 		             </tr>              
 		          </thead>             
 		</table>          
-		<div style="overflow:auto;width:770px; height:300px; ">
+		<div style="overflow:auto;width:750px; height:300px; ">
 		<table width="750" border="1" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
 			<?Php   
 							for($i=0; $i < count($results);$i++) {
@@ -148,13 +148,13 @@ function CheckSelection(retval)
 								Print "<tr class=\"initial\" 
 											onMouseOver=\"this.className='highlight'\" 
 											onMouseOut=\"this.className='normal'\" >";
-								Print "<td onClick=\"CheckSelection(".$retval.")\" width='50'>".$actif_affich." </td>";
-								Print "<td onClick=\"CheckSelection(".$retval.")\" width='50'>".$results[$i]['titre']. " </td>";
+								Print "<td onClick=\"CheckSelection(".$retval.")\" width='75'>".$actif_affich." </td>";
+								Print "<td onClick=\"CheckSelection(".$retval.")\" width='75'>".$results[$i]['titre']. " </td>";
 								Print "<td onClick=\"CheckSelection(".$retval.")\" width='150'>".$results[$i]['nom']. " </td>";
 								Print "<td onClick=\"CheckSelection(".$retval.")\" width='150'>".$m_prenom. " </td>";
-								Print "<td onClick=\"CheckSelection(".$retval.")\" width='100'>".$tel. " </td>";
+								Print "<td onClick=\"CheckSelection(".$retval.")\" width='150'>".$tel. " </td>";
 								Print "<td onClick=\"CheckSelection(".$retval.")\" width='150'>".$specialite. " </td>";
-								Print "<td width='100'><center><input id=\"Supprimer_".$i."\" type=\"button\" onclick=\"DelMedecin(".$id_prt.");\" value=\"Supprimer\" name=\"Supprimer\"></center></td>";
+								Print "<td width='150'> <input id=\"Supprimer_".$i."\" type=\"button\" onclick=\"DelMedecin(".$id_prt.");\" value=\"Supprimer\" name=\"Supprimer\"> </td>";
 								Print "</tr>";
 								
 		

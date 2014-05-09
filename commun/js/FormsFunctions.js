@@ -1,4 +1,4 @@
-﻿function LanceAjax(Scripturl,PageVariables){
+function LanceAjax(Scripturl,PageVariables){
 		var html = $.ajax({
 		  				url: Scripturl,
 		  				data :PageVariables,
@@ -32,31 +32,41 @@ function SetColorInput(Name,Id)
 }
 
 function updateForms(VID,Name,Id,Val,Source,ABV,libelle,compdata) {
+
 		var ColorActuel=$("#LBL_"+Name+Id).attr('class');
 		var valeur=Val;
+
+		if($("#"+Name).attr('type')=='textarea')valeur=$('#'+Name).val();
+		//valeur=$('#'+Name).val();
 		if(ColorActuel=="OptionNotSelected")valeur='99';
-		var pagevariables="FormUpdate_VID="+VID+"&FormUpdate_REF="+$('#ref').val()+"&FormUpdate_Var="+Name+"&FormUpdate_Libelle="+libelle+"&FormUpdate_Val="+valeur+"&Source="+Source+"&FormUpdate_ABV="+ABV+"&FormUpdate_Nip="+$('#nip').val()+"&FormUpdate_Nda="+$('#nda').val()+"&FormUpdate_Nohjo="+$('#nohjo').val()+"&FormUpdate_Entry="+$('#entry').val()+"&FormUpdate_End="+$('#end').val()+"&FormUpdate_Uhdem="+$('#uhdem').val()+"&FormUpdate_Uhexec="+$('#uhexec').val()+"&FormUpdate_Libuhdem="+$('#service_name').val()+"&FormUpdate_Type="+$('#type_codage').val()+"&FormUpdate_Username="+$('#Username').val()+"&FormUpdate_SaveDateTime="+$('#SaveDateTime').val()	;
+		var pagevariables="FormUpdate_VID="+VID+"&FormUpdate_REF="+$('#ref').val()+"&FormUpdate_Var="+Name+"&FormUpdate_Libelle="+libelle+"&FormUpdate_Val="+valeur+"&Source="+Source+"&FormUpdate_ABV="+ABV+"&FormUpdate_Nip="+$('#nip').val()+"&FormUpdate_Nda="+$('#nda').val()+"&FormUpdate_Nohjo="+$('#nohjo').val()+"&FormUpdate_Entry="+$('#entry').val()+"&FormUpdate_End="+$('#end').val()+"&FormUpdate_Uhdem="+$('#uhdem').val()+"&FormUpdate_Uhexec="+$('#uhexec').val()+"&FormUpdate_Libuhdem="+$('#service_name').val()+"&FormUpdate_TypeAttribut="+$('#type_codage').val()+"&FormUpdate_Username="+$('#Username').val()+"&FormUpdate_SaveDateTime="+$('#SaveDateTime').val()	;
 		//alert(pagevariables);
 	 		res=LanceAjax("../commun/ajax/Ajax_updateForms.php",pagevariables);
 	 		
 	 		if(compdata=='o'){
-				res=LanceAjax("../aghate/commun/ajax/ajax_update_description.php",pagevariables);
-				 }
-   		//alert(res);
+				res=LanceAjax("../aghate/commun/ajax/ajax_update_description.php",pagevariables+"&table_loc="+$("#table_loc").val());
+			}
+			var InitForm=$('#InitForm').val();	
+			if(InitForm=='No'){
+				var pagevariables2="FormUpdate_VID="+VID+"&FormUpdate_REF="+$('#ref').val()+"&FormUpdate_Var=Form&FormUpdate_Libelle=Nom du formulaire&FormUpdate_Val="+$('#InitForm').attr('name')+"&Source=forms&FormUpdate_ABV="+ABV+"&FormUpdate_Nip="+$('#nip').val()+"&FormUpdate_Nda="+$('#nda').val()+"&FormUpdate_Nohjo="+$('#nohjo').val()+"&FormUpdate_Entry="+$('#entry').val()+"&FormUpdate_End="+$('#end').val()+"&FormUpdate_Uhdem="+$('#uhdem').val()+"&FormUpdate_Uhexec="+$('#uhexec').val()+"&FormUpdate_Libuhdem="+$('#service_name').val()+"&FormUpdate_TypeAttribut="+$('#type_codage').val()+"&FormUpdate_Username="+$('#Username').val()+"&FormUpdate_SaveDateTime="+$('#SaveDateTime').val()	;
+				res2=LanceAjax("../commun/ajax/Ajax_updateForms.php",pagevariables2);
+				$("#InitForm").val("Yes");
+			}
    		if (res=="KO")alert("Erreur id veuillez reessayer plus tard..");
    		
 }
 
-function disableModifier(){
+
+function disableModifier()
+{
 	var lien=$("[id^=LBL_]");
-	var compare;
-	for(var i=0;i<lien.length;i++){
-		compare=lien[i].id;
-			compare=compare.substring(0,compare.length-1);
-			if(compare != "LBL_forms")
-			lien[i].removeAttribute("onclick");
+	
+	for(var i=0;i<lien.length;i++)
+	{
+		lien[i].removeAttribute("onclick");
 	}
 }
+
 function Create_LigneOnblur(id_table,id_name,id_value,pagevar){
 	var ligne  = "<tr >";                                                                                                                              
 			ligne += "	<td align='left'><div class='input-prepend input-append'><textarea readonly name=\""+id_name+"\"  style=\"resize: none;width:255px;height: 24px;font-size:12px;\">"+id_value+"</textarea >"
@@ -65,7 +75,7 @@ function Create_LigneOnblur(id_table,id_name,id_value,pagevar){
 	id_table.find("tbody tr:first").after(ligne);
 	$("#"+id_table.attr('id')).on("click", "#BTN_DEL_"+id_table.attr('id')+"_"+id_name, function() {
 		$(this).parent().parent().remove();
-	pagevariables='FormUpdate_Var='+id_name+'&'+pagevar;
+	pagevariables='FormUpdate_VidChamps='+id_name+'&'+pagevar;
 		res=LanceAjax('../commun/ajax/Ajax_updateFormsFields.php',pagevariables);
 		
 	});
@@ -80,25 +90,55 @@ function Create_Ligne_FielsOnblur(id_table,id_source,id_name,id_value,id_value_f
 	id_table.find("tbody tr:first").after(ligne);
 	$("#"+id_table.attr('id')).on("click", "#BTN_DEL_"+id_table.attr('id')+"_"+id_name, function() {
 		$(this).parent().parent().remove();
-		pagevariables='FormUpdate_Var='+id_name+'&'+pagevar;
+		pagevariables='FormUpdate_VidChamps='+id_name+'&'+pagevar;
 		res=LanceAjax('../commun/ajax/Ajax_updateFormsFields.php',pagevariables);
 	});
 }
 
-
+function disableModifier(){
+	var lien=$("[id^=LBL_]");
+	var compare;
+	for(var i=0;i<lien.length;i++){
+		compare=lien[i].id;
+			compare=compare.substring(0,compare.length-1);
+			if(compare != "LBL_forms")
+			lien[i].removeAttribute("onclick");
+	}
+}
+function getLink(id,balise,TableLoc){
+	window.location.href="reservation_aghate.php?id="+id+"&filename="+balise.value+"&mode=Modifier"+"&table_loc="+TableLoc;
+}
+function formsView(){
+	var id = $("#name").val();
+	var Image_Node = document.getElementById(id);
+	Image_Node.setAttribute("class","FileSelected");	
+	return false;
+}
+function returnView(file,id,TableLoc,script_name){
+	
+	//var TableLoc = $("table_loc").val();
+	//alert(TableLoc);
+	var variables="filename="+file;
+	res=LanceAjax("../commun/ajax/ajax_form_retourVue.php",variables);
+	if (res=="KO")alert("Erreur id veuillez reessayer plus tard..");
+	if(res.length>0){
+		window.location =script_name+"?id="+id+"&filename="+file+"&table_loc="+TableLoc+"&name=LBL_forms"+res;
+	}
+	else{
+		window.location =script_name+"?id="+id+"&filename="+file+"&table_loc="+TableLoc;
+	}   		
+}
 //=================================================================
 // document ready
 //=================================================================
  
 $(document).ready(function() {	
 	
+	$( "#other" ).click(function() {
+		$( "#resa" ).submit();
+	});
    
-  //##############################################################
-  // load pat
-  //############################################################## 
-	LoadResaInfo()
-
-	//----------------------------------------
+ 	//----------------------------------------
 	// on blur sur champ recherche affiche les patients 
 	//----------------------------------------
  	
@@ -126,6 +166,7 @@ $(document).ready(function() {
 			$("#pat_info").html('');
   });	
  
+
 
 })// fin doc ready
 
@@ -213,3 +254,4 @@ jQuery.fn.AutoSuggest = function(ScriptAjax)
 	    }
 		});
 };
+

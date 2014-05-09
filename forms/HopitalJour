@@ -1,0 +1,25 @@
+#Variables php:
+NOM:Formulaire de reservation des lits
+NABV:FormResa
+DATABASE:intramsi
+FICHIER_REFERENCE:HopitalJour.xls
+
+#Description des caractéristiques des champs du fichier de référence :
+#Col1 : nom variable php
+#Col2 : nom de la colonne dans le fichier de reference
+#Col3 : Description du contenu de la colonne dans le fichier de reference
+
+VAR:VAR:Variables contenues dans le fichier d'échange xls
+VABV:ABV:Abreviation du nom de la variable
+LIBELLE:LIBELLE:Libelle de la variable ou de l'element d'affichage
+TYPE:TYPE:Type de variable ou d'element d'affichage
+LEGENDE:LEGENDE:unite, contenu des CS,...
+COMMENTAIRES:COMMENTAIRES:details sur variable , autres commentaires (si ='NumRef' -> variable = numero de reference pour indentation)
+SOURCE:SOURCE:source de donnees
+COMPDATA:COMPDATA:Donnees compléeentaires aghate
+
+#Descriptifs de champs complementaires
+IDFORM:ID
+IDPATIENT:NIP
+NAMEPATIENT:NOM
+FIRSTNAMEPATIENT:PRENOM

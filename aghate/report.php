@@ -93,12 +93,12 @@ for($i = 0; $i < count($Protocoles); $i++)
 //----------------------------------------------------
 // Preparation Medecines  list
 //----------------------------------------------------
-$sql = "SELECT DISTINCT specialite FROM `agt_medecin`";
-$Specialite = $db->Select($sql);
+$sql = "SELECT * from agt_medecin   group by specialite";
+$specialite = $db->Select($sql);
     
-for($i = 0; $i < count($Specialite); $i++)
+for($i = 0; $i < count($specialite); $i++)
 {
-	$ListeSpecialite[] = $Specialite[$i]['specialite']."|".$Specialite[$i]['specialite'];
+	$Listespecialite[] = $specialite[$i]['specialite']."|".$specialite[$i]['specialite'];
 }
 
 
@@ -153,12 +153,11 @@ if ($Afficher=="Afficher")
 				FROM_UNIXTIME(e.end_time, '%d/%m/%Y %Hh%i') as date_fin,					
 				e.id as entry_id,a.service_name, r.room_name, r.description, a.id,
 				e.protocole,e.medecin,e.uh,e.nda
-			FROM agt_loc e, agt_service a, agt_room r, agt_pat p
+			FROM agt_loc e, agt_service a, agt_room r,agt_pat p 
 			WHERE e.room_id = r.id 
 			  AND r.service_id = a.id   
 			  AND p.noip=e.noip
-              AND ( e.medecin IN ( Select id_medecin from agt_medecin) OR e.medecin IS NULL)
-              
+            
 			  "; 
 	//filtre entrée / sortie
 	if($TypeMvt=="E")
@@ -173,17 +172,12 @@ if ($Afficher=="Afficher")
 		
 	//filtre par protocoles 
 	if (strlen($protocole) > 0){
-		 $sql .= " AND e.protocole ='".$protocole."'";
+		 $sql .= " AND protocole ='".$protocole."'";
 		}
 
 	//filtre par medecin 
 	if (strlen($medecin) > 0){
-		 $sql .= " AND e.medecin ='".$medecin."'";
-		}
-		
-//filtre par medecin 
-	if (strlen($specialite) > 0){
-		 $sql .= " AND '".$specialite."' IN (Select specialite from agt_medecin where id_medecin = e.medecin)";
+		 $sql .= " AND medecin ='".$medecin."'";
 		}
 $sql.=" $cond Order by p.nom,p.prenom limit 500"	;						
 	 

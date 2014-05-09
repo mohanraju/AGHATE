@@ -22,6 +22,7 @@ include "./commun/include/ClassFileHandle.php";
 include "./commun/include/ClassAghate.php";
 include "./commun/include/CommonFonctions.php";
 include "config/config_".$site.".php";
+ 
 
 $debut = time();
 echo "<pre>";
@@ -35,13 +36,57 @@ $Gilda= new Gilda($ConnexionStringGILDA);
 $FileHandle= new FileHandle();
 echo "<hr> Syncronisation gilda <hr>";
 
+/*=======================================================================
+ * Etape 1 
+ * Mettre a jour les annulations adns la journée  reconstrure les sejours 
+ * ======================================================================
+*/
+$Aghate->AddTrace("\n ####  Procedure MAJ annulations ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
+//recupares les annulation de GILDA.MVT avec le typaj D et date misea jour=$date
+$sql="SELECT dos.noip,mvt.NODA as NDA,MVT.NOUF,MVT.TYMVAD,MVT.DAMVAD,MVT.HHMVAD,MVT.TYMAJ,MVT.DADEMJ,MVT.NOIDMV
+		FROM mvt,dos
+		WHERE  dos.noda=mvt.noda 
+		AND DADEMJ between sysdate-1 and sysdate+1
+		AND tymaj='D' order by mvt.NODA";
 
-/*#####################################################################
- * Traitement des sorties SH du Gilda.MVT
- * met a jour les dates de fin (SH)
- * Ferme les séjours 
- * ecrire la tableau dans un fichier 
- * #####################################################################
+$AnnlGilda=$Gilda->OraSelect($sql);
+//print_r($res); 
+ 
+$nbr_resume=count($AnnlGilda);
+$last_nda="";
+
+for($i=0; $i < $nbr_resume ;$i++)
+{
+	// verify e sejour est deja reconstrute
+	$Chk=$Aghate->select("select * from  loc_backup  WHERE tymaj='D' AND NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"); 
+	if (count($Chk) > 0)
+	{
+		if($last_nda != $res[$i]['NDA'])
+		{
+			$Aghate->AddTrace("\nNDA:".$res[$i]['NDA']." séjour reconstruite");		
+			// url
+			$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
+			$url= str_replace(strrchr($url,"/"),"/",$url);			
+			$result = file_get_contents($url."commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda=".$AnnlGilda[$i]['NDA']."&table_loc=agt_loc");
+			//echo "<br>".$result;
+		}	
+		$last_nda = $res[$i]['NDA'];
+		
+		//mettre a jour dans loc_bacup les annularions
+		$sql_update="UPDATE loc_backup set
+					tymaj='D' WHERE NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"; 
+		$NbrRecords=$Aghate->update($sql_update);	
+	}
+}
+
+
+ 
+ 
+/*=======================================================================
+ * Etape 2 
+ * 	mettre a jour les SH du Gilda.MVT
+ * 
+ * ======================================================================
 */
  // Initialise le fichier de trace
 $Aghate->init_trace_file ();
@@ -49,7 +94,7 @@ $Aghate->init_trace_file ();
 $DonneeGilda= $Gilda->GetSortiesParDate(date("d/m/Y"));
 $FileHandle->Array2csv($DonneeGilda,"./trace/Sorie.".date("Y.m.d.h.i.s").".csv");
 
-$Aghate->AddTrace("\n #### totoooProcedure mettre a jour DateFin ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
+$Aghate->AddTrace("\n ####  Procedure mettre a jour DateFin ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
 
 // les cols retourne :NOIP	NDA	DTSOR	HHSOR	UHSOR	TYSEJ	NOIDMV
 $cpt_maj = 0;
@@ -57,6 +102,8 @@ $cpt_wait = 0;
 
 $TableName = 'agt_loc';
 $nb_i = count($DonneeGilda);
+$Aghate->BackupSortie($DonneeGilda);
+
 for($i=0;$i< $nb_i;$i++)
 {
 	$noip 		= $DonneeGilda[$i]['NOIP'];
@@ -81,13 +128,16 @@ for($i=0;$i< $nb_i;$i++)
 }
 
 $Aghate->AddTrace("\n ==> Fin à ". date('d/m/Y H:i:s'). " \n"); 		
- 
-/*#####################################################################
+
+ /*
+ * ======================================================================
+ * Etape 3
+ * insert/maj LOC
  * Syncronisation with Gilda LOC+MVT vers Agt.loc
  * paramètre : $GildaLoc : tableau contenant les données de LOC
  * Insère les patients de LOC vers Aghate (agt_loc)
  * Met a jour les dates d'entrées et/ou les uh/nda
- * #####################################################################
+ * ======================================================================
 */ 
 
 // Récupère les données de LOC  dans un tableau
@@ -135,11 +185,15 @@ for ($i=0; $i< $nb_loc ;$i++)
 		$nopost 			= ""; 	//------------------------------------------------------->
 		$service_info = $Aghate->GetServiceInfoByUh(trim($GildaLoc[$i]['UH']));
 		$MsgAlert			=	"Pas de lit physique dans Gilda";
+		$date_loc 		= $GildaLoc[$i]['DTENT']; //de MVT
+		$heure_loc 		= $GildaLoc[$i]['HHENT']; //de MVT		
 	}
 	else
 	{
 		$room_name 		= $GildaLoc[$i]['NOLIT'];
 		$nopost 		= $GildaLoc[$i]['NOPOST'];
+		$date_loc 		= $GildaLoc[$i]['DDLOPT']; //de LOC
+		$heure_loc 		= $GildaLoc[$i]['HHLOPT']; //de LOC		
 		//localisation des service par LIT ou NOposte
 		//is Neckar on localise par Nom du lit 
 		if($site=='001')
@@ -148,11 +202,9 @@ for ($i=0; $i< $nb_loc ;$i++)
 			$service_info 	= $Aghate->GetServiceInfoByNoPost($nopost);
 
 	}	
-	
-	$date_loc 		= $GildaLoc[$i]['DTENT']; //de MVT
-	$heure_loc 		= $GildaLoc[$i]['HHENT']; //de MVT
-	$type_mv 	= 	$GildaLoc[$i]['TYMVT'];
-	$uh				=	$GildaLoc[$i]['UH'];
+
+	$type_mv 		= $GildaLoc[$i]['TYMVT'];
+	$uh				= $GildaLoc[$i]['UH'];
 	
 	$Aghate->AddTrace("| uh : ".$uh."| tymvt : ".$type_mv."| lit :".$room_name . "| post_trt :".$nopost ."| date_mvt :".$date_loc." à ".$heure_loc);
 
@@ -164,8 +216,8 @@ for ($i=0; $i< $nb_loc ;$i++)
 	$service_id = $service_info['id']; 
 	if (strlen($service_id) < 1)
 	{
-		echo "ERR => Post Traitement =>".$GildaLoc[$i]['NOPOST']." NOLIT =>".$GildaLoc[$i]['NOLIT']." Service introuvable , maj jour structure neccessaire" ;
-		echo "================================================================================================================================================================================================<>>>>>>>>>>>>>>>>>>>><<<Traitement abandonné!!" ;				
+		$Aghate->AddTrace("ERR => Post Traitement =>".$GildaLoc[$i]['NOPOST']." NOLIT =>".$GildaLoc[$i]['NOLIT']." Service introuvable , maj jour structure neccessaire" );
+		$Alerts[]="ERR => Post Traitement =>".$GildaLoc[$i]['NOPOST']." NOLIT =>".$GildaLoc[$i]['NOLIT']." Service introuvable , maj jour structure neccessaire" ;
 		continue;
 	}
 				
@@ -176,7 +228,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 	if (strlen($room_info['id']) < 1 )
 	{
 		$Aghate->AddTrace("ERR => Le lit ".$room_name." n'existe pas dans la table agt_room, maj de la structure necessaire\n");
-		echo "================================================================================================================================================================================================<>>>>>>>>>>>>>>>>>>>><<<Traitement abandonné!!" ;				
+		$Alerts[]="ERR => Le lit ".$room_name." n'existe pas dans la table agt_room, maj de la structure necessaire\n";
 		continue;
 	}
 	
@@ -210,18 +262,17 @@ for ($i=0; $i< $nb_loc ;$i++)
 
 		//-----------------------------------------------------------
 		// Check si nouveau PI , GEstion intra mouvments par GILDA
-		// pour n'est ecracé le current sej on controme le date deb $date_deb != $info_entry['start_time']
+		// pour n'est ecracé le current sej on controle le date deb $date_deb != $info_entry['start_time']
 		//-----------------------------------------------------------	
-		if ($type_mv=='PI'){
+		if ($type_mv=='PI')
+		{
 			// on verifie d'abord si start_time n'est pas le même et que ds source est différent de gilda
-			if($date_deb != $info_entry['start_time'] && $info_entry['ds_source']!='Gilda' && $info_entry['uh']!=$uh){				
-
-
-				// prepare tableau
+			if($date_deb != $info_entry['start_time']  && $info_entry['uh']!=$uh)
+			{				
+				// prepare tableau ,mise a jour de la date de sortie du passage précédent
 				$TableauUp ['end_time'] = $date_deb;
 				$TableauUp ['ds_source'] = 'Gilda';
 				$TableauCondUp['id'] = $info_entry['id'];
-				// Si PI, mise a jour de la date de sortie du passage précédent
 				$Aghate->update_($TableName,$TableauUp,$TableauCondUp);
 				$Aghate->AddTrace(", |Passage Interne MVT son dernière sejour maj id:".$info_entry['id'].' date_fin :'.date('d/m/Y h:i:s',$date_fin));	
 				$cpt_pi++;
@@ -237,13 +288,13 @@ for ($i=0; $i< $nb_loc ;$i++)
 
 		// print_r($info_entry);							
 		// echo "<br>".$info_entry['room_id']	."!= ".$room_id ."&&". $date_deb ."< ".$info_entry['end_time'] ."&&". $info_entry['ds_source']."!='Gilda' &&". $info_entry['uh']."==".$uh 		;
-		if($info_entry['room_id']	!= $room_id && $date_deb < $info_entry['end_time'] && $info_entry['ds_source']!='Gilda' && $info_entry['uh']==$uh  )
+		if($info_entry['room_id']	!= $room_id && $date_deb < $info_entry['end_time'] && $info_entry['uh']==$uh  )
 		{				
 				// prepare tableau
 				$TableauUp ['end_time'] = $date_deb;
 				$TableauUp ['ds_source'] = 'Gilda';
 				$TableauCondUp['id'] = $info_entry['id'];
-				// Si PI, mise a jour de la date de sortie du passage précédent
+	
 				$Aghate->update_($TableName,$TableauUp,$TableauCondUp);
 				$Aghate->AddTrace(", |Passage Interne LOC son dernière sejour maj id:".$info_entry['id'].' date_fin :'.date('d/m/Y h:i:s',$date_fin));	
 				$cpt_pi++;
@@ -254,7 +305,8 @@ for ($i=0; $i< $nb_loc ;$i++)
 		
 	
 	//-----------------------------------------------------------
-	//  Check Sejour Present déjà dans le AGT.service 
+	// Check Sejour Present déjà dans le AGT.loc
+	// DateDeb= pour les patient dans la journées
 	//-----------------------------------------------------------			
 
 	$sejours= $Aghate->CheckSejourPresent($nip,$date_deb,$service_id); 
@@ -265,10 +317,12 @@ for ($i=0; $i< $nb_loc ;$i++)
 
 		//--------------------------------------------------------------------------------------------
 		// si start_time et room_id sont même le pat present dans le bon lit  de_source ='automate'
+		// mettre a jour le end_time
 		//--------------------------------------------------------------------------------------------
 		if ( ($sejours[$s]['start_time']	== $date_deb) && ($sejours[$s]['room_id']	== $room_id) && ($sejours[$s]['ds_source']=="Automate"))
 		{
 			// check lit occupé par autre patient, donv envoi le NIP a exclure
+			$date_fin=  time();
 			$ChkPlaceLibre=$Aghate->IsPlaceLibre($room_id,$date_deb,$date_fin,$nip);
 			// si place libre
 			if(count($ChkPlaceLibre) > 0)
@@ -281,7 +335,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 				$Aghate->UpdateDescriptionFromId($ChkPlaceLibre[0]['id'],"TRACE_AUTOMATE",$alert,"TRACE_AUTOMATE");					
 			} 				
 				
-			$date_fin=  time()+ ($duree_previsionnel*60*60*24);
+			
 			$sql="UPDATE agt_loc set end_time='".$date_fin."' 
 						WHERE id='".$sejours[$s]['id']."'";
 			//echo "<br>".
@@ -349,7 +403,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 		// si Gilda.LIT  <> AGT.LIT , 
 		// deplace Panier vers LIT les Programations
 		//--------------------------------------------------------------------------------------------				
-		elseif(($sejours[$s]['start_time'] == $date_deb) && ($sejours[$s]['room_id'] != $room_id) )	
+		elseif(($sejours[$s]['start_time']	== $date_deb) && ($sejours[$s]['room_id']	!= $room_id) )	
 		{	
 			// check lit occupé par autre patient, donv envoi le NIP a exclure
 			$ChkPlaceLibre=$Aghate->IsPlaceLibre($room_id,$date_deb,$date_fin);
@@ -378,7 +432,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 		// si Gilda.LIT  <> AGT.LIT and gilda.start_time <> agt.start_time  
 		// deplace Panier vers LIT les Programations
 		//--------------------------------------------------------------------------- -----------------				
-		 elseif(($sejours[$s]['start_time']	!= $date_deb) && ($sejours[$s]['room_id'] != $room_id) )	
+		 elseif(($sejours[$s]['start_time']	!= $date_deb) && ($sejours[$s]['room_id']	!= $room_id) )	
 		{	
 			// check lit occupé par autre patient, donc envoi le NIP a exclure
 			$ChkPlaceLibre=$Aghate->IsPlaceLibre($room_id,$date_deb,$date_fin,$nip);
@@ -390,7 +444,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 							room_id='".$ServicePanierID."'
 							WHERE id='".$ChkPlaceLibre[0]['id']."'";
 				$Aghate->update($sql);			
-				$alert="Conflit 3-> Patient(".$nip.") du lit ".$sejours[$s]['room_name']." occupe le lit  donc patient deplacer dans le panier";		
+				$alert="Conflit 3-> Patient(".$nip.") du lit ".$sejours[$s]['room_name']." occupe le lit  donc patient deplacer dans le pannier";		
 				$Aghate->AddTrace(" |".$alert);
 				$Aghate->UpdateDescriptionFromId($ChkPlaceLibre[0]['id'],"TRACE_AUTOMATE",$alert,"TRACE_AUTOMATE");
 	
@@ -411,13 +465,16 @@ for ($i=0; $i< $nb_loc ;$i++)
 		}
 
 		//-------------------------------------------
-		// mise a jour les NDA, si programmé	
+		// mise a jour les NDA, si programmé,puis CODAGE et FORMS	
 		//-------------------------------------------
 		if($nda != $sejours[$s]['nda']){
 			$Aghate->updateNda($sejours[$s]['id'],$GildaLoc[$i]);
+
 			// mise a jour TEMPS NDA dans forms/coadge a faire ici
-			//$res="ajax_forms_update_nda.php?temp_nda=".$sejours[$s]['nda']."&nda=".$nda);
-			//$res="ajax_codage_update_nda.php?temp_nda=".$sejours[$s]['nda']."&nda=".$nda);						
+			$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
+			$url= str_replace(strrchr($url,"/"),"/",$url);			
+			$res = file_get_contents($url."../commun/ajax/ajax_forms_update_temp_nda.php?temp_nda=".$sejours[$s]['nda']."&nda=".$GildaLoc[$i]['NDA']."&uh=".$GildaLoc[$i]['UH']);
+
 		}		
 
 		//--------------------------------------------------------------------------------------------
@@ -438,7 +495,7 @@ for ($i=0; $i< $nb_loc ;$i++)
 	
 	if(count($sejours) > 0)
 	{
-		continue; // pase besion de verifier les restes patient deja present dans la base et les donnes sont maj
+		continue; // pas besion de verifier les restes patient deja present dans la base et les donnes sont maj
 	}
 	else
 	{
@@ -497,15 +554,19 @@ $Aghate->AddTrace("\n\nNombre séjours traité : ".$nb_loc);
 $Aghate->AddTrace("\nNombre patient insere : ".$cpt_in);
 $Aghate->AddTrace("\nNombre maj : ".$cpt_updt."\n");
 $Aghate->AddTrace("Nombre lit absent | pat non insere : ".$nb_lit_abs."\n");
-$Aghate->AddTrace("NOmbre pat non insere faute de place : ".$no_place."\n");
+$Aghate->AddTrace("Nombre pat non insere faute de place : ".$no_place."\n");
 $Aghate->AddTrace("Nombre pat dejà present agt_loc : ".$pat_pres."\n");
 $Aghate->AddTrace("Nombre date de sortie forcé pour insertion : ".$cpt_forced."\n");
-
  
 
 //Ecrit dans le fichier de trace
 $Aghate->write_trace_file();
 
+// affiche les alerts
+foreach ($Alerts as $val)
+{
+	echo "<br>".$val;
+}
 $fin = time();
 
 $result = $fin - $debut;

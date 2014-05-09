@@ -28,3 +28,23 @@ function LanceAjax(Scripturl,PageVariables){
 	 					}).responseText;
 	 return html;
 }
+function CocherElements(CurrentElementNo,GroupId)
+{
+	//recupère le bgcolor du current element 
+	var ColorActuel=$("#LBL_"+GroupId+CurrentElementNo).attr('class');
+
+	//remettre tous comme non selectionnées 
+	$("a[id^='LBL_"+GroupId+"']").each(function() {
+			$(this).removeClass('FileSelected').addClass('OptionNonSelected');		    
+	});	
+	
+	//
+	if(ColorActuel=="OptionNonSelected")
+ 	{
+		$("#LBL_"+GroupId+CurrentElementNo).removeClass('OptionNonSelected').addClass('FileSelected');
+		$("#"+GroupId).val($("#LBL_"+GroupId+CurrentElementNo).attr('cval'));	
+ 	}else
+ 	{
+ 		$("#"+GroupId).val('99');	
+ 	}
+}

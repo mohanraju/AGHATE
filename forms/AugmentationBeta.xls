@@ -1,0 +1,34 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+NIP	num		hidden	NIP	forms	
+NDA	num		hidden	NDA	forms	
+Informations patient	titre1				forms	
+Date Souhaitee	Date 			date_S	forms	
+Diagnostics	titre1				forms	
+Diagnostic d'entrée	InputCompletSimple	DP	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DP|TABLE=cim10spec|AJAX=ajax_autocomplete	dp	codagedp	o
+Pathologies associées	InputCompletMulti	DAS	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DAS|TABLE=cim10spec|AJAX=ajax_autocomplete	das	codage	
+Molecule habituelle du patient	cs 	 Bisoprolol|Carvédilol|Nébivolol|Métoprolol 		mol_ha	forms	
+Dose actuelle de BB (/jour)	num			dose_act	forms	
+nombre de prise	num			nb_pris	forms	
+Dose de BB à donner au patient le jour de la surveillance	num			dose_surv	forms	
+Patient convoqué le	date			date_convoq	forms	
+Nom du médecin	text			nom_med	forms	
+Examens à réaliser	titre1				forms	
+	cm	Electrocardiogramme		electro	forms	
+	cm	Ionogramme sanguin+créatinine		iono	forms	
+	cm	Bilan hépatique		bil_hep	forms	
+	cm	BNP		bnp	forms	
+	cm	NFS Plaquettes		nfs-pla	forms	
+	cm	TP INR		tp_inr	forms	
+	cm	autres		aut_exam	forms	
+Préciser	text			precis_aut	forms	
+Molécule 	cs 	 Bisoprolol|Carvédilol|Nébivolol|Métoprolol 		mol_choix	forms	
+Dose de BB déjà prise par le patient (en mg)	num			dose_pris	forms	
+Dose  donnée par l’IDE pour atteindre la dose du palier suivant (mg) :	num			dose_ide	forms	
+Téléphone	num			tel_pat	forms	
+Médecin responsable	text			med_resp	forms	
+Médecin responsable, le 	date			date_med	forms	
+IDE responsable 	date			date_ide	forms	
+Conclusion	cs 	Succès|Mauvaise tolérance|Autre		ccl	forms	
+Devenir du patient	cs 	Retour à domicile|Hospitalisé|Autre		devenir	forms	
+Revu 	cs 	En consultation|Nouvelle augmentation				
+Le	date			date_revu	forms	

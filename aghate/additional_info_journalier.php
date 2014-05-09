@@ -2,14 +2,14 @@
 include "./commun/include/admin.inc.php";
 include "./commun/include/CustomMysql.php";
 include "./commun/include/CommonFonctions.php";
+$db = New CustomMySQL($DBName);
 
 if(strlen($service_id)>0)
 	$area=$service_id;
 else
 	$area=$area;
-$db = New CustomMySQL($DBName);
 $grr_script_name = "additional_info_journalier.php";
-//if (empty($area)) $area = get_default_area();
+if (empty($area)) $area = get_default_area();
 
 if (strlen($area)==0){
 	echo "Veuillez recommencez SVP !!!";
@@ -43,11 +43,12 @@ if (strlen($area)==0){
 	 if(($tmode=="UPDATE") and ($update_info=='1') ){
 			$sql="update agt_loc_parametres set medecin_id='$medecin',details='$details', service_fermee='$fermee' 
 			where id ='$id'";
+ 
 			$results=$db->update($sql);
 			echo "modification enregisteré";
 		}
 	 if(($tmode=="INSERT") and ($update_info=='1') ){
-			$sql="insert into agt_loc_parametres  (date,medecin_id,details,service_id,service_fermee) values ('$date','".protect_data_sql($medecin)."','".protect_data_sql($details)."','$area','$fermee')";		
+			$sql="insert into agt_loc_parametres  (date,medecin_id,details,service_id,service_fermee) values ('$date','".protect_data_sql($medecin)."','".protect_data_sql($details)."','$area','$fermee')";
 			$results=$db->insert($sql);
 			echo "Enregisterment ok";
 		}
@@ -66,7 +67,7 @@ if (strlen($area)==0){
 	$fermee=$results[0]['service_fermee'];
 	$medecin=$results[0]['medecin_id'];	
 	//echo $sql_;		
-
+	
 	// medecind liste
 	$sql_="select *  FROM agt_medecin
 			where   agt_medecin.service_id='".protect_data_sql($area)."'";

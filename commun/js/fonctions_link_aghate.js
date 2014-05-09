@@ -4,8 +4,9 @@
 
 $(document).ready(function() {	
 	  
-	LoadResaInfo();
+	//LoadResaInfo();
 });
+ 
 //##############################################################
 // function LoadResaInfo()
 // Charger les resa infos 
@@ -13,22 +14,24 @@ $(document).ready(function() {
  
 function LoadResaInfo()
 {
+		//get page variables
 		var id		=$("#id").val();
 		var mode	=$("#mode").val();
-		var table_loc	=$("#table_loc").val();
-		var type_reservation	=$("#type_reservation").val();		
+		var table_loc	=$("#table_loc").val();		
 	 	var description='';
 		//Get info reservation from aghate (ajax response = json)
 		//alert("../aghate/commun/ajax/ajax_aghate_get_resa_info_from_id.php?entry_id="+id+"&mode="+mode+"&table_loc="+table_loc);
-		RefData=LanceAjax("../aghate/commun/ajax/ajax_aghate_get_resa_info_from_id.php","entry_id="+id+"&mode="+mode+"&table_loc="+table_loc+"&type_reservation="+
-							type_reservation);
-		if(RefData.length > 1)
+		RefData=LanceAjax("../aghate/commun/ajax/ajax_aghate_get_resa_info_from_id.php","entry_id="+id+"&mode="+mode+"&table_loc="+table_loc);
+ 
+		obj = JSON && JSON.parse(RefData) || $.parseJSON(RefData);
+		
+		if(typeof obj.Erreur == 'undefined')
 		{
-	   		obj = JSON && JSON.parse(RefData) || $.parseJSON(RefData);
+			$("#view_resa").html(RefData);
+	   		
 	   		
 			if(id !="")
-			{	if(!obj.nda) obj.nda = id;
-				$("#nda").val(obj.nda);
+			{	$("#NDA").val(obj.nda);
 				$("#ref").val("AGHATE");
 				
 				$("#RefData").val(RefData);
@@ -54,10 +57,16 @@ function LoadResaInfo()
 				
 				if(typeof obj.description.DESC___COMPL !=  'undefined')description=obj.description.DESC___COMPL.Valeur;
 
-				if(typeof obj.medecin != 'undefined') {obj.prenom_medecin="";obj.nom_medecin="A renseigner";obj.specialite='';}
+				if(typeof obj.medecin == 'undefined' || obj.medecin == '' || obj.medecin == null) 
+				{
+					obj.prenom_medecin="";
+					obj.nom_medecin="A renseigner";
+					obj.specialite='';
+				}
+				if(obj.specialite == null) obj.specialite='';
 
-				var html_resa  = "<a href='../aghate/reservation.php?id="+id+"&table_loc="+table_loc+"&type_reservation="+
-							type_reservation+ "&mode=MODIFY'>Modifier cette r&eacute;servation</a> <br>";
+
+				var html_resa  = "<a href='../aghate/reservation.php?id="+id+"&table_loc="+table_loc+"&mode=MODIFY'>Modifier cette r&eacute;servation</a> <br>";
 				//alert(html_resa);
 				html_resa +=  "<table width='700'>"  ;                                                                                                                            
 				//	html_resa += "	<tr><td width=200><a href='./reservation.php?id="+id+"'>Modifier cette réservation</a> <br></td>"
@@ -65,7 +74,7 @@ function LoadResaInfo()
 				html_resa += "  <td id='Patient'><b>"+obj.nom+" "+obj.prenom+"   N&eacute;e le "+obj.naissance+"</b><br>";
 				html_resa += "	<b>NIP</b> "+obj.noip+" <b>NDA</b> "+obj.nda+"<br><br>";
 				html_resa += "	<b>Motif</b> "+obj.protocole+"<br>";
-				html_resa += "	<b>Medecin responsable</b> "+obj.prenom_medecin+" "+obj.nom_medecin+"<br><br>";
+				html_resa += "	<b>Medecin responsable</b> "+obj.nom_medecin+" "+obj.prenom_medecin+"<br><br>";
 				html_resa += "  <b>Sp&eacute;cialit&eacute;</b> : "+obj.specialite+"<br><br>";
 				html_resa += obj.service_name+" du "+obj.entry+" au "+obj.end+"<br>";
 				html_resa += "</td></tr></table>";
@@ -94,7 +103,7 @@ function LoadResaInfo()
 	//			$("#view_resa").html(res[0]);
 	//		}
 		}else
-			$("#view_resa").html("<span>Aucune reservation trouvé</span>");	
+			$("#view_resa").html("<span>"+obj.Erreur+"</span>");	
 }
 
 

@@ -3,6 +3,7 @@ NOM:Formulaire de reservation des lits
 NABV:FormResa
 DATABASE:intramsi
 FICHIER_REFERENCE:ReservationFormNCK.xls
+MULTI_FORMS:
 
 #Description des caractéristiques des champs du fichier de référence :
 #Col1 : nom variable php

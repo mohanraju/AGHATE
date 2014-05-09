@@ -149,6 +149,19 @@ class Forms extends MySQL
 		$Res=$this->Simpa->OraSelect($sqlSej);
 	return $Res[0];
 	}
+	
+		function GetListeSejour($NIP)
+	{
+		$Res=array();
+		$sqlH="select noda as \"NDA\", noip as \"NIP\",to_char(DAENTR,'DD-MM-YYYY') as \"de\",
+							to_char(DASOR,'DD-MM-YYYY') as \"ds\",
+							tydos as \"type\",DASOR as \"ds\"
+						from dos
+						where NOIP='".$NIP."' ORDER BY DASOR desc ";
+		$Res=$this->Simpa->OraSelect($sqlH);
+		
+		return $Res;
+	}
 
 	function GetMvtFromNda($Nda){
 		$sqlMvt="select to_char(DAMVAD,'DD/MM/YYYY') as DATEMVT ,NOUF,NODA
@@ -184,8 +197,8 @@ class Forms extends MySQL
 	}
 	function GetDataFromSource($VID,$Source,$NDA="",$NOHJO="",$UH=""){
 		//echo $Source."<br>";
-		$NDA=$VID;
-	//	if(!$NDA || !$UH) $NDA=$VID;
+		
+		//	if(!$NDA || !$UH) $NDA=$VID;
 		if($Source=='GILDA'){$Data=array();	
 				if(strlen($ID)==10){$Data['Patient']=$this->GetPatientFromNip($VID);}
 
@@ -209,7 +222,7 @@ class Forms extends MySQL
 				//echo $DetailSource['SQL'].'<br>';
 
 				//Si donnees en colonne transformation
-				if($DetailSource['TYPEDATA']=='colonne' && $Source!='codage' && $Source!='codagedp' && $Source!='codagedate_date'){
+				if($DetailSource['TYPEDATA']=='colonne' && $Source!='codage' && $Source!='codagedp' && $Source!='codagedate_date' && $Source!='formsAutoComp'){
 					$tmp=$Data;$Data=array();
 					for($i=0;$i<count($tmp);$i++){
 						//rendre parametrable var et val
@@ -226,6 +239,15 @@ class Forms extends MySQL
 					}
 					
 				}
+				//Si donnees en colonne transformation
+				if($Source=='formsAutoComp'){
+					$tmp=$Data;$Data=array();
+					for($i=0;$i<count($tmp);$i++){
+						//rendre parametrable var et val
+						$Data[0][$tmp[$i]['type']][$tmp[$i]['id']]=	array(diag=>$tmp[$i]['val'] ,	libdiag=>$tmp[$i]['libelle'],	datrea=>$tmp[$i]['datrea'])	;		
+					}
+					
+				}
 				//echo'<pre>';
 				//print_r($Data);
 		}
@@ -233,7 +255,7 @@ class Forms extends MySQL
 		return $Data[0];
 	
 	}
-
+	
 
 	function GetFormId($DP,$IdAdmin=''){
 		//GetDetail Formulaire		
@@ -293,49 +315,152 @@ class Forms extends MySQL
 
 
 
+	function GetForm($NDA){
+			$sql="select distinct val from forms where var='form' and nda=$NDA order by val asc";
+			$Res=$this->select($sql);
+			return $Res;
+	}
+	
+	/*
+	* ==========================================================================
+	* function updateNda($LocID,$InfoMVT[])
+	* function permet de mise a jour les TempNDA vers le vrai NDA  et les UH
+	* Ex :T00000001 => 761401224
+	* ==========================================================================
+	*/
+	function updateNda($TempNDA,$InfoMVT)
+	{
+		//update forms
+		$sql_updt="UPDATE forms set idref='".$InfoMVT['NDA']."', ref='GILDA', nda='".$InfoMVT['NDA']."', uhexec='".$InfoMVT['UH']."', uhdem='".$InfoMVT['UH']."' WHERE nda='".$TempNDA."'";
+		$res = $this->update($sql_updt);	
+		echo $sql_updt;
+		//update codage
+		$sql_updt="UPDATE codage_msi set nda='".$InfoMVT['NDA']."', uhexec='".$InfoMVT['UH']."', uhdem='".$InfoMVT['UH']."' WHERE nda='".$TempNDA."'";
+		$res = $this->update($sql_updt);	
+		echo '<br>'.$sql_updt;
+	}
+	
+	function GetIdFromVID($vid)
+	{
+		$requete="SELECT ID from u2i where VID='$vid' AND ACTIF=1";
+		
+		$id=parent::select($requete);
+	
+		return $id[0]['ID'];
+	}
 
+	function getVID($NIP,$NDA,$UH)
+	{
+		$requete="SELECT VID FROM u2i WHERE NIP='".$NIP."' AND NDA='".$NDA."' AND UH='".$UH."' AND actif=1";
+		
+		$vid=parent::select($requete);
+		
+		if(!isset($vid[0]['VID']))
+			return 0;
+		
+		return $vid[0]['VID'];
+	}
 
-
-
-	function PrintForm($DP,$VID,$mode_ref=""){
+	function PrintForm($DP,$result,$mode_ref=""){
+		foreach ($result as $key => $value) {
+			//echo "clé : ".$key." valeur : ".$value;
+			${$key} = $value;
+		}
+		$VID=$id;$nip=$noip;$NDA=$nda;$UH=$uh;$uhexec=$uh;$uhdem=$uh;
+		$FichierRef=$DP['MULTI_FORMS'];
+		$nom = $_SERVER["SCRIPT_NAME"]; 
+		$script_name=explode('/',$nom);
+		$script_name=end($script_name);
+		
+		if(strlen($FichierRef) > 0){
+			$fp = fopen($FichierRef, 'rb');
+			$aLines = file($FichierRef);
+			$count=0;
+			foreach($aLines as $sLine) {  
+				$aCols = explode("\t", $sLine);
+				$FormsList[$aCols[0]]=$aCols[1];
+			}
+			$FichierRef=array_keys($FormsList);
+			$formsr=$this->GetForm($NDA);
 			
+			//Attribution du formulaire à lire : utlisation de $_GET['filename'] qui est forcé si non renseigné
+			if(!isset($_GET['filename'])){
+				if($formsr)$_GET['filename'] = $formsr[0][val];
+				else $_GET['filename'] = $FichierRef[0];
+			}
+			$DP['FICHIER_REFERENCE'] = $_GET['filename'].'.xls';
+		
+		
+		//Le formulaire selectionné a-t-il été utilisé ?
+		$InitForm='No';
+		for($i=0;$i<count($formsr);$i++)if($formsr[$i]['val']==$_GET['filename'])$InitForm='Yes';
+		
+		}
+		
 		$DetailsForm=$this->GetDetailsFormulaire($DP);
-
+		
  		//Get Data from all sources
 		$Data=array();
-		$nda=$VID;
+		//$nda=$VID;
 		$uh=$_GET['uhexec'];
+		$table_loc = $_GET['table_loc'];
+
 		foreach($DetailsForm['SOURCE'] as $Source){
-			if(!isset($Data[$Source])&$Source!=''&$Source!='GILDA')$Data[$Source]=$this->GetDataFromSource($VID,$Source,$nda,'',$uh);
+			if(!isset($Data[$Source])&$Source!=''&$Source!='GILDA')$Data[$Source]=$this->GetDataFromSource($VID,$Source,$NDA,'',$uh);
 
 		} 
 		
 		
 		//Recupération des données du systeme d'information
 		foreach($DetailsForm[$DP['VABV']] as $k=>$ABV){
-				if (strcasecmp($ABV, 'NDA') == 0){$RefNDA=$DetailsForm[$DP['SOURCE']][$k];$NDA=$Data[$RefNDA][$ABV];}
+				//if (strcasecmp($ABV, 'NDA') == 0){$RefNDA=$DetailsForm[$DP['SOURCE']][$k];$NDA=$Data[$RefNDA][$ABV];}
 				if (strcasecmp($ABV, 'NIP') == 0){$RefNIP=$DetailsForm[$DP['SOURCE']][$k];$NIP=$Data[$RefNIP][$ABV];}
 				if (strcasecmp($ABV, 'NOIP') == 0){$RefNIP=$DetailsForm[$DP['SOURCE']][$k];$NIP=$Data[$RefNIP][$ABV];}
 		}
-
-		if(strlen($mode_ref) > 0)
-			{
-				echo "<a href='reservation_aghate.php?mode=Modifier&id=$VID&table_loc=".$_GET['table_loc']."'>Modifier le formulaire</a>";
-			}
 			
 		echo '<script src="../commun/js/FormsFormsDocready.js"></script>';
 		echo '<script src="../commun/js/FormsFunctions.js"></script>';
-
+		echo ' <link href="../commun/styles/bootstrap_form.css" rel="stylesheet">';
 		
+		
+
+		echo '<input type="hidden" name="'.$_GET['filename'].'" id="InitForm" value="'.$InitForm.'">';
 		echo '<input type="hidden" name="Username" id="Username"	value='.$_SESSION['login'].'>';
 		echo '<input type="hidden" name="SaveDateTime" id="SaveDateTime"	value="'.date("Y-m-d H:i", time()).'">';
 		echo '<input type="hidden" name="VID" id="VID" value="'.$VID.'">';
 	
-		
-		echo '<table width="700">';
-		
 	
+		
+		if(strlen($mode_ref) > 0  )
+		{
+			echo "<a href='#' onclick=\"$('#mode').val('Modif');\" id='other'>Modifier le formulaire</a><br/>";
+			//echo "<a href='".$script_name."?mode=Modifier&id=$VID&filename=".$_GET['filename']."&table_loc=".$table_loc."'>Modifier le formulaire</a><br/>";
+			if(strlen($FichierRef)>0)
+			{
+				
+				$compt=0;
+				foreach ($formsr as $key => $val){
+					foreach ($FormsList as $key1 => $val1){
+						if($val['val']==$key1){
+							$name="LBL_forms".$compt;
+							$listResultat[]=$script_name."?&name=$name&id=$VID&table_loc=$table_loc&filename=$key1|$val1";
+							$compt++;
+						}
+					}
+				}
+				
+				echo '<br>'.$this->Html->InputChoix($listResultat,'forms',"","window.location = $(this).attr('cval')",false).'<br>';
+			}
+		}
+		else
+		{		
+			echo "<a href='#' onclick=\"$('#mode').val('');\" id='other'>Retour au mode vue</a>";
+			if(strlen($FichierRef)>0)
+				echo "<br><br>Liste des formulaires  ".$this->Html->InputSelectFromArray($FormsList,'file',$_GET['filename'],"onchange='getLink(".$VID.",this,\"".$table_loc."\")'").'<br>';
+		}
+		
 		$n=0;
+		echo '<table width="700">';
 		for ($i=0;$i<count($DetailsForm['LIBELLE']);$i++){
 			$mode=$mode_ref;
 			$name=$DetailsForm[$DP['VABV']][$i];
@@ -353,6 +478,14 @@ class Forms extends MySQL
 						if($DAS){
 							foreach($DAS as $key=>$value){
 								$idF=$key;$value=$DAS[$key][libdiag];$code=$DAS[$key][diag];
+								
+							}
+						}
+			}elseif($DetailsForm[$DP['LEGENDE']][$i] == "BIO"){
+				$value=$Data[$DetailsForm[$DP['SOURCE']][$i]][$DetailsForm[$DP['LEGENDE']][$i]];
+						if($BIO){
+							foreach($BIO as $key=>$value){
+								$idF=$key;$value=$BIO[$key][libdiag];$code=$BIO[$key][diag];
 								
 							}
 						}
@@ -381,6 +514,7 @@ class Forms extends MySQL
 
 			if($DetailsForm[$DP['TYPE']][$i]!='titre1'&&$DetailsForm[$DP['TYPE']][$i]!='titre2'&&$DetailsForm[$DP['TYPE']][$i]!='titre3'){
 				if($DetailsForm[$DP['COMMENTAIRES']][$i]=='hidden'){
+					if(strlen($value)<1) $value=${$name};
 						echo '<input type="hidden" name="'.$name.'" id="'.$name.'" subtype="'.$subtype.'" value="'.$value.'">';
 				}
 
@@ -421,8 +555,11 @@ class Forms extends MySQL
 							echo '<input  DataSource="'.$DetailsForm[$DP['SOURCE']][$i].'" type="text" id="'.$name.'" name="'.$name.'" value="'.$value.'" CompData="'.$CompData=$DetailsForm[$DP['COMPDATA']][$i].'" '.$mode.'/>';
 							echo '&nbsp;&nbsp;'.$DetailsFormulaire[$DP['LEGENDE']][$i].'</td></tr>';}
 					elseif( $DetailsForm[$DP['TYPE']][$i]=='longtext'){
-							echo '<tr><td><b>'.$DetailsForm[$DP['LIBELLE']][$i].'</b><br>';
-							echo '<textarea class="form-control" rows="5" id="'.$name.'" name="'.$name.'" '.$mode.'>'.$value.'</textarea></td></tr>';}
+							echo '<tr><td><b>'.$DetailsForm[$DP['LIBELLE']][$i];
+							 	if($DetailsForm[$DP['COMPDATA']][$i]=='o')echo '*';
+							 echo '</b><br>';
+							echo "<textarea  id='".$name."' type='textarea' onblur=\"updateForms('".$VID."','".$name."','".$VID."','".$value."','".$DetailsForm[$DP['SOURCE']][$i]."','".$DetailsForm[$DP['ABV']][$i]."','".$DetailsForm[$DP['LIBELLE']][$i]."','".$DetailsForm[$DP['COMPDATA']][$i]."')\" class=\"form-control\" rows=\"10\" cols=\"93\"  ".$mode."/>".$value."</textarea></td></tr>";
+						}
 					elseif($DetailsForm[$DP['TYPE']][$i]=='num'|$DetailsForm[$DP['TYPE']][$i]=='num'){
 							echo '<tr><td><b>'.$DetailsForm[$DP['LIBELLE']][$i].'&nbsp;&nbsp;&nbsp;';
 							echo '<input  DataSource="'.$DetailsForm[$DP['SOURCE']][$i].'" type="text" class="span2" id="'.$name.'" name="'.$name.'" value="'.$value.'" '.$mode.'/>';
@@ -430,7 +567,10 @@ class Forms extends MySQL
 					}
 					elseif($DetailsForm[$DP['TYPE']][$i]=='date'){
 		    				$DateFr=$this->GetDateFr($value);
-							echo '<tr><td colspan=2><b>'.$DetailsForm[$DP['LIBELLE']][$i].'</b>';
+							echo '<tr><td colspan=2><b>'.$DetailsForm[$DP['LIBELLE']][$i];
+								if($DetailsForm[$DP['COMPDATA']][$i]=='o')echo '*';
+							echo '</b>';
+							
 							echo '&nbsp;&nbsp;&nbsp;';
 							echo '<input  DataSource="'.$DetailsForm[$DP['SOURCE']][$i].'"  type="date" class="span4" name="'.$name.'" value="'.$DateFr.'" '.$mode.' /></td></tr>';
 		    		}
@@ -450,10 +590,10 @@ class Forms extends MySQL
 		    		Print $this->Html->InputCompletSimple($VariableName=$name,$Source=$DetailsForm[$DP['SOURCE']][$i],
 		    																					$default=$value,
 		    																					$defaultCode=$code,
-		    																					$table='cim10spec',
+		    																					$table=$DetailAc['TABLE'],
 		    																					$COND1=$DetailAc['CODE'],
 		    																					$COND2=$DetailAc['LIBELLE'],
-		    																					$ajax='../commun/ajax/ajax_autocomplete.php',
+		    																					$ajax=$DetailAc['AJAX'],
 		    																					$TypeAttribut=$DetailAc['TYPEATTRIBUT'],
 		    																					$compdata=$DetailsForm[$DP['COMPDATA']][$i],
 		    																					$id=$idF,
@@ -473,13 +613,12 @@ class Forms extends MySQL
 						}
 						
 		    		echo '<tr><td>';
-		    		
 						Print $this->Html->InputCompletMulti($VariableName=$name,$Source=$DetailsForm[$DP['SOURCE']][$i],
 																								$default=$value,
-		    																					$table='cim10spec',
+		    																					$table=$DetailAc['TABLE'],
 		    																					$COND1=$DetailAc['CODE'],
 		    																					$COND2=$DetailAc['LIBELLE'],
-		    																					$ajax='../commun/ajax/ajax_autocomplete.php',
+		    																					$ajax=$DetailAc['AJAX'],
 		    																					$TypeAttribut=$DetailAc['TYPEATTRIBUT'],
 		    																					$Libelle=$DetailsForm[$DP['LIBELLE']][$i],
 		    																					$Fields=$DetailAc['CHAMPSCOMP'],

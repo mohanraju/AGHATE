@@ -1,3 +1,12 @@
+<?php
+/*#########################################################
+	
+	Affiche_service_detail.php
+	* Détail de chaque service
+	* Affichage des lits et des patients
+  Fichier appeler par AJAX
+#########################################################*/
+?>
 <!--
 on recupere les width car la page force les width
 -->
@@ -11,13 +20,7 @@ $('.soustable').width($table_width);
 </script>
 <?php 
 
-/*#########################################################
-	
-	Affiche_service_detail.php
-	* Détail de chaque service
-	* Affichage des lits et des patients
-  Fichier appeler par AJAX
-#########################################################*/
+
 
 include "./commun/include/admin.inc.php";
 include "./commun/include/mrbs_sql.inc.php";

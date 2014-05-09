@@ -6,7 +6,7 @@ include("./commun/include/ClassHtml.php");
 include("./commun/include/CommonFonctions.php");
 include("./commun/include/ClassAghate.php");
 include("./config/config_".$site.".php");
-include("../commun/layout/header.php");
+//include("../commun/layout/header.php");
 
 $com=new CommonFunctions(true);
 $Html=new Html();
@@ -114,7 +114,7 @@ if ((authGetUserLevel(getUserName(),-1) < 3) and (authGetUserLevel(getUserName()
 		          </thead>             
 		</table>          
 		<div style="overflow:auto;width:600px; height:150px; ">
-		<table width="600" border="1" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+		<table width="580" border="1" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
 			<?Php   
 							for($i=0; $i < count($results);$i++) {
 								$id_prt=$results[$i]['id_protocole'];	
@@ -133,7 +133,7 @@ if ((authGetUserLevel(getUserName(),-1) < 3) and (authGetUserLevel(getUserName()
 								Print "<td width='75' onClick=\"CheckSelection(".$retval.")\">".$date_deb. " </td>";
 								Print "<td width='95' onClick=\"CheckSelection(".$retval.")\">".$date_fin. " </td>";
 								Print "<td width='50' onClick=\"CheckSelection(".$retval.")\">".$actif."</td>";
-								Print "<td width='150'><center><input id=\"Supprimer_".$i."\" type=\"button\" onclick=\"DelProtocole(".$id_prt.");\" value=\"Supprimer\" name=\"Supprimer\"></center></td>";
+								Print "<td width='150'> <input id=\"Supprimer_".$i."\" type=\"button\" onclick=\"DelProtocole(".$id_prt.");\" value=\"Supprimer\" name=\"Supprimer\"> </td>";
 								Print "</tr>";
 								
 		
