@@ -316,7 +316,7 @@ class Forms extends MySQL
 
 
 	function GetForm($NDA){
-			$sql="select distinct val from forms where var='form' and nda=$NDA order by val asc";
+			$sql="select distinct val from forms where var='form' and nda='$NDA' order by val asc";
 			$Res=$this->select($sql);
 			return $Res;
 	}
@@ -434,7 +434,6 @@ class Forms extends MySQL
 		if(strlen($mode_ref) > 0  )
 		{
 			echo "<a href='#' onclick=\"$('#mode').val('Modif');\" id='other'>Modifier le formulaire</a><br/>";
-			//echo "<a href='".$script_name."?mode=Modifier&id=$VID&filename=".$_GET['filename']."&table_loc=".$table_loc."'>Modifier le formulaire</a><br/>";
 			if(strlen($FichierRef)>0)
 			{
 				

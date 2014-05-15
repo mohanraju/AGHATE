@@ -11,7 +11,7 @@ include("../commun/include/ClassHtml.php");
 include("../commun/include/ClassSimpa.php"); 
 include("../commun/include/ClassGilda.php"); 
 include("../aghate/commun/include/ClassAghate.php");
-include("../config/config_".$site.".php");
+
 
 //Preparation Page Variable
 $page_vars="t=t";
@@ -24,8 +24,7 @@ foreach ($_GET as $key=> $val)
 if ($mode=="MODIFY" || strlen($id) < 1) {
 	header("location:../aghate/reservation.php?".$page_vars);
 	exit;	
-	//header("location:../aghate/reservation.php?id=$id&area=$area&room=$room&hour=$hour&minute=$minute&year=$year&month=$month&day=$day&page=day");
-	//exit;
+
 }
 
 $com=new CommonFunctions(true);
