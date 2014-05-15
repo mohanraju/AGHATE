@@ -2629,7 +2629,7 @@ class Aghate  extends MySQL
 	==========================================================================
 	*/
 	function GetColorCodeByDescription($Description){
-		$sql = "SELECT * FROM agt_type_area WHERE ='".$Description."'";
+		$sql = "SELECT * FROM agt_type_area WHERE type_name ='".$Description."'";
 
 		$res = $this->select($sql);
 		return $res[0]['type_letter'];

@@ -24,7 +24,10 @@ foreach ($_GET as $key=> $val)
 if ($mode=="MODIFY" || strlen($id) < 1) {
 	header("location:../aghate/reservation.php?".$page_vars);
 	exit;	
+<<<<<<< HEAD
 
+=======
+>>>>>>> 93bd3e527415fb52f2934017b2f5127ee4ca728c
 }
 
 $com=new CommonFunctions(true);
@@ -34,35 +37,25 @@ $Forms->Html=$Html;
 $aghate = new Aghate();
 include("../commun/layout/header.php");
 echo  ' <link href="../commun/styles/bootstrap_form.css" rel="stylesheet">  ';
+print $Html->InputHiddenBox(id,$id);
+print $Html->InputHiddenBox(table_loc,$table_loc);		
+print $Html->InputHiddenBox(NDA,$NDA);
+print $Html->InputHiddenBox(area,$area);
+print $Html->InputHiddenBox(room,$room);
 
-$path="aghate/commun/ajax/ajax_aghate_get_resa_info_from_id.php";
-if(strlen($jsonpat) < 1){
-		$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
-		$url= str_replace(strrchr($url,"/"),"/",$url);		
-		$url= str_replace("forms/","",$url);		
-	
 
-	$jsonpat = file_get_contents($url.$path."?entry_id=".$id."&mode=".$mode."&table_loc=".$table_loc."&login=".$login);
-}else
-{
-	//echo "Second";
-	//echo stripcslashes($jsonpat);
-	$jsonpat=stripcslashes($jsonpat);
-	//exit;
-}
-/*echo 'toto : <pre>';
-print_r($jsonpat);
-echo "<br><br>";
-print_r(json_decode($jsonpat,true));*/
-$result=json_decode($jsonpat,true);
+print $Html->InputHiddenBox(prenom,$prenom);
+print $Html->InputHiddenBox(nomjf,$nomjf);
+print $Html->InputHiddenBox(ddn,$ddn);
+print $Html->InputHiddenBox(sexe,$sexe);
+print $Html->InputHiddenBox(age,$age);
+print $Html->InputHiddenBox(mode,$mode);
+print $Html->InputHiddenBox(service_name,$service_name);
+print $Html->InputHiddenBox(TypeCodage,'ID_DAS');
 
-foreach ($result as $key => $value) {
-	//echo "clé : ".$key." valeur : ".$value."<br>";
-    ${$key} = $value;
-}
-$nip=$noip;
+print $Html->InputHiddenBox(RefData,'');
+
 ?>
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -77,71 +70,40 @@ $nip=$noip;
 </head>
 <body style="">
 	
-<form name="resa" id="resa" action=<?php print $PHP_SELF;?> method=POST>
+<form name="resa" id="resa" action=<?php print $PHP_SELF;?> method="POST">
 <?php
-	print $Html->InputHiddenBox(id,$id);
-	print $Html->InputHiddenBox(table_loc,$table_loc);		
-	print $Html->InputHiddenBox(jsonpat,htmlspecialchars($jsonpat),100,100);
-	print $Html->InputHiddenBox(nip,$nip);
-	print $Html->InputHiddenBox(nda,$nda);
-	print $Html->InputHiddenBox(area,$area);
-	print $Html->InputHiddenBox(room,$room);
+$nom = $_SERVER["SCRIPT_NAME"]; 
+$FichierProjet = "DescriptifProjet";
+$DP=$Forms->GetDescriptifProjet($FichierProjet);
+echo '<div class="row-fluid">';
+echo '<div class="span1 "></div>';
+echo '<div class="span7">';
 
+echo '<div id="view_resa"></div>';
+echo '<br>';
+echo '<script> LoadResaInfo();</script>';
+if ($mode=="")
+{
+	$consulter='disabled="disabled"';
+}
+else
+{
+	$consulter='';
 
-	print $Html->InputHiddenBox(prenom,$prenom);
-	print $Html->InputHiddenBox(nomjf,$nomjf);
-	print $Html->InputHiddenBox(ddn,$ddn);
-	print $Html->InputHiddenBox(sexe,$sexe);
-	print $Html->InputHiddenBox(age,$age);
-	print $Html->InputHiddenBox(mode,$mode);
-	print $Html->InputHiddenBox(service_name,$service_name);
-	print $Html->InputHiddenBox(TypeCodage,'ID_DAS');
-	print $Html->InputHiddenBox(RefData,'');
-		//$nom = $_SERVER["SCRIPT_NAME"]; 
-		//echo $nom;
- 		$FichierProjet = "DescriptifProjet";
-		$DP=$Forms->GetDescriptifProjet($FichierProjet);
-		echo '<div class="row-fluid">';
-		echo '<div class="span1 "></div>';
-		echo '<div class="span7">';
- 		
- 		echo '<div id="view_resa">
- 		<a href="../aghate/reservation.php?id='.$id.'&table_loc='.$table_loc.'&mode=MODIFY">Modifier cette r&eacute;servation</a> <br>
-		<table width="700">
-		<td id="Patient"><b>'.$nom.' '.$prenom.' N&eacute;e le '.$naissance.'</b><br>
-		<b>NIP</b> '.$noip.' <b>NDA</b> '.$nda.'<br><br>
-		<b>Motif</b> : '.$protocole.'<br>
-		<b>Medecin responsable</b> : '.$nom_medecin.' '.$prenom_medecin.'<br><br>
-		<b>Sp&eacute;cialit&eacute;</b> : '.$specialite.'<br><br>
-		'.$service_name.' du '.$entry.' au '.$end.'<br>
-		</td></tr></table>
-		<br><b>Commentaire : </b>'.$description['DESC___COMPL'].'
- 		</div>';
- 		
- 		echo '<br>';
- 		//echo '<script> LoadResaInfo();</script>';
- 		if ($mode=="")
- 		{
- 			$consulter='disabled="disabled"';
- 		}
- 		else
- 		{
- 			$consulter='';
-
- 		}
- 		/*if (strlen($NDA) < 1 ) {
-			echo "<script>top.document.location='".$nom."?NDA='+obj.nda+'&UH='+obj.uh+'&".$page_vars."';</script>";
-		}*/
- 		//echo "nda : ".$nda;
- 		//exit;
- 		echo '<div id="modif_form">';
- 		$Forms->PrintForm($DP,$result,$consulter);
- 		if ($mode=="")
- 			echo "<script>disableModifier();</script>";
- 			
- 		echo '</div>';
+}
+if (strlen($NDA) < 1 ) {
+	echo "<script>top.document.location='".$nom."?NDA='+obj.nda+'&UH='+obj.uh+'&".$page_vars."';</script>";
+}
+//echo "NDA : ".$NDA;
+//exit;
+echo '<div id="modif_form">';
+$Forms->PrintForm($DP,$id,$NDA,$UH,$consulter);
+if ($mode=="")
+	echo "<script>disableModifier();</script>";
 	
-	
-	include("../commun/layout/footer.php");	
+echo '</div>';
+
+
+include("../commun/layout/footer.php");	
 ?>
  
