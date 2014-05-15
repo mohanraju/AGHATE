@@ -1,10 +1,12 @@
-<?php
-/*######################################################################
- * Update_agt.php
- * Script permet de syncroniser avec la base administrtatif (ex Gilda ou Orbis)
- * 
- * Ecrit dans un fichier trace/trace.txt a chque traitement
- * #####################################################################
+<?Php  
+/*
+* PROJET AGHATE
+* Module Automate permet de syncroniser avec GILDA
+* 
+* @Mohanraju SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
 */
 
 header('Content-Type: text/html; charset=utf-8');
@@ -21,7 +23,7 @@ include "./commun/include/ClassGilda.php";
 include "./commun/include/ClassFileHandle.php";
 include "./commun/include/ClassAghate.php";
 include "./commun/include/CommonFonctions.php";
-include "config/config_".$site.".php";
+
  
 
 $debut = time();
@@ -34,14 +36,14 @@ $Aghate->NomTableLoc = "agt_loc";
 $Aghate->AffcheTraceSurEcran=true;
 $Gilda= new Gilda($ConnexionStringGILDA);
 $FileHandle= new FileHandle();
-echo "<hr> Syncronisation gilda <hr>";
+echo "<hr> Syncronisation gilda \n==>Lancé à ". date('d/m/Y H:i:s'). " \n <hr>";
 
 /*=======================================================================
  * Etape 1 
  * Mettre a jour les annulations adns la journée  reconstrure les sejours 
  * ======================================================================
 */
-$Aghate->AddTrace("\n ####  Procedure MAJ annulations ####\n==>Lancé à ". date('d/m/Y H:i:s'). " \n" ); 		
+$Aghate->AddTrace("\n ####  MAJ annulations ####\n"); 		
 //recupares les annulation de GILDA.MVT avec le typaj D et date misea jour=$date
 $sql="SELECT dos.noip,mvt.NODA as NDA,MVT.NOUF,MVT.TYMVAD,MVT.DAMVAD,MVT.HHMVAD,MVT.TYMAJ,MVT.DADEMJ,MVT.NOIDMV
 		FROM mvt,dos
@@ -50,7 +52,6 @@ $sql="SELECT dos.noip,mvt.NODA as NDA,MVT.NOUF,MVT.TYMVAD,MVT.DAMVAD,MVT.HHMVAD,
 		AND tymaj='D' order by mvt.NODA";
 
 $AnnlGilda=$Gilda->OraSelect($sql);
-//print_r($res); 
  
 $nbr_resume=count($AnnlGilda);
 $last_nda="";
@@ -59,28 +60,29 @@ for($i=0; $i < $nbr_resume ;$i++)
 {
 	// verify e sejour est deja reconstrute
 	$Chk=$Aghate->select("select * from  loc_backup  WHERE tymaj='D' AND NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"); 
-	if (count($Chk) > 0)
+	if (count($Chk) < 0)
 	{
-		if($last_nda != $res[$i]['NDA'])
+
+		if($last_nda != $AnnlGilda[$i]['NDA'])
 		{
-			$Aghate->AddTrace("\nNDA:".$res[$i]['NDA']." séjour reconstruite");		
+			$Aghate->AddTrace("\nNDA:".$AnnlGilda[$i]['NDA']." séjour reconstruite");		
 			// url
 			$url= "http://".$_SERVER["HTTP_HOST"].$_SERVER["PHP_SELF"];		
 			$url= str_replace(strrchr($url,"/"),"/",$url);			
-			$result = file_get_contents($url."commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda=".$AnnlGilda[$i]['NDA']."&table_loc=agt_loc");
+			$result = file_get_contents($url."commun/ajax/ajax_aghate_remettre_ajour_gilda_par_nda.php?nda=".$AnnlGilda[$i]['NDA']."&table_loc=agt_loc");
 			//echo "<br>".$result;
 		}	
-		$last_nda = $res[$i]['NDA'];
+		$last_nda = $AnnlGilda[$i]['NDA'];
 		
 		//mettre a jour dans loc_bacup les annularions
 		$sql_update="UPDATE loc_backup set
 					tymaj='D' WHERE NOIDMV = '".$AnnlGilda[$i]['NOIDMV']."'"; 
 		$NbrRecords=$Aghate->update($sql_update);	
+	}else{
+		$Aghate->AddTrace("\nNDA:".$AnnlGilda[$i]['NDA']." déja traité");				
 	}
 }
 
-
- 
  
 /*=======================================================================
  * Etape 2 

@@ -1,16 +1,16 @@
-<?php
+<?Php  
 /*
-############################################################################################
-#	                                                                                         #
-#                                                                                          #
-############################################################################################
+* PROJET AGHATE
+* Ajax Get protocoles
+*
+* @Mohanraju SBIM/SAINT LOUIS/APHP/Paris
+* 
+* date dernière modififation 14/05/2014
+* 
 */
-header('Cache-Control: no-cache, must-revalidate');
+
+include "../../resume_session.php";
 header('Content-type: application/json');
- 
-//==========================================================================================
-// script s d'inclusion
-//==========================================================================================
 include("../../config/config.php");
 require("../../commun/include/ClassMysql.php");
 require("../../commun/include/ClassAghate.php");
@@ -18,11 +18,9 @@ require("../../commun/include/ClassAghate.php");
 $db=new MYSQL();
 $Aghate = new Aghate();
 
-$tb=$_GET['tb'];
-
 // escape your parameters to prevent sql injection
 $param   = utf8_decode($_GET['term']);
-$ret_vals = array();
+$tb=$_GET['tb'];
 
 $ret_vals = array();
 

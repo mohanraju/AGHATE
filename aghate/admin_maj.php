@@ -17,7 +17,6 @@ ini_set("display_errors","1");
 error_reporting(E_ALL ^ E_NOTICE);
 
 include "./config/config.php";
-include "./config/config_".$site.".php";
 $grr_script_name = "admin_maj.php";
 
 // Session related functions

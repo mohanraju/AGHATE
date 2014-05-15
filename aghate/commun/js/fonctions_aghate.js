@@ -265,10 +265,11 @@ function SavePage(TableLoc,TypeResa){
 	msg=" Voulez-vous enregistrer cette réservation ?";
 	if (confirm(msg)==false) 
 		return false;
-alert("./commun/ajax/ajax_aghate_save_"+TypeResa.toLowerCase()+".php?"+FormVariables+"&table_loc="+TableLoc);			
+	//alert("./commun/ajax/ajax_aghate_save_"+TypeResa.toLowerCase()+".php?"+FormVariables+"&table_loc="+TableLoc);			
 	res=LanceAjax("./commun/ajax/ajax_aghate_save_"+TypeResa.toLowerCase()+".php",FormVariables+"&table_loc="+TableLoc);	
+	$( "#LOG" ).append("\nSave resa:"+res );		
 	result=res.split('|');
-	//alert(res);
+
 	if (result[1] != "OK"){
 		alert(result[2]);
 		return false;
@@ -290,6 +291,7 @@ function DelReservation(TableLoc,TypeResa)
 	else
 	{
 		res=LanceAjax("./commun/ajax/ajax_aghate_del_"+TypeResa.toLowerCase()+".php","id="+id+"&table_loc="+TableLoc);	
+		$( "#LOG" ).append("\nDel resa:"+res );				
 		result=res.split('|');
 		if (result[1] != "OK"){
 			alert(result[2]);
@@ -328,6 +330,7 @@ function DelMedecin(val)
 	else
 	{
 		res=LanceAjax("./commun/ajax/ajax_aghate_del_medecin.php","id="+val);	
+		$( "#LOG" ).append("\nDel medecin:"+res );		
 		result=res.split('|');
 		if (result[1] != "OK"){
 			//alert(result[2]);
@@ -353,6 +356,7 @@ function DelProtocole(val)
 	else
 	{
 		res=LanceAjax("./commun/ajax/ajax_aghate_del_protocole.php","id="+val);	
+		$( "#LOG" ).append("\nDel Protocole:"+res );					
 		result=res.split('|');
 		if (result[1] != "OK"){
 			//alert(result[2]);

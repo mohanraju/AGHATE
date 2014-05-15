@@ -1,13 +1,18 @@
-<?php
+<?Php  
 /*
- * ajax_aghate_remttre_ajour_gilda_par_nda.php
- * 
- * Gestion des Annulations GLIDA
- * Réverification les séjours de données administratif 
- * puis corrigé dans AGHATE
- * 
- * modifie par mohanraju le 07/04/2014
- * 
+* PROJET AGHATE
+* Ajax remettre a jour les sejours 
+*
+* @Mohanraju SBIM/SAINT LOUIS/APHP/Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+* Gestion des Annulations GLIDA
+* Réverification les séjours de données administratif 
+* puis corrigé dans AGHATE
+* 
+* modifie par mohanraju le 07/04/2014
+* 
 */
 
 include "../../resume_session.php";
@@ -26,10 +31,7 @@ $TableName = 'agt_loc';
 $sej_aghate	=	$Aghate->GetSejoursParNda($nda);
 
 // loc backup 
-$sej_backup=$Aghate->GetLocBackupParNda($nad);
-
-//print_r($sej_aghate);
-//print_r($sej_backup);
+$sej_backup=$Aghate->GetLocBackupParNda($nda);
 
 $NbrAghate 	=count($sej_aghate);
 $NbrBackup	=count($sej_backup);
@@ -38,6 +40,7 @@ $NbrBackup	=count($sej_backup);
 $protocole	=	$sej_aghate[0]['protocole'];
 $medecin	=	$sej_aghate[0]['medecin'];
 $id_prog	=	$sej_aghate[0]['id_prog'];
+$type     	=	$sej_aghate[0]['type'];
 
 // supprime les sejour dans aghate avant d'inserer
 $Aghate->update("UPDATE agt_loc set statut_entry='SUPPRIMER' where nda='".$nda."'");
@@ -68,7 +71,7 @@ for($g=0; $g < $NbrBackup; $g++)
 		if($site=='001')
 			$service_info = $Aghate->GetServiceInfoByRoomName(trim($sej_backup[$g]['NOLIT']));
 		else	
-			$service_info 	= $Aghate->GetServiceInfoByNoPost($nopost);
+			$service_info 	= $Aghate->GetServiceInfoByNoPost(trim($sej_backup[$g]['NOPOST']));
 			
 	}		
 	if(count($service_info)< 1)
@@ -157,7 +160,7 @@ for($g=0; $g < $NbrBackup; $g++)
 		}
 	}	
 	// Insertion de la reservation
- 	
+ 	//print_r($TableauData);
 	$id = $Aghate->InsertConvocation($TableName,$TableauData);
 
 			

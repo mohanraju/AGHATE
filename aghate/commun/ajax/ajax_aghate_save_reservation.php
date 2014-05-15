@@ -1,32 +1,21 @@
-<?php
+<?Php  
 /*
-#########################################################################
-#                  ajax_edit_entry_handler.php                         #
-
-#                                                                       #
-#            Dernière modification : 20/03/2008                         #
-#                                                                       #
-#########################################################################
-modifie par mohanraju le 13/01/2014
-
- 
- */
-
+* PROJET AGHATE
+* Ajax Save reservation
+* 
+* @Celeste Thierry SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+*/
+include "../../resume_session.php";
 header('Content-type: text/html; charset=utf-8'); 
 include "../../config/config.php";
-include "../../config/config.inc.php";
-include "../../commun/include/functions.inc.php";
-include "../../commun/include/$dbsys.inc.php";
-include "../../commun/include/mrbs_sql.inc.php";
-include "../../commun/include/misc.inc.php";
-
-include "../../config/config.php";
-include "../../config/config_".$site.".php";
 include "../../commun/include/ClassMysql.php";
 include "../../commun/include/ClassAghate.php";
-
 include "../../commun/include/ClassGilda.php";
 include "../../commun/include/CommonFonctions.php";
+
 $mysql = new MySQL();
 $Aghate = new Aghate();
 $CommonFonctions = new CommonFunctions(true);
@@ -38,26 +27,15 @@ if (strlen($table_loc)< 1){
 }else
 	$Aghate->NomTableLoc =$table_loc;
 
-// Settings
-date_default_timezone_set('Europe/Paris');
-require_once("../include/settings.inc.php");
 
 //-----------------------------------------------------------------------------
-//Chargement des valeurs de la table settings
+//Check Session
 //-----------------------------------------------------------------------------
-if (!loadSettings()){
-    echo "|ERR|Erreur chargement settings";
-	exit;
-}
-//-----------------------------------------------------------------------------
-// Session related functions
-//-----------------------------------------------------------------------------
-require_once("../include/session.inc.php");
-// Resume session
-if (!grr_resumeSession()) {
+if (strlen($login) < 0 ) {
     echo "|ERR|Session expaired, veuillez reconnectez svp!";
     exit;
 };
+
 
 
 //----------------------------------------------------------------------------- 
@@ -82,12 +60,15 @@ if (strlen($noip) > 0){
  
 //----------------------------------------------------------------------------- 
 // check reservation present plus au moins 5 jours dans n'importe quel service
-// A FAIRE
 //-----------------------------------------------------------------------------
  
+// A FAIRE 
+
+//----------------------------------------------------------------------------- 
+// check SEXE dans le cas HDJ 
+//-----------------------------------------------------------------------------
  
- 
- 
+// A FAIRE 
  
  
 //----------------------------------------------------------------------------- 
@@ -111,7 +92,6 @@ if ((strlen($id_service) < 1) && (strlen($room_id) < 1) && (intval($id_service) 
 }
 $ServiceInfo=$Aghate->GetServiceInfoByServiceId ($id_service);
 
-
  
 //-----------------------------------------------------------------------------
 //si le room non declaré on force Coulour/Panier
@@ -119,28 +99,6 @@ if (strlen($room_id) < 1){
 	$room_id=$Aghate->GetPanierIdByServiceId($id_service);
 }
   
-// Récupération des données concernant l'affichage du planning du domaine
-//-----------------------------------------------------------------------------
-get_planning_area_values($area);
-
-if(authGetUserLevel(getUserName(),-1) < 1)
-{
-	echo "|ERR|Access Denied !";
-  exit();
-}
- 
-//-----------------------------------------------------------------------------
-// check dorit de reservation
-//-----------------------------------------------------------------------------
-if(!verif_qui_peut_reserver_pour($room_id, $_SESSION['login']))
-{
-	echo "|ERR|Access denied pour cette utilisateur!";
-	exit;
-} 
-
-//-----------------------------------------------------------------------------
-// check dorit de reservation
-//-----------------------------------------------------------------------------
 //-----------------------------------------------------------------
 // vérify le droit de reservation 
 //-----------------------------------------------------------------	
@@ -202,7 +160,7 @@ if ($endtime <= $starttime)
 	exit;
 }
 
- 
+
 
 //-----------------------------------------------------------------------------
 // Check Hors reservation ou Service ferme 
@@ -215,21 +173,14 @@ $day_temp   = date("d",$endtime);
 $month_temp = date("m",$endtime);
 $year_temp  = date("Y",$endtime);
 $endtime_midnight = mktime(0, 0, 0, $month_temp, $day_temp, $year_temp);
-// On teste
-if (resa_est_hors_reservation($starttime_midnight , $endtime_midnight )) {
-	echo "|ERR|Erreur dans la date de début ou de fin de réservation  \n Rservation dans Hors péroide/Congée/jour fériée";
-	exit;
-}
+
+// A faire ree hosrs reservation 
  
 //----------------------------------------------------------------------------- 
 # Acquire mutex to lock out others trying to book the same slot(s).
 //-----------------------------------------------------------------------------
 
-if(!grr_sql_mutex_lock('agt_loc'))
-{
-   echo "|ERR|unable to lock table agt_loc!";
-   exit;
-}
+// a fiare
 
 //-----------------------------------------------------------------------------
 //check droit d'utlisateur sur la room
@@ -307,7 +258,7 @@ else{
 	$id_prog = $Aghate->CreateSingleEntry('agt_prog',$TableauProg);
 
 }
-$TableauData['id_prog'] = $id_prog;
+$TableauData['id_prog'] = strlen($id_prog)>0?$id_prog:0;
 
 // RESERVATION (LOC)
 if(strlen($id)>0){
@@ -326,8 +277,11 @@ else
 		$Aghate->UpdateDescriptionFromId ($id,"DESC___COMPL",$_description,"DESC___COMPL");
 }
 
-   
-grr_sql_mutex_unlock('agt_loc');
+//----------------------------------------------------------------------------- 
+# Acquire mutex un lock 
+//-----------------------------------------------------------------------------
+// a fiare   
+
 
 echo "|OK|$id|"; 
 ?>

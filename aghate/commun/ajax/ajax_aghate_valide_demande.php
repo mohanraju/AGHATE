@@ -1,30 +1,21 @@
-<?php
+<?Php  
 /*
-#########################################################################
-#                  ajax_edit_entry_handler.php                          #
-
-#                                                                       #
-#            Dernière modification : 20/03/2008                         #
-#                                                                       #
-#########################################################################
-modifie par mohanraju le 13/01/2014
+* PROJET AGHATE
+* Ajax Get reservation infromation from ID
+* 
+* @Celeste Thierry SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
 */
-
+include "../../resume_session.php";
 header('Content-type: text/html; charset=utf-8'); 
 include "../../config/config.php";
-include "../../config/config.inc.php";
-include "../../commun/include/functions.inc.php";
-include "../../commun/include/$dbsys.inc.php";
-include "../../commun/include/mrbs_sql.inc.php";
-include "../../commun/include/misc.inc.php";
-
-include "../../config/config.php";
-include "../../config/config_".$site.".php";
 include "../../commun/include/ClassMysql.php";
 include "../../commun/include/ClassAghate.php";
-
 include "../../commun/include/ClassGilda.php";
 include "../../commun/include/CommonFonctions.php";
+
 $mysql = new MySQL();
 $Aghate = new Aghate();
 $CommonFonctions = new CommonFunctions(true);

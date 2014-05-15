@@ -1,6 +1,15 @@
-<?php
-session_name('GRR');
-session_start();
+<?Php  
+/*
+* PROJET AGHATE
+* Module reservation
+* 
+* @Mohanraju SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+*/
+
+include("./resume_session.php");
 header('Content-type: text/html; charset=utf-8');
 include("./config/config.php");
 require("./commun/include/ClassMysql.php");
@@ -8,7 +17,6 @@ include("./commun/include/ClassHtml.php");
 include("./commun/include/CommonFonctions.php");
 include("./commun/include/ClassAghate.php");
 include("./commun/include/ClassGilda.php");
-include("./config/config_".$site.".php");
 include("../commun/layout/header.php");
  
 $com=new CommonFunctions(true);
@@ -605,6 +613,8 @@ if($ResService[0]['enable_periods']=='y')
  
 ?>
 </form>
+<?php $log=strlen($log)>0?"black":"none";?>
+<div id="LOG" style="display:<?php print $log?>;">Les traces sont disponible ici</div>
 </body>
 <script>
 //=================================================================
@@ -641,7 +651,8 @@ $(document).ready(function() {
 		var room_id		=$("#room").val();		
 		
 		//rooms recuparès de JSON
-		ListRooms=res=LanceAjax("../aghate/commun/ajax/ajax_aghate_get_rooms.php","service_id="+id_service+"room_id="+room_id) ;		
+		ListRooms=res=LanceAjax("../aghate/commun/ajax/ajax_aghate_get_rooms.php","service_id="+id_service+"room_id="+room_id) ;	
+		$( "#LOG" ).append("\nGetROOMs:"+ListRooms );	
 
 		// Get the raw DOM object for the select box
 		select = document.getElementById('room_id');
@@ -664,11 +675,13 @@ $(document).ready(function() {
 	$("#medecin").blur(function(){
 		//recupare page variables
 		var id_medecin		=$("#id_medecin").val();
-		res	=LanceAjax("../aghate/commun/ajax/ajax_aghate_get_specialite.php","id_medecin="+id_medecin ) ;	
+		res	=LanceAjax("../aghate/commun/ajax/ajax_aghate_get_specialite.php","id_medecin="+id_medecin ) ;
+		$( "#LOG" ).append("\nMedecin:"+res );		
 		if(res.length > 1)
 		{
 			$("#specialite").val(res);
 			color_code	=LanceAjax("../aghate/commun/ajax/ajax_aghate_get_coleur_code.php","specialite="+res ) ;
+			$( "#LOG" ).append("\ncolor_code:"+color_code );	
 			if(color_code.length > 0)
 			{	
 				$("#type").val(color_code);
@@ -685,7 +698,7 @@ $(document).ready(function() {
 		var plage_pos	=$("#plage_pos").val();
 		var start_date	= $("#start_time").val();
 		var res	=LanceAjax("../aghate/commun/ajax/ajax_aghate_calculplages.php","plage_pos="+plage_pos +"&start_date="+start_date ) ;
-
+		$( "#LOG" ).append("\nplage_pos:"+res );	
 		res=res.split("|");
 		if (res[1]){
 			$("#start_time").val(res[1]);
@@ -704,6 +717,7 @@ $(document).ready(function() {
 	//--------------------------------------------------------------------
 	$("#protocole").blur(function(){
 		res=LanceAjax("./commun/ajax/ajax_aghate_get_duree_protocole.php","id_protocole="+$("#id_protocole").val()+"&date_deb="+$("#start_time").val()+"&date_fin="+$("#end_time").val()+"&duree="+$("#duree").val());
+		$( "#LOG" ).append("\n protocole:"+res );	
 		res = res.split("|");
 		$("#end_time").val(res[1]);
 		$("#duree").val(res[0]);
@@ -714,6 +728,7 @@ $(document).ready(function() {
 	//=================================================================
 	//demmarage
 	res=LanceAjax("./commun/ajax/ajax_aghate_get_duree.php","date_fin="+$("#end_time").val()+"&date_deb="+$("#start_time").val());
+	$( "#LOG" ).append("\nduree:"+res );	
 	$("#duree").val(res);
 	if(de_source!='Gilda') 
 		$("#start_time").datetimepicker({
@@ -721,6 +736,7 @@ $(document).ready(function() {
 		lang:'fr',
 		onClose: function(dateText) {
 			res=LanceAjax("./commun/ajax/ajax_aghate_get_duree.php","date_fin="+$("#end_time").val()+"&date_deb="+$("#start_time").val());
+			$( "#LOG" ).append("\nduree:"+res );	
 			$("#duree").val(res);
         }
 	});
@@ -746,8 +762,9 @@ $(document).ready(function() {
 	//--------------------------------------------------------------------
 	$("#MAJ").click(function(){
 		var nda = $("#MAJ").attr( "NDA" );		
-		//alert("./commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php?nda="+nda+"&table_loc="+$("#table_loc").val());		
-		res=LanceAjax("./commun/ajax/ajax_aghate_remttre_ajour_gilda_par_nda.php","nda="+nda+"&table_loc="+$("#table_loc").val());
+		//alert("./commun/ajax/ajax_aghate_remettre_ajour_gilda_par_nda.php?nda="+nda+"&table_loc="+$("#table_loc").val());		
+		res=LanceAjax("./commun/ajax/ajax_aghate_remettre_ajour_gilda_par_nda.php","nda="+nda+"&table_loc="+$("#table_loc").val());
+		$( "#LOG" ).append("\nmise a jour nda:"+res );	
 		res = res.split("|");
 		alert(res[1]);
 		//refresh windows

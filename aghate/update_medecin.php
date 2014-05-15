@@ -20,7 +20,6 @@ include "./commun/include/ClassMysql.php";
 include "./commun/include/ClassGilda.php";
 include "./commun/include/ClassAghate.php";
 include "./commun/include/ClassGildaToAghate.php";
-include "config/config_".$site.".php";
 
 #Paramètres de connection
 require_once("./commun/include/settings.inc.php");

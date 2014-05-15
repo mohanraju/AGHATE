@@ -12,7 +12,7 @@
 ############################################################################################
 */
 include("./config/config.php");
-echo "Site Code : ".$site;
+echo "Site en cours : ".$site;
 $dossier_export="./trace/";
 
 	if (count($_POST)) {
@@ -55,14 +55,10 @@ if(strlen($site) < 1 )
 	echo "<br><br><br><br><div align='center'>Veuillez spécifez votre site SVP  </div>";
 	exit;
 }else
-include("./config/config_".strtolower($site).".php"); // fichier configutaion du site
 
-if($site=="076") 
-	$hopital ="Saint louis";
-elseif($site=="047") 	
-	$hopital ="Lariboisière";
-else	
-	$hopital ="Site Inconnu";
+
+
+$hopital =$site;
 ?>
 <!--
 ----------------------------------------------------------

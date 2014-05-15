@@ -21,7 +21,6 @@ ini_set('memory_limit','256M');
 //------------------------------------------------
 include "./resume_session.php";
 require_once("./config/config.php");
-require_once("./config/config_".strtolower($site).".php"); 
 require_once("./commun/include/ClassMysql.php");
 require_once("./commun/include/ClassGilda.php");
 require_once("./commun/include/ClassAghate.php");

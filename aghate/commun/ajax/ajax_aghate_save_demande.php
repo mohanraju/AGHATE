@@ -21,7 +21,6 @@ include "../../commun/include/mrbs_sql.inc.php";
 include "../../commun/include/misc.inc.php";
 
 include "../../config/config.php";
-include "../../config/config_".$site.".php";
 include "../../commun/include/ClassMysql.php";
 include "../../commun/include/ClassAghate.php";
 

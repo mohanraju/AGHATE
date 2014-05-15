@@ -19,6 +19,7 @@ if ($RevisionBase < $Revision)
 	$sql_modif[] ="ALTER TABLE `agt_prog` CHANGE `end_time_prog` `end_time` INT( 11 ) NOT NULL ";
 	$sql_modif[] ="ALTER TABLE `agt_prog` ADD `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `end_time` ";
 	$sql_modif[] ="ALTER TABLE `agt_prog` ADD `type` VARCHAR( 2 ) NOT NULL DEFAULT 'A'";
+	$sql_modif[] ="ALTER TABLE `agt_prog` ADD `nda` VARCHAR( 9 ) ";	
 	$sql_modif[] ="ALTER TABLE `agt_prog` ADD `description` text";
 	$sql_modif[] ="ALTER TABLE `agt_prog` ADD `statut_entry` varchar(25) NOT NULL DEFAULT '-'";
 	$sql_modif[] ="ALTER TABLE `agt_prog` ADD `motif` varchar(100) DEFAULT NULL";

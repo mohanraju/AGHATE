@@ -1,4 +1,15 @@
-<?php
+<?Php  
+/*
+* PROJET AGHATE
+* Ajax get duree de protocole
+* @Mohanraju SBIM/SAINT LOUIS/APHP/Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+* 
+*/
+// script s d'inclusion
+include "../../resume_session.php";
 include "../../config/config.php";
 include "../../config/config.inc.php";
 include "../include/ClassMysql.php";

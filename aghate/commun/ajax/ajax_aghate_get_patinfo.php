@@ -1,22 +1,18 @@
-<?php
+<?Php  
 /*
-#########################################################################################
-		ProjetMSI
-		Module Resa
-		Recherche Patient
-		Auther Celeste Thierry @SLS-APAP
-########################################################################################
-		Date creation 
-		Date derni? modif : 15/01/2014
+* PROJET AGHATE
+* Ajax get patients pour les recherche par nom/noip
+* @Mohanraju SBIM/SAINT LOUIS/APHP/Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+* 
 */
- 
-//=================================================================================--------
 // script s d'inclusion
-//=================================================================================--------
+include "../../resume_session.php";
 header('Content-Type: text/html; charset=utf-8');
 header('Content-Type: application/json');
 include("../../config/config.php");
-include("../../config/config_".$site.".php"); 
 require("../include/CommonFonctions.php");
 include("../include/ClassGilda.php");
 
@@ -45,3 +41,4 @@ if ($nbr_rec > 0){
 else{
 	echo "[{'ERR':'Aucune donnee trouvee'}]";
 }
+?>

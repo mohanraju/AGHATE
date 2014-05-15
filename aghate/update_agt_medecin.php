@@ -15,7 +15,7 @@ include "./config/config.php";
 include "./commun/include/ClassGilda.php";
 include "./commun/include/ClassMysql.php";
 include "./commun/include/ClassAghate.php";
-include "./config/config_".$site.".php";
+
 
 $gilda = new Gilda($ConnexionStringGILDA);
 $mysql = new MySQL();

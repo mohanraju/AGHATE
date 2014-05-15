@@ -1,4 +1,15 @@
-<?php
+<?Php  
+/*
+* PROJET AGHATE
+* Module reservation
+* 
+* @Mohanraju SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+*/
+
+
 /*	predfinition stat_time et fin_time pour les plages agt_loc
  *  20 munites par plage est calculées par palge d'horaure
  */

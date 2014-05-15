@@ -1,12 +1,15 @@
-﻿<?php
-#########################################################################
-#                        Aghate Charge reservationcoleurs          	    #
-#                                                                       #
-#                                                                       #
-#                                                                       #
-#########################################################################
+﻿<?Php  
+/*
+* PROJET AGHATE
+* Module reservation
+* 
+* @Mohanraju SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+*/
 
-
+include("./resume_session.php");
 include "../../config/config.php";
 include "../../commun/include/ClassMysql.php";
 include "../../commun/include/ClassHtml.php";

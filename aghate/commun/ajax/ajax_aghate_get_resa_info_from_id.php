@@ -9,6 +9,7 @@
 		Date dernière modif : 23/01/2014
 */
  
+// ATTN pas de session ici ce script est appelé par get_url_contents() 
 // script s d'inclusion
 include("../../config/config.php");
 require("../../commun/include/ClassMysql.php");
@@ -23,9 +24,6 @@ $Aghate->NomTableLoc=$table_loc;
 $com=new CommonFunctions(true);
 
 
-include("../include/settings.inc.php");
-session_name('GRR');
-session_start();
 
 if(strlen($login)< 1)
 {

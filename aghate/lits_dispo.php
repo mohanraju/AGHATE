@@ -31,7 +31,7 @@ include "./commun/include/ClassMysql.php";
 include "./commun/include/ClassGilda1.php";
 include "./commun/include/ClassGildaToAghate.php";
 include "./commun/include/ClassAghate.php";
-include "./config/config_$site.php";
+
 
 $sql ="select NOLIT,NOCHAM,NOSERV,to_char(DDVALI,'YYYY-MM-DD') as DDVALI,
 			  to_char(DFVALI,'YYYY-MM-DD') as DFVALI,NOPOST,HHDIDP,HHFIDP,CDITEM 

@@ -1221,7 +1221,7 @@ class Aghate  extends MySQL
 			'" . substr($Trace_msg,0,254) . "',
 			'" . $_SERVER['HTTP_REFERER'] . "',
 			'1',
-			'" . $_SESSION['start'] . "'+ interval " . getSettingValue("sessionMaxLength") . " minute
+			'" . $_SESSION['start'] . "'+ interval ___ minute
 			);";   
 		$result_id = $this->insert($sql_log);		
 		$removed++;
@@ -2629,7 +2629,7 @@ class Aghate  extends MySQL
 	==========================================================================
 	*/
 	function GetColorCodeByDescription($Description){
-		$sql = "SELECT * FROM agt_type_area WHERE type_name ='".$Description."'";
+		$sql = "SELECT * FROM agt_type_area WHERE type_name='".$Description."'";
 
 		$res = $this->select($sql);
 		return $res[0]['type_letter'];
@@ -2880,7 +2880,51 @@ class Aghate  extends MySQL
 		$sql =	"SELECT * from loc_backup where NDA='".$Nda."' AND TYMAJ='A' order by DTENT,HHENT,DDLOPT,HHLOPT";
 		return $this->select($sql);
 	}	
-		
+
+	/*
+	==========================================================================
+	// In MySQL, we avoid table locks, and use low-level locks instead.
+	==========================================================================
+	*/
+	function grr_sql_mutex_lock($name)
+	{
+		global $sql_mutex_shutdown_registered, $grr_sql_mutex_unlock_name;
+		if (!$this->CONN->query("SELECT GET_LOCK('$name', 20)")) return 0;
+		$grr_sql_mutex_unlock_name = $name;
+		if (empty($sql_mutex_shutdown_registered))
+		{
+			register_shutdown_function("grr_sql_mutex_cleanup");
+			$sql_mutex_shutdown_registered = 1;
+		}
+		return 1;
+	}
+
+	/*
+	==========================================================================
+	// Release a mutual-exclusion lock on the named table. See grr_sql_mutex_unlock.
+	==========================================================================
+	*/
+	function grr_sql_mutex_unlock($name)
+	{
+		global $grr_sql_mutex_unlock_name;
+		$this->CONN->query("SELECT RELEASE_LOCK('$name')");
+		$grr_sql_mutex_unlock_name = "";
+	}
+
+	/*
+	==========================================================================
+	// Shutdown function to clean up a forgotten lock. For internal use only.
+	==========================================================================
+	*/
+	function grr_sql_mutex_cleanup()
+	{
+		global $sql_mutex_shutdown_registered, $grr_sql_mutex_unlock_name;
+		if (!empty($grr_sql_mutex_unlock_name))
+		{
+			grr_sql_mutex_unlock($grr_sql_mutex_unlock_name);
+			$grr_sql_mutex_unlock_name = "";
+		}
+	}
 	
 }
 //fin Objet	

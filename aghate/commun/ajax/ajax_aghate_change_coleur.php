@@ -1,4 +1,15 @@
-<?php
+<?Php  
+/*
+* PROJET AGHATE
+* Module reservation
+* 
+* @Mohanraju SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+*/
+
+include("../resume_session.php");
 include "../../config/config.php";
 include "../include/ClassMysql.php";
 include "../include/ClassAghate.php";

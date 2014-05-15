@@ -1,6 +1,16 @@
-<?php
-
+<?Php  
+/*
+* PROJET AGHATE
+* Module reservation
+* 
+* @Mohanraju SBIM/SAINT LOUIS/APHP /Paris
+* 
+* date dernière modififation 14/05/2014
+* 
+*/
 //inclusion des objets
+
+include("./resume_session.php");
 header('Content-Type: text/html; charset=utf-8');
 include "./config/config.php";
 include "./config/config.inc.php";
@@ -157,7 +167,7 @@ if ($Afficher=="Afficher")
 			WHERE e.room_id = r.id 
 			  AND r.service_id = a.id   
 			  AND p.noip=e.noip
-            
+			  AND statut_entry !='SUPPRIMER'	
 			  "; 
 	//filtre entrée / sortie
 	if($TypeMvt=="E")
@@ -309,7 +319,7 @@ $res = $db->select($sql);
 					else
 						$cur_class="one";
 					$pat =	$res[$i]['nom']." ".$res[$i]['prenom']." né(e)".$funtions->Mysql2Normal($res[$i]['ddn']);
-					$EditLink =$ModuleReservationEdit."?id=".$res[$i]['entry_id'];						
+					$EditLink =$ModuleReservationEdit."?id=".$res[$i]['entry_id']."&table_loc=agt_loc";						
 					$EditLink ="<a href='#?'  onClick=\"OpenPopupResa('".$EditLink."')\">".$pat." </a>";                        				
 
 					$info_med	=$Aghate->GetInfoMedecinById($res[$i]['medecin']);

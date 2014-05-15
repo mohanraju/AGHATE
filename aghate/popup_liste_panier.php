@@ -7,7 +7,6 @@ require("./commun/include/ClassMysql.php");
 include("./commun/include/ClassHtml.php");
 include("./commun/include/CommonFonctions.php");
 include("./commun/include/ClassAghate.php");
-include("./config/config_".$site.".php");
 include("../commun/layout/header.php");
 
 $com=new CommonFunctions(true);

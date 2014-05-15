@@ -235,8 +235,8 @@ function OpenPopupResa(url) {
 jQuery(function($){
    $.datepicker.regional['fr'] = {
 	  closeText: 'Fermer',
-	  prevText: '<Préc',
-	  nextText: 'Suiv>',
+	  prevText: 'Préc',
+	  nextText: 'Suiv',
 	  currentText: 'Courant',
 	  monthNames: ['Janvier','Février','Mars','Avril','Mai','Juin',
 	  'Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
@@ -268,7 +268,7 @@ $(function() {
 		buttonImage: "./commun/images/calendar.gif",
  		buttonImageOnly: true,		
 		numberOfMonths: 1, 
-		showCurrentAtPos: 1,
+		showCurrentAtPos: 0,
 		changeMonth: true,
 		changeYear: true,	
 		showAnim: "drop",		
@@ -436,18 +436,18 @@ Premier fois demande de declarer le service par default
 ====================================================================
 */
  
-	$areas = $Aghate->GetAllArea();
-	if (count($areas)< 1) 
-	if($nb_area==0){
-		echo "<h1 align = 'center'>".get_vocab('no_rooms_for_area')."</h1>";
-		echo "<h2 align = 'center' > Une synchronisation est nécessaire avec la structure GILDA  </h2>";
-		echo "<div style=\"text-align : center; font-size : 15px \"  ><a href='update_structure.php'> Synchroniser maintenant </a> </div>";
-		echo "<br><br>";
-	}
-	else{
-		echo "<div style=\"text-align : center; font-size : 15px \"  ><a href='my_account.php'> Modifier le service par defaut </a> </div>";
-	}
- 
+$areas = $Aghate->GetAllArea();
+if (count($areas)< 1) 
+if($nb_area==0){
+	echo "<h1 align = 'center'>".get_vocab('no_rooms_for_area')."</h1>";
+	echo "<h2 align = 'center' > Une synchronisation est nécessaire avec la structure GILDA  </h2>";
+	echo "<div style=\"text-align : center; font-size : 15px \"  ><a href='update_structure.php'> Synchroniser maintenant </a> </div>";
+	echo "<br><br>";
+}
+else{
+	echo "<div style=\"text-align : center; font-size : 15px \"  ><a href='my_account.php'> Modifier le service par defaut </a> </div>";
+}
+
 
 
 
@@ -698,7 +698,7 @@ for($i=0;$i< $nb_res;$i++)
 //===============================================
 
 $Aghate->NomTableLoc = 'agt_prog';
-
+/*
 $demande = $Aghate->GetInfoDemande($area,$compare_to_start_time,$compare_to_end_time);
 $nb_demande = count($demande);
 echo "<table style='float:right' id='TablePanier' cellspacing='0' cellpadding='0' border='1'>";
@@ -741,7 +741,7 @@ for($i=0;$i< $nb_demande;$i++)
 }
 	echo '</table>';
 
-
+*/
 	$Aghate->NomTableLoc = $TableLoc;
 if ($cpt!=0)
 	echo "Réservation programmées (lit à attribuer) :".$lien;
