@@ -1,0 +1,50 @@
+Aide dans le cas où la fonction "Poser des réservations sous réserve", est activée pour une ressource donnée
+------------------------------------------------------------------------------------------------------------
+
+Dans la page de modification des paramètres d'une ressource,
+l'administrateur a la possibilité d'activer la fonction "Poser des réservations sous réserve".
+Dans le cas, la personne effectuant une réservation a la possibilité de remplir un champ
+supplémentaire "Réservation à confirmer au plus tard le ...".
+Si l'utilisateur ne confirme pas sa réservation avant la date indiquée, la réservation
+est automatiquement supprimée et un mail automatique est envoyé aux personnes concernées.
+
+Pour effectuer cette tâche automatique de suppression, il y a deux configurations possibles dans le fichier config.inc.php,
+selon la valeur de la variable $verif_reservation_auto (valeur 0 ou 1) :
+
+Cas où $verif_reservation_auto = 0
+----------------------------------
+Si $verif_reservation_auto = 0, la tâche de suppression automatique est réalisée une fois par jour,
+lorsqu'un utilisateur se connecte : chaque jour, lors de la première connexion,
+la tâche de vérification des réservations à supprimer est effectuée :
+c'est donc la connexion du premier utilisateur qui déclenche l'exécution du script.
+-> Avantage : simplicité de mise en oeuvre.
+-> Inconvénient : vérification aléatoire (pas de vérification à heure fixe, voire pas de vérification certains jours si personne ne se connecte).
+
+Cas où $verif_reservation_auto = 1
+----------------------------------
+Si $verif_reservation_auto = 1, la tâche de suppression automatique est déclenchée par
+l'exécution du script verif_auto_grr.php.
+-> Avantage : vérification systématique à heure fixe et envoi des mails à heure fixe, chaque jour.
+-> Inconvénient : difficulté de mise en oeuvre.
+
+ATTENTION : dans ce cas, il faut avoir la possibilité de programmer l'exécution automatique et périodique du script verif_auto_grr.php.
+Sur un serveur Linux, par exemple, le script verif_auto_grr.php peut être programmé en tâche "cron".
+La périodicité conseillée est de 1 jour, en début de journée avant les premières connexions.
+Si GRR est installé sur un serveur mutualisé, l'accès aux tâches "cron" est exclue.
+La solution consiste alors à faire appel à une serveur conçu pour rendre ce genre de service.
+Il en existe plusieurs sur Internet. Parmi les service gratuits, citons :
+-htttp://webcron.org
+-http://cronjob4you.at
+-http://cronjob.de
+-Certains hébergeurs offrent également ce service à leurs clients.
+
+Le principe est le suivant :
+1) Inscription en ligne sur le site afin d'obtenir un compte avec login et mot de passe.
+2) A l'aide du compte, créer des tâches en fournissant l'adresse du script à exécuter
+(dans notre cas, quelque chose du genre http://mon-site.fr/grr/verif_auto_grr.php.mdp=mot-de-passe),
+la périodicité et l'heure d'exécution du script.
+
+Remarque : l'exécution du script verif_auto_grr.php requiert un mot de passe.
+Exemple : si le mot de passe est jamesbond007, vous devrez indiquer une URL du type :
+http://mon-site.fr/grr/verif_auto_grr.php?mdp=jamesbond007
+Le mot de passe  est défini dans le fichier config.inc.php

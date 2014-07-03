@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Replace Textarea with Inline Editor &mdash; CKEditor Sample</title>
+	<script src="../ckeditor.js"></script>
+	<link href="sample.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<form action="sample_posteddata.php" method="post">
+
+		
+			<textarea name="article-body" style="height: 200px">
+				&lt;h2&gt;Technical details &lt;a id="tech-details" name="tech-details"&gt;&lt;/a&gt;&lt;/h2&gt;
+
+				&lt;table align="right" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" style="border-collapse:collapse;margin:10px 0 10px 15px;"&gt;
+					&lt;caption&gt;&lt;strong&gt;Mission crew&lt;/strong&gt;&lt;/caption&gt;
+					&lt;thead&gt;
+					&lt;tr&gt;
+						&lt;th scope="col"&gt;Position&lt;/th&gt;
+						&lt;th scope="col"&gt;Astronaut&lt;/th&gt;
+					&lt;/tr&gt;
+					&lt;/thead&gt;
+					&lt;tbody&gt;
+					&lt;tr&gt;
+						&lt;td&gt;Commander&lt;/td&gt;
+						&lt;td&gt;Neil A. Armstrong&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;Command Module Pilot&lt;/td&gt;
+						&lt;td&gt;Michael Collins&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;Lunar Module Pilot&lt;/td&gt;
+						&lt;td&gt;Edwin &quot;Buzz&quot; E. Aldrin, Jr.&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;/tbody&gt;
+				&lt;/table&gt;
+
+			
+			</textarea>
+		</p>
+ 
+	</form>
+
+	<script>
+		CKEDITOR.inline( 'article-body' );
+	</script>
+
+</body>
+</html>

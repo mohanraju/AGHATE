@@ -1,0 +1,111 @@
+p,BODY {color:black; font-size: 10pt; font-family:arial,sans-serif;
+background-color:#FFEEEE}
+
+input,textarea,submit {color:black; font-size: 10pt; font-family:arial,sans-serif}
+FORM {margin-bottom : 5pt;margin-top : 5pt    }
+
+.small {font-size:8pt}
+
+A:link {color:#C00000; font-weight: bold; text-decoration: none}
+A:visited {color:#C00000; font-weight: bold; text-decoration: none}
+A:hover {color:#C00000; text-decoration:underline}
+
+.onmouseover{
+    color:#C00000; font-weight: bold; text-decoration: none
+}
+
+H1 {color:black; font-family:verdana,sans-serif; font-size:16pt}
+H2 {color:black; font-family:verdana,sans-serif; font-size:14pt}
+H3 {color:black; font-family:verdana,sans-serif; font-size:12pt}
+
+TD {font-size:10pt; font-family:arial,sans-serif; border-width:1px;
+vertical-align:top}
+
+TD.CR { vertical-align: middle; text-align: right}
+TD.CL { vertical-align: middle; text-align: left}
+TD.BR { vertical-align: baseline; text-align: right}
+TD.BL { vertical-align: baseline; text-align: left}
+TD.TR { vertical-align: top; text-align: right}
+TD.TL { vertical-align: top; text-align: left}
+
+.fontcolor1{color:#FFFFCC}
+.fontcolor2{color:#FFC0C0}
+.fontcolor3{color:#FFC0C0}
+.fontcolor4{color:#000000}
+
+.clock {
+font-size: 10pt;
+}
+
+.bground {background-color:#FFC0C0}
+TD.border_banner {background-color:#FF0000}
+TD.banner {vertical-align:middle; background-color:#FFC0C0}
+TH {
+color:#eeeeee;
+font-size:10pt;
+font-family:verdana,sans-serif;
+background-color:#A00000;
+border-width:1px;
+border-color:black;
+vertical-align:top
+}
+TD.cell_hours {background-color:#FFC0C0; text-align:center}
+TD.cell_month {font-size: 8pt; background-color:white}
+TD.cell_month_o {background-color:#cccccc;}
+TD.empty_cell {background-color:white;}
+.monthday {font-size: 11pt}
+
+.cal_current_day{color:BLACK}
+
+.week {background-color:#FFC0C0}
+TD.calendar {border:0px; font-size: 7pt}
+TD.calendarcol1 {border:0px; font-size: 8pt}
+TD.calendarHeader {border:0px; font-size: 10pt}
+
+
+.center {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.avertissement {
+background-color:#FF8585;
+text-align:center;
+}
+
+
+TD.calendar2 {border:0px; font-size: 8pt}
+TD.calendarHeader2 {border:0px; font-size: 10pt}
+.formo {width: 100%; background-color: #FFF0E0; background-position: center bottom; float: none; color: #000000}
+.fondo {background-color: #FFF0E0; background-position: center bottom; float: none; color: #000000}
+.fondl {background-color: #CCCCCC; background-position: center bottom; float: none; color: #000000}
+
+/* La colonne de gauche de l'administration
+------------------------------------------*/
+#colgauche fieldset{
+    border: 1px solid #000000;
+    margin:10px;
+    padding:10px;
+}
+#colgauche  fieldset legend{
+    color:#000000;
+    margin-bottom:5pt;
+}
+#colgauche  fieldset ul{
+    margin: 0;
+    padding-bottom:0;
+    padding-top:0;
+    padding-left:10pt;
+}
+#colgauche  fieldset ul li{
+    list-style-type:disc;
+}
+div.tooltip{
+	color: Black;
+	margin-bottom: 5pt;
+	background: #FFC0C0;
+	margin: 5px;
+	padding: 5px;
+}
