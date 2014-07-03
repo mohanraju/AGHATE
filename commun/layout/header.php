@@ -20,7 +20,7 @@
 		    <script src="../commun/js/jquery.js"></script>
 		    <script src="../commun/js/jquery_ui.js"></script>
 			<script src="../commun/js/fonctions.js"></script>		    		    
-
+			<script src="../commun/js/bootstrap-dropdown.js"></script>
 				
 		    
   <style type="text/css">

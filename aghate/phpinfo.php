@@ -1,3 +1,0 @@
-<?Php  
-print phpinfo();
-?>

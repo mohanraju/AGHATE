@@ -8,7 +8,7 @@ session_start();
 //require("../../user/session_check.php");
 // insertion des objets
 require_once("../../config/config.php");
-require_once("../../config/config_".$_SESSION['site_patient'].".php");
+ 
 require_once("../../commun/include/ClassMysql.php");
 require_once("../../commun/include/CommonFonctions.php");
 require_once('../../commun/include/ClassCim10.php');

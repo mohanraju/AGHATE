@@ -12,7 +12,7 @@ header('Content-type: application/json');
 // scripts d'inclusion
 //==========================================================================================
 include("../../config/config.php");
-include("../../config/config_$site.php"); 
+ 
 require("../include/CommonFonctions.php");
 include("../include/ClassGilda.php");
 

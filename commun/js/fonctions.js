@@ -13,10 +13,12 @@
 //	PageVariables = les varibales a passer donc "test=test&toto=toto&tati=tati"
 //=================================================================
 function LanceAjax(Scripturl,PageVariables){
+ 
 	var html = $.ajax({
 	  				url: Scripturl,
 	  				data :PageVariables,
-						beforeSend: function(xhr) {
+	  				dataType:"json",
+					beforeSend: function(xhr) {
 							xhr.setRequestHeader('Content-type','utf-8');
 						},		  				
 	  				async: false,
@@ -26,6 +28,12 @@ function LanceAjax(Scripturl,PageVariables){
 							}
 						}	  				
 	 					}).responseText;
+	// trace les resultat dans log
+	if($('#LOG').length > 0)
+	{
+		$( "#LOG" ).append("<br>Script :" + Scripturl +  PageVariables + "<br>Res =>" + html );		
+	}
+	 	 	 					
 	 return html;
 }
 function CocherElements(CurrentElementNo,GroupId)

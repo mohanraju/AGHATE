@@ -1,7 +1,7 @@
 LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
 ref	text		hidden	ref		
 nip	num		hidden	nip		
-nda	num		hidden	nda		
+nda	text		hidden	nda		
 nohjo	text		hidden	nohjo		
 entry	date		hidden	entry		
 end	date		hidden	end		

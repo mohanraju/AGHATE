@@ -7,6 +7,11 @@ function LanceAjax(Scripturl,PageVariables){
 							},		  				
 		  				async: false
 		 					}).responseText;
+	// trace les resultat dans log
+	if($('#LOG').length > 0)
+	{
+		$( "#LOG" ).append("<br>Script :" + Scripturl +  PageVariables + "<br>Res =>" + html );		
+	}		 					
 		 return html;
 	}
 

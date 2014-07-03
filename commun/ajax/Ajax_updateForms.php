@@ -1,7 +1,6 @@
 <?php
 ini_set('display_errors',1);
 include("../../config/config.php");
-include("../../config/config_".$site.".php"); 
 include("../../commun/include/ClassMysql.php");
 $FichierRef = '../../commun/sources/'.$_GET['Source'].'.source';
 $fp = fopen($FichierRef, 'rb');

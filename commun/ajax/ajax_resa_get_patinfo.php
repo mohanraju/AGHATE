@@ -21,7 +21,7 @@
 //=================================================================================--------
 
 include("../../config/config.php");
-include("../../config/config_".$site.".php"); 
+  
 require("../include/CommonFonctions.php");
 include("../include/ClassGilda.php");
 

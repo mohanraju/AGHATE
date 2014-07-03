@@ -12,7 +12,7 @@ Parametres $DataCodage
 require("../../user/session_check.php");
 
 include("../../config/config.php");
-include("../../config/config_".$_SESSION['site_patient'].".php");
+ 
 include("../../commun/include/CommonFonctions.php");
 include("../../commun/include/ClassMysql.php");
 include('../../commun/include/ClassCim10.php');

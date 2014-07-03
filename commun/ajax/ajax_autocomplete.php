@@ -10,7 +10,6 @@
 // script s d'inclusion
 //==========================================================================================
 include("../../config/config.php");
-include("../../config/config_".$site.".php"); 
 require("../../commun/include/ClassMysql.php");
 require("../../commun/include/CommonFonctions.php");
 

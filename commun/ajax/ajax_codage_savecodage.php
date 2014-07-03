@@ -17,7 +17,7 @@ include("../../config/config.php");
 include("../../commun/include/CommonFonctions.php");
 $site_patient="0".substr(trim($NDA),0,2);
 //include("../../config/config_".$site_patient.".php");
-include("../../config/config_".$site.".php");
+ 
 include("../../commun/include/ClassMysql.php");
 include('../../commun/include/ClassCim10.php');
 include('../../commun/include/ClassCodeBarre.php');

@@ -2,7 +2,7 @@
 NOM:Formulaire de reservation des lits
 NABV:FormResa
 DATABASE:intramsi
-FICHIER_REFERENCE:SLS_CIC_ReservationForm.xls
+FICHIER_REFERENCE:SLS_hemato_senior_resa.xls
 MULTI_FORMS:
 
 #Description des caractéristiques des champs du fichier de référence :

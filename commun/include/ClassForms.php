@@ -384,22 +384,23 @@ class Forms extends MySQL
 			$formsr=$this->GetForm($NDA);
 			
 			//Attribution du formulaire à lire : utlisation de $_GET['filename'] qui est forcé si non renseigné
-			if(!isset($_GET['filename'])){
-				if($formsr)$_GET['filename'] = $formsr[0][val];
-				else $_GET['filename'] = $FichierRef[0];
+			if(strlen($filename) < 1){
+				if($formsr)
+					$filename = $formsr[0][val];
+				else 
+					$filename = $FichierRef[0];
 			}
-			$DP['FICHIER_REFERENCE'] = $_GET['filename'].'.xls';
-		
+			$DP['FICHIER_REFERENCE'] = $filename.'.xls';
 		
 		//Le formulaire selectionné a-t-il été utilisé ?
 		$InitForm='No';
-		for($i=0;$i<count($formsr);$i++)if($formsr[$i]['val']==$_GET['filename'])$InitForm='Yes';
+		for($i=0;$i<count($formsr);$i++)if($formsr[$i]['val']==$filename)$InitForm='Yes';
 		
 		}
 		
 		$DetailsForm=$this->GetDetailsFormulaire($DP);
 		
- 		//Get Data from all sources
+		//Get Data from all sources
 		$Data=array();
 		//$nda=$VID;
 		$uh=$_GET['uhexec'];
@@ -424,19 +425,20 @@ class Forms extends MySQL
 		
 		
 
-		echo '<input type="hidden" name="'.$_GET['filename'].'" id="InitForm" value="'.$InitForm.'">';
+		echo '<input type="hidden" name="'.$filename.'" id="InitForm" value="'.$InitForm.'">';
+		echo '<input type="hidden" name="filename" id="filename" value="'.$filename.'">';
 		echo '<input type="hidden" name="Username" id="Username"	value='.$_SESSION['login'].'>';
 		echo '<input type="hidden" name="SaveDateTime" id="SaveDateTime"	value="'.date("Y-m-d H:i", time()).'">';
 		echo '<input type="hidden" name="VID" id="VID" value="'.$VID.'">';
 	
-	
+		$tailleFichier=(is_array($FichierRef))?count($FichierRef):strlen($FichierRef);
 		
 		if(strlen($mode_ref) > 0  )
 		{
 			echo "<a href='#' onclick=\"$('#mode').val('Modif');\" id='other'>Modifier le formulaire</a><br/>";
-			if(strlen($FichierRef)>0)
+			//echo "<a href='".$script_name."?mode=Modifier&id=$VID&filename=".$_GET['filename']."&table_loc=".$table_loc."'>Modifier le formulaire</a><br/>";
+			if($tailleFichier>0)
 			{
-				
 				$compt=0;
 				foreach ($formsr as $key => $val){
 					foreach ($FormsList as $key1 => $val1){
@@ -448,14 +450,15 @@ class Forms extends MySQL
 					}
 				}
 				
-				echo '<br>'.$this->Html->InputChoix($listResultat,'forms',"","window.location = $(this).attr('cval')",false).'<br>';
+				echo '<br>'.$this->Html->InputChoix($listResultat,'forms',"","filename=$(this).attr('cval').split('filename=');$('#filename').val(filename[1]);$('form')[0].submit();",false).'<br>';
 			}
 		}
 		else
 		{		
 			echo "<a href='#' onclick=\"$('#mode').val('');\" id='other'>Retour au mode vue</a>";
-			if(strlen($FichierRef)>0)
-				echo "<br><br>Liste des formulaires  ".$this->Html->InputSelectFromArray($FormsList,'file',$_GET['filename'],"onchange='getLink(".$VID.",this,\"".$table_loc."\")'").'<br>';
+			if($tailleFichier>0)
+				echo "<br><br>Liste des formulaires  ".$this->Html->InputSelectFromArray($FormsList,'file',$filename,"onchange='$(\"#filename\").val(this.value);$(\"form\")[0].submit();'").'<br>';
+				
 		}
 		
 		$n=0;
@@ -471,6 +474,8 @@ class Forms extends MySQL
 					foreach($Tab as $key=>$value){
 						$idF=$key;$value=$Tab[$key][libdiag];$code=$Tab[$key][diag];
 					}
+
+		
 				}
 			}elseif($DetailsForm[$DP['LEGENDE']][$i] == "DAS"){
 				$value=$Data[$DetailsForm[$DP['SOURCE']][$i]][$DetailsForm[$DP['LEGENDE']][$i]];
